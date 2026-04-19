@@ -61,6 +61,8 @@ function Definitions()
 		hist_map_08_click = clicked_hist_map_08,
 		hist_map_09_click = clicked_hist_map_09,
 		hist_map_10_click = clicked_hist_map_10,
+		-- TechSupport: Added in new map for the singleplayer mode
+		hist_map_11_click = clicked_hist_map_11,
 		inf_map_01_click = clicked_inf_map_01,
 		inf_map_02_click = clicked_inf_map_02,
 		inf_map_03_click = clicked_inf_map_03,
@@ -814,6 +816,18 @@ end
 function clicked_hist_map_10(message)
 	if message == OnEnter then
 		Map_Selected = Toggle_Check("Caamas",Map_Selected)
+		Setup_Map_Text(Map_Selected)
+	elseif message == OnUpdate then
+
+		crossplot:update()
+
+	end
+end
+
+-- TechSupport: Added in new map for the singleplayer mode
+function clicked_hist_map_11(message)
+	if message == OnEnter then
+		Map_Selected = Toggle_Check("StoryMode",Map_Selected)
 		Setup_Map_Text(Map_Selected)
 	elseif message == OnUpdate then
 

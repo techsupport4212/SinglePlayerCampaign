@@ -207,6 +207,8 @@ return {
 	,["Orinda_TITLE"] = "Orinda Campaign"
 	,["FIP_TITLE"] = "Final Imperial Push"
 	,["Caamas_TITLE"] = "Caamas Crisis"
+	-- TechSupport: Added in title for the singleplayer mode
+	,["StoryMode_TITLE"] = "Story Mode"
 	,["FTGU_TITLE"] = "From the Ground Up"
 	,["Custom_Small_TITLE"] = "Custom GC Small"
 	,["Custom_Medium_TITLE"] = "Custom GC Medium"
@@ -225,6 +227,8 @@ return {
 	,["Orinda_DATE"] = "12 ABY"
 	,["FIP_DATE"] = "17 ABY"
 	,["Caamas_DATE"] = "19 ABY"
+	-- TechSupport: Added in dates for the singleplayer mode
+	,["StoryMode_DATE"] = "4 ABY"
 	
 	-- Map Descriptions -- 
 	
@@ -282,6 +286,9 @@ return {
 	,["FIP"] = { ["TOP_TEXT"] = "Imperial successes at Orinda have emboldened the Moffs, who have ordered Admiral Daala to strike from the Deep Core while Admiral Pellaeon attacks from the Rim. New Republic forces fight on two fronts in a clash of dreadnaughts."
 						}
 	,["Caamas"] = { ["TOP_TEXT"] = "The discovery of Bothan involvement in the destruction of Caamas has sent tremors through the fragile foundation of the ascendant New Republic. The Remnant and Empire of the Hand wait for opportunities at expense of the Rebels."
+						}
+	-- TechSupport: Added in text for the singleplayer mode
+	,["StoryMode"] = { ["TOP_TEXT"] = "Story-based single player map. Each map has a unique set of factions, planets, and events based on the era and location. These maps are designed to be more challenging than the standard GC experience, with more limited starting resources and more aggressive AI opponents."
 						}
 	,["FTGU"] = { ["TOP_TEXT"] = "Conquer the Star Wars galaxy starting from only a single planet. Most planets start controlled by Independent Forces though others are controlled by active factions. Choose from Fixed Era or Progressive Era."
 						}

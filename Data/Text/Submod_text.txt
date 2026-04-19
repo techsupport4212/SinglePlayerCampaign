@@ -1,1 +1,3 @@
-﻿TEXT_NOTE,Put text changes for submods here
+﻿TEXT_GCMENU_STORYMODE,Pre-Endor Story Campaign
+TEXT_GCMENU_STORYMODE_TOOLTIP,Approximate CPU Load: Medium-High
+TEXT_NOTE,Put text changes for submods here

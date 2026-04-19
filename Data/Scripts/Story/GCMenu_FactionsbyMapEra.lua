@@ -1506,6 +1506,29 @@ return {
 
 	},
 	
+	-- TechSupport: added faction availability for the new map.
+	["StoryMode"] = {
+
+		["Historical"] = { ["REBEL"] = false,
+					["EMPIRE"] = true,
+					["ERIADU_AUTHORITY"] = false,
+					["PENTASTAR"] = false,
+					["ZSINJ_EMPIRE"] = false,
+					["GREATER_MALDROOD"] = false,
+					["HAPES_CONSORTIUM"] = false,
+					["EMPIREOFTHEHAND"] = true,
+					["HUTT_CARTELS"] = false,
+					["CORPORATE_SECTOR"] = false,
+					["IMPERIAL_PROTEUS"] = false,
+					["CHISS"] = false,
+					["SSIRUUVI_IMPERIUM"] = false,
+					["KILLIK_HIVES"] = false,
+					["CORELLIA"] = false,
+					["YEVETHA"] = false,
+					["UNDERWORLD"] = false }
+
+	},
+
 	["Empires_At_War"] = {
 
 		["4ABY"] = { ["REBEL"] = false,

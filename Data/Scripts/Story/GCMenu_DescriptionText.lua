@@ -311,6 +311,15 @@ return {
 				["DEFAULT"] = "Plots abound as the New Republic scrambles to maintain itself, which may require obtaining secrets from the Empire of the Hand's archives. But the Galactic Empire is also not immune to internal dissent, and will face a revolt from the Sinister Triumvirate if not stopped beforehand."
 			}
 		},
+		-- TechSupport: Added in text for the singleplayer mode
+		["StoryMode"] = {
+			Title = "Story Mode Campaign"
+			,Description = "Story Mode campaign focused on the leadup to the Battle of Endor, with a focus on progressing through multiple campaigns before the final battle."
+			,DateOverride = "2 BBY"
+			,EraTextOverride = {
+				["DEFAULT"] = "You start as a commander in an Imperial Sector Fleet. Move up the ranks through multiple campaigns as you fight against all those who stand against the Empire."
+			}
+		},
 
 		-- FTGU / Custom
 		["FTGU"] = {

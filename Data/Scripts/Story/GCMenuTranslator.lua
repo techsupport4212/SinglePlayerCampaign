@@ -215,6 +215,8 @@ return {
 	["Orinda"] = "hist_map_08",
 	["FIP"] = "hist_map_09",
 	["Caamas"] = "hist_map_10",
+	-- TechSupport: Added in new map for the singleplayer mode
+	["StoryMode"] = "hist_map_11",
 	["Empires_At_War"] = "inf_map_01",
 	["FTGU"] = "inf_map_02",
 	["Custom_Small"] = "inf_map_03",
@@ -245,6 +247,8 @@ return {
 		"Orinda",
 		"FIP",
 		"Caamas",
+		-- TechSupport: Added in new map for the singleplayer mode
+		"StoryMode",
 		"Empires_At_War",
 		"FTGU",
 		"Custom_Small",
@@ -291,6 +295,8 @@ return {
 		"Reunification",
 		"Orinda",
 		"FIP",
-		"Caamas"
+		"Caamas",
+		-- TechSupport: Added in new map for the singleplayer mode
+		"StoryMode"
 	}
 }
