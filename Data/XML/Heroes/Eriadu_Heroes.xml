@@ -1,0 +1,2079 @@
+<?xml version="1.0" ?>
+<Eriadu_Heroes>
+	
+	<!-- Space Heroes -->
+	
+	<UniqueUnit Name="Delvardus_Brilliant">
+		<Variant_Of_Existing_Type>Imperial_II_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DELVARDUS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_07_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DELVARDUS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_BRILLIANT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_HULL 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_SHIELD 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_MOVE
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP2
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_DELVARDUS_UPGRADE1
+		TEXT_TOOLTIP_DELVARDUS_UPGRADE2
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPERIOR_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_delvardus_leader.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<SFXEvent_Select>Unit_Select_Sander_Delvardus</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Sander_Delvardus</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Move_Sander_Delvardus</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Sander_Delvardus</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Select_Sander_Delvardus</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Sander_Delvardus </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Sander_Delvardus </SFXEvent_Move_Into_Nebula>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Lasers_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Missiles_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Ion_Cannons_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Engines_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Hangar_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+		
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Lasers_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Cannons_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Hangar_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_07 + Offensive -->
+			<Combat_Bonus_Ability Name="Command_Tier_07_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.27</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.21</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.21</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_07_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.21</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+	<UniqueUnit Name="Delvardus_Thalassa">
+		<Variant_Of_Existing_Type>Praetor_II_Battlecruiser</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DELVARDUS </Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_07_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DELVARDUS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_THALASSA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PRAETOR_II_HULL
+		TEXT_TOOLTIP_PRAETOR_II_SHIELD 
+		TEXT_TOOLTIP_PRAETOR_II_MOVE 
+		TEXT_TOOLTIP_PRAETOR_II_SQUADRON
+		TEXT_TOOLTIP_PRAETOR_II_WEAP1 
+		TEXT_TOOLTIP_PRAETOR_II_WEAP2 
+		TEXT_TOOLTIP_PRAETOR_II_WEAP3
+		TEXT_TOOLTIP_PRAETOR_II_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_RESPAWN_DELVARDUS
+		TEXT_TOOLTIP_DELVARDUS_UPGRADE2
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPERIOR_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_delvardus_leader.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiCapital </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Destruction_Survivors> 
+			Destruction_Survivor_Delvardus_Titan_Barge, 1
+		</Destruction_Survivors>
+
+		<SFXEvent_Build_Complete>Unit_Complete_Sander_Delvardus</SFXEvent_Build_Complete>
+
+		<SFXEvent_Select>Unit_Select_Sander_Delvardus</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Sander_Delvardus</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Move_Sander_Delvardus</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Sander_Delvardus</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Sander_Delvardus</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Sander_Delvardus </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Sander_Delvardus </SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Lasers_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Missiles_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Ion_Cannons_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Engines_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Hangar_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Lasers_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, Unit_Lost_Missiles_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, Unit_Lost_Missiles_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Cannons_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Hangar_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_07 + Offensive -->
+			<Combat_Bonus_Ability Name="Command_Tier_07_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.27</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.21</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.21</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_07_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.21</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+	<DummyStructure Name="Delvardus_Thalassa_Dummy">
+		<Variant_Of_Existing_Type>Template_Flagship_Swap_NoSelfDelete</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>13750</Build_Cost_Credits>
+		<Build_Time_Seconds>4</Build_Time_Seconds>
+
+		<Text_ID>TEXT_TOOLTIP_COMMAND_THALASSA</Text_ID>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Icon_Name>i_button_delvardus_leader.tga</Icon_Name>
+
+		<Encyclopedia_Unit_Class>Ship Crews Cost: 2,020</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_UPGRADE_FLAG
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_PRAETOR_II_HULL
+		TEXT_TOOLTIP_PRAETOR_II_SHIELD 
+		TEXT_TOOLTIP_PRAETOR_II_MOVE 
+		TEXT_TOOLTIP_PRAETOR_II_SQUADRON
+		TEXT_TOOLTIP_PRAETOR_II_WEAP1 
+		TEXT_TOOLTIP_PRAETOR_II_WEAP2 
+		TEXT_TOOLTIP_PRAETOR_II_WEAP3
+		TEXT_TOOLTIP_PRAETOR_II_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_RESPAWN_DELVARDUS
+		TEXT_TOOLTIP_DELVARDUS_UPGRADE2
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+
+		<Lua_Script></Lua_Script>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Eriadu_Shipyard_Level_Four</Required_Special_Structures>
+
+		<Required_Orbiting_Units>Delvardus_Brilliant</Required_Orbiting_Units>
+		
+		<Population_Value>108</Population_Value>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+	
+	<UniqueUnit Name="Delvardus_Night_Hammer">
+		<Variant_Of_Existing_Type>Template_Executor_Star_Dreadnought</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DELVARDUS </Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_07_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DELVARDUS 
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_NIGHT_HAMMER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL
+		TEXT_TOOLTIP_EXECUTOR_SHIELD
+		TEXT_TOOLTIP_EXECUTOR_MOVE
+		TEXT_TOOLTIP_EXECUTOR_SQUADRON
+		TEXT_TOOLTIP_EXECUTOR_WEAP1
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP3
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		TEXT_TOOLTIP_EXECUTOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPERIOR_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_delvardus_SSD.tga</Icon_Name>
+		
+		<Space_Model_Name>EV_KnightHammer.alo</Space_Model_Name>
+		<Death_Clone>Damage_Normal, KnightHammer_Death_Clone</Death_Clone>
+		
+		<CategoryMask> SuperCapital | AntiCapital </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Tech_Level>99</Tech_Level>
+		
+
+		<Score_Cost_Credits> 1 </Score_Cost_Credits>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shielded_TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron_Double, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 5</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Shielded_TIE_Interceptor_Squadron, 5</Reserve_Spawned_Units_Tech_0>
+
+		<SFXEvent_Build_Complete>Unit_Complete_Sander_Delvardus</SFXEvent_Build_Complete>
+
+		<SFXEvent_Select>Unit_Select_Sander_Delvardus</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Sander_Delvardus</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Move_Sander_Delvardus</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Sander_Delvardus</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Move_Sander_Delvardus</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Move_Sander_Delvardus </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Move_Sander_Delvardus </SFXEvent_Move_Into_Asteroid_Field>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_Attack_Lasers_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_Attack_Missiles_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_Attack_Ion_Cannons_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_Attack_Engines_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_Attack_Hangar_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Sander_Delvardus </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Lasers_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, Unit_Lost_Missiles_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, Unit_Lost_Missiles_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Cannons_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Hangar_Sander_Delvardus </SFXEvent_Hardpoint_Destroyed>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_07 + Offensive -->
+			<Combat_Bonus_Ability Name="Command_Tier_07_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.27</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.21</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.21</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_07_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.21</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+	<DummyStructure Name="Delvardus_Brilliant_Night_Hammer_Dummy">
+		<Variant_Of_Existing_Type>Template_Flagship_Swap_NoSelfDelete</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>35750</Build_Cost_Credits>
+		<Build_Time_Seconds>4</Build_Time_Seconds>
+
+		<Text_ID>TEXT_TOOLTIP_COMMAND_NIGHT_HAMMER_SHORT</Text_ID>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Icon_Name>i_button_delvardus_SSD.tga</Icon_Name>
+
+		<Encyclopedia_Unit_Class>Ship Crews Cost: 7,020</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_UPGRADE_FLAG
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL
+		TEXT_TOOLTIP_EXECUTOR_SHIELD
+		TEXT_TOOLTIP_EXECUTOR_MOVE
+		TEXT_TOOLTIP_EXECUTOR_SQUADRON
+		TEXT_TOOLTIP_EXECUTOR_WEAP1
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP3
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		TEXT_TOOLTIP_EXECUTOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+
+		<Lua_Script></Lua_Script>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Eriadu_Shipyard_Level_Four</Required_Special_Structures>
+
+		<Required_Orbiting_Units>Delvardus_Brilliant</Required_Orbiting_Units>
+		
+		<Population_Value>217</Population_Value>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+	
+	<DummyStructure Name="Delvardus_Thalassa_Night_Hammer_Dummy">
+		<Variant_Of_Existing_Type>Template_Flagship_Swap_NoSelfDelete</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>12000</Build_Cost_Credits>
+		<Build_Time_Seconds>4</Build_Time_Seconds>
+
+		<Text_ID>TEXT_TOOLTIP_COMMAND_NIGHT_HAMMER_SHORT</Text_ID>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Icon_Name>i_button_delvardus_SSD.tga</Icon_Name>
+
+		<Encyclopedia_Unit_Class>Ship Crews Cost: 2,500</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_UPGRADE_FLAG
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL
+		TEXT_TOOLTIP_EXECUTOR_SHIELD
+		TEXT_TOOLTIP_EXECUTOR_MOVE
+		TEXT_TOOLTIP_EXECUTOR_SQUADRON
+		TEXT_TOOLTIP_EXECUTOR_WEAP1
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP3
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		TEXT_TOOLTIP_EXECUTOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Eriadu_Shipyard_Level_Four</Required_Special_Structures>
+
+		<Required_Orbiting_Units>Delvardus_Thalassa</Required_Orbiting_Units>
+		
+		<Population_Value>217</Population_Value>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+	</DummyStructure>
+
+	<DummyStructure Name="Delvardus_Night_Hammer_Historical_Dummy">
+		<Variant_Of_Existing_Type>Template_Flagship_Swap_NoSelfDelete</Variant_Of_Existing_Type>
+		<Build_Cost_Credits>26500</Build_Cost_Credits>
+		<Build_Time_Seconds>4</Build_Time_Seconds>
+
+		<Text_ID>TEXT_TOOLTIP_COMMAND_NIGHT_HAMMER_SHORT</Text_ID>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Icon_Name>i_button_delvardus_SSD.tga</Icon_Name>
+
+		<Encyclopedia_Unit_Class>Ship Crews Cost: 520</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_UPGRADE_FLAG_NIGHT_HAMMER_REUNIFICATION
+		</Encyclopedia_Text>
+
+		<Lua_Script></Lua_Script>
+
+		<Required_Special_Structures>Story_Category_Dummy, Eriadu_Shipyard_Level_Three</Required_Special_Structures>
+		<Required_Planets>Kampe</Required_Planets>
+
+		<Required_Orbiting_Units>Delvardus_Brilliant</Required_Orbiting_Units>
+
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Limit_Lifetime_Per_Player>1</Build_Limit_Lifetime_Per_Player>
+		
+		<Population_Value>217</Population_Value>
+
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+	</DummyStructure>
+	
+	<UniqueUnit Name="Destruction_Survivor_Delvardus_Titan_Barge">
+		<Variant_Of_Existing_Type>Destruction_Survivor_Transport</Variant_Of_Existing_Type>
+
+		<Space_Model_Name>y-85_titan_dropship.ALO</Space_Model_Name>
+		<Scale_Factor>0.5</Scale_Factor>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_ATAT_Barge_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_ATAT_Barge_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_ATAT_Barge_Cinematic_Engine_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+	</UniqueUnit>
+	
+	<UniqueUnit Name="Hublin_Kabalian_Cross">
+		<Variant_Of_Existing_Type>Imperial_I_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_SHEA_HUBLIN</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_09_SPACE
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_STARFIGHTER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_SHEA_HUBLIN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_KABALIAN_CROSS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_SHEA_HUBLIN_SPECIAL
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_AIR_MARSHAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_SHEA_HUBLIN.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>3</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Starting_Spawned_Units_Tech_1>Shielded_TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_1>
+        <Starting_Spawned_Units_Tech_1>Early_Skipray_Squadron_Half, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Shea_Hublin_Sword_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Punisher_Squadron_Half, 1</Starting_Spawned_Units_Tech_1> <!-- Put after all other bombers so iconic bombing run units happen instead -->
+		<Reserve_Spawned_Units_Tech_1>TIE_Punisher_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Shielded_TIE_Fighter_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+        <Reserve_Spawned_Units_Tech_1>Early_Skipray_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+
+		<SFXEvent_Build_Complete>Unit_Complete_Hublin</SFXEvent_Build_Complete>
+
+		<SFXEvent_Select> Unit_Select_Hublin </SFXEvent_Select>
+		<SFXEvent_Move> Unit_Move_Hublin </SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Hublin</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Hublin </SFXEvent_Attack>
+		<SFXEvent_Guard> Unit_Guard_Hublin </SFXEvent_Guard>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Hublin </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Hublin </SFXEvent_Move_Into_Nebula>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Hublin </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Hublin </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Hublin </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Hublin </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Hublin </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Hublin </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Hublin </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_09 + Starfighter_Specialist -->
+			<Combat_Bonus_Ability Name="Command_Tier_09_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.27</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.27</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.27</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_09_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.27</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Combat_Bonus_Ability Name="Starfighter_Specialist_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Fighter | Bomber</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.06</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.06</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.06</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Starfighter_Specialist_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Fighter | Bomber</Applicable_Unit_Categories>
+				<FOW_Reveal_Range_Multiplier>1.06</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>1</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+	<UniqueUnit Name="Prittick_Conquest">
+		<Variant_Of_Existing_Type>Imperial_II_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_PRITTICK</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_06_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_PRITTICK
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_ISD_CONQUEST
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_HULL 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_SHIELD 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_MOVE
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP2
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADMIRAL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_prittick.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>6</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>TURBO</Type>
+
+				<Expiration_Seconds>20</Expiration_Seconds>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	3.0f</Mod_Multiplier>
+				<Mod_Multiplier>SHIELD_REGEN_MULTIPLIER,	0.0f</Mod_Multiplier>
+				<Mod_Multiplier>ENERGY_REGEN_MULTIPLIER,	1.0f</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		2.0f</Mod_Multiplier>
+
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+				<SFXEvent_GUI_Unit_Ability_Deactivated />
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_06 -->
+			<Combat_Bonus_Ability Name="Command_Tier_06_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.18</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.18</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.18</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_06_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.18</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Resuun_Retribution">
+		<Variant_Of_Existing_Type>Imperial_I_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_RESUUN</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_05_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_RESUUN 
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_RETRIBUTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_RESUUN_SPECIAL
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GOVERNOR </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_resuun.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>6</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Starting_Spawned_Units_Tech_1>Shielded_TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_1>
+        <Starting_Spawned_Units_Tech_1>Early_Skipray_Squadron_Half, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Tomax_Bren_White_Death_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Punisher_Squadron_Half, 1</Starting_Spawned_Units_Tech_1> <!-- Put after all other bombers so iconic bombing run units happen instead -->
+		<Reserve_Spawned_Units_Tech_1>TIE_Punisher_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Shielded_TIE_Fighter_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+        <Reserve_Spawned_Units_Tech_1>Early_Skipray_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+		
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_05 -->
+			<Combat_Bonus_Ability Name="Command_Tier_05_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.15</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_05_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.15</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+	
+	<!-- Land Heroes -->
+	
+	<UniqueUnit Name="Cronus_A6">
+		<Variant_Of_Existing_Type> A6_Juggernaut </Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_CRONUS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_05_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_CRONUS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_UNIT_JUGGERNAUT_A6
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_JUGGERNAUT_A6_HEALTH
+		TEXT_TOOLTIP_JUGGERNAUT_A6_MOVE
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP1 
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP2 
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP3
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_JUGGERNAUT_A6_INFANTRY_HEAL
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_TRANSPORT
+		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COLONEL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_cronus.tga</Icon_Name>
+		
+		<CategoryMask> VehicleHero | AntiInfantry | AntiVehicle </CategoryMask>
+		<Property_Flags>GoodInfantryCrusher | CanContainGarrison | IsSupercrusher | GTSImmune </Property_Flags>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Ranking_In_Category>5</Ranking_In_Category>
+
+        <Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_05 + Offensive -->
+			<Combat_Bonus_Ability Name="Command_Tier_05_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.21</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.15</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_05_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.15</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		
+			<Force_Healing_Ability Name="A6_Healing">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>400.0</Heal_Range>
+				<Heal_Amount> 3.0 </Heal_Amount>
+				<Heal_Percent> 0.0 </Heal_Percent>
+				<Heal_Interval_In_Secs>1.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Heal_Infantry_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Infantry | InfantryHero</Applicable_Unit_Categories>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Unit_Healed_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2/>
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.1, 1.2, 1.1</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<HeroCompany Name="Cronus_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_CRONUS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_05_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_CRONUS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_UNIT_JUGGERNAUT_A6
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_JUGGERNAUT_A6_HEALTH
+		TEXT_TOOLTIP_JUGGERNAUT_A6_MOVE
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP1 
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP2 
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP3
+		TEXT_TOOLTIP_JUGGERNAUT_A6_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_JUGGERNAUT_A6_INFANTRY_HEAL
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_TRANSPORT
+		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COLONEL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_cronus.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Imperial_Titan_Barge</Company_Transport_Unit>
+		<Company_Units>Cronus_A6</Company_Units>
+		
+		<Population_Value>2</Population_Value>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>5190</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>33</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+
+	<UniqueUnit Name="Cronus_Night_Hammer">
+		<Variant_Of_Existing_Type>Template_Executor_Star_Dreadnought</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_CRONUS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_07_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_CRONUS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_NIGHT_HAMMER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_EXECUTOR_HULL
+		TEXT_TOOLTIP_EXECUTOR_SHIELD
+		TEXT_TOOLTIP_EXECUTOR_MOVE
+		TEXT_TOOLTIP_EXECUTOR_SQUADRON
+		TEXT_TOOLTIP_EXECUTOR_WEAP1
+		TEXT_TOOLTIP_EXECUTOR_WEAP2
+		TEXT_TOOLTIP_EXECUTOR_WEAP3
+		TEXT_TOOLTIP_EXECUTOR_WEAP4
+		TEXT_TOOLTIP_EXECUTOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COLONEL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_cronus_SSD.tga</Icon_Name>
+		
+		<Space_Model_Name>EV_KnightHammer.alo</Space_Model_Name>
+		<Death_Clone>Damage_Normal, KnightHammer_Death_Clone</Death_Clone>
+		
+		<CategoryMask> SuperCapital | AntiCapital </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>2</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron_Double, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>Shielded_TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron_Double, 10</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Bomber_Squadron, 5</Reserve_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Shielded_TIE_Interceptor_Squadron, 5</Reserve_Spawned_Units_Tech_0>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_07 + Offensive -->
+			<Combat_Bonus_Ability Name="Command_Tier_07_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.27</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.21</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.21</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_07_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.21</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Veers_AT_AT_Walker">
+		<Variant_Of_Existing_Type>Imperial_AT_AT_Walker</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_MAXIMILIAN_VEERS</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_08_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_WALKER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VEERS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_AT_AT_WALKER_VEERS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ATAT_HEALTH
+		TEXT_TOOLTIP_ATAT_MOVE 
+		TEXT_TOOLTIP_ATAT_WEAP1 
+		TEXT_TOOLTIP_ATAT_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATAT_EMPIRE_DEPLOY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_MAXIMILLIAN_VEERS.tga</Icon_Name>
+		
+		<CategoryMask> VehicleHero | AntiVehicle | AntiStructure </CategoryMask>
+		<Property_Flags>GoodInfantryCrusher | IsSupercrusher | GTSImmune </Property_Flags>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Ranking_In_Category>3</Ranking_In_Category>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<SFXEvent_Select>Unit_Select_Veers</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Veers</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Veers</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Veers</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Veers</SFXEvent_Guard>
+		<SFXEvent_Announce>Unit_Announce_Veers</SFXEvent_Announce>
+		<SFXEvent_Group_Move>Unit_Group_Move_Veers</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Veers</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Veers </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Veers </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Veers </Death_SFXEvent_Start_Die>
+
+		<Projectile_Types>Proj_Ground_Maximum_Firepower_Dummy_Laser</Projectile_Types>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.0</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Fire_Recharge_Seconds>0.1</Projectile_Fire_Recharge_Seconds>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>MAXIMUM_FIREPOWER</Type>
+				<Expiration_Seconds>1</Expiration_Seconds>
+				<Recharge_Seconds>70</Recharge_Seconds>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.0f</Mod_Multiplier> <!-- no delay, fire continuously -->
+				<GUI_Activated_Ability_Name>AT_AT_Maximum_Firepower_Attack</GUI_Activated_Ability_Name> 
+				<Projectile_Types_Override>Proj_Veers_AT_AT_Max_Power_Laser_Red</Projectile_Types_Override>
+				<Mod_Flag>ALLOW_TARGET_DIMINISHING_FIREPOWER, false</Mod_Flag>
+				<SFXEvent_GUI_Unit_Ability_Activated/>
+				<SFXEvent_Target_Ability> Unit_Target_Energy_Blast_Veers </SFXEvent_Target_Ability>
+				<Supports_Autofire>false</Supports_Autofire>
+			</Unit_Ability>
+			
+			<!-- Stormtroopers on Veers -->
+			<Unit_Ability>
+				<Type>DEPLOY_TROOPERS</Type>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Spawned_Object_Type>Imperial_Stormtrooper_Medium_Squad</Spawned_Object_Type>
+				<Max_Num_Spawned_Objects>1</Max_Num_Spawned_Objects>
+				<Owner_Attachment_Bone>B_Trooper_00, B_Trooper_01, B_Trooper_02 </Owner_Attachment_Bone>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Deploy_Veers</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_08 + Offensive + Walker Specialist -->
+			<Combat_Bonus_Ability Name="Command_Tier_08_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.24</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.24</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_08_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.24</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Combat_Bonus_Ability Name="Walker_Specialist_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>
+				AT_RT_Walker, Imperial_AT_RT_Walker, Lightning_Squadron_AT_RT_Walker,
+				AT_PT_Walker, AT_MP_Walker, AT_ST_Walker, AT_ST_A_Walker, AT_DP_Walker, AT_TE_Walker,
+				AT_AA_Walker, AT_AA_Missile_Walker, AT_AA_Flak_Walker, AT_AI_Walker,
+				AT_AP_Walker, Imperial_AT_AT_Walker, Imperial_AT_AT_Walker_Turbolaser_Refit,
+				Espo_Walker_91, Espo_Walker_101, EotH_Sonic_Walker
+				</Applicable_Unit_Types>
+				<Damage_Bonus_Percentage>0.06</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.06</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.06</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Battlefield_Modifier_Ability Name="Walker_Specialist_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Types>
+				AT_RT_Walker, Imperial_AT_RT_Walker, Lightning_Squadron_AT_RT_Walker,
+				AT_PT_Walker, AT_MP_Walker, AT_ST_Walker, AT_ST_A_Walker, AT_DP_Walker, AT_TE_Walker,
+				AT_AA_Walker, AT_AA_Missile_Walker, AT_AA_Flak_Walker, AT_AI_Walker,
+				AT_AP_Walker, Imperial_AT_AT_Walker, Imperial_AT_AT_Walker_Turbolaser_Refit,
+				Espo_Walker_91, Espo_Walker_101, EotH_Sonic_Walker
+				</Applicable_Unit_Types>
+				<FOW_Reveal_Range_Multiplier>1.06</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>1</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Maximum_Firepower_Attack_Ability Name="AT_AT_Maximum_Firepower_Attack">
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Owner_Particle_Effect>Veers_Powerup_Particle_Effect</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name>powerup</Owner_Particle_Bone_Name>
+				<SFXEvent_Activate>Unit_AT_AT_PowerUp</SFXEvent_Activate>
+			</Maximum_Firepower_Attack_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<HeroCompany Name="Veers_AT_AT_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_MAXIMILIAN_VEERS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_08_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_WALKER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VEERS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_AT_AT_WALKER_VEERS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ATAT_HEALTH
+		TEXT_TOOLTIP_ATAT_MOVE
+		TEXT_TOOLTIP_ATAT_WEAP1
+		TEXT_TOOLTIP_ATAT_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATAT_EMPIRE_DEPLOY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_MAXIMILLIAN_VEERS.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Imperial_ATAT_Barge_Veers</Company_Transport_Unit>
+		<Company_Units>Veers_AT_AT_Walker</Company_Units>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Veers</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Veers</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>6380</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+
+	<UniqueUnit Name="Nyrox_AT_AT_Walker">
+		<Variant_Of_Existing_Type>Imperial_AT_AT_Walker</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_NYROX</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_DEFENSE_FOCUS
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_WALKER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_NYROX
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_AT_AT_WALKER_NYROX
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_NYROX_ATAT_HEALTH
+		TEXT_TOOLTIP_ATAT_MOVE 
+		TEXT_TOOLTIP_ATAT_WEAP1 
+		TEXT_TOOLTIP_ATAT_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATAT_WARLORD_DEPLOY
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_VEHICLE_SELF_REPAIR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_nyrox.tga</Icon_Name>
+
+		<CategoryMask> VehicleHero | AntiVehicle | AntiStructure </CategoryMask>
+		<Property_Flags>GoodInfantryCrusher | IsSupercrusher | GTSImmune </Property_Flags>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Ranking_In_Category>8</Ranking_In_Category>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Play_SFXEvent_On_Sighting>True</Play_SFXEvent_On_Sighting>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>DEPLOY_TROOPERS</Type>
+				<Recharge_Seconds>20</Recharge_Seconds>
+				<Spawned_Object_Type>Imperial_Army_Trooper_Medium_Squad</Spawned_Object_Type>
+				<Max_Num_Spawned_Objects>1</Max_Num_Spawned_Objects>
+				<Owner_Attachment_Bone>B_Trooper_00, B_Trooper_01, B_Trooper_02 </Owner_Attachment_Bone>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Deploy_AT_AT</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_ABILITY_DEPLOY_ARMY</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_ABILITY_DEPLOY_ARMY_DESCRIPTION</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+		
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_04 + Defensive + Walker Specialist -->
+			<Combat_Bonus_Ability Name="Command_Tier_04_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.12</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.18</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.12</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_04_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.12</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Combat_Bonus_Ability Name="Walker_Specialist_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>
+				AT_RT_Walker, Imperial_AT_RT_Walker, Lightning_Squadron_AT_RT_Walker,
+				AT_PT_Walker, AT_MP_Walker, AT_ST_Walker, AT_ST_A_Walker, AT_DP_Walker, AT_TE_Walker,
+				AT_AA_Walker, AT_AA_Missile_Walker, AT_AA_Flak_Walker, AT_AI_Walker,
+				AT_AP_Walker, Imperial_AT_AT_Walker, Imperial_AT_AT_Walker_Turbolaser_Refit,
+				Espo_Walker_91, Espo_Walker_101, EotH_Sonic_Walker
+				</Applicable_Unit_Types>
+				<Damage_Bonus_Percentage>0.06</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.06</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.06</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Battlefield_Modifier_Ability Name="Walker_Specialist_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Types>
+				AT_RT_Walker, Imperial_AT_RT_Walker, Lightning_Squadron_AT_RT_Walker,
+				AT_PT_Walker, AT_MP_Walker, AT_ST_Walker, AT_ST_A_Walker, AT_DP_Walker, AT_TE_Walker,
+				AT_AA_Walker, AT_AA_Missile_Walker, AT_AA_Flak_Walker, AT_AI_Walker,
+				AT_AP_Walker, Imperial_AT_AT_Walker, Imperial_AT_AT_Walker_Turbolaser_Refit,
+				Espo_Walker_91, Espo_Walker_101, EotH_Sonic_Walker
+				</Applicable_Unit_Types>
+				<FOW_Reveal_Range_Multiplier>1.06</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>1</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Force_Healing_Ability Name="Nyrox_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.02 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Nyrox_AT_AT_Walker</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>ROOT</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2/>
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<HeroCompany Name="Nyrox_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_NYROX</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_DEFENSE_FOCUS
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_WALKER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_NYROX
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_AT_AT_WALKER_NYROX
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_NYROX_ATAT_HEALTH
+		TEXT_TOOLTIP_ATAT_MOVE 
+		TEXT_TOOLTIP_ATAT_WEAP1 
+		TEXT_TOOLTIP_ATAT_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATAT_WARLORD_DEPLOY
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_VEHICLE_SELF_REPAIR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_nyrox.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Imperial_ATAT_Barge</Company_Transport_Unit>
+		<Company_Units>Nyrox_AT_AT_Walker</Company_Units>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Veers</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Veers</SFXEvent_Fleet_Move>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>4120</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>15</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+
+	<UniqueUnit Name="Octavion_Sorin_2M">
+		<Variant_Of_Existing_Type> 2M_Repulsor_Tank </Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_SORIN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_07_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_SORIN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_2M_REPULSOR_TANK
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
+		TEXT_TOOLTIP_ESCORT_SORIN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_2M_REPULSOR_HEALTH 
+		TEXT_TOOLTIP_2M_REPULSOR_SHIELD
+		TEXT_TOOLTIP_2M_REPULSOR_MOVE 
+		TEXT_TOOLTIP_2M_REPULSOR_WEAP1
+		TEXT_TOOLTIP_2M_REPULSOR_WEAP2 
+		TEXT_TOOLTIP_2M_REPULSOR_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_SORIN.TGA</Icon_Name>
+
+		<CategoryMask> VehicleHero | AntiVehicle </CategoryMask>
+		<Property_Flags> DoKite | GTSImmune </Property_Flags>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Ranking_In_Category>4</Ranking_In_Category>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<LandBehavior>SPAWN_SQUADRON, ABILITY_COUNTDOWN, AFFECTED_BY_SHIELD, HUNT, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE, SURFACE_FX, DAMAGE_TRACKING</LandBehavior>
+		
+		<Starting_Spawned_Units_Tech_0> 2M_Repulsor_Tank, 3 </Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0.0</Spawned_Squadron_Delay_Seconds>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	0.5f</Mod_Multiplier>
+				<Expiration_Seconds>10.0</Expiration_Seconds>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Attack_2M_Tank</SFXEvent_GUI_Unit_Ability_Activated>
+				<SFXEvent_Target_Ability>Unit_Attack_2M_Tank</SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_07 + Offense Focus -->
+			<Combat_Bonus_Ability Name="Command_Tier_07_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.27</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.21</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.21</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_07_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.21</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<HeroCompany Name="Octavion_Sorin_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_SORIN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK 
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_07_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_SORIN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_UNIT_2M_REPULSOR_TANK
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
+		TEXT_TOOLTIP_ESCORT_SORIN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_2M_REPULSOR_HEALTH 
+		TEXT_TOOLTIP_2M_REPULSOR_SHIELD
+		TEXT_TOOLTIP_2M_REPULSOR_MOVE 
+		TEXT_TOOLTIP_2M_REPULSOR_WEAP1
+		TEXT_TOOLTIP_2M_REPULSOR_WEAP2 
+		TEXT_TOOLTIP_2M_REPULSOR_WEAP3
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GENERAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_SORIN.TGA</Icon_Name>
+		
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>Octavion_Sorin_2M</Company_Units>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>6680</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>16</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+
+	<UniqueUnit Name="Adrick_ATST">
+		<Variant_Of_Existing_Type>AT_ST_Walker</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_ADRICK</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_LAND
+		TEXT_TOOLTIP_TRAIT_UTILITY_STEALTH_OPERATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ADRICK
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_ADRICK
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK 
+		TEXT_TOOLTIP_ESCORT_ADRICK1
+		TEXT_TOOLTIP_ESCORT_ADRICK2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ATST_HEALTH
+		TEXT_TOOLTIP_ADRICK_SHIELD
+		TEXT_TOOLTIP_ATST_MOVE
+		TEXT_TOOLTIP_ATST_WEAP1
+		TEXT_TOOLTIP_ATST_WEAP2 
+		TEXT_TOOLTIP_ATST_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATST_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COLONEL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_ADRICK.TGA</Icon_Name>
+		
+		<CategoryMask> VehicleHero | AntiInfantry </CategoryMask>
+		<Property_Flags> GoodInfantryCrusher | GTSImmune</Property_Flags>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Ranking_In_Category>7</Ranking_In_Category>
+		
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<Shield_Armor_Type>ShieldG_LightVehicle</Shield_Armor_Type>
+		<Shield_Points>100</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+
+		<LandBehavior>SELECTABLE, SPAWN_SQUADRON, BARRAGE, ABILITY_COUNTDOWN,AFFECTED_BY_SHIELD,HUNT, WALK_LOCOMOTOR,TARGETING,IDLE,WEAPON,TURRET,POWERED, SHIELDED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING, SQUASH, GARRISON_UNIT</LandBehavior>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_04 -->
+			<Combat_Bonus_Ability Name="Command_Tier_04_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.12</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.12</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.12</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_04_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.12</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Galactic_Stealth_Ability Name="Stealth_Operative_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<HeroCompany Name="Adrick_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_ADRICK</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_LAND
+		TEXT_TOOLTIP_TRAIT_UTILITY_STEALTH_OPERATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ADRICK
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_ADRICK
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK 
+		TEXT_TOOLTIP_ESCORT_ADRICK1
+		TEXT_TOOLTIP_ESCORT_ADRICK2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_ATST_HEALTH
+		TEXT_TOOLTIP_ADRICK_SHIELD
+		TEXT_TOOLTIP_ATST_MOVE
+		TEXT_TOOLTIP_ATST_WEAP1
+		TEXT_TOOLTIP_ATST_WEAP2 
+		TEXT_TOOLTIP_ATST_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_ABILITY_BLOCK
+		TEXT_TOOLTIP_ATST_WEAP4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COLONEL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_ADRICK.TGA</Icon_Name>
+		
+		<Company_Transport_Unit>Imperial_Landing_Craft</Company_Transport_Unit>
+		<Company_Units>Adrick_ATST</Company_Units>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>3185</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+
+	<HeroUnit Name="Grath_Stormtrooper">
+		<Variant_Of_Existing_Type>Hero_Commando_Shielded_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_GRATH</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_03_LAND
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_GRATH_STORMTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_HEALTH
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_SHIELD
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_MOVE
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_WEAP1
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_grath_stormtrooper.tga</Icon_Name>
+		
+		<Land_Model_Name>EI_Grath.ALO</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			EI_Grath.ALO,
+			Urban, 				EI_Grath.ALO,
+			Arctic, 			EI_Grath_Snow.ALO,
+			Volcanic, 			EI_Grath.ALO,
+			Desert, 			EI_Grath.ALO,
+			Forest, 			EI_Grath.ALO,
+			Swamp, 				EI_Grath.ALO
+		</Land_Terrain_Model_Mapping>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<Ranking_In_Category>8</Ranking_In_Category>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<HardPoints>HP_Hero_Ceremonial_Rifle</HardPoints>
+		
+		<Tactical_Health>190</Tactical_Health>
+		<Shield_Points>50</Shield_Points>
+		<Shield_Refresh_Rate>5</Shield_Refresh_Rate>
+		<AI_Combat_Power>40</AI_Combat_Power>
+		
+		<Max_Speed>1.1</Max_Speed>
+		<OverrideAcceleration> 1.1 </OverrideAcceleration>
+		<OverrideDeceleration> 1.1 </OverrideDeceleration>
+
+		<Targeting_Priority_Set>AntiInfantry</Targeting_Priority_Set>
+		
+		<Death_Clone>Damage_Normal, Stormtrooper_Hero_Death_Clone</Death_Clone>
+		
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Thermal_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+        <SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+		
+		<SFXEvent_Select>Unit_Select_Storm_Trooper</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Storm_Trooper</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Storm_Trooper</SFXEvent_Attack>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Storm_Trooper </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Storm_Trooper </SFXEvent_Assist_Attack>
+		<SFXEvent_Guard>Unit_Guard_Storm_Trooper</SFXEvent_Guard>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+            <Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Land_FOW_Reveal_Ping_Blast </Spawned_Object_Type>
+				<Effective_Radius> 0.0 </Effective_Radius>
+				<!-- 0.0 means no distance factor, unlimited to entire map -->
+				<Area_Effect_Decal_Distance> 250.0 </Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>
+				</GUI_Activated_Ability_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_03 -->
+			<Combat_Bonus_Ability Name="Command_Tier_03_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.09</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.09</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.09</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_03_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.09</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</HeroUnit>
+
+	<HeroCompany Name="Grath_Stormtrooper_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_GRATH</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_03_LAND
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_GRATH_STORMTROOPER
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_HEALTH
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_SHIELD
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_MOVE
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_WEAP1
+		TEXT_TOOLTIP_GRATH_STORMTROOPER_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_grath_stormtrooper.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Grath_Stormtrooper</Company_Units>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Storm_Trooper</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Storm_Trooper</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2400</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>11</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Two_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+	
+	<HeroUnit Name="Snopel">
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_SNOPEL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_01_LAND
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_INFANTRY
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_SNOPEL
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SNOPEL_HEALTH
+		TEXT_TOOLTIP_SNOPEL_MOVE
+		TEXT_TOOLTIP_SNOPEL_WEAP1
+		TEXT_TOOLTIP_SNOPEL_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SERGEANT </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_snopel.tga</Icon_Name>
+		
+		<Land_Model_Name>ei_snopel.alo</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>RocketInfantry.alo</Land_Model_Anim_Override_Name>
+		<Scale_Factor>1.1</Scale_Factor>
+		
+		<CategoryMask> InfantryHero | AntiVehicle </CategoryMask>
+		<Ranking_In_Category>10</Ranking_In_Category>
+		
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<HardPoints>HP_Hero_PLX_2_Hand</HardPoints>
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Tactical_Health>225</Tactical_Health>
+		<AI_Combat_Power>63</AI_Combat_Power>
+
+		<Max_Speed>1</Max_Speed>
+		<OverrideAcceleration> 1 </OverrideAcceleration>
+		<OverrideDeceleration> 1 </OverrideDeceleration>
+		
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>275.0</Targeting_Max_Attack_Distance>
+		<Mouse_Collide_Override_Sphere_Radius> 10.0 </Mouse_Collide_Override_Sphere_Radius>
+
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+
+		<!-- Grenade throw -->
+		<Projectile_Types>HeroProj_Thrown_Fragmentation_Grenade</Projectile_Types>
+		<Projectile_Fire_Recharge_Seconds>15.0</Projectile_Fire_Recharge_Seconds>
+		<Projectile_Fire_Pulse_Count>1</Projectile_Fire_Pulse_Count>
+		<Projectile_Fire_Pulse_Delay_Seconds>0.2</Projectile_Fire_Pulse_Delay_Seconds>
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+        <SFXEvent_Fire>Unit_Grenade_Throw</SFXEvent_Fire>
+
+		<Death_Persistence_Duration> 5.0 </Death_Persistence_Duration>
+		<Death_Fade_Time>1.0</Death_Fade_Time>
+
+		<SFXEvent_Select> Unit_Select_Pirate_Plex_Soldier </SFXEvent_Select>         
+		<SFXEvent_Move> Unit_Move_Pirate_Plex_Soldier </SFXEvent_Move>  
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pirate_Plex_Soldier</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Pirate_Plex_Soldier </SFXEvent_Attack>         		 
+		<SFXEvent_Guard> Unit_Guard_Pirate_Plex_Soldier </SFXEvent_Guard>            		 
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Pirate_Plex_Soldier </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Pirate_Plex_Soldier </SFXEvent_Assist_Attack> 
+		<Death_SFXEvent_Start_Die>Unit_Rebel_Soldier_2_Death</Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPREAD_OUT</Type>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.5f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Take_Cover_Storm_Trooper</SFXEvent_GUI_Unit_Ability_Activated>
+			</Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>PROXIMITY_MINES</Type>
+				<Recharge_Seconds>90.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Snopel_Proximity_Mines_AV</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability/>
+				<Area_Effect_Decal_Distance>50.0</Area_Effect_Decal_Distance>
+				<Effective_Radius> 100.0 </Effective_Radius>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AV_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_PROXIMITY_MINES_AV_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>I_SA_ANTITANK_MINES.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_01 + Infantry Specialist -->
+			<Combat_Bonus_Ability Name="Command_Tier_01_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.03</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.03</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.03</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_01_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.03</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Combat_Bonus_Ability Name="Infantry_Specialist_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Infantry | InfantryHero</Applicable_Unit_Categories>
+				<Damage_Bonus_Percentage>0.06</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.06</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.06</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Battlefield_Modifier_Ability Name="Infantry_Specialist_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>Infantry | InfantryHero</Applicable_Unit_Categories>
+				<FOW_Reveal_Range_Multiplier>1.06</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>1</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Proximity_Mines_Ability Name="Snopel_Proximity_Mines_AV">
+				<Activation_Style>User_Input</Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>25.0</Activation_Max_Range>
+				<Mine_Type>Mine_Land_Prox_Antivehicle</Mine_Type>
+				<Trigger_Radius>5</Trigger_Radius>
+				<Number_Of_Mines>18</Number_Of_Mines>
+				<Activation_Time_In_Seconds>0.5</Activation_Time_In_Seconds>
+				<Activate_SFX>Unit_Mine_Arm</Activate_SFX>
+			</Proximity_Mines_Ability>
+		</Abilities>
+	</HeroUnit>
+
+	<HeroCompany Name="Snopel_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_SNOPEL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_01_LAND
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_INFANTRY
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_SNOPEL
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SNOPEL_HEALTH
+		TEXT_TOOLTIP_SNOPEL_MOVE
+		TEXT_TOOLTIP_SNOPEL_WEAP1
+		TEXT_TOOLTIP_SNOPEL_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SERGEANT </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_snopel.tga</Icon_Name>
+
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Snopel</Company_Units>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+		
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Pirate_Plex_Soldier</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Pirate_Plex_Soldier</SFXEvent_Fleet_Move>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2100</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>9</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites></Tactical_Build_Prerequisites>
+	</HeroCompany>
+	
+	<HeroUnit Name="Blaise"> <!-- Era 2+ -->
+		<Variant_Of_Existing_Type>Hero_Commando_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_BLAISE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_03_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_INTEL_FOCUS
+		TEXT_TOOLTIP_TRAIT_UTILITY_SPY
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_BLAISE
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
+		TEXT_TOOLTIP_ESCORT_BLAISE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BLAISE_HEALTH
+		TEXT_TOOLTIP_BLAISE_MOVE
+		TEXT_TOOLTIP_BLAISE_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_AGENT </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_BLAISE.tga</Icon_Name>
+		
+		<Land_Model_Name>Scout_trooper.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>TrainedInfantry.alo</Land_Model_Anim_Override_Name>
+		
+		<Ranking_In_Category>7</Ranking_In_Category>
+
+		<Tactical_Health>150</Tactical_Health>
+
+		<Max_Speed>1.2</Max_Speed>
+		<OverrideAcceleration> 1.2 </OverrideAcceleration>
+		<OverrideDeceleration> 1.2 </OverrideDeceleration>
+		
+		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Imperial_Proteus</Affiliation>
+		
+		<HardPoints>HP_Hero_DLT_19_HMG</HardPoints>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit> <!-- Stealth heroes spawn in orbit -->
+
+		<AI_Combat_Power>64</AI_Combat_Power>
+
+		<Starting_Spawned_Units_Tech_0>ISB_Infiltrator_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		
+		<SFXEvent_Select>Unit_Select_Infiltrator</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Infiltrator</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Infiltrator</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Infiltrator</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Infiltrator</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Infiltrator </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning>Unit_Health_Critical_Infiltrator</SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Death_Infiltrator </Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+                <Type>STUN</Type>
+                <Recharge_Seconds>30.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name> Infantry_Stun </GUI_Activated_Ability_Name>
+                <Effective_Radius> 150.0 </Effective_Radius>
+                <Spawned_Object_Type> Stun_Ability_Particles </Spawned_Object_Type>
+				<SFXEvent_Target_Ability/>
+				<Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+			
+			<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>30.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Grenade_Attack</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability/>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_03 + Intel Focus + Spy -->
+			<Combat_Bonus_Ability Name="Command_Tier_03_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.06</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.09</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.15</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Battlefield_Modifier_Ability Name="Command_Tier_04_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.27</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Galactic_Stealth_Ability Name="Spy_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+			<System_Spy_Ability Name="Spy_System">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Galactic_Automatic</Activation_Style>
+				<Causes_Despawn>No</Causes_Despawn>
+				<Duration_In_Secs>-1.0</Duration_In_Secs>
+				<See_Num_Fleets>Yes</See_Num_Fleets>
+				<See_Special_Structures>Yes</See_Special_Structures>
+				<See_Minor_Stealth_Heroes>Yes</See_Minor_Stealth_Heroes>
+				<See_Major_Stealth_Heroes>Yes</See_Major_Stealth_Heroes>
+			</System_Spy_Ability>
+			
+			<Stun_Ability Name="Infantry_Stun">
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We need to be within this distance of the clicked target to consider activating Stun -->
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>75.0</Activation_Max_Range>
+				<Stun_Time_In_Secs>10.0</Stun_Time_In_Secs>
+				<Stun_Range>110.0</Stun_Range>
+				<!-- How long does it take for the shockwave to spread from the hero to the max range? -->
+				<Stun_Travel_Time_In_Secs>1.0</Stun_Travel_Time_In_Secs>
+                <Stunned_Effect> Stunned_Particle_Effect </Stunned_Effect> 
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Ability_Stun</SFXEvent_Activate>
+				<Owner_Particle_Effect>Stun_Ability_Particles</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name />
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Stun_Ability>
+			
+			<Grenade_Attack_Ability Name="Grenade_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> <!-- Was Special_Attack -->
+				<!-- We need to be within this distance of the clicked target to consider throwing the grenade -->
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>300.0</Activation_Max_Range>
+				<Requires_Direct_Player_Command> No </Requires_Direct_Player_Command> <!-- Was NO -->
+				<Grenade_Type>Proj_Hero_Sticky_Bomb</Grenade_Type>
+				<Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+				<Grenade_Spawn_Frame>12.0</Grenade_Spawn_Frame>
+				<Grenade_Spawn_Bone>MuzzleA_00</Grenade_Spawn_Bone>
+				<Grenade_Explode_Timer_In_Secs>3.0</Grenade_Explode_Timer_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Vehicle, VehicleHero, Structure</Applicable_Unit_Categories>
+				<!-- <Applicable_Unit_Types /> -->
+			</Grenade_Attack_Ability>
+		</Abilities>
+	</HeroUnit>
+	
+	<HeroCompany Name="Blaise_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_BLAISE</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_03_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_INTEL_FOCUS
+		TEXT_TOOLTIP_TRAIT_UTILITY_SPY
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_BLAISE
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
+		TEXT_TOOLTIP_ESCORT_BLAISE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BLAISE_HEALTH
+		TEXT_TOOLTIP_BLAISE_MOVE
+		TEXT_TOOLTIP_BLAISE_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_AGENT </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_BLAISE.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Blaise</Company_Units>
+		
+		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Imperial_Proteus</Affiliation>
+
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Complete_Infiltrator</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Infiltrator</SFXEvent_Fleet_Move>
+		
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>2600</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>6</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Three_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+	
+	<!-- Admin Heroes -->
+	
+	<HeroUnit Name="Malcom">
+		<Variant_Of_Existing_Type>Non_Combat_Hero_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_MALCOM</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ADMIN_TIER_MOFF
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_MALCOM
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_RESTRICTED_HYPERDRIVE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MOFF </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_MALCOM_ADMIN.tga</Icon_Name>
+		
+		<Ranking_In_Category>6</Ranking_In_Category>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Abilities SubObjectList="Yes"> <!-- Admin_Tier_Moff -->
+			<Reduce_Production_Price_Ability Name="Admin_Tier_Moff_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Excluded_Unit_Categories>Upgrade | Wall</Excluded_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.10</Price_Reduction_Percentage>
+				<Stacking_Category>50</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Admin_Tier_Moff_Reduce_Production_Time">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Excluded_Unit_Categories>Upgrade | Wall</Excluded_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.10</Time_Reduction_Percentage>
+				<Stacking_Category>50</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Admin_Tier_Moff_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_MOFF</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0.1</Percentage_Income_Modifier> <!-- X percent of base planetary income -->
+				<Absolute_Income_Modifier>0</Absolute_Income_Modifier> <!-- plus flat Y credits -->
+				<Additional_Multiplier_On_Mining_Colonies>1.0</Additional_Multiplier_On_Mining_Colonies> <!-- multiply by Z on mining planets  -->
+				<!-- Total bonus credits per cycle = ((base * X) + Y) * Z -->
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</HeroUnit>
+
+	<HeroCompany Name="Malcom_Team">
+		<Variant_Of_Existing_Type>Non_Combat_Hero_Template_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_MALCOM</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ADMIN_TIER_MOFF
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_MALCOM
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_RESTRICTED_HYPERDRIVE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_MOFF </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_MALCOM_ADMIN.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Shuttle_Tyderium_Admin</Company_Transport_Unit>
+		<Company_Units>Malcom</Company_Units>
+		
+		<Affiliation>Eriadu_Authority</Affiliation>
+	</HeroCompany>
+</Eriadu_Heroes>

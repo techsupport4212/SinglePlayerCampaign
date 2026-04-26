@@ -1,0 +1,365 @@
+<?xml version="1.0" ?>
+<Options>
+    <DummyStructure Name="Template_Option">
+        <Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+
+        <Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Yevetha, Imperial_Proteus</Affiliation>
+        <Lua_Script>DelayedSelfDelete</Lua_Script>
+
+        <Build_Initially_Locked>Yes</Build_Initially_Locked>
+        <Tech_Level>0</Tech_Level>
+        <Required_Special_Structures>Options_Category_Dummy</Required_Special_Structures>
+        <Build_Cost_Credits>1</Build_Cost_Credits>
+        <Build_Time_Seconds>3</Build_Time_Seconds>
+
+        <Required_Star_Base_Level>1</Required_Star_Base_Level>
+
+        <Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+    </DummyStructure>
+
+<!--options-->
+    <DummyStructure Name="Option_Cruel_On">
+        <Variant_Of_Existing_Type>Template_Option</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_OPTION_DUMMY_CRUEL_ON</Text_ID>
+        <Encyclopedia_Text>TEXT_OPTION_DUMMY_CRUEL_ON_DESCRIPTION</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OPTIONS </Encyclopedia_Unit_Class>
+
+        <Icon_Name>i_button_cruel_ai_on.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Option_Cruel_Off">
+        <Variant_Of_Existing_Type>Template_Option</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_OPTION_DUMMY_CRUEL_OFF</Text_ID>
+        <Encyclopedia_Text>TEXT_OPTION_DUMMY_CRUEL_OFF_DESCRIPTION</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OPTIONS </Encyclopedia_Unit_Class>
+
+        <Icon_Name>i_button_cruel_ai_off.tga</Icon_Name>
+    </DummyStructure>
+	
+    <DummyStructure Name="Option_Factional_Fighters">
+        <Variant_Of_Existing_Type>Template_Option</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_UPGRADE_IA_FACTIONAL_FIGHTERS</Text_ID>
+        <Encyclopedia_Text>TEXT_UPGRADE_IA_FACTIONAL_FIGHTERS_DESC</Encyclopedia_Text>
+        <Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_OPTIONS </Encyclopedia_Unit_Class>
+
+        <Icon_Name>I_BUTTON_FACTIONAL_FIGHTERS.tga</Icon_Name>
+    </DummyStructure>
+
+    <!-- Command Staff Category Filters (DataManager variant) -->
+
+    <DummyStructure Name="DM_View_Grand_Admirals">
+        <Variant_Of_Existing_Type>Template_Option</Variant_Of_Existing_Type>
+        <Text_ID>View Grand Admirals</Text_ID>
+        <Encyclopedia_Text>Show the Grand Admirals roster.</Encyclopedia_Text>
+        <Icon_Name>i_encyclopedia_empire_symbol.tga</Icon_Name>
+        <Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_View_Space_Commanders">
+        <Variant_Of_Existing_Type>DM_View_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>View Space Commanders</Text_ID>
+        <Encyclopedia_Text>Show the Space Commanders roster.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_View_Generals">
+        <Variant_Of_Existing_Type>DM_View_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>View Generals</Text_ID>
+        <Encyclopedia_Text>Show the Generals roster.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_View_Admins">
+        <Variant_Of_Existing_Type>DM_View_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>View Admins</Text_ID>
+        <Encyclopedia_Text>Show the Admins roster.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_View_Special_Forces">
+        <Variant_Of_Existing_Type>DM_View_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>View Special Forces</Text_ID>
+        <Encyclopedia_Text>Show the Special Forces roster.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Grand_Admirals">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+        <Text_ID>Retire Grand Admiral</Text_ID>
+        <Encyclopedia_Text>Relieve a Grand Admiral at this planet.</Encyclopedia_Text>
+        <Affiliation>Empire</Affiliation>
+        <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Space_Commanders">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Space Commander</Text_ID>
+        <Encyclopedia_Text>Relieve a Space Commander at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Generals">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire General</Text_ID>
+        <Encyclopedia_Text>Relieve a General at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Admins">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Admin</Text_ID>
+        <Encyclopedia_Text>Relieve an Admin at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+ 
+    <DummyStructure Name="DM_Retire_Special_Forces">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Special Forces</Text_ID>
+        <Encyclopedia_Text>Relieve a Special Forces commander at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Yonka">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Sair Yonka</Text_ID>
+        <Encyclopedia_Text>Dismiss Sair Yonka at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Brothic">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Brothic</Text_ID>
+        <Encyclopedia_Text>Dismiss Brothic at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Darron">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Vict Darron</Text_ID>
+        <Encyclopedia_Text>Dismiss Vict Darron at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Phulik">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Phulik</Text_ID>
+        <Encyclopedia_Text>Dismiss Phulik at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Ars">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Ars Dangor</Text_ID>
+        <Encyclopedia_Text>Dismiss Ars Dangor at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Luke_Darkside">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Luke Skywalker</Text_ID>
+        <Encyclopedia_Text>Dismiss Luke Skywalker at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Cronus">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Ivan Cronus</Text_ID>
+        <Encyclopedia_Text>Dismiss Ivan Cronus at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Norym_Kim">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Norym Kim</Text_ID>
+        <Encyclopedia_Text>Dismiss Norym Kim at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Banjeer">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Llon Banjeer</Text_ID>
+        <Encyclopedia_Text>Dismiss Llon Banjeer at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Retire_Golanda">
+        <Variant_Of_Existing_Type>DM_Retire_Grand_Admirals</Variant_Of_Existing_Type>
+        <Text_ID>Retire Golanda</Text_ID>
+        <Encyclopedia_Text>Dismiss Golanda at this planet.</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Random_Grand_Admirals_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>Random Grand Admiral</Text_ID>
+        <Encyclopedia_Text>Unused.</Encyclopedia_Text>
+        <Icon_Name>I_BUTTON_UNKNOWN.TGA</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+        <Build_Initially_Locked>Yes</Build_Initially_Locked>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Random_Space_Commanders_Assign">
+        <Variant_Of_Existing_Type>DM_Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+        <Text_ID>Random Space Commander</Text_ID>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Random_Generals_Assign">
+        <Variant_Of_Existing_Type>DM_Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+        <Text_ID>Random General</Text_ID>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Random_Admins_Assign">
+        <Variant_Of_Existing_Type>DM_Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+        <Text_ID>Random Admin</Text_ID>
+    </DummyStructure>
+
+    <DummyStructure Name="DM_Random_Special_Forces_Assign">
+        <Variant_Of_Existing_Type>DM_Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+        <Text_ID>Random Special Forces</Text_ID>
+    </DummyStructure>
+
+    <DummyStructure Name="Yonka_Empire_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_YONKA</Text_ID>
+        <Icon_Name>i_button_yonka.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Brothic_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_BROTHIC</Text_ID>
+        <Icon_Name>I_BUTTON_BROTHIC_ADMIN.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Darron_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_DARRON</Text_ID>
+        <Icon_Name>i_button_darron.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Phulik_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_PHULIK</Text_ID>
+        <Icon_Name>i_button_phulik.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Ars_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_DANGOR</Text_ID>
+        <Icon_Name>I_BUTTON_DANGOR_ADMIN.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Luke_Darkside_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_LUKE_SKYWALKER</Text_ID>
+        <Icon_Name>I_BUTTON_LUKE_DARK_SIDE.TGA</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Cronus_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_CRONUS</Text_ID>
+        <Icon_Name>i_button_cronus.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Norym_Kim_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_NORYM_KIM</Text_ID>
+        <Icon_Name>i_button_norym_kim.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Banjeer_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_BANJEER</Text_ID>
+        <Icon_Name>i_button_banjeer.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+    <DummyStructure Name="Golanda_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_GOLANDA</Text_ID>
+        <Icon_Name>i_button_golanda.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+    </DummyStructure>
+
+<!--cheats-->
+    <DummyStructure Name="Template_Cheat">
+        <Variant_Of_Existing_Type>Template_Option</Variant_Of_Existing_Type>
+
+        <Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_CHEAT</Encyclopedia_Unit_Class>
+
+        <Build_Time_Seconds>1</Build_Time_Seconds>
+        <GUI_Row>0</GUI_Row>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Disable_AI">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_DISABLE_AI</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_DISABLE_AI</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_disable_ai.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Give_Credits">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_GIVE_CREDITS</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_GIVE_CREDITS</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_credits.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Give_Unit">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_GIVE_UNIT</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_GIVE_UNIT</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_give_unit.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Give_Vision">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_GIVE_VISION</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_GIVE_VISION</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_vision.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Government">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_GOVERNMENT</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_GOVERNMENT</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_government.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Influence">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_INFLUENCE</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_INFLUENCE</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_influence.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Infra_And_Discount">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_INFRA_AND_DISCOUNT</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_INFRA_AND_DISCOUNT</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_infra_and_discount.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Kill_All">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_KILL_ALL</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_KILL_ALL</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_kill_all.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Turn_Off_Crews">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_TURN_OFF_CREWS</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_TURN_OFF_CREWS</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_crews.tga</Icon_Name>
+    </DummyStructure>
+
+    <DummyStructure Name="Cheat_Victory">
+        <Variant_Of_Existing_Type>Template_Cheat</Variant_Of_Existing_Type>
+
+        <Text_ID>TEXT_CHEAT_VICTORY</Text_ID>
+        <Encyclopedia_Text>TEXT_TOOLTIP_CHEAT_VICTORY</Encyclopedia_Text>
+        <Icon_Name>i_button_cheat_victory.tga</Icon_Name>
+    </DummyStructure>
+</Options>

@@ -1,0 +1,783 @@
+<?xml version="1.0" ?>
+<GroundBases>
+
+	<!-- NOTE: ALL factions from factions.xml must have ground base levels. -->
+	<!-- Failure to do so will cause the AI to break -->
+	<!-- Faction named Neutral does not need ground bases -->
+
+	<!-- Playable factions -->
+
+	<GroundBase Name="New_Republic_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>New_Republic_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="New_Republic_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Prev_Level_Base>New_Republic_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>New_Republic_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="New_Republic_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Prev_Level_Base>New_Republic_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>New_Republic_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="New_Republic_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Prev_Level_Base>New_Republic_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>New_Republic_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="New_Republic_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Rebel</Affiliation>
+		<Prev_Level_Base>New_Republic_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Galactic_Empire_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Galactic_Empire_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Galactic_Empire_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<Prev_Level_Base>Galactic_Empire_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Galactic_Empire_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Galactic_Empire_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<Prev_Level_Base>Galactic_Empire_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Galactic_Empire_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Galactic_Empire_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<Prev_Level_Base>Galactic_Empire_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Galactic_Empire_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Galactic_Empire_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Empire</Affiliation>
+		<Prev_Level_Base>Galactic_Empire_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hutt_Cartels_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Hutt_Cartels_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hutt_Cartels_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Prev_Level_Base>Hutt_Cartels_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Hutt_Cartels_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hutt_Cartels_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Prev_Level_Base>Hutt_Cartels_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Hutt_Cartels_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hutt_Cartels_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Prev_Level_Base>Hutt_Cartels_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Hutt_Cartels_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hutt_Cartels_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Hutt_Cartels</Affiliation>
+		<Prev_Level_Base>Hutt_Cartels_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Eriadu_Authority_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Eriadu_Authority_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Eriadu_Authority_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Prev_Level_Base>Eriadu_Authority_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Eriadu_Authority_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Eriadu_Authority_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Prev_Level_Base>Eriadu_Authority_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Eriadu_Authority_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Eriadu_Authority_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Prev_Level_Base>Eriadu_Authority_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Eriadu_Authority_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Eriadu_Authority_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Eriadu_Authority</Affiliation>
+		<Prev_Level_Base>Eriadu_Authority_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Greater_Maldrood_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Greater_Maldrood_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Greater_Maldrood_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Prev_Level_Base>Greater_Maldrood_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Greater_Maldrood_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Greater_Maldrood_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Prev_Level_Base>Greater_Maldrood_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Greater_Maldrood_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Greater_Maldrood_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Prev_Level_Base>Greater_Maldrood_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Greater_Maldrood_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Greater_Maldrood_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Greater_Maldrood</Affiliation>
+		<Prev_Level_Base>Greater_Maldrood_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Pentastar_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Pentastar_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Pentastar_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Prev_Level_Base>Pentastar_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Pentastar_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Pentastar_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Prev_Level_Base>Pentastar_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Pentastar_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Pentastar_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Prev_Level_Base>Pentastar_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Pentastar_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Pentastar_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Pentastar</Affiliation>
+		<Prev_Level_Base>Pentastar_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Zsinj_Empire_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Zsinj_Empire_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Zsinj_Empire_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Prev_Level_Base>Zsinj_Empire_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Zsinj_Empire_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Zsinj_Empire_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Prev_Level_Base>Zsinj_Empire_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Zsinj_Empire_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Zsinj_Empire_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Prev_Level_Base>Zsinj_Empire_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Zsinj_Empire_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Zsinj_Empire_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Prev_Level_Base>Zsinj_Empire_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corporate_Sector_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Corporate_Sector_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corporate_Sector_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Prev_Level_Base>Corporate_Sector_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Corporate_Sector_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corporate_Sector_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Prev_Level_Base>Corporate_Sector_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Corporate_Sector_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corporate_Sector_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Prev_Level_Base>Corporate_Sector_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Corporate_Sector_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corporate_Sector_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Corporate_Sector</Affiliation>
+		<Prev_Level_Base>Corporate_Sector_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hapes_Consortium_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Hapes_Consortium_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hapes_Consortium_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Prev_Level_Base>Hapes_Consortium_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Hapes_Consortium_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hapes_Consortium_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Prev_Level_Base>Hapes_Consortium_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Hapes_Consortium_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hapes_Consortium_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Prev_Level_Base>Hapes_Consortium_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Hapes_Consortium_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hapes_Consortium_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Hapes_Consortium</Affiliation>
+		<Prev_Level_Base>Hapes_Consortium_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="EmpireoftheHand_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>EmpireoftheHand_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="EmpireoftheHand_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Prev_Level_Base>EmpireoftheHand_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>EmpireoftheHand_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="EmpireoftheHand_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Prev_Level_Base>EmpireoftheHand_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>EmpireoftheHand_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="EmpireoftheHand_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Prev_Level_Base>EmpireoftheHand_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>EmpireoftheHand_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="EmpireoftheHand_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>EmpireoftheHand</Affiliation>
+		<Prev_Level_Base>EmpireoftheHand_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+
+	<!-- Non-Playable factions -->
+
+	<GroundBase Name="Corellia_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Corellia</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Corellia_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corellia_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Corellia</Affiliation>
+		<Prev_Level_Base>Corellia_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Corellia_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corellia_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Corellia</Affiliation>
+		<Prev_Level_Base>Corellia_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Corellia_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corellia_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Corellia</Affiliation>
+		<Prev_Level_Base>Corellia_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Corellia_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Corellia_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Corellia</Affiliation>
+		<Prev_Level_Base>Corellia_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Yevetha_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Yevetha</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Yevetha_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Yevetha_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Yevetha</Affiliation>
+		<Prev_Level_Base>Yevetha_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Yevetha_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Yevetha_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Yevetha</Affiliation>
+		<Prev_Level_Base>Yevetha_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Yevetha_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Yevetha_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Yevetha</Affiliation>
+		<Prev_Level_Base>Yevetha_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Yevetha_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Yevetha_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Yevetha</Affiliation>
+		<Prev_Level_Base>Yevetha_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Chiss_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Chiss</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Chiss_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Chiss_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Chiss</Affiliation>
+		<Prev_Level_Base>Chiss_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Chiss_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Chiss_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Chiss</Affiliation>
+		<Prev_Level_Base>Chiss_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Chiss_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Chiss_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Chiss</Affiliation>
+		<Prev_Level_Base>Chiss_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Chiss_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Chiss_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Chiss</Affiliation>
+		<Prev_Level_Base>Chiss_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Killik_Hives_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Killik_Hives</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Killik_Hives_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Killik_Hives_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Killik_Hives</Affiliation>
+		<Prev_Level_Base>Killik_Hives_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Killik_Hives_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Killik_Hives_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Killik_Hives</Affiliation>
+		<Prev_Level_Base>Killik_Hives_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Killik_Hives_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Killik_Hives_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Killik_Hives</Affiliation>
+		<Prev_Level_Base>Killik_Hives_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Killik_Hives_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Killik_Hives_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Killik_Hives</Affiliation>
+		<Prev_Level_Base>Killik_Hives_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="SsiRuuvi_Imperium_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>SsiRuuvi_Imperium_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="SsiRuuvi_Imperium_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		<Prev_Level_Base>SsiRuuvi_Imperium_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>SsiRuuvi_Imperium_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="SsiRuuvi_Imperium_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		<Prev_Level_Base>SsiRuuvi_Imperium_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>SsiRuuvi_Imperium_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="SsiRuuvi_Imperium_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		<Prev_Level_Base>SsiRuuvi_Imperium_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>SsiRuuvi_Imperium_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="SsiRuuvi_Imperium_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>SsiRuuvi_Imperium</Affiliation>
+		<Prev_Level_Base>SsiRuuvi_Imperium_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Vong_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Vong_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Vong_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Prev_Level_Base>Vong_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Vong_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Vong_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Prev_Level_Base>Vong_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Vong_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Vong_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Prev_Level_Base>Vong_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Vong_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Vong_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Underworld</Affiliation>
+		<Prev_Level_Base>Vong_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Independent_Forces_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Independent_Forces</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Independent_Forces_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Independent_Forces_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Independent_Forces</Affiliation>
+		<Prev_Level_Base>Independent_Forces_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Independent_Forces_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Independent_Forces_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Independent_Forces</Affiliation>
+		<Prev_Level_Base>Independent_Forces_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Independent_Forces_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Independent_Forces_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Independent_Forces</Affiliation>
+		<Prev_Level_Base>Independent_Forces_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Independent_Forces_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Independent_Forces_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Independent_Forces</Affiliation>
+		<Prev_Level_Base>Independent_Forces_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Mandalorians_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Mandalorians_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Mandalorians_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+		<Prev_Level_Base>Mandalorians_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Mandalorians_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Mandalorians_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+		<Prev_Level_Base>Mandalorians_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Mandalorians_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Mandalorians_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+		<Prev_Level_Base>Mandalorians_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Mandalorians_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Mandalorians_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Mandalorians</Affiliation>
+		<Prev_Level_Base>Mandalorians_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Warlords_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Warlords_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Warlords_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Prev_Level_Base>Warlords_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Warlords_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Warlords_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Prev_Level_Base>Warlords_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Warlords_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Warlords_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Prev_Level_Base>Warlords_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Warlords_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Warlords_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Prev_Level_Base>Warlords_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Sector_Forces_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Sector_Forces</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Sector_Forces_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Sector_Forces_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Sector_Forces</Affiliation>
+		<Prev_Level_Base>Sector_Forces_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Sector_Forces_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Sector_Forces_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Sector_Forces</Affiliation>
+		<Prev_Level_Base>Sector_Forces_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Sector_Forces_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Sector_Forces_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Sector_Forces</Affiliation>
+		<Prev_Level_Base>Sector_Forces_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Sector_Forces_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Sector_Forces_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Sector_Forces</Affiliation>
+		<Prev_Level_Base>Sector_Forces_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hostile_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Hostile</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Hostile_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hostile_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Hostile</Affiliation>
+		<Prev_Level_Base>Hostile_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Hostile_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hostile_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Hostile</Affiliation>
+		<Prev_Level_Base>Hostile_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Hostile_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hostile_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Hostile</Affiliation>
+		<Prev_Level_Base>Hostile_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Hostile_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Hostile_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Hostile</Affiliation>
+		<Prev_Level_Base>Hostile_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+	
+	<GroundBase Name="Imperial_Proteus_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Imperial_Proteus</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Imperial_Proteus_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Imperial_Proteus_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Imperial_Proteus</Affiliation>
+		<Prev_Level_Base>Imperial_Proteus_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Imperial_Proteus_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Imperial_Proteus_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Imperial_Proteus</Affiliation>
+		<Prev_Level_Base>Imperial_Proteus_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Imperial_Proteus_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Imperial_Proteus_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Imperial_Proteus</Affiliation>
+		<Prev_Level_Base>Imperial_Proteus_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Imperial_Proteus_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Imperial_Proteus_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Imperial_Proteus</Affiliation>
+		<Prev_Level_Base>Imperial_Proteus_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+</GroundBases>

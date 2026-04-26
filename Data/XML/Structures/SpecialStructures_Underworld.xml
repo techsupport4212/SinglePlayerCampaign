@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+<Tactical_Capturables>
+
+	<Tactical_Capturable Name="Garrison_Bunker_Empire">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Affiliation>Empire,  Greater_Maldrood, Eriadu_Authority, Yevetha, Imperial_Proteus</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+        <Garrison_Radius>10</Garrison_Radius>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Garrison_Bunker_Rebel">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>RB_Bunker.alo</Land_Model_Name>
+		<Icon_Name>i_button_rb_bunker.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Affiliation>Rebel, Hapes_Consortium</Affiliation>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Garrison_Bunker_Underworld">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>UB_Bunker.alo</Land_Model_Name>
+		<Icon_Name>i_button_ui_bunker.tga</Icon_Name>
+		<Affiliation>EmpireoftheHand, Chiss</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Garrison_Bunker_Pentastar">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Affiliation>Pentastar, Warlords</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Garrison_Bunker_Pirate">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_EV_BUNKER.tga</Icon_Name>
+		<Affiliation>Zsinj_Empire, Hutt_Cartels, Corporate_Sector, SsiRuuvi_Imperium</Affiliation>
+		<Scale_Factor>1.0</Scale_Factor>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Garrison_Bunker_Capturable">
+		<Variant_Of_Existing_Type>Garrison_Bunker_Template</Variant_Of_Existing_Type>
+		<LandBehavior>SPACE_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, GARRISON_STRUCTURE, CAPTURE_POINT</LandBehavior>
+		<Land_Model_Name>NB_Bunker.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Garrison_Makeshift_Bunker_Capturable">
+		<Variant_Of_Existing_Type>Garrison_Makeshift_Bunker_Template</Variant_Of_Existing_Type>
+		<LandBehavior>SPACE_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, GARRISON_STRUCTURE, CAPTURE_POINT</LandBehavior>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+	
+	<Tactical_Capturable Name="Trooper_Bunker_Capturable">
+		<Variant_Of_Existing_Type>Trooper_Bunker_Template</Variant_Of_Existing_Type>
+		<LandBehavior>SPACE_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, EARTHQUAKE_TARGET, GARRISON_STRUCTURE, CAPTURE_POINT</LandBehavior>
+		<Land_Model_Name>Infantry_bunker_structure.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Pillbox_Bunker_Capturable">
+		<Variant_Of_Existing_Type>Pillbox_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>NB_Bunker.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="Battery_Bunker_Capturable">
+		<Variant_Of_Existing_Type>Battery_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>EB_TestBunker.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="AV_Bunker_Capturable">
+		<Variant_Of_Existing_Type>AV_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>AV_Bunker_structure.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="AI_Bunker_Capturable">
+		<Variant_Of_Existing_Type>AI_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>AI_Bunker_structure.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+	<Tactical_Capturable Name="PLEX_Bunker_Capturable">
+		<Variant_Of_Existing_Type>PLEX_Bunker_Template</Variant_Of_Existing_Type>
+		<Land_Model_Name>NB_Bunker.alo</Land_Model_Name>
+        <Ownership_Sticks>No</Ownership_Sticks>
+		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
+		<Capture_Point_Radius>220</Capture_Point_Radius>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+      <Include_In_UI_Map_Header>True</Include_In_UI_Map_Header>
+	</Tactical_Capturable>
+
+</Tactical_Capturables>
+

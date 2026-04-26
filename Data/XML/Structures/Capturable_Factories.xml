@@ -1,0 +1,646 @@
+<?xml version="1.0" ?>
+<SecondaryStructures>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Template">
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_HEAVY_FACTORY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_STRUCTURE</Encyclopedia_Unit_Class>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_E_FACTORY_CAPTURE </Secondary_Objective>
+		<Icon_Name>i_button_e_advanced_weapons.tga</Icon_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Land_Model_Name>EB_VehicleFactory.alo</Land_Model_Name>
+		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
+		<SFXEvent_Ambient_Loop>Structure_Barracks_Loop</SFXEvent_Ambient_Loop>
+		<Behavior>CAPTURE_POINT, DUMMY_GROUND_STRUCTURE</Behavior>
+		<LandBehavior>SPACE_OBSTACLE, LAND_OBSTACLE, REVEAL, SELECTABLE, HIDE_WHEN_FOGGED, DAMAGE_TRACKING, DUMMY_LAND_BASE_LEVEL_COMPONENT, UNIT_AI, SPAWN_SQUADRON, CAPTURE_POINT</LandBehavior>
+		<Capture_Point_Transition_Time_Seconds>12.0</Capture_Point_Transition_Time_Seconds>
+		<Multisample_FOW_Check>Yes</Multisample_FOW_Check>
+		<Land_FOW_Reveal_Range>300.0</Land_FOW_Reveal_Range>
+		<Is_Community_Property>no</Is_Community_Property>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
+
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+
+		<Ownership_Sticks>Yes</Ownership_Sticks>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Radar_Icon_Name>MINI_MAP_FACTORY.TGA</Radar_Icon_Name>
+		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
+		<Last_State_Visible_Under_FOW> False </Last_State_Visible_Under_FOW>
+		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
+		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
+		<Radar_Show_Facing>No</Radar_Show_Facing>
+
+		<Select_Box_Scale>180</Select_Box_Scale>
+		<Mass>1.0</Mass>
+		<Scale_Factor>1.50</Scale_Factor>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size> 
+		<Is_Dummy>No</Is_Dummy>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Armor_Type> ArmourG_Structure </Armor_Type>
+		<Reveal_During_Setup_Phase> True </Reveal_During_Setup_Phase>
+
+		<Land_Damage_Thresholds>1, .5, 0</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>1, 2, 3</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation,null</Land_Damage_SFX>
+
+		<Political_Control>0</Political_Control>
+		<Size_Value>50</Size_Value>
+		<Tactical_Health>700</Tactical_Health>
+		<Victory_Relevant>no</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+
+		<CategoryMask> Structure </CategoryMask>
+
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> Corvette </Space_Layer>
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Property_Flags>InBase</Property_Flags>
+
+		<Starting_Spawned_Units_Tech_0></Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>0</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Bones>SPAWN_00</Spawned_Squadron_Location_Bones>
+		<Spawned_Squadron_Location_Flyout_Distances>110.0</Spawned_Squadron_Location_Flyout_Distances>
+
+		<Lua_Script>ObjectScript_CapturableFactorySpawning</Lua_Script>
+		<Death_Clone_Is_Obstacle>True</Death_Clone_Is_Obstacle>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_E">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_AT_PT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 5</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_P">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_AT_PT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 5</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_R">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_ISP
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_factory_2_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Infantry_Support_Platform, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_AT-AP">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_ADVANCED_FACTORY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_AT_AP
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_MegaAdvancedWeapons.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_factory_3_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>AT_AP_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_AAT">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_AAT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_factory_2_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>AAT, 3</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Riot_Hailfire">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_RIOT_HAILFIRE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_factory_2_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Hailfire_Riot_Control, 3</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_AT_TE_Walker">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_ADVANCED_FACTORY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_AT_TE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_MegaAdvancedWeapons.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_factory_3_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>AT_TE_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_B1">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_B1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>B1_Droid_Squad, 7</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_B1_RC">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_B1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>CSA_B1_Droid_Squad, 7</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_B2">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_B2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>B2_Droid_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK1
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_I_P, 10</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid_Q">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK1_Q
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_I_Q, 8</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid_W">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK1_W
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_I_W, 10</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid_MK2">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_II, 6</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid_MK2_Hunter">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK2_HUNTER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_II_Hunter, 7</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Destroyer_Droid_MK2_Turret">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DESTROYER_DROIDMK2_TURRET
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Destroyer_Droid_II_Turret, 6</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Luxury_Yacht">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_LUXURY_BARGE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>EB_MegaAdvancedWeapons.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_factory_3_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Luxury_Barge, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
+	<!-- Should probably replace with non-imperial eventually or do a split -->
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Dwarf_Spider_Droid">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_DWARF_SPIDER_DROID
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Imperial_Dwarf_Spider_Droid_Squad, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<!-- 	<SecondaryStructure Name="Secondary_Heavy_Factory_Protocol_Legionnaire"> T-Posing do not used until fixed
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_PROTOCOL_LEGIONNAIRE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Protocol_Legionnaire_Team_Deployed, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure> -->
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_SD6">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_DROIDWORKS</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_SD6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_DROIDWORKS_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>UB_DroidWorks.alo</Land_Model_Name>
+		<Icon_Name>i_button_n_UB_DroidWorks_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 6</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Skiff">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_SKIFF
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>Bantha_II_Skiff, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_M91">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_ESPO_EARLY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>Espo_Walker_91, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Arrow">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_ARROW
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_factory_2_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Arrow_23, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_ULAV">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_ULAV_EARLY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>ULAV_Early, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_T2A">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_T2A
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_factory_2_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>T2A_Tank, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_T4A">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_T4A
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Land_Model_Name>rb_heavyvehiclefactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_r_factory_2_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>T4A_Tank, 2</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_TX130">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_TX130
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>TX130S, 3</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_TNT">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_TNT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>Treaded_Neutron_Torch, 3</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Gian">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_GIAN
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>Gian_Speeder, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Gian_PDF">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_GIAN_PDF
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Starting_Spawned_Units_Tech_0>Gian_PDF, 4</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<!-- Aircraft -->
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Skyhopper">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_SKYHOPPER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Skyhopper, 2</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Gaba18">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_GABA18
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Gaba18, 2</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Storm">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_CLOUDCAR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>Storm_Cloud_Car, 2</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_JX30">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_JX30
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>JX30, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_VAAT">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_VAATE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>VAAT, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_LAAT">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_LAAT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>LAAT, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_Snowspeeder">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_T47_AIRSPEEDER
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>T47_Airspeeder, 2</Starting_Spawned_Units_Tech_0>
+	</SecondaryStructure>
+
+	<SecondaryStructure Name="Secondary_Heavy_Factory_MAAT">
+		<Variant_Of_Existing_Type>Secondary_Heavy_Factory_Template</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_GROUND_SECONDARY_ABANDONED_LANDINGPAD</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_ENCYCLOPEDIA_SECONDARY_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SECONDARY_FACTORY_MAAT
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE
+		</Encyclopedia_Text>
+		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_LANDINGPAD_CAPTURE </Secondary_Objective>
+		<Land_Model_Name>EB_ICC_LandingPad.alo</Land_Model_Name>
+		<Icon_Name>i_button_e_landing_pad_1_abandon.tga</Icon_Name>
+		<Starting_Spawned_Units_Tech_0>MAAT, 1</Starting_Spawned_Units_Tech_0>
+		<Spawned_Squadron_Location_Flyout_Distances>150.0</Spawned_Squadron_Location_Flyout_Distances>
+	</SecondaryStructure>
+</SecondaryStructures>

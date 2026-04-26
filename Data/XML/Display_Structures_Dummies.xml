@@ -1,0 +1,890 @@
+<?xml version="1.0"?>
+<Display_Structures_Dummies>
+
+	<DummyStructure Name="AI_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Placeholder_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Non_Capital_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Heavy_Frigate_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Options_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_1">
+		<Variant_Of_Existing_Type>Non_Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_2">
+		<Variant_Of_Existing_Type>Non_Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_3">
+		<Variant_Of_Existing_Type>Non_Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_4">
+		<Variant_Of_Existing_Type>Non_Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Capital_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Dreadnought_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_5">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_6">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_7">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_8">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_9">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_10">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_11">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Ship_Crew_Tier_12">
+		<Variant_Of_Existing_Type>Capital_Category_Dummy</Variant_Of_Existing_Type>
+	</DummyStructure>
+
+	<DummyStructure Name="Structure_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Story_Category_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_One">
+		<Text_ID>TEXT_DISPLAY_ONE</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Two">
+		<Text_ID>TEXT_DISPLAY_TWO</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Three">
+		<Text_ID>TEXT_DISPLAY_THREE</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Four">
+		<Text_ID>TEXT_DISPLAY_FOUR</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Five">
+		<Text_ID>TEXT_DISPLAY_FIVE</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Six">
+		<Text_ID>TEXT_DISPLAY_SIX</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Seven">
+		<Text_ID>TEXT_DISPLAY_SEVEN</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Eight">
+		<Text_ID>TEXT_DISPLAY_EIGHT</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Nine">
+		<Text_ID>TEXT_DISPLAY_NINE</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Display_Ten">
+		<Text_ID>TEXT_DISPLAY_TEN</Text_ID>
+		<GUI_Row> 1 </GUI_Row>
+		<Ranking_In_Category>7</Ranking_In_Category>
+		<MovementClass> Space </MovementClass>
+		<Hyperspace>Yes</Hyperspace>
+		<Hyperspace_Speed>1.5</Hyperspace_Speed>
+		<Affiliation>Neutral</Affiliation>
+		<SFXEvent_Select>null</SFXEvent_Select>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>99</Required_Star_Base_Level>
+		<Required_Special_Structures>
+		</Required_Special_Structures>
+		<Required_Planets />
+		<Damage>25</Damage>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Piracy_Value_Credits>50</Piracy_Value_Credits>
+		<Build_Time_Seconds>20</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Size_Value>120</Size_Value>
+		<Behavior>DUMMY_STARSHIP, SELECTABLE</Behavior>
+		<Icon_Name>i_button_temporary.tga</Icon_Name>
+		<Victory_Relevant>no</Victory_Relevant>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<MovementClass> Space </MovementClass>
+		<Encyclopedia_Text>TEXT_TOOLTIP_NONE</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_TOOLTIP_NONE</Encyclopedia_Unit_Class>
+		<Score_Cost_Credits> 1350</Score_Cost_Credits>
+		<Population_Value>0</Population_Value>
+	</DummyStructure>
+
+	<DummyStructure Name="Crew_Resource_Dummy">
+		<Affiliation>
+			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
+		</Affiliation>
+		<Text_ID>
+		</Text_ID>
+		<!-- <Space_Model_Name>W_LASER_INVISIBLE.ALO</Space_Model_Name> -->
+		<Space_Model_Name>diamond_planet.ALO</Space_Model_Name>
+		<Land_Model_Name>diamond_planet.ALO</Land_Model_Name>
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>0</Select_Box_Scale>
+		<Select_Box_Z_Adjust>0</Select_Box_Z_Adjust>
+		<Is_Dummy>Yes</Is_Dummy>
+		<Build_Cost_Credits>0</Build_Cost_Credits>
+		<Build_Time_Seconds>0</Build_Time_Seconds>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+		<Build_Max_Instances_Per_Planet> 0 </Build_Max_Instances_Per_Planet>
+		<Size_Value>1</Size_Value>
+		<Base_Position>In_Base</Base_Position>
+		<Shield_Points>0</Shield_Points>
+		<Tech_Level>99</Tech_Level>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>6</Required_Star_Base_Level>
+		<Required_Special_Structures>Placeholder_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Energy_Capacity>0</Energy_Capacity>
+		<Energy_Refresh_Rate>0</Energy_Refresh_Rate>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		<Tactical_Health>1</Tactical_Health>
+		<Behavior>DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>DUMMY_LAND_BASE_LEVEL_COMPONENT</SpaceBehavior>
+		<!-- <SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, ASTEROID_FIELD_DAMAGE, SPAWN_SQUADRON, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA, SIMPLE_SPACE_LOCOMOTOR </SpaceBehavior> -->
+		<Collidable_By_Projectile_Living>No</Collidable_By_Projectile_Living>
+		<Space_FOW_Reveal_Range>0.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>0.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> No </Last_State_Visible_Under_FOW>
+		<Icon_Name>
+		</Icon_Name>
+		<Victory_Relevant>No</Victory_Relevant>
+		<Scale_Factor>1</Scale_Factor>
+		<GUI_Bracket_Size>1</GUI_Bracket_Size>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<CategoryMask></CategoryMask>
+		<Score_Cost_Credits> 0 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Space_Layer> StaticObject </Space_Layer>
+	</DummyStructure>
+
+</Display_Structures_Dummies>

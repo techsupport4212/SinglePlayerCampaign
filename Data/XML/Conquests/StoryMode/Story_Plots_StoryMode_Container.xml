@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+	<Lua_Script>GCPlayerAgnostic_StoryMode</Lua_Script>
+	<Active_Plot>Conquests\Player_Agnostic_Plot.xml</Active_Plot>
+
+	<Lua_Script>GC_MasterScript_StoryMode</Lua_Script>
+	<Active_Plot>Conquests\Historical\Story_TR_Historicals_Generic_Container.xml</Active_Plot>
+
+	<Lua_Script>GCUtilityHandleClicks</Lua_Script>
+	<Active_Plot>Conquests\GCUtilityHandleClicks.xml</Active_Plot>
+	<Active_Plot>Conquests\Documentation.xml</Active_Plot>
+
+	<Active_Plot>Conquests\Events\EventLogRepository.xml</Active_Plot>
+	<Active_Plot>Conquests\Events\MissionRepository.xml</Active_Plot>
+
+	<Active_Plot>Conquests\Tactical\Story_Tactical_Universal.xml</Active_Plot>
+</Story_Mode_Plots>

@@ -179,6 +179,8 @@
 	<File>Conquests\InstantAction\Campaigns_InstantAction.xml</File> <!--universal-->
 	<File>Conquests\Survival\Campaigns_Survival.xml</File> <!--mod-specific-->
 
+	<!-- TechSupport: Map files for the story mode-->
+	<File>Conquests\StoryMode\Campaigns_StoryMode.xml</File>
 	<!--Testing-->
 	<!-- <File>Conquests\Campaigns_FullMap.xml</File> --> <!--universal-->
 	<!-- <File>Conquests\Campaigns_MapTest.xml</File> --> <!--mod-specific-->
