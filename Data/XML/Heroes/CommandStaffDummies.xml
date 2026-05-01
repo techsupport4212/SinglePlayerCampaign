@@ -1,0 +1,696 @@
+<?xml version="1.0" ?>
+<CommandStaffDummies>
+
+	<!-- Command Staff Hire / Retire Dummies -->
+
+    <DummyStructure Name="View_Grand_Admirals_Empire">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_VIEW_GRAND_ADMIRALS</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_SELECT_GRAND_ADMIRALS.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VIEW_CHANGE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+    <DummyStructure Name="View_Space_Commanders_Empire">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_VIEW_SPACE_COMMANDERS</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_SELECT_SPACE_COMMANDERS.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VIEW_CHANGE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+    <DummyStructure Name="View_Generals_Empire">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_VIEW_GENERALS</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_SELECT_GENERALS.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VIEW_CHANGE
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_HERO_ASSIGN_GROUND_RESTRICTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+    <DummyStructure Name="View_Admins_Empire">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_VIEW_ADMINS</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_SELECT_ADMINS.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VIEW_CHANGE
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_HERO_ASSIGN_GROUND_RESTRICTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+    <DummyStructure Name="View_Special_Forces_Empire">
+		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
+		<GUI_Row> 1 </GUI_Row>
+
+		<Population_Value>0</Population_Value>
+		<Build_Cost_Credits>1</Build_Cost_Credits>
+		<Build_Limit_Current_Per_Player>1</Build_Limit_Current_Per_Player>
+		<Build_Time_Seconds>1</Build_Time_Seconds>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<AI_Combat_Power>10000</AI_Combat_Power>
+
+		<CategoryMask>Wall</CategoryMask>
+
+		<Text_ID>TEXT_HERO_VIEW_SPECIAL_FORCES</Text_ID>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
+		<Affiliation>Empire</Affiliation>
+		<Icon_Name>I_BUTTON_SELECT_SPECIAL_FORCES.tga</Icon_Name>
+
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+
+		<Tech_Level>0</Tech_Level>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_VIEW_CHANGE
+		TEXT_TOOLTIP_SEPARATOR_NONE_BLOCK
+		TEXT_TOOLTIP_HERO_ASSIGN_GROUND_RESTRICTION
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_STORYEVENT</Encyclopedia_Unit_Class>
+
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
+	</DummyStructure>
+
+    <DummyStructure Name="Retire_Grand_Admirals_Empire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RETIRE_GRAND_ADMIRALS</Text_ID>
+		<Icon_Name>I_BUTTON_RETIRE_GRAND_ADMIRALS.tga</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+	</DummyStructure>
+
+    <DummyStructure Name="Retire_Space_Commanders_Empire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RETIRE_SPACE_COMMANDERS</Text_ID>
+		<Icon_Name>I_BUTTON_RETIRE_SPACE_COMMANDERS.tga</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+	</DummyStructure>
+
+    <DummyStructure Name="Retire_Generals_Empire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RETIRE_GENERALS</Text_ID>
+		<Icon_Name>I_BUTTON_RETIRE_GENERALS.tga</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+	</DummyStructure>
+
+    <DummyStructure Name="Retire_Admins_Empire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RETIRE_ADMINS</Text_ID>
+		<Icon_Name>I_BUTTON_RETIRE_ADMINS.tga</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+	</DummyStructure>
+ 
+    <DummyStructure Name="Retire_Special_Forces_Empire">
+		<Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_HERO_RETIRE_SPECIAL_FORCES</Text_ID>
+		<Icon_Name>I_BUTTON_RETIRE_SPECIAL_FORCES.tga</Icon_Name>
+        <Tech_Level>99</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+	</DummyStructure>
+
+    <DummyStructure Name="Retire_Teshik">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_TESHIK.tga</Icon_Name>
+		<Required_Orbiting_Units>Teshik_Eleemosynary</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Batch">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_BATCH.tga</Icon_Name>
+		<Required_Orbiting_Units>Batch_Meniscus</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Il_Raz">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_IL_RAZ.tga</Icon_Name>
+		<Required_Orbiting_Units>Il_Raz_EmperorsDisciple</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Declann">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_DECLANN.tga</Icon_Name>
+		<Required_Orbiting_Units>Declann_Recondite</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Okins">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_OKINS.tga</Icon_Name>
+		<Required_Orbiting_Units>Okins_Allegiance</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Coross">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_COROSS.tga</Icon_Name>
+		<Required_Orbiting_Units>Coross_Vengeance_II</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Kermen">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_KERMEN.tga</Icon_Name>
+		<Required_Orbiting_Units>Kermen_Belligerent</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Covell">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_COVELL.tga</Icon_Name>
+		<Required_Orbiting_Units>Imperial_ATAT_Barge_Covell</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Veers">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_VEERS.tga</Icon_Name>
+		<Required_Orbiting_Units>Imperial_ATAT_Barge_Veers</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Ashen">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_TAL_ASHEN.tga</Icon_Name>
+		<Required_Orbiting_Units>Imperial_ATAT_Barge_Ashen</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Pestage">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_PESTAGE.tga</Icon_Name>
+		<Required_Orbiting_Units>Shuttle_Tyderium_Pestage</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Dangor">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_DANGOR.tga</Icon_Name>
+		<Required_Orbiting_Units>Shuttle_Tyderium_Dangor</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Starkiller">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_DARK_APPRENTICE.tga</Icon_Name>
+		<Required_Orbiting_Units>Shuttle_Tyderium_Starkiller</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Bly">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_BLY.tga</Icon_Name>
+		<Required_Orbiting_Units>Shuttle_Tyderium_Bly</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Cody">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_CODY.tga</Icon_Name>
+		<Required_Orbiting_Units>Shuttle_Tyderium_Cody</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Tremayne">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_TREMAYNE.tga</Icon_Name>
+		<Required_Orbiting_Units>Shuttle_Tyderium_Tremayne</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Retire_Strang">
+        <Variant_Of_Existing_Type>Template_Retire</Variant_Of_Existing_Type>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+		<Lua_Script>DelayedSelfDelete</Lua_Script>
+		<Icon_Name>I_BUTTON_RETIRE_STRANG.tga</Icon_Name>
+		<Required_Orbiting_Units>Shuttle_Tyderium_Strang</Required_Orbiting_Units>
+    </DummyStructure>
+
+    <DummyStructure Name="Random_Grand_Admirals_Assign">
+		<Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_RANDOM_HERO_SELECTOR</Text_ID>
+		<Icon_Name>I_BUTTON_UNKNOWN.TGA</Icon_Name>
+
+		<CategoryMask>Upgrade</CategoryMask>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_RANDOM_COMMANDER
+		TEXT_DOCUMENTATION_SEPARATOR_SMALL
+		TEXT_TOOLTIP_ASSIGN_RANDOM_COMMANDER2
+		</Encyclopedia_Text>
+		
+		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy, Empire_Office</Required_Special_Structures>
+	</DummyStructure>
+
+    <DummyStructure Name="Random_Space_Commanders_Assign">
+        <Variant_Of_Existing_Type>Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+    </DummyStructure>
+
+    <DummyStructure Name="Random_Generals_Assign">
+        <Variant_Of_Existing_Type>Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+    </DummyStructure>
+
+    <DummyStructure Name="Random_Admins_Assign">
+        <Variant_Of_Existing_Type>Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+    </DummyStructure>
+
+    <DummyStructure Name="Random_Special_Forces_Assign">
+        <Variant_Of_Existing_Type>Random_Grand_Admirals_Assign</Variant_Of_Existing_Type>
+    </DummyStructure>
+
+    <DummyStructure Name="Teshik_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_TESHIK</Text_ID>
+        <Icon_Name>i_button_teshik.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_11_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_TESHIK
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_ELEEMOSYNARY
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Batch_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_BATCH</Text_ID>
+        <Icon_Name>i_button_batch.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_09_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_BATCH
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_MENISCUS
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Il_Raz_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_IL_RAZ</Text_ID>
+        <Icon_Name>i_button_il_raz.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_09_SPACE
+		TEXT_TOOLTIP_TRAIT_SADISTIC
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_IL_RAZ
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_EMPERORSDISCIPLE
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Declann_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_DECLANN</Text_ID>
+        <Icon_Name>i_button_declann.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_09_SPACE
+		TEXT_TOOLTIP_TRAIT_ACEPILOT
+		TEXT_TOOLTIP_TRAIT_FORCESENSITIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DECLANN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_RECONDITE
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Okins_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_OKINS</Text_ID>
+        <Icon_Name>i_button_okins.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_05_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_OKINS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_OKINS 
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Coross_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_COROSS</Text_ID>
+        <Icon_Name>I_BUTTON_COROSS.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_06_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_COROSS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_COROSS
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Kermen_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_UTHER_KERMEN</Text_ID>
+        <Icon_Name>i_button_kermen.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_07_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_KERMEN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_BELLIGERENT
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Covell_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_COVELL</Text_ID>
+        <Icon_Name>i_button_covell.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_08_LAND
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_WALKER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_COVELL 
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_UNIT_AT_AT_WALKER
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Veers_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_MAXIMILIAN_VEERS</Text_ID>
+        <Icon_Name>I_BUTTON_MAXIMILLIAN_VEERS.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_08_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_WALKER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VEERS
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_AT_AT_WALKER_VEERS
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Ashen_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_TAL_ASHEN</Text_ID>
+        <Icon_Name>I_BUTTON_TAL_ASHEN.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_08_LAND
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_FORTIFICATION
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_TAL_ASHEN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_UNIT_AT_AT_WALKER
+		TEXT_TOOLTIP_COMMAND_ELITE_FORCE
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Pestage_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_PESTAGE</Text_ID>
+        <Icon_Name>I_BUTTON_PESTAGE_ADMIN.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ADMIN_TIER_ADMIN_02
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_PESTAGE
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_RESTRICTED_HYPERDRIVE
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Dangor_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_DANGOR</Text_ID>
+        <Icon_Name>I_BUTTON_DANGOR_ADMIN.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_ADMIN_TIER_ADMIN_02
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DANGOR
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_RESTRICTED_HYPERDRIVE
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Starkiller_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_DARK_APPRENTICE</Text_ID>
+        <Icon_Name>I_BUTTON_DARK_APPRENTICE.tga</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_UTILITY_STEALTH_OPERATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DARK_APPRENTICE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_DARK_APPRENTICE_HEALTH
+		TEXT_TOOLTIP_DARK_APPRENTICE_MOVE
+		TEXT_TOOLTIP_DARK_APPRENTICE_WEAP1
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Bly_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_BLY</Text_ID>
+        <Icon_Name>I_BUTTON_BLY_TR.TGA</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_LAND
+		TEXT_TOOLTIP_TRAIT_UTILITY_COOPERATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_BLY
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
+		TEXT_TOOLTIP_ESCORT_BLY1
+		TEXT_TOOLTIP_ESCORT_BLY2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BLY_HEALTH
+		TEXT_TOOLTIP_BLY_MOVE
+		TEXT_TOOLTIP_BLY_WEAP1
+		TEXT_TOOLTIP_BLY_WEAP2
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Cody_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_CODY</Text_ID>
+        <Icon_Name>I_BUTTON_CODY.TGA</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_LAND
+		TEXT_TOOLTIP_TRAIT_SPECIALIZATION_INFANTRY
+		TEXT_TOOLTIP_TRAIT_AGENT_TIER_AGENT_01_SPEC_STORMTROOPER
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_CODY
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
+		TEXT_TOOLTIP_ESCORT_CODY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CODY_HEALTH
+		TEXT_TOOLTIP_CODY_MOVE
+		TEXT_TOOLTIP_CODY_WEAP1
+		TEXT_TOOLTIP_CODY_WEAP2
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Tremayne_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_TREMAYNE</Text_ID>
+        <Icon_Name>I_BUTTON_TREMAYNE.TGA</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_06_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_COMMAND_INTEL_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_TREMAYNE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_TREMAYNE_HEALTH
+		TEXT_TOOLTIP_TREMAYNE_MOVE
+		TEXT_TOOLTIP_TREMAYNE_WEAP1
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+    <DummyStructure Name="Strang_Assign">
+        <Variant_Of_Existing_Type>Template_Assign</Variant_Of_Existing_Type>
+        <Text_ID>TEXT_HERO_STRANG</Text_ID>
+        <Icon_Name>I_BUTTON_STRANG.TGA</Icon_Name>
+        <Affiliation>Empire</Affiliation>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ASSIGN_COMMANDER
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_06_LAND
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_STRANG 
+		TEXT_TOOLTIP_SEPARATOR_ESCORTS_BLOCK
+		TEXT_TOOLTIP_ESCORT_STRANG
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STRANG_HEALTH
+		TEXT_TOOLTIP_STRANG_MOVE
+		TEXT_TOOLTIP_STRANG_WEAP1
+		TEXT_TOOLTIP_STRANG_WEAP2
+		</Encyclopedia_Text>
+    </DummyStructure>
+
+</CommandStaffDummies>

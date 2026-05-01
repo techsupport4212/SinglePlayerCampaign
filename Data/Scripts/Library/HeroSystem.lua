@@ -55,6 +55,28 @@ local function register_lookup_tree(lookup, value, hero_tag)
 	end
 end
 
+local function safe_lock_tech(player, object_name)
+	if player == nil then
+		return
+	end
+
+	local tech_type = Find_Object_Type(object_name)
+	if TestValid(tech_type) then
+		player.Lock_Tech(tech_type)
+	end
+end
+
+local function safe_unlock_tech(player, object_name)
+	if player == nil then
+		return
+	end
+
+	local tech_type = Find_Object_Type(object_name)
+	if TestValid(tech_type) then
+		player.Unlock_Tech(tech_type)
+	end
+end
+
 function build_hero_lookup(hero_data)
 	if hero_data.hero_lookup ~= nil then
 		return
@@ -77,7 +99,7 @@ function init_hero_system(hero_data)
 	Lock_Hero_Options(hero_data)
 	Unlock_Hero_Options(hero_data)
 	if hero_data.disabled then
-		hero_data.active_player.Lock_Tech(Find_Object_Type(hero_data.retire_object))
+		safe_lock_tech(hero_data.active_player, hero_data.retire_object)
 	end
 end
 
@@ -104,11 +126,9 @@ end
 
 function Lock_Hero_Options(hero_data)
 	for index, entry in pairs(hero_data.full_list) do
-		local assign_unit = Find_Object_Type(entry[1])
-		hero_data.active_player.Lock_Tech(assign_unit)
+		safe_lock_tech(hero_data.active_player, entry[1])
 	end
-	local assign_unit = Find_Object_Type(hero_data.random_name)
-	hero_data.active_player.Lock_Tech(assign_unit)
+	safe_lock_tech(hero_data.active_player, hero_data.random_name)
 end
 
 function Unlock_Hero_Options(hero_data)
@@ -117,21 +137,20 @@ function Unlock_Hero_Options(hero_data)
 		if hero_data.free_hero_slots > 0 then
 			for index, adm in pairs(hero_data.available_list) do
 				local entry = hero_data.full_list[adm]
-				local assign_unit = Find_Object_Type(entry[1])
-				hero_data.active_player.Unlock_Tech(assign_unit)
-				if not entry.no_random then
-					random_count = random_count + 1
+				if entry then
+					safe_unlock_tech(hero_data.active_player, entry[1])
+					if not entry.no_random then
+						random_count = random_count + 1
+					end
 				end
 			end
 			if random_count > 0 then
-				local assign_unit = Find_Object_Type(hero_data.random_name)
-				hero_data.active_player.Unlock_Tech(assign_unit)
+				safe_unlock_tech(hero_data.active_player, hero_data.random_name)
 			end
 		end
 	end
 	if hero_data.vacant_hero_slots > 0 and hero_data.vacant_limit > 0 then
-		local assign_unit = Find_Object_Type(hero_data.extra_name)
-		hero_data.active_player.Unlock_Tech(assign_unit)
+		safe_unlock_tech(hero_data.active_player, hero_data.extra_name)
 	end
 end
 
@@ -389,8 +408,7 @@ function Handle_Hero_Death(hero_data)
 		hero_data.vacant_hero_slots = 0
 	end
 	if hero_data.vacant_hero_slots > 0 then
-		local assign_unit = Find_Object_Type(hero_data.extra_name)
-		hero_data.active_player.Unlock_Tech(assign_unit)
+		safe_unlock_tech(hero_data.active_player, hero_data.extra_name)
 	end
 end
 
@@ -407,13 +425,11 @@ function Handle_New_Hero_Slot(hero_data)
 		hero_data.free_hero_slots = hero_data.free_hero_slots + 1
 		Unlock_Hero_Options(hero_data)
 		if hero_data.vacant_hero_slots < 0 or (table.getn(hero_data.available_list) - hero_data.free_hero_slots) < 0 then
-			local assign_unit = Find_Object_Type(hero_data.extra_name)
-			hero_data.active_player.Lock_Tech(assign_unit)
+			safe_lock_tech(hero_data.active_player, hero_data.extra_name)
 		end
 		Get_Active_Heroes(false,hero_data)
 	else
-		local assign_unit = Find_Object_Type(hero_data.extra_name)
-		hero_data.active_player.Lock_Tech(assign_unit)
+		safe_lock_tech(hero_data.active_player, hero_data.extra_name)
 	end
 end
 
@@ -596,21 +612,20 @@ end
 function Disable_Hero_Options(hero_data)
 	hero_data.disabled = true
 	Lock_Hero_Options(hero_data)
-	hero_data.active_player.Lock_Tech(Find_Object_Type(hero_data.retire_object))
+	safe_lock_tech(hero_data.active_player, hero_data.retire_object)
 end
 
 function Enable_Hero_Options(hero_data)
 	hero_data.disabled = false
 	Unlock_Hero_Options(hero_data)
-	hero_data.active_player.Unlock_Tech(Find_Object_Type(hero_data.retire_object))
+	safe_unlock_tech(hero_data.active_player, hero_data.retire_object)
 end
 
 function Set_Locked_Slots(hero_data, quantity)
 	hero_data.vacant_hero_slots = hero_data.vacant_hero_slots + quantity
 	hero_data.free_hero_slots = hero_data.free_hero_slots - quantity
 	if quantity > 0 then
-		local assign_unit = Find_Object_Type(hero_data.extra_name)
-		hero_data.active_player.Unlock_Tech(assign_unit)
+		safe_unlock_tech(hero_data.active_player, hero_data.extra_name)
 	end
 	if hero_data.free_hero_slots == 0 then
 		Lock_Hero_Options(hero_data)

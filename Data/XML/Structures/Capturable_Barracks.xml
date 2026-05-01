@@ -85,7 +85,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Light_Mercenary_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -98,7 +98,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Mercenary_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -111,7 +111,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Elite_Mercenary_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -124,7 +124,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Security_Trooper_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -137,7 +137,7 @@
 		TEXT_TOOLTIP_SECONDARY_BARRACKS_SD9
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>SD_9_Assault_Battle_Droid, 5</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -150,7 +150,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Mandalorian_Soldier_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -163,7 +163,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Mandalorian_Commando_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -176,7 +176,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Sun_Guard_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -189,7 +189,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Ailon_Nova_Guard_Squad, 4</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 	
@@ -202,7 +202,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Mercenary_Phalanx_Trooper_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -215,7 +215,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Hutt_GuardianCorps_Squad, 4</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -228,7 +228,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>GuardianCorps_Derelict_Squad, 4</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -241,7 +241,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Hutt_Crimson_Condottiere_Squad, 4</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -256,7 +256,7 @@
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
 		TEXT_TOOLTIP_UNIT_CAPTUREABLE_STRUCTURE 
 		</Encyclopedia_Text>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Nimbus_Commando_Company_Dummy, 1</Starting_Spawned_Units_Tech_0>
 	</SecondaryStructure>
 
@@ -277,7 +277,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_GARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>Police_Responder_Heavy_Squad, 2</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
@@ -307,7 +307,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_GARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>PDF_Soldier_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>PDF_Soldier_Heavy_Squad, 2</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
@@ -336,7 +336,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_GARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>PDF_Tactical_Unit_Squad, 4</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
 		<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
@@ -364,7 +364,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_GARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Military_Soldier_Squad, 4</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
 		<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
@@ -392,7 +392,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_GARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Security_Trooper_Squad, 4</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
 		<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
@@ -424,7 +424,7 @@
 		<Land_Model_Name>EB_InfantryBarracks.alo</Land_Model_Name>
 		<Scale_Factor>1.50</Scale_Factor>
 		<Icon_Name>i_button_cloning_facility.TGA</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Medium_Squad, 4</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
 		<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
@@ -447,7 +447,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_IMPGARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Imperial_Navy_Trooper_Squad, 4</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
 		<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
@@ -475,7 +475,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_IMPGARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Imperial_Army_Guard_Squad, 4</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>
 		<Spawned_Squadron_Location_Bones>ROOT</Spawned_Squadron_Location_Bones>
@@ -504,7 +504,7 @@
 		<Secondary_Objective> TEXT_TACTICAL_SECONDARY_IMPGARRISON_CAPTURE </Secondary_Objective>
 		<Land_Model_Name>RB_Barracks_small.alo</Land_Model_Name>
 		<Icon_Name>i_button_r_barrack_3_abandon.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, 2</Starting_Spawned_Units_Tech_0>
 		<Spawned_Squadron_Delay_Seconds>2</Spawned_Squadron_Delay_Seconds>

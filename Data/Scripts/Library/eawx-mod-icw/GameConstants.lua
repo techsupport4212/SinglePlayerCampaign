@@ -34,6 +34,7 @@ GameConstants = {
         "WARLORDS",
         "YEVETHA",
         "SECTOR_FORCES",
+        "HOLDOUTS",
     },
     ALL_FACTIONS = {--Adjust Get_Faction_Index in Data\XML\AI\PerceptualEquations\TRBasicGalacticEquations.xml to match for any additions or redorders
         "REBEL",
@@ -59,6 +60,7 @@ GameConstants = {
         "IMPERIAL_PROTEUS",
         "YEVETHA",
         "SECTOR_FORCES",
+        "HOLDOUTS",
     },
     ALL_FACTIONS_NOT_NEUTRAL = {
         "REBEL",
@@ -83,6 +85,7 @@ GameConstants = {
         "IMPERIAL_PROTEUS",
         "YEVETHA",
         "SECTOR_FORCES",
+        "HOLDOUTS",
     },
     ALL_FACTION_TEXTS = {
         REBEL = "TEXT_FACTION_NEW_REPUBLIC",
@@ -108,6 +111,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "REPORT_THIS_PROTEUS_BUG_A", --should never be seen in game
         YEVETHA = "TEXT_FACTION_DUSKHAN_LEAGUE",
         SECTOR_FORCES = "TEXT_FACTION_SECTOR_FORCES",
+        HOLDOUTS = "TEXT_FACTION_HOLDOUTS",
     },
     LIVE_FACTION_TABLE = {--Match the order of the index in factions.xml
         ["REBEL"] = 0,
@@ -133,6 +137,7 @@ GameConstants = {
         ["IMPERIAL_PROTEUS"] = 20,
         ["YEVETHA"] = 21,
         --["SECTOR_FORCES"] = 22,
+        --["HOLDOUTS"] = 23,
     },
     ALL_FACTIONS_CAPITALS = {
         REBEL = {STRUCTURE = "NEWREP_CAPITAL", LOCATION = {"CORUSCANT", "SAIJO", "MON_CALAMARI", "BOTHAWUI", "ITHOR", "WALINOR"}},
@@ -157,6 +162,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = {STRUCTURE = "IMPERIAL_PROTEUS_CAPITAL", LOCATION =  {"RINTONNE"}},
         YEVETHA = {STRUCTURE = "YEVETHA_CAPITAL", LOCATION =  {"NZOTH"}},
         SECTOR_FORCES = {STRUCTURE = nil, LOCATION =  {}},
+        HOLDOUTS = {STRUCTURE = nil, LOCATION =  {}},
     },
     ALL_FACTIONS_BASIC_STRUCTURES = {
         REBEL = {"REBEL_STAR_BASE_1","REBEL_OFFICE"},
@@ -181,6 +187,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = {"EMPIRE_STAR_BASE_1","IMPERIAL_PROTEUS_OFFICE"},
         YEVETHA = {"EMPIRE_STAR_BASE_1","YEVETHA_OFFICE"},
         SECTOR_FORCES = {"EMPIRE_STAR_BASE_1","EMPIRE_OFFICE"},
+        HOLDOUTS = {"CSA_STAR_BASE_1","CSA_OFFICE"},
     },
     ALL_FACTIONS_AI = {
         REBEL = "NRAI",
@@ -205,6 +212,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "WarlordAI",
         YEVETHA = "YevethaAI",
         SECTOR_FORCES = "None",
+        HOLDOUTS = "None",
     },
     ALL_FACTIONS_CRUEL_AI = {
         REBEL = "SkynetAI",
@@ -229,6 +237,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "SkynetAI",
         YEVETHA = "SkynetAI",
         SECTOR_FORCES = "None",
+        HOLDOUTS = "None",
     },
     FACTION_COLORS = {
         ["REBEL"] = {r = 239, g = 139, b = 9},
@@ -254,6 +263,7 @@ GameConstants = {
         ["IMPERIAL_PROTEUS"] = {r = 54, g = 134, b = 242},--{r = 90, g = 166, b = 96}
         ["YEVETHA"] = {r = 237, g = 113, b = 108},
         ["SECTOR_FORCES"] = {r = 8, g = 122, b = 16},
+        ["HOLDOUTS"] = {r = 44, g = 121, b = 216},
     },
     ALL_FACTION_NAMES = {
         REBEL = "New Republic",
@@ -279,6 +289,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "REPORT_THIS_PROTEUS_BUG_B", --should never be seen in game
         YEVETHA = "Duskhan League",
         SECTOR_FORCES = "Imperial Sector Forces",
+        HOLDOUTS = "Seperatist Holdouts",
     },
     ALL_FACTION_ABBREVIATIONS = {
         REBEL = "NR",
@@ -304,6 +315,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "MW",
         YEVETHA = "DL",
         SECTOR_FORCES = "SF",
+        HOLDOUTS = "SH",
     },
     PARTICLES = {
         REBEL = "NR_Allies",
@@ -324,6 +336,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "Warlord_Allies",
         YEVETHA = "DL_Allies",
         SECTOR_FORCES = "Empire_Allies",
+        HOLDOUTS = "CIS_ALLIES",
     },
     ALIASES = {
         EMPIRE = "IMPERIAL",
@@ -363,6 +376,7 @@ GameConstants = {
         ["IMPERIAL_PROTEUS"] = "Imperial_Landing_Craft_Landing",
         ["YEVETHA"] = "Imperial_Landing_Craft_Landing",
         ["SECTOR_FORCES"] = "Imperial_Landing_Craft_Landing",
+        ["HOLDOUTS"] = "Gallofree_Transport_Landing",
     },
     FTGU_HUMAN_START_FORCES = {
         ["REBEL"] = {

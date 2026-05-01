@@ -5,27 +5,35 @@
 <Story>
 	<!-- Spawn Starting Heroes -->
 
-	<Event Name="Spawn_Isard_Lusankya">
+	<Event Name="Spawn_Thrawn_One">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Isard_Lusankya</Reward_Param1>
+		<Reward_Param1>Thrawn_Commander_Stalwart</Reward_Param1>
 		<Reward_Param2>Thyferra</Reward_Param2>
 	</Event>
 
-	<Event Name="Spawn_Yonka">
+	<Event Name="Spawn_Kuuztin">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Yonka_Avarice</Reward_Param1>
+		<Reward_Param1>Kuuztin_Couragous</Reward_Param1>
 		<Reward_Param2>Thyferra</Reward_Param2>
 	</Event>
 
-	<Event Name="Spawn_Convarion">
+	<Event Name="Spawn_Vader">
 		<Event_Type>STORY_ELAPSED</Event_Type>
 		<Event_Param1>0</Event_Param1>
 		<Reward_Type>SPAWN_HERO</Reward_Type>
-		<Reward_Param1>Convarion_Corrupter</Reward_Param1>
+		<Reward_Param1>Vader_Team</Reward_Param1>
+		<Reward_Param2>Thyferra</Reward_Param2>
+	</Event>
+
+	<Event Name="Spawn_The_Senate">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+		<Reward_Type>SPAWN_HERO</Reward_Type>
+		<Reward_Param1>The_Senate_Team</Reward_Param1>
 		<Reward_Param2>Thyferra</Reward_Param2>
 	</Event>
 

@@ -710,6 +710,42 @@
 		<Next_Level_Base></Next_Level_Base>
 	</GroundBase>
 
+	<GroundBase Name="Holdouts_Ground_Base_1">
+		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
+		<Affiliation>Holdouts</Affiliation>
+		<Prev_Level_Base></Prev_Level_Base>
+		<Next_Level_Base>Holdouts_Ground_Base_2</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Holdouts_Ground_Base_2">
+		<Variant_Of_Existing_Type>Template_Ground_Base_2</Variant_Of_Existing_Type>
+		<Affiliation>Holdouts</Affiliation>
+		<Prev_Level_Base>Holdouts_Ground_Base_1</Prev_Level_Base>
+		<Next_Level_Base>Holdouts_Ground_Base_3</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Holdouts_Ground_Base_3">
+		<Variant_Of_Existing_Type>Template_Ground_Base_3</Variant_Of_Existing_Type>
+		<Affiliation>Holdouts</Affiliation>
+		<Prev_Level_Base>Holdouts_Ground_Base_2</Prev_Level_Base>
+		<Next_Level_Base>Holdouts_Ground_Base_4</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Holdouts_Ground_Base_4">
+		<Variant_Of_Existing_Type>Template_Ground_Base_4</Variant_Of_Existing_Type>
+		<Affiliation>Holdouts</Affiliation>
+		<Prev_Level_Base>Holdouts_Ground_Base_3</Prev_Level_Base>
+		<Next_Level_Base>Holdouts_Ground_Base_5</Next_Level_Base>
+	</GroundBase>
+
+	<GroundBase Name="Holdouts_Ground_Base_5">
+		<Variant_Of_Existing_Type>Template_Ground_Base_5</Variant_Of_Existing_Type>
+		<Affiliation>Holdouts</Affiliation>
+		<Prev_Level_Base>Holdouts_Ground_Base_4</Prev_Level_Base>
+		<Next_Level_Base></Next_Level_Base>
+	</GroundBase>
+
+
 	<GroundBase Name="Hostile_Ground_Base_1">
 		<Variant_Of_Existing_Type>Template_Ground_Base_1</Variant_Of_Existing_Type>
 		<Affiliation>Hostile</Affiliation>

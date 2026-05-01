@@ -481,6 +481,9 @@
 		Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"} *
 		Variable_Self.IsFaction {Parameter_Faction = "Sector_Forces"}
 		+
+		Variable_Target.IsFaction {Parameter_Faction = "Holdouts"} *
+		Variable_Self.IsFaction {Parameter_Faction = "Holdouts"}
+		+
 		Variable_Target.IsFaction {Parameter_Faction = "Yevetha"} *
 		Variable_Self.IsFaction {Parameter_Faction = "Yevetha"}
 		+
@@ -509,6 +512,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -534,6 +538,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -559,6 +564,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -584,6 +590,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -609,6 +616,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -634,6 +642,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -659,6 +668,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -684,6 +694,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -709,6 +720,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -734,6 +746,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -759,6 +772,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -784,6 +798,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -809,6 +824,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -834,6 +850,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -859,6 +876,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Greater_Maldrood"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
@@ -882,6 +900,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Corporate_Sector"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Pentastar"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Greater_Maldrood"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
@@ -931,10 +950,38 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Corporate_Sector"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Pentastar"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Imperial_Proteus"}
+		)
+		*
+		Variable_Self.IsFaction {Parameter_Faction = "Holdouts"}
+		+
+		(
+		Variable_Target.IsFaction {Parameter_Faction = "Rebel"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hutt_Cartels"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "EmpireoftheHand"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Underworld"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Chiss"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corellia"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "SsiRuuvi_Imperium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Hapes_Consortium"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Corporate_Sector"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Pentastar"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Greater_Maldrood"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Killik_Hives"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Imperial_Proteus"}
@@ -961,6 +1008,7 @@
 		+ Variable_Target.IsFaction {Parameter_Faction = "Yevetha"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Mandalorians"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"}
+		+ Variable_Target.IsFaction {Parameter_Faction = "Holdouts"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Warlords"}
 		+ Variable_Target.IsFaction {Parameter_Faction = "Independent_Forces"}
 		)
@@ -1344,5 +1392,7 @@
 		22.0*(Variable_Target.IsFaction {Parameter_Faction = "Yevetha"})
 		+
 		23.0*(Variable_Target.IsFaction {Parameter_Faction = "Sector_Forces"})
+		+
+		24.0*(Variable_Target.IsFaction {Parameter_Faction = "Holdouts"})
 	</Get_Faction_Index>
 </Equations>

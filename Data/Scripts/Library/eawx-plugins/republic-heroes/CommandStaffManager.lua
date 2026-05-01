@@ -19,18 +19,18 @@ function CommandStaffManager:new(gc, id, human_player)
     self.default_category_slots = 1
     self.category_slot_limits = {
         GRAND_ADMIRALS = self.default_category_slots,
-        SPACE_COMMANDERS = self.default_category_slots,
-        GENERALS = self.default_category_slots,
+        SPACE_COMMANDERS = 2,
+        GENERALS = 2,
         ADMINS = self.default_category_slots,
-        SPECIAL_FORCES = self.default_category_slots
+        SPECIAL_FORCES = 2
     }
 
     self.viewers = {
-        ["DM_VIEW_GRAND_ADMIRALS"] = "GRAND_ADMIRALS",
-        ["DM_VIEW_SPACE_COMMANDERS"] = "SPACE_COMMANDERS",
-        ["DM_VIEW_GENERALS"] = "GENERALS",
-        ["DM_VIEW_ADMINS"] = "ADMINS",
-        ["DM_VIEW_SPECIAL_FORCES"] = "SPECIAL_FORCES"
+        ["VIEW_GRAND_ADMIRALS_EMPIRE"] = "GRAND_ADMIRALS",
+        ["VIEW_SPACE_COMMANDERS_EMPIRE"] = "SPACE_COMMANDERS",
+        ["VIEW_GENERALS_EMPIRE"] = "GENERALS",
+        ["VIEW_ADMINS_EMPIRE"] = "ADMINS",
+        ["VIEW_SPECIAL_FORCES_EMPIRE"] = "SPECIAL_FORCES"
     }
 
     self.object_dispatch = {}
@@ -41,7 +41,7 @@ function CommandStaffManager:new(gc, id, human_player)
 
     self:define_command_staff_data()
 
-    if self.id ~= "HISTORICAL" and self.id ~= "DEFAULT" then
+    if self.id == "ZAARIN" then
         self:unlock_view_buttons()
     end
 end
@@ -98,16 +98,18 @@ function CommandStaffManager:define_command_staff_data()
             vacant_hero_slots = 0,
             vacant_limit = 0,
             initialized = false,
-            retire_object = "DM_RETIRE_GRAND_ADMIRALS",
+            retire_object = "RETIRE_GRAND_ADMIRALS_EMPIRE",
             full_list = {
-                ["Yonka"] = {"YONKA_EMPIRE_ASSIGN", {"YONKA_AVARICE"}, "Sair Yonka", ["retire_object"] = "DM_RETIRE_YONKA", ["no_random"] = true},
-                ["Brothic"] = {"BROTHIC_ASSIGN", {"BROTHIC"}, "Brothic", ["retire_object"] = "DM_RETIRE_BROTHIC", ["Companies"] = {"BROTHIC_TEAM"}, ["no_random"] = true}
+                ["Teshik"] = {"TESHIK_ASSIGN", {"TESHIK_ELEEMOSYNARY"}, "Osvald Teshik", ["retire_object"] = "RETIRE_TESHIK", ["no_random"] = true},
+                ["Batch"] = {"BATCH_ASSIGN", {"BATCH_MENISCUS"}, "Martio Batch", ["retire_object"] = "RETIRE_BATCH", ["no_random"] = true},
+                ["IlRaz"] = {"IL_RAZ_ASSIGN", {"IL_RAZ_EMPERORSDISCIPLE"}, "Ishin-Il-Raz", ["retire_object"] = "RETIRE_IL_RAZ", ["no_random"] = true},
+                ["Declann"] = {"DECLANN_ASSIGN", {"DECLANN_RECONDITE"}, "Nial Declann", ["retire_object"] = "RETIRE_DECLANN", ["no_random"] = true}
             },
-            available_list = {"Yonka", "Brothic"},
+            available_list = {"Teshik", "Batch", "IlRaz", "Declann"},
             story_locked_list = {},
             active_player = empire,
             extra_name = "EXTRA_GRAND_ADMIRALS_SLOT_DISABLED",
-            random_name = "DM_RANDOM_GRAND_ADMIRALS_ASSIGN",
+            random_name = "RANDOM_GRAND_ADMIRALS_ASSIGN",
             global_display_list = "GRAND_ADMIRALS_LIST",
             disabled = true
         },
@@ -117,16 +119,17 @@ function CommandStaffManager:define_command_staff_data()
             vacant_hero_slots = 0,
             vacant_limit = 0,
             initialized = false,
-            retire_object = "DM_RETIRE_SPACE_COMMANDERS",
+            retire_object = "RETIRE_SPACE_COMMANDERS_EMPIRE",
             full_list = {
-                ["Darron"] = {"DARRON_ASSIGN", {"DARRON_DIREPTION"}, "Vict Darron", ["retire_object"] = "DM_RETIRE_DARRON", ["no_random"] = true},
-                ["Phulik"] = {"PHULIK_ASSIGN", {"PHULIK_BINDER"}, "Phulik", ["retire_object"] = "DM_RETIRE_PHULIK", ["no_random"] = true}
+                ["Okins"] = {"OKINS_ASSIGN", {"OKINS_ALLEGIANCE"}, "Ledre Okins", ["retire_object"] = "RETIRE_OKINS", ["no_random"] = true},
+                ["Coross"] = {"COROSS_ASSIGN", {"COROSS_VENGEANCE_II"}, "Coross", ["retire_object"] = "RETIRE_COROSS", ["no_random"] = true},
+                ["Kermen"] = {"KERMEN_ASSIGN", {"KERMEN_BELLIGERENT"}, "Uther Kermen", ["retire_object"] = "RETIRE_KERMEN", ["no_random"] = true}
             },
-            available_list = {"Darron", "Phulik"},
+            available_list = {"Okins", "Coross", "Kermen"},
             story_locked_list = {},
             active_player = empire,
             extra_name = "EXTRA_SPACE_COMMANDERS_SLOT_DISABLED",
-            random_name = "DM_RANDOM_SPACE_COMMANDERS_ASSIGN",
+            random_name = "RANDOM_SPACE_COMMANDERS_ASSIGN",
             global_display_list = "SPACE_COMMANDERS_LIST",
             disabled = true
         },
@@ -136,16 +139,17 @@ function CommandStaffManager:define_command_staff_data()
             vacant_hero_slots = 0,
             vacant_limit = 0,
             initialized = false,
-            retire_object = "DM_RETIRE_GENERALS",
+            retire_object = "RETIRE_GENERALS_EMPIRE",
             full_list = {
-                ["Ars"] = {"ARS_ASSIGN", {"ARS_DANGOR"}, "Ars Dangor", ["retire_object"] = "DM_RETIRE_ARS", ["Companies"] = {"ARS_DANGOR_TEAM"}, ["no_random"] = true},
-                ["Luke"] = {"LUKE_DARKSIDE_ASSIGN", {"LUKE_SKYWALKER_DARKSIDE"}, "Luke Skywalker", ["retire_object"] = "DM_RETIRE_LUKE_DARKSIDE", ["Companies"] = {"LUKE_SKYWALKER_DARKSIDE_TEAM"}, ["no_random"] = true}
+                ["Covell"] = {"COVELL_ASSIGN", {"COVELL_AT_AT_WALKER"}, "Freja Covell", ["retire_object"] = "RETIRE_COVELL", ["Companies"] = {"COVELL_AT_AT_TEAM"}, ["no_random"] = true},
+                ["Veers"] = {"VEERS_ASSIGN", {"VEERS_AT_AT_WALKER"}, "Maximilian Veers", ["retire_object"] = "RETIRE_VEERS", ["Companies"] = {"VEERS_AT_AT_TEAM"}, ["no_random"] = true},
+                ["Ashen"] = {"ASHEN_ASSIGN", {"TAL_ASHEN_AT_AT_WALKER"}, "Tal Ashen", ["retire_object"] = "RETIRE_ASHEN", ["Companies"] = {"TAL_ASHEN_TEAM"}, ["no_random"] = true}
             },
-            available_list = {"Ars", "Luke"},
+            available_list = {"Covell", "Veers", "Ashen"},
             story_locked_list = {},
             active_player = empire,
-            extra_name = "EXTRA_GENERALS_SLOT_DISABLED",
-            random_name = "DM_RANDOM_GENERALS_ASSIGN",
+            extra_name = "EXTRA_GENERALS_SLOT_EMPIRE",
+            random_name = "RANDOM_GENERALS_ASSIGN_EMPIRE",
             global_display_list = "GENERALS_LIST",
             disabled = true
         },
@@ -155,16 +159,16 @@ function CommandStaffManager:define_command_staff_data()
             vacant_hero_slots = 0,
             vacant_limit = 0,
             initialized = false,
-            retire_object = "DM_RETIRE_ADMINS",
+            retire_object = "RETIRE_ADMINS_EMPIRE",
             full_list = {
-                ["Cronus"] = {"CRONUS_ASSIGN", {"CRONUS_13X"}, "Ivan Cronus", ["retire_object"] = "DM_RETIRE_CRONUS", ["no_random"] = true},
-                ["Norym"] = {"NORYM_KIM_ASSIGN", {"NORYM_KIM_BLOOD_GAINS"}, "Norym Kim", ["retire_object"] = "DM_RETIRE_NORYM_KIM", ["no_random"] = true}
+                ["Pestage"] = {"PESTAGE_ASSIGN", {"PESTAGE_CLONE"}, "Sate Pestage", ["retire_object"] = "RETIRE_PESTAGE", ["Companies"] = {"PESTAGE_TEAM"}, ["no_random"] = true},
+                ["Dangor"] = {"DANGOR_ASSIGN", {"ARS_DANGOR"}, "Ars Dangor", ["retire_object"] = "RETIRE_DANGOR", ["Companies"] = {"ARS_DANGOR_TEAM"}, ["no_random"] = true}
             },
-            available_list = {"Cronus", "Norym"},
+            available_list = {"Pestage", "Dangor"},
             story_locked_list = {},
             active_player = empire,
             extra_name = "EXTRA_ADMINS_SLOT_DISABLED",
-            random_name = "DM_RANDOM_ADMINS_ASSIGN",
+            random_name = "RANDOM_ADMINS_ASSIGN",
             global_display_list = "ADMINS_LIST",
             disabled = true
         },
@@ -174,16 +178,19 @@ function CommandStaffManager:define_command_staff_data()
             vacant_hero_slots = 0,
             vacant_limit = 0,
             initialized = false,
-            retire_object = "DM_RETIRE_SPECIAL_FORCES",
+            retire_object = "RETIRE_SPECIAL_FORCES",
             full_list = {
-                ["Banjeer"] = {"BANJEER_ASSIGN", {"BANJEER_NEUTRON"}, "Llon Banjeer", ["retire_object"] = "DM_RETIRE_BANJEER", ["no_random"] = true},
-                ["Golanda"] = {"GOLANDA_ASSIGN", {"GOLANDA_MPTL"}, "Golanda", ["retire_object"] = "DM_RETIRE_GOLANDA", ["Companies"] = {"GOLANDA_MPTL_TEAM"}, ["no_random"] = true}
+                ["Starkiller"] = {"STARKILLER_ASSIGN", {"DARK_APPRENTICE"}, "Starkiller", ["retire_object"] = "RETIRE_STARKILLER", ["Companies"] = {"DARK_APPRENTICE_TEAM"}, ["no_random"] = true},
+                ["Bly"] = {"BLY_ASSIGN", {"BLY"}, "Bly", ["retire_object"] = "RETIRE_BLY", ["Companies"] = {"BLY_TEAM"}, ["no_random"] = true},
+                ["Cody"] = {"CODY_ASSIGN", {"CODY"}, "Cody", ["retire_object"] = "RETIRE_CODY", ["Companies"] = {"CODY_TEAM"}, ["no_random"] = true},
+                ["Tremayne"] = {"TREMAYNE_ASSIGN", {"ANTINNIS_TREMAYNE"}, " Antinnis Tremayne", ["retire_object"] = "RETIRE_TREMAYNE", ["Companies"] = {"ANTINNIS_TREMAYNE_TEAM"}, ["no_random"] = true},
+                ["Strang"] = {"STRANG_ASSIGN", {"VICTOR_STRANG"}, " Victor Strang", ["retire_object"] = "RETIRE_STRANG", ["Companies"] = {"STRANG_TEAM"}, ["no_random"] = true}
             },
-            available_list = {"Banjeer", "Golanda"},
+            available_list = {"Starkiller", "Bly", "Cody", "Tremayne", "Strang"},
             story_locked_list = {},
             active_player = empire,
             extra_name = "EXTRA_SPECIAL_FORCES_SLOT_DISABLED",
-            random_name = "DM_RANDOM_SPECIAL_FORCES_ASSIGN",
+            random_name = "RANDOM_SPECIAL_FORCES_ASSIGN",
             global_display_list = "SPECIAL_FORCES_LIST",
             disabled = true
         }

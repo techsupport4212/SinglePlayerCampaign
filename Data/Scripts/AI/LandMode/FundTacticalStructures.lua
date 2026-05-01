@@ -67,7 +67,7 @@ function MainForce_Thread()
 		-- Pirates work as individual cells and have no galactic coordination of cash.
 		-- Also, they always have a level one base, so they get a fixed amount of free cash for structures.
 		-- if EvaluatePerception("Is_Pirate", PlayerObject, Target) then
-		if PlayerObject.Get_Faction_Name() == "SECTOR_FORCES" or PlayerObject.Get_Faction_Name() == "HOSTILE" or PlayerObject.Get_Faction_Name() == "WARLORDS" or PlayerObject.Get_Faction_Name() == "INDEPENDENT_FORCES" then
+		if PlayerObject.Get_Faction_Name() == "SECTOR_FORCES" or PlayerObject.Get_Faction_Name() == "HOLDOUTS" or PlayerObject.Get_Faction_Name() == "HOSTILE" or PlayerObject.Get_Faction_Name() == "WARLORDS" or PlayerObject.Get_Faction_Name() == "INDEPENDENT_FORCES" then
 			cash_amount = 15000
 			PlayerObject.Give_Money(cash_amount)
 			DebugMessage("%s -- Tactical funding (free for Pirates) %.2f", tostring(Script), cash_amount)

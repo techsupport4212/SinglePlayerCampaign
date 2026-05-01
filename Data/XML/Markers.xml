@@ -920,10 +920,11 @@
 		<Faction_Anim_Subindex>Hutt_Cartels, 14</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Imperial_Proteus, 15</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Sector_Forces, 16</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Holdouts, 17</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>True</Influences_Capture_Point>
 		<Control_Point_Domination_Condition_Relevant>Yes</Control_Point_Domination_Condition_Relevant>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss, SsiRuuvi_Imperium, Corellia, Independent_Forces, Mandalorians, Yevetha, Imperial_Proteus, Sector_Forces</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss, SsiRuuvi_Imperium, Corellia, Independent_Forces, Mandalorians, Yevetha, Imperial_Proteus, Sector_Forces, Holdouts</Affiliation>
 		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		<Additional_Population_Capacity>10</Additional_Population_Capacity>
@@ -985,10 +986,11 @@
 		<Faction_Anim_Subindex>Hutt_Cartels, 14</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Imperial_Proteus, 15</Faction_Anim_Subindex>
 		<Faction_Anim_Subindex>Sector_Forces, 16</Faction_Anim_Subindex>
+		<Faction_Anim_Subindex>Holdouts, 17</Faction_Anim_Subindex>
 
 		<Influences_Capture_Point>False</Influences_Capture_Point>
 		<Control_Point_Domination_Condition_Relevant>Yes</Control_Point_Domination_Condition_Relevant>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss, SsiRuuvi_Imperium, Corellia, Independent_Forces, Mandalorians, Yevetha, Imperial_Proteus, Sector_Forces</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Chiss, SsiRuuvi_Imperium, Corellia, Independent_Forces, Mandalorians, Yevetha, Imperial_Proteus, Sector_Forces, Holdouts</Affiliation>
 		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>True</Initial_State_Visible_Under_FOW>
 		<Additional_Population_Capacity>5</Additional_Population_Capacity>

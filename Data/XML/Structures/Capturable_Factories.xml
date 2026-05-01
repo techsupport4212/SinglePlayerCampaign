@@ -25,7 +25,7 @@
 		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
 		<Ranged_Target_Z_Adjust>5.0</Ranged_Target_Z_Adjust>
 
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 
 		<Ownership_Sticks>Yes</Ownership_Sticks>
 		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>

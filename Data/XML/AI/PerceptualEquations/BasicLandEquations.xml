@@ -371,7 +371,8 @@
 										Parameter_Faction = "Warlords", 
 										Parameter_Faction = "Independent_Forces",
 										Parameter_Faction = "Mandalorians", <!-- FOTR/TR only; Rev Mandos are Underworld-->
-										Parameter_Faction = "Sector_Forces"
+										Parameter_Faction = "Sector_Forces",
+										Parameter_Faction = "Holdouts"
 									   }
 		)
 	</Allowed_To_Retreat_From_Land>

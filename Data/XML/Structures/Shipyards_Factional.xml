@@ -329,7 +329,7 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_One">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_One</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>Beta_ETR_3_Squadron,2</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_1>
@@ -389,7 +389,7 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_Two">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_Two</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_1>
@@ -450,7 +450,7 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_Three">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_Three</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>A9_Squadron_Double,1</Starting_Spawned_Units_Tech_1>
 		<Reserve_Spawned_Units_Tech_1>A9_Squadron_Double,2</Reserve_Spawned_Units_Tech_1>
@@ -522,7 +522,7 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_Four">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_Four</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Skirmish_IPV1,3</Starting_Spawned_Units_Tech_1>

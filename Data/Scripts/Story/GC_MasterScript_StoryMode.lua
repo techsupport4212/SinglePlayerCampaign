@@ -1,13 +1,69 @@
---*******************************************
---******  Thrawn's Revenge: Bacta War  ******
---*******************************************
+--*****************************************************
+--******  Thrawn's Revenge: Zaarin Insurrection  ******
+--*****************************************************
 
 require("PGStoryMode")
 require("deepcore/crossplot/crossplot")
 require("deepcore/std/class")
 require("eawx-util/StoryUtil")
 require("eawx-util/UnitUtil")
+require("CustomLibrary")
 require("SetFighterResearch")
+
+EMPIRE_PLAYER_AVAILABLE_UNITS = {
+	"Imperial_Army_Trooper_Company",
+	"Imperial_Stormtrooper_Company",
+	"Imperial_AT_PT_Company",
+	"AT_ST_Company",
+	"Chariot_LAV_Company",
+	"Imperial_TX130S_Company",
+	"Imperial_AT_AT_Walker_Company",
+	"Raider_I_Corvette",
+	"IPV1",
+	"Lancer_Frigate",
+	"Patrol_Nebulon_B",
+	"Strike_Cruiser",
+	"Victory_I_Star_Destroyer",
+	"Imperial_I_Star_Destroyer",
+}
+IMPERIAL_PROTEUS_PLAYER_AVAILABLE_UNITS = {
+	"Imperial_Army_Trooper_Company",
+	"Imperial_Stormtrooper_Company",
+	"Imperial_AT_PT_Company",
+	"Imperial_Army_74Z_Bike_Company",
+	"Imperial_TX130S_Company",
+	"S_1_Firehawke_Company",
+	"Imperial_A5_Juggernaut_Company",
+	"Customs_Corvette",
+	"Charger_C70",
+	"Carrack_Cruiser",
+	"Marauder_Cruiser",
+	"Procursator_Star_Destroyer",
+	"Venator_Star_Destroyer",
+	"Imperial_I_Star_Destroyer_Patrol",
+}
+EMPIRE_EXTRA_LOCKS = {
+	"TURR_PHENNIR_TIE_INTERCEPTOR_LOCATION_SET",
+	"RANDOM_BOUNTY_HUNTER",
+}
+
+function State_Delayed_Lock()
+	local dummies = Get_FTGU_Dummies()
+
+	if dummies.EMPIRE ~= nil and dummies.EMPIRE.RosterUnits ~= nil then
+		UnitUtil.SetLockList("Empire", dummies.EMPIRE.RosterUnits, false)
+		UnitUtil.SetLockList("Empire", EMPIRE_PLAYER_AVAILABLE_UNITS)
+		UnitUtil.SetLockList("Empire", EMPIRE_EXTRA_LOCKS, false)
+	end
+
+	if dummies.IMPERIAL_PROTEUS ~= nil and dummies.IMPERIAL_PROTEUS.RosterUnits ~= nil then
+		UnitUtil.SetLockList("Imperial_Proteus", dummies.IMPERIAL_PROTEUS.RosterUnits, false)
+		UnitUtil.SetLockList("Imperial_Proteus", IMPERIAL_PROTEUS_PLAYER_AVAILABLE_UNITS)
+	end
+
+	p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_TIE_Defender"))
+	p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_Skipray_Blastboat"))
+end
 
 function Definitions()
 	DebugMessage("%s -- In Definitions", tostring(Script))
@@ -33,18 +89,8 @@ function State_Determine_Faction(message)
 			Story_Event("NR_STORY_START")
 		elseif p_empire.Is_Human() then
 			Story_Event("GE_STORY_START")
-
-			local list = {"Vorru_Team"}
-			SpawnList(list,FindPlanet("THYFERRA"),p_empire,true,false)
 		elseif p_zsinj.Is_Human() then
 			Story_Event("ZE_STORY_START")
-		end
-
-		if p_empire.Is_Human() == false then
-			local list = {"Krennel_Warlord","Phulik_Binder","Brothic_Team"}
-			SpawnList(list,FindPlanet("CIUTRIC"),p_empire,true,false)
-			list = {"Darron_Direption"}
-			SpawnList(list,FindPlanet("LIINADE"),p_empire,true,false)
 		end
 	else
 		crossplot:update()
@@ -62,11 +108,9 @@ function State_Delayed_Initialize(message)
 		crossplot:publish("NR_FILTER_REMOVE", {"Salm_Location_Set"}, 2)
 		Set_Fighter_Hero("SALM_Y_WING_SQUADRON", "ACKBAR_HOME_ONE")
 
-		p_empire.Lock_Tech(Find_Object_Type("TURR_PHENNIR_TIE_INTERCEPTOR_LOCATION_SET"))
 		Clear_Fighter_Hero("VESSERY_STRANGER_SQUADRON")
-		Set_Fighter_Hero("ERISI_DLARIT_ELITE_SQUADRON", "ISARD_LUSANKYA")
-		p_empire.Unlock_Tech(Find_Object_Type("ERISI_DLARIT_LOCATION_SET"))
-
+		State_Delayed_Lock()
+		crossplot:publish("WARLORD_CHOICE_OPTION","ZAARIN_EMPIRE")
 		crossplot:publish("INITIALIZE_AI", "empty")
 	else
 		crossplot:update()

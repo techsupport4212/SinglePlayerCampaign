@@ -49,7 +49,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
@@ -62,7 +62,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
@@ -76,7 +76,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
@@ -89,7 +89,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
@@ -102,7 +102,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
@@ -115,7 +115,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
@@ -128,7 +128,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>
@@ -141,7 +141,7 @@
         <Ownership_Sticks>No</Ownership_Sticks>
 		<Capture_Point_Transition_Time_Seconds>3</Capture_Point_Transition_Time_Seconds>
 		<Capture_Point_Radius>220</Capture_Point_Radius>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar,  Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Last_State_Visible_Under_FOW> True </Last_State_Visible_Under_FOW>
 		<Initial_State_Visible_Under_FOW>False</Initial_State_Visible_Under_FOW>
 		<Visible_On_Radar_When_Fogged>True</Visible_On_Radar_When_Fogged>

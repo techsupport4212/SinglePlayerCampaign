@@ -3395,6 +3395,12 @@
 		<Text_ID>TEXT_FACTION_MANDALORIANS </Text_ID>
 	</DummyStructure>
 
+	<DummyStructure Name="Custom_GC_HOLDOUTS">
+		<Variant_Of_Existing_Type>Custom_GC_Minor_Warlords</Variant_Of_Existing_Type>
+		<Icon_Name>I_BUTTON_FACTION_EMPIRE.TGA</Icon_Name>
+		<Text_ID>TEXT_FACTION_MANDALORIANS </Text_ID>
+	</DummyStructure>
+
 	<DummyStructure Name="Custom_GC_Space_Light_Corvette">
 		<Variant_Of_Existing_Type>Custom_GC_Random_Dummy</Variant_Of_Existing_Type>
 		<Icon_Name>I_BUTTON_TARGET_CORVETTE.TGA</Icon_Name>

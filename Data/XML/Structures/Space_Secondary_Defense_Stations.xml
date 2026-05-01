@@ -4,19 +4,19 @@
 	<Generic_Structure Name="Secondary_Golan_One">
 		<Variant_Of_Existing_Type>Template_Secondary_Golan_One</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Corporate_Sector, Warlords, Sector_Forces, Corellia, Rebel, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, Imperial_Proteus</Affiliation>
 	</Generic_Structure>
 
 	<Generic_Structure Name="Secondary_Golan_Two">
 		<Variant_Of_Existing_Type>Template_Secondary_Golan_Two</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Corporate_Sector, Warlords, Sector_Forces, Corellia, Rebel, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, Imperial_Proteus</Affiliation>
 	</Generic_Structure>
 
 	<Generic_Structure Name="Secondary_Golan_Three">
 		<Variant_Of_Existing_Type>Template_Secondary_Golan_Three</Variant_Of_Existing_Type>
 		<Tech_Level>0</Tech_Level>
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Warlords, Sector_Forces, Corellia, Rebel, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Pentastar, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, Imperial_Proteus</Affiliation>
 
 		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 2</Starting_Spawned_Units_Tech_0>
 	</Generic_Structure>

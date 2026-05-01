@@ -862,7 +862,7 @@
 		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
 		<Energy_Capacity>1000</Energy_Capacity>
 		<Energy_Refresh_Rate>50</Energy_Refresh_Rate>
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
 		<Base_Level_Available>1</Base_Level_Available>
 		<Victory_Relevant>No</Victory_Relevant>
 		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
@@ -943,7 +943,7 @@
 	<Generic_Structure Name="Ground_Base_Shield">
 		<Variant_Of_Existing_Type>Template_Base_Shield</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
 	</Generic_Structure>
 
 	<Generic_Structure Name="Ground_Base_Shield_Small">
@@ -960,7 +960,7 @@
 	<Generic_Structure Name="Ground_Umbrella_Shield">
 		<Variant_Of_Existing_Type>Template_Base_Shield</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
 
 		<Land_Model_Name>SLD-14_Shield_Generator_Umbrella.alo</Land_Model_Name>
 		<Land_Model_Anim_Override_Name>SLD-14_Shield_Generator.alo</Land_Model_Anim_Override_Name>
@@ -969,7 +969,7 @@
 	<Generic_Structure Name="Ground_Planetary_Shield">
 		<Variant_Of_Existing_Type>Template_Planetary_Shield</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
 		<!-- <Required_Special_Structures>Empire_Office</Required_Special_Structures>		 -->
 		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
 
@@ -980,14 +980,14 @@
 		<Tactical_Additional_Structure_Type>Ground_Base_Shield</Tactical_Additional_Structure_Type>
 		<Obstacle_Proxy_Type> Ground_Turbolaser_Tower_Build_Pad </Obstacle_Proxy_Type>
 		<Required_Special_Structures>Empire_Office | Rebel_Office</Required_Special_Structures>
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
 		<!--<Projectile_Types>Proj_AV_Turbolaser_Green</Projectile_Types>-->
 	</Generic_Structure>
 
 	<Generic_Structure Name="Galactic_Turbolaser_Tower_Defenses">
 		<Variant_Of_Existing_Type>Template_Turbolaser_Tower_Defenses</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Eriadu_Authority, Zsinj_Empire, Corporate_Sector, Pentastar, Warlords, Sector_Forces, Holdouts, Corellia, Rebel, Hapes_Consortium, Hutt_Cartels, Yevetha, SsiRuuvi_Imperium, Killik_Hives, EmpireoftheHand, Chiss, Imperial_Proteus</Affiliation>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>

@@ -123,6 +123,7 @@
 		<AI_Player_Control> Rebel, None </AI_Player_Control>
 		<AI_Player_Control> Zsinj_Empire, None </AI_Player_Control>
 		<AI_Player_Control> Sector_Forces, None </AI_Player_Control>
+		<AI_Player_Control> Holdouts, None </AI_Player_Control>
 
 		<AI_Player_Control>Chiss, None</AI_Player_Control>
 		<AI_Player_Control>Corellia, None</AI_Player_Control>
@@ -160,6 +161,7 @@
 		<Markup_Filename>SsiRuuvi_Imperium, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Underworld, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Sector_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Holdouts, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Imperial_Proteus, DefaultGalacticHints</Markup_Filename>
@@ -603,23 +605,28 @@
 		<Starting_Tech_Level> Sector_Forces, 1 </Starting_Tech_Level>
 		<Max_Tech_Level> Sector_Forces, 1 </Max_Tech_Level>
 
+
+		<Starting_Credits> Holdouts,  15000 </Starting_Credits>
+		<Starting_Tech_Level> Holdouts, 1 </Starting_Tech_Level>
+		<Max_Tech_Level> Holdouts, 1 </Max_Tech_Level>
+
 		<!-- Ciutric Space Forces -->
-		<Starting_Forces> Sector_Forces, Ciutric, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Ciutric, Generate_Force </Starting_Forces>
 
 		<!-- Corvis_Minor Space Forces -->
-		<Starting_Forces> Sector_Forces, Corvis_Minor, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Corvis_Minor, Generate_Force </Starting_Forces>
 
 		<!-- Liinade Space Forces -->
-		<Starting_Forces> Sector_Forces, Liinade, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Liinade, Generate_Force </Starting_Forces>
 
 		<!-- Axxila Space Forces -->
-		<Starting_Forces> Sector_Forces, Axxila, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Axxila, Generate_Force </Starting_Forces>
 
 		<!-- Vrosynri Space Forces -->
-		<Starting_Forces> Sector_Forces, Vrosynri, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Vrosynri, Generate_Force </Starting_Forces>
 
 		<!-- Corellia Space Forces -->
-		<Starting_Forces> Sector_Forces, Corellia, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Corellia, Generate_Force </Starting_Forces>
 
 		<!-- Carida Space Forces -->
 		<Starting_Forces> Sector_Forces, Carida, Generate_Force </Starting_Forces>

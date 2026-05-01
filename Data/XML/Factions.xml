@@ -10284,4 +10284,38 @@
 		<Basic_AI> GenericAI </Basic_AI>
 	</Faction>
 
+
+	<Faction Name="Holdouts">
+		<Text_ID> TEXT_FACTION_HOLDOUTS </Text_ID>
+
+		<Color>                              44, 121, 216, 255 </Color>
+		<No_Colorization_Color>              44, 121, 216, 255 </No_Colorization_Color>
+		<Display_Font_Color>                 44, 121, 216, 255 </Display_Font_Color>
+		<Space_Retreat_Countdown_Color_RGBA> 44, 121, 216, 255 </Space_Retreat_Countdown_Color_RGBA>
+		<Land_Retreat_Countdown_Color_RGBA>  44, 121, 216, 255 </Land_Retreat_Countdown_Color_RGBA>
+		<Selection_Blob_RGBA>                44, 121, 216, 255 </Selection_Blob_RGBA>
+
+		<Infantry_Icon_Name>i_button_b1.tga</Infantry_Icon_Name>
+
+		<Is_Playable>false</Is_Playable>
+		<Is_Debug_Switchable_To> No </Is_Debug_Switchable_To> <!--if playable = true then Yes; else No-->
+		<Create_Player_In_Multiplayer_Games> Yes </Create_Player_In_Multiplayer_Games> <!--if playable = true then No; else Yes-->
+		<Can_Control_Planets>true</Can_Control_Planets>
+
+		<Is_Neutral> No </Is_Neutral>
+		<Allies>Neutral</Allies>
+		<Enemies> Rebel, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Empire </Enemies>
+
+	<!--does stuff we care about; should be the same for all factions; do not change-->
+		<Space_Tactical_Unit_Cap>300</Space_Tactical_Unit_Cap> <!--Rev + FotR: 200, TR: 300-->
+		<Scatters_From_Crushers> true </Scatters_From_Crushers>
+		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
+		<Maintenance_Cost>1.0</Maintenance_Cost>
+
+	<!--don't touch; many of these may not do anything but not worth messing with-->
+		<Credits_Accumulation_Factor> 1.0 </Credits_Accumulation_Factor>
+		<Force_Alignment>Neutral</Force_Alignment>
+		<Basic_AI> GenericAI </Basic_AI>
+	</Faction>
+
 </Factions>

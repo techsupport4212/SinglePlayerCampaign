@@ -928,6 +928,10 @@ function Get_FTGU_Dummies()
 			DummyUnit = "Custom_GC_Sector_Forces",
 			Capital = "Empire_Capital",
 		},
+		["HOLDOUTS"] = {
+			Nonplayable = true,
+			DummyUnit = "Custom_GC_Holdouts",
+		},
 	}
 	
 	return dummies

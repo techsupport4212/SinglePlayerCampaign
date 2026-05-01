@@ -1,4 +1,19 @@
 return {
+-- New Heroes will go at the top of the list
+["DECLANN_RECONDITE"] = true,
+["IL_RAZ_EMPERORSDISCIPLE"] = true,
+["TESHIK_ELEEMOSYNARY"] = true,
+["BATCH_MENISCUS"] = true,
+["THRAWN_COMMANDER_STALWART"] = true,
+["THRAWN_VICE_VANGUARD"] = true,
+["THRAWN_GRAND_GREY_WOLF"] = true,
+["KUUZTIN_COURAGEOUS"] = true,
+["VADER_GARRETT"] = true,
+["VADER_DEVESTATOR"] = true,
+["ZAARIN_GLORY"] = true,
+["DIN_ZEPLIN"] = true,
+["HARKOV_PROTECTOR"] = true,
+-- Continue with the rest of the original list in alphabetical order
 ["ABAHT_INTREPID"] = true,
 ["ABAHT_INTREPID_SUPCOM"] = true,
 ["ACCLAMATOR_II"] = true,

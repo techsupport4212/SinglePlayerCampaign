@@ -1,9 +1,324 @@
 <?xml version="1.0" ?>
 <My_Heroes>
- 
-	<!-- Modified Grand Admiral Thrawn to be in the Grey Wolf, so that Pellaeon can have the Chimaera -->
 
-	<UniqueUnit Name="Thrawn_Grey_Wolf_Empire">
+	<!-- The Many Grand Admiral Thrawns -->
+
+	<UniqueUnit Name="Thrawn_Commander_Stalwart">
+		<Variant_Of_Existing_Type>Victory_I_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_THRAWN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_11_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_INTEL_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_THRAWN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_STALWART
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VICTORY1_HULL
+		TEXT_TOOLTIP_VICTORY1_SHIELD 
+		TEXT_TOOLTIP_VICTORY1_MOVE
+		TEXT_TOOLTIP_VICTORY1_SQUADRON
+		TEXT_TOOLTIP_VICTORY1_WEAP1
+		TEXT_TOOLTIP_VICTORY1_WEAP2
+		TEXT_TOOLTIP_VICTORY1_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_THRAWN_OLD.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		<Lua_Script>GenericGameObject</Lua_Script>
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
+
+		<SFXEvent_Select>Unit_Select_Thrawn</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Thrawn</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Thrawn</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Thrawn</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Thrawn</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Thrawn </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Thrawn </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Thrawn </SFXEvent_Health_Low_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Defeat_Thrawn</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+					<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_NAME</Alternate_Name_Text>
+					<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_DESCRIPTION</Alternate_Description_Text>
+					<Alternate_Icon_Name>i_sa_ART_OF_WAR.tga</Alternate_Icon_Name>
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
+				     Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<Effective_Radius>1</Effective_Radius>
+
+				<Target_Types />
+
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>20</Expiration_Seconds>
+
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Particle_Effect>Art_of_War_Ability_Particle</Particle_Effect>
+
+				<Mod_Multiplier />
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_11 + Intel -->
+			<Combat_Bonus_Ability Name="Command_Tier_11_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.33</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.39</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_11_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.51</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Thrawn_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_VORRU</Specific_Mod_Source_Text>
+				<!-- 300% bonus to base planetary income -->
+				<Percentage_Income_Modifier>3</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>800</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>4.5</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.5 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Time_Ability Name="Thrawn_Production_Time_Bonus">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories> All </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types></Excluded_Unit_Types>
+				<Time_Reduction_Percentage>0.5</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+			<Reduce_Production_Price_Ability Name="Thrawn_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.6</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Thrawn_Vice_Vanguard">
+		<Variant_Of_Existing_Type>Template_Imperial_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_THRAWN</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_11_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_INTEL_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_THRAWN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_VANGUARD
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_VICE_ADMIRAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_THRAWN_OLD.tga</Icon_Name>
+
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, LURE, SIMPLE_SPACE_LOCOMOTOR, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<Lua_Script>GenericGameObject</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	  
+		<Score_Cost_Credits> 60000 </Score_Cost_Credits>
+		<Affiliation>Empire</Affiliation>
+		<Property_Flags>GTSImmune</Property_Flags>
+
+		<Starting_Spawned_Units_Tech_1>Skipray_Squadron_Half, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Missile_Boat_Squadron_Half, 1</Starting_Spawned_Units_Tech_1> <!-- Put after all other bombers so iconic bombing run units happen instead -->
+
+		<Reserve_Spawned_Units_Tech_1>Missile_Boat_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Fighter_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skipray_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<SFXEvent_Build_Complete>Unit_Complete_Thrawn</SFXEvent_Build_Complete>
+
+		<SFXEvent_Select>Unit_Select_Thrawn</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Thrawn</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Thrawn</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Thrawn</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Thrawn</SFXEvent_Guard>
+		<SFXEvent_Move_Into_Nebula> Unit_Nebula_Thrawn </SFXEvent_Move_Into_Nebula>
+		<SFXEvent_Move_Into_Asteroid_Field> Unit_Asteroids_Thrawn </SFXEvent_Move_Into_Asteroid_Field>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Thrawn </SFXEvent_Health_Low_Warning>
+		<Death_SFXEvent_Start_Die>Unit_Defeat_Thrawn</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+					<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_NAME</Alternate_Name_Text>
+					<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_DESCRIPTION</Alternate_Description_Text>
+					<Alternate_Icon_Name>i_sa_ART_OF_WAR.tga</Alternate_Icon_Name>
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
+				     Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<Effective_Radius>1</Effective_Radius>
+
+				<Target_Types />
+
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>20</Expiration_Seconds>
+
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Particle_Effect>Art_of_War_Ability_Particle</Particle_Effect>
+
+				<Mod_Multiplier />
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_11 + Intel -->
+			<Combat_Bonus_Ability Name="Command_Tier_11_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.33</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.39</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_11_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.51</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Thrawn_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_VORRU</Specific_Mod_Source_Text>
+				<!-- 300% bonus to base planetary income -->
+				<Percentage_Income_Modifier>3</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>800</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>4.5</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.5 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Time_Ability Name="Thrawn_Production_Time_Bonus">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories> All </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types></Excluded_Unit_Types>
+				<Time_Reduction_Percentage>0.5</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+			<Reduce_Production_Price_Ability Name="Thrawn_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.6</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Thrawn_Grand_Grey_Wolf">
 		<Variant_Of_Existing_Type>Template_Imperial_Star_Destroyer</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_THRAWN</Text_ID>
@@ -102,7 +417,6 @@
 		<Unit_Abilities_Data SubObjectList="Yes">
 			<Unit_Ability>
 				<Type>LURE</Type>
-
 					<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_NAME</Alternate_Name_Text>
 					<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_DESCRIPTION</Alternate_Description_Text>
 					<Alternate_Icon_Name>i_sa_ART_OF_WAR.tga</Alternate_Icon_Name>
@@ -363,7 +677,7 @@
 
 	<!-- Osvald Teshik -->
 	<UniqueUnit Name="Teshik_Eleemosynary">
-		<Variant_Of_Existing_Type>Imperial_II_Star_Destroyer</Variant_Of_Existing_Type>
+		<Variant_Of_Existing_Type>Imperial_I_Star_Destroyer</Variant_Of_Existing_Type>
 		<Is_Named_Hero>Yes</Is_Named_Hero>
 		<Text_ID>TEXT_HERO_TESHIK</Text_ID>
 		<Encyclopedia_Text>
@@ -384,7 +698,6 @@
 		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP4
 		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP5
 		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
-		TEXT_TOOLTIP_CAPABILITY_ORBITAL_SUPPORT_TIERCE
 		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
 		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
 		</Encyclopedia_Text>
@@ -395,38 +708,25 @@
 		<Property_Flags>GTSImmune</Property_Flags>
 		
 		<Ranking_In_Category>1</Ranking_In_Category>
-		
+
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>8500</Shield_Points>
+		<Shield_Refresh_Rate>42.5</Shield_Refresh_Rate>
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Tactical_Health>8160</Tactical_Health>
+
+		<HardPoints>
+			HP_Star_Destroyer_2_Weapon_01, HP_Star_Destroyer_2_Weapon_02, HP_Star_Destroyer_2_Weapon_03, HP_Star_Destroyer_2_Weapon_04, HP_Star_Destroyer_2_Weapon_05, HP_Star_Destroyer_2_Weapon_06,
+			HP_Star_Destroyer_2_Weapon_07, HP_Star_Destroyer_2_Weapon_08, HP_Star_Destroyer_2_Weapon_09, HP_Star_Destroyer_2_Weapon_10, HP_Star_Destroyer_2_Weapon_11, HP_Star_Destroyer_2_Weapon_12,
+			HP_Star_Destroyer_2_Weapon_13, HP_Star_Destroyer_2_Weapon_14, HP_Star_Destroyer_2_Weapon_15, HP_Star_Destroyer_2_Weapon_16, HP_Star_Destroyer_2_Weapon_17, HP_Star_Destroyer_2_Weapon_18,
+			HP_Star_Destroyer_2_Engines, HP_Star_Destroyer_2_Fighter_Bay,
+			HP_Star_Destroyer_2_Main_Battery_1, HP_Star_Destroyer_2_Main_Battery_2, HP_Star_Destroyer_2_Main_Battery_3, HP_Star_Destroyer_2_Main_Battery_4,
+			HP_Star_Destroyer_2_Main_Battery_5, HP_Star_Destroyer_2_Main_Battery_6, HP_Star_Destroyer_2_Main_Battery_7, HP_Star_Destroyer_2_Main_Battery_8
+		</HardPoints>
+
 		<Tech_Level>99</Tech_Level>
 		
 		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
-
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_Laser_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_Missile_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_Torp_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_Ion_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_Shields_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_Engines_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_Bay_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
-		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, Unit_Attack_Thrawn </SFXEvent_Attack_Hardpoint>
-
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, Unit_Lost_Engines_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Thrawn </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
-		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
 
 		<Abilities SubObjectList="Yes"> <!-- Command_Tier_11 -->
 			<Combat_Bonus_Ability Name="Command_Tier_11_Combat_Bonus">
@@ -509,6 +809,1378 @@
 			</Battlefield_Modifier_Ability>
 		</Abilities>
 	</UniqueUnit>
+
+
+	<!-- TODO: STILL NEED TO PROPERLY IMPLEMENT-->
+	<!-- Good Man Captain Kuuztin -->
+	<UniqueUnit Name="Kuuztin_Couragous">
+		<Variant_Of_Existing_Type>Imperial_I_Star_Destroyer_Hero_Refit</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_KUUZTIN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_KUUZTIN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_COURAGEOUS 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STAR_DESTROYER_X_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_X_SHIELD 
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_TWO_WEAP2
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_CAPTAIN </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_kuuztin.tga</Icon_Name>
+
+		<Ranking_In_Category>8</Ranking_In_Category>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_04 -->
+			<Combat_Bonus_Ability Name="Command_Tier_04_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.12</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.12</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.12</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_04_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.12</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<!-- Ported + Modified FoTR Heroes (Empire) -->
+	<!-- Lord Vader -->
+	<HeroUnit Name="Vader">
+		<Variant_Of_Existing_Type>Template_Lightsaber_Hero</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_10_LAND_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_DEVESTATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VADER_HEALTH
+		TEXT_TOOLTIP_VADER_MOVE
+		TEXT_TOOLTIP_VADER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING_40_20
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.tga</Icon_Name>
+
+		<Land_Model_Name>EI_VADER.ALO</Land_Model_Name>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+		
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		
+		<Holster_Holstered_Bone_Translation> 0.0, 5.8, 0.0 </Holster_Holstered_Bone_Translation>
+		
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Health>200</Tactical_Health>
+		
+		<AI_Combat_Power>241</AI_Combat_Power>
+		
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		
+		<Max_Speed>1.2</Max_Speed>
+		<OverrideAcceleration> 1.2 </OverrideAcceleration>
+		<OverrideDeceleration> 1.2 </OverrideDeceleration>
+		
+		<SFXEvent_Tactical_Build_Started> EHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> Unit_Respawn_Vader </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> EHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+
+		<SFXEvent_Select> Unit_Select_Vader </SFXEvent_Select>
+		<SFXEvent_Move> Unit_Move_Vader </SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Vader</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack> Unit_Attack_Vader </SFXEvent_Attack>
+		<SFXEvent_Guard> Unit_Guard_Vader </SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Group_Move_Vader</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Vader</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Vader </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Vader </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Vader </Death_SFXEvent_Start_Die> 
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FORCE_TELEKINESIS</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Vader_Force_Telekinesis </GUI_Activated_Ability_Name> 
+				<SFXEvent_Target_Ability> Unit_Lift_Vader </SFXEvent_Target_Ability> 
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+			
+            <Unit_Ability>
+                <Type>FORCE_LIGHTNING</Type>
+                <Recharge_Seconds>25.0</Recharge_Seconds>
+                <GUI_Activated_Ability_Name>Vader_Force_Choke</GUI_Activated_Ability_Name>
+                <SFXEvent_Target_Ability> Unit_Push_Vader </SFXEvent_Target_Ability>
+                <Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FORCE_CHOKE_NAME</Alternate_Name_Text>
+                <Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FORCE_CHOKE_DESCRIPTION</Alternate_Description_Text>
+                <Alternate_Icon_Name>I_SA_FORCE_CHOKE.tga</Alternate_Icon_Name>
+                <Supports_Autofire>True</Supports_Autofire>
+            </Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_11 -->
+			<Combat_Bonus_Ability Name="Command_Tier_11_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.39</Damage_Bonus_Percentage>    
+				<Defense_Bonus_Percentage>0.33</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.39</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Battlefield_Modifier_Ability Name="Command_Tier_11_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.42</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Earthquake_Attack_Ability Name="Vader_Attack_Structures">
+				<Activation_Style>Special_Attack</Activation_Style>
+				<Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>120.0</Activation_Max_Range>
+				<Activation_Chance>1.0</Activation_Chance>
+				<Damage_Amount>0.0</Damage_Amount>
+				<Damage_Percentage>0.02</Damage_Percentage>
+				<Damage_Interval_In_Secs>0.5</Damage_Interval_In_Secs>
+				<!-- Note: As well as matching the below Unit_Category/Unit_Type filters, the -->
+				<!-- target object must also have the EARTHQUAKE_TARGET behavior attached. -->
+				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate />
+				<Target_Particle_Effect>Earthquake_Dust_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Earthquake_Attack_Ability>
+
+		   <Redirect_Blaster_Ability Name="Vader_Redirect_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.5</Redirect_Chance>
+				<Block_Chance>0.6</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 135.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories> Infantry | InfantryHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Absorb_Blaster_Ability Name="Vader_Absorb_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Absorb_Chance>0.3</Absorb_Chance>
+				<!-- Absorb Percentage and Amount work together in the following way: -->
+				<!-- Actual Amount healed = (Projectile Damage * Absorb Percentage) + Absorb Amount -->
+				<!-- Either value can be zero, but at least one should be non-zero. -->
+				<Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+				<Damage_Absorb_Amount>1</Damage_Absorb_Amount>
+				<!-- We can absorb shots from the following units types (but no missiles or grenades): -->
+				<Applicable_Unit_Categories>Infantry | InfantryHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Force_Absorb</SFXEvent_Activate>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2></Owner_Light_Effect_Color2>
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count></Owner_Light_Effect_Pulse_Count>
+			</Absorb_Blaster_Ability>
+
+			<Force_Healing_Ability Name="Vader_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.02 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Vader</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+            <Force_Lightning_Ability Name="Vader_Force_Choke">
+                <Activation_Style> User_Input </Activation_Style>
+                <Activation_Min_Range>0.0</Activation_Min_Range>
+                <Activation_Max_Range>175.0</Activation_Max_Range>
+                <Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+                <Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+                <Applicable_Unit_Types/>
+                <Damage_Amount>999.0</Damage_Amount>
+                <Damage_Application_Time_In_Secs>2.3893</Damage_Application_Time_In_Secs>
+                <Start_Lightning_Frame_Number> 25 </Start_Lightning_Frame_Number>
+                <Lightning_Effect_Name>Force_Choke</Lightning_Effect_Name>			<!--	See LightningEffectTypes.xml -->
+                <Lightning_Source_Bone_Name>B_PELVIS</Lightning_Source_Bone_Name>
+                <Lightning_Target_Bone_Name>B_PELVIS</Lightning_Target_Bone_Name>
+                <Lightning_Max_Targets> 40 </Lightning_Max_Targets>					<!-- How many victims will the lightning seek out, including original target -->
+                <Lightning_Targets_Radius> 200.0 </Lightning_Targets_Radius>		<!-- How far from the original target will the lightning seek for other victims -->
+                <SFXEvent_Activate/>
+                <SFXEvent_Target_Affected/>
+                <Target_Particle_Effect>Force_Lightning_Smoke</Target_Particle_Effect>
+                <Target_Particle_Bone_Name>B_PELVIS</Target_Particle_Bone_Name>		<!-- B_FOOT_R B_FOOT_L -->
+                <Target_Light_Effect_Type>Linear_Pulse</Target_Light_Effect_Type>
+                <Target_Light_Effect_Color>0.3, 0.3, 0.8</Target_Light_Effect_Color>
+                <Target_Light_Effect_Color2/>
+                <Target_Light_Effect_Duration>2.3893</Target_Light_Effect_Duration>
+                <Target_Light_Effect_Pulse_Count>25</Target_Light_Effect_Pulse_Count>
+            </Force_Lightning_Ability>
+
+			<Force_Telekinesis_Ability Name="Vader_Force_Telekinesis">
+				<Activation_Style>User_Input</Activation_Style>
+				<Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>190.0</Activation_Max_Range>
+				<Activation_Chance>1.0</Activation_Chance>
+				<Damage_Amount>0.0</Damage_Amount>
+				<Damage_Percentage>0.10</Damage_Percentage>
+				<Damage_Interval_In_Secs>0.2</Damage_Interval_In_Secs>
+				<!-- Note: As well as matching the below Unit_Category/Unit_Type filters, the -->
+				<!-- target object must also have the TELEKINESIS_TARGET behavior attached. -->
+				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types>
+					Protodeka, Republic_A6_Juggernaut
+				</Excluded_Unit_Types>
+				<SFXEvent_Activate />
+				<Target_Particle_Effect>Force_Telekinesis_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>Turret_00, B_Turret_00, B_Turret, B_Turret_Base, ROOT</Target_Particle_Bone_Name>
+				<Excluded_Unit_Types>Jedi_Consular, Jedi_Guardian, Jedi_Sentinel, Jedi_Padawan, Dark_Jedi, Nightsister_Sith_Witch</Excluded_Unit_Types>
+			</Force_Telekinesis_Ability>
+
+			<Berserker_Ability Name="Vader_Force_Attack">
+				<Activation_Style> Special_Attack </Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>120.0</Activation_Max_Range>
+				<Berserker_Speed>2.0</Berserker_Speed>
+				<Berserker_Damage>20.0</Berserker_Damage>
+				<Berserker_Damage_Range>12.0</Berserker_Damage_Range>
+				<Berserker_Duration_In_Secs>4.0</Berserker_Duration_In_Secs>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+			</Berserker_Ability>
+		</Abilities>
+	</HeroUnit>
+	<HeroCompany Name="Vader_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Population_Value>33</Population_Value>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_10_LAND_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_DEVESTATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VADER_HEALTH
+		TEXT_TOOLTIP_VADER_MOVE
+		TEXT_TOOLTIP_VADER_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING_40_20
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SITH_LORD </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Vader_Devestator</Company_Transport_Unit>
+		<Company_Units>Vader</Company_Units>
+		
+		<Affiliation>Empire</Affiliation>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>1220</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>14</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Four_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+	<UniqueUnit Name="Vader_Garrett">
+		<Variant_Of_Existing_Type>Imperial_I_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_10_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_GARRETT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPREME_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_11 -->
+			<Combat_Bonus_Ability Name="Command_Tier_11_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.33</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.33</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.33</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_11_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.33</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+	<UniqueUnit Name="Vader_Devestator_OLD">
+		<Variant_Of_Existing_Type>Imperial_I_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_10_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_DEVESTATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPREME_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_11 -->
+			<Combat_Bonus_Ability Name="Command_Tier_11_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.33</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.33</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.33</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_11_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.33</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<UniqueUnit Name="Vader_Devestator">
+		<Variant_Of_Existing_Type>Imperial_I_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DARTH_VADER</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_10_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_VADER
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK 
+		TEXT_TOOLTIP_COMMAND_DEVESTATOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_SUPREME_COMMANDER</Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_VADER.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>2</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+		
+		<Behavior> SELECTABLE, TRANSPORT, DUMMY_STARSHIP </Behavior>
+		<SpaceBehavior>LURE, ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, TARGETING, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
+		
+		<Landing_Transport_Variant>Shuttle_Tyderium_Landing</Landing_Transport_Variant>
+
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_BATTLE_MEDITATION_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_BATTLE_MEDITATION_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_BATTLE_MEDITATION.tga</Alternate_Icon_Name>
+				<SFXEvent_GUI_Unit_Ability_Activated> Unit_Ability_Meditation_CBaoth </SFXEvent_GUI_Unit_Ability_Activated>
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
+					 Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<Effective_Radius>1</Effective_Radius>
+
+				<Target_Types />
+
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>60</Expiration_Seconds>
+
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>120</Max_Number_Of_Pulses>
+				<Particle_Effect>Battle_Meditation_Space_Particle</Particle_Effect>
+
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 0.01f</Mod_Multiplier>
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>HARMONIC_BOMB</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Spawned_Object_Type>Proj_Fleet_Tender_Fighter_Heal</Spawned_Object_Type>
+				<Bomb_Countdown_Seconds>0.0</Bomb_Countdown_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Force_Area_Heal</SFXEvent_GUI_Unit_Ability_Activated>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_FLEET_TENDER_NAME</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FLEET_TENDER_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_repair_vehicle.tga</Alternate_Icon_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Combat_Bonus_Ability Name="Battle_Meditation_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.09</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.09</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.09</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			
+			<Battlefield_Modifier_Ability Name="Battle_Meditation_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.18</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Force_Healing_Ability Name="Star_Galleon_Fleet_Tender">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Heal_Range>800.0</Heal_Range>
+				<Heal_Amount> 50.0 </Heal_Amount>
+				<Heal_Interval_In_Secs>2.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				<Heal_Range_Blob_Material>Space_Repair_Radius_Overlay</Heal_Range_Blob_Material>
+				<!-- We can heal the following unit types: -->
+				<Applicable_Unit_Categories>Gunship, Corvette, Frigate, Capital, SuperCapital, SpaceHero, Transport</Applicable_Unit_Categories>
+				<Applicable_Unit_Types/>
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Shield_Sparks_Medium</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_TURRET, TURRET_00, B_TURRET_BASE</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 1.2, 2.0</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2/>
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Particle_Bone_Name>ROOT</Owner_Particle_Bone_Name>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 1.2, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2/>
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+				<!--<Lightning_Effect_Name>Repair_Facility_Effect</Lightning_Effect_Name>-->
+			</Force_Healing_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+
+	<!-- The Senate -->
+	<HeroUnit Name="The_Senate">
+		<Variant_Of_Existing_Type>Template_Lightsaber_Hero</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_EMPEROR_PALPATINE</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_10_LAND
+		TEXT_TOOLTIP_TRAIT_AGENT_TIER_AGENT_02
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_PALPATINE 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PALPATINE_REBORN_HEALTH
+		TEXT_TOOLTIP_PALPATINE_MOVE
+		TEXT_TOOLTIP_PALPATINE_WEAP1
+		TEXT_TOOLTIP_PALPATINE_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING_50_30
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_EMPEROR </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_emperor_palpatine.TGA</Icon_Name>
+
+		<Land_Model_Name>EI_Palpatine.ALO</Land_Model_Name>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+		
+		<Holster_Holstered_Bone_Translation> 0.0, -5.835, 0.0 </Holster_Holstered_Bone_Translation>
+		
+		<SFXEvent_Engine_Idle_Loop> Unit_Vader_Lightsaber_Idle_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Vader_Lightsaber_Moving_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Engine_Cinematic_Focus_Loop> Unit_Vader_Lightsaber_Cinematic_Loop </SFXEvent_Engine_Cinematic_Focus_Loop>
+		
+		<Movement_Animation_Speed> 0.8 </Movement_Animation_Speed>
+		
+		<Max_Speed>1.1</Max_Speed>
+		<OverrideAcceleration> 1.1 </OverrideAcceleration>
+		<OverrideDeceleration> 1.1 </OverrideDeceleration>
+
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+		
+		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Imperial_Proteus</Affiliation>
+
+		<Tactical_Health>275</Tactical_Health>
+		
+		<AI_Combat_Power>399</AI_Combat_Power>
+		
+		<Projectile_Appearance_Delay_Frames> 8 </Projectile_Appearance_Delay_Frames>
+		<Projectile_Fire_Recharge_Seconds>0.1</Projectile_Fire_Recharge_Seconds>
+
+		<SFXEvent_Select>Unit_Select_Emperor</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Emperor</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Emperor</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Emperor</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Emperor</SFXEvent_Guard>
+		<SFXEvent_Group_Move>Unit_Group_Move_Emperor</SFXEvent_Group_Move>
+		<SFXEvent_Group_Attack>Unit_Group_Attack_Emperor</SFXEvent_Group_Attack>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Emperor </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Emperor </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Emperor </Death_SFXEvent_Start_Die>
+		
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FORCE_TELEKINESIS</Type>
+				<Recharge_Seconds>30.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Emperor_Force_Telekinesis </GUI_Activated_Ability_Name>
+				<Supports_Autofire>True</Supports_Autofire>
+				<SFXEvent_Target_Ability> Unit_Lift_Emperor </SFXEvent_Target_Ability>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>AREA_EFFECT_CONVERT</Type>
+				<Recharge_Seconds>120.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> </GUI_Activated_Ability_Name> 
+				<Spawned_Object_Type> Proj_Special_Area_Effect_Convert </Spawned_Object_Type>
+				<Supports_Autofire>True</Supports_Autofire>
+				<SFXEvent_Target_Ability> Unit_Convert_Emperor </SFXEvent_Target_Ability>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_10 and Agent_Tier_Agent_02 + Offense_Focus + Force_Sensitive -->
+			<Combat_Bonus_Ability Name="Command_Tier_10_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>    
+				<Defense_Bonus_Percentage>0.30</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.30</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Battlefield_Modifier_Ability Name="Command_Tier_10_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.30</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Reduce_Production_Price_Ability Name="Agent_Tier_Agent_02_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Excluded_Unit_Categories>Upgrade | Wall</Excluded_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.10</Price_Reduction_Percentage>
+				<Stacking_Category>51</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<!-- Redirect Blaster must appear in the special ability list before Absorb Blaster -->
+			<Redirect_Blaster_Ability Name="Emperor_Redirect_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.5</Redirect_Chance>
+				<Block_Chance>0.6</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 135.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories>Infantry | InfantryHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Absorb_Blaster_Ability Name="Emperor_Absorb_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Absorb_Chance>0.3</Absorb_Chance>
+				<!-- Absorb Percentage and Amount work together in the following way: -->
+				<!-- Actual Amount healed = (Projectile Damage * Absorb Percentage) + Absorb Amount -->
+				<!-- Either value can be zero, but at least one should be non-zero. -->
+				<Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+				<Damage_Absorb_Amount>1</Damage_Absorb_Amount>
+				<!-- We can absorb shots from the following units types (but no missiles or grenades): -->
+				<Applicable_Unit_Categories>Infantry | InfantryHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Force_Absorb</SFXEvent_Activate>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Absorb_Blaster_Ability>
+
+			<Force_Healing_Ability Name="Emperor_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.04 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+
+				<Applicable_Unit_Categories />
+				<Applicable_Unit_Types>Emperor_Palpatine</Applicable_Unit_Types>
+				<Excluded_Unit_Types />
+
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<!-- Force Lightning must come after Force Whirlwind, otherwise Force Whirlwind would never activate. -->
+			<Force_Lightning_Ability Name="Emperor_Force_Lightning">
+				<Activation_Style>Special_Attack</Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>175.0</Activation_Max_Range>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Damage_Amount>9999.0</Damage_Amount>
+				<Damage_Application_Time_In_Secs>2.3893</Damage_Application_Time_In_Secs>
+				<Start_Lightning_Frame_Number> 8 </Start_Lightning_Frame_Number>
+				<Lightning_Effect_Name>Force_Lightning</Lightning_Effect_Name>	<!-- See LightningEffectTypes.xml -->
+				<Lightning_Source_Bone_Name>B_HAND_L</Lightning_Source_Bone_Name>
+				<Lightning_Target_Bone_Name>B_PELVIS</Lightning_Target_Bone_Name>
+				<Lightning_Max_Targets> 15 </Lightning_Max_Targets> 					<!-- How many victims will the lightning seek out, including original target -->
+				<Lightning_Targets_Radius> 100.0 </Lightning_Targets_Radius>		<!-- How far from the original target will the lightning seek for other victims -->
+				<SFXEvent_Activate>Unit_Force_Lightning</SFXEvent_Activate>
+				<SFXEvent_Target_Affected> Unit_Lightning_Emperor </SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Force_Lightning_Smoke</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>B_PELVIS</Target_Particle_Bone_Name> <!-- B_FOOT_R B_FOOT_L -->
+				<Target_Light_Effect_Type>Linear_Pulse</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>0.3, 0.3, 0.8</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>2.3893</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>25</Target_Light_Effect_Pulse_Count>
+			</Force_Lightning_Ability>
+
+			<Force_Telekinesis_Ability Name="Emperor_Force_Telekinesis">
+				<Activation_Style>User_Input</Activation_Style>
+				<Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>190.0</Activation_Max_Range>
+				<Activation_Chance>1.0</Activation_Chance>
+				<Damage_Amount>0.0</Damage_Amount>
+				<Damage_Percentage>0.10</Damage_Percentage>
+				<Damage_Interval_In_Secs>0.2</Damage_Interval_In_Secs>
+				<!-- Note: As well as matching the below Unit_Category/Unit_Type filters, the -->
+				<!-- target object must also have the TELEKINESIS_TARGET behavior attached. -->
+				<Applicable_Unit_Categories>Vehicle</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types>
+					A6_Juggernaut, MAS_2xB
+				</Excluded_Unit_Types>
+				<SFXEvent_Activate />
+				<Target_Particle_Effect>Force_Telekinesis_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name>Turret_00, B_Turret_00, B_Turret, B_Turret_Base, ROOT</Target_Particle_Bone_Name>
+			</Force_Telekinesis_Ability>
+
+			<Earthquake_Attack_Ability Name="Emperor_Attack_Structures">
+				<Activation_Style>Special_Attack</Activation_Style>
+				<Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>240.0</Activation_Max_Range>
+				<Activation_Chance>1.0</Activation_Chance>
+				<Damage_Amount>0.0</Damage_Amount>
+				<Damage_Percentage>0.04</Damage_Percentage>
+				<Damage_Interval_In_Secs>0.5</Damage_Interval_In_Secs>
+				<!-- Note: As well as matching the below Unit_Category/Unit_Type filters, the -->
+				<!-- target object must also have the EARTHQUAKE_TARGET behavior attached. -->
+				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate />
+				<Target_Particle_Effect>Earthquake_Dust_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Earthquake_Attack_Ability>
+		</Abilities>
+	</HeroUnit>
+	<HeroCompany Name="The_Senate_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_EMPEROR_PALPATINE</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_10_LAND
+		TEXT_TOOLTIP_TRAIT_AGENT_TIER_AGENT_02
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_PALPATINE 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_PALPATINE_REBORN_HEALTH
+		TEXT_TOOLTIP_PALPATINE_MOVE
+		TEXT_TOOLTIP_PALPATINE_WEAP1
+		TEXT_TOOLTIP_PALPATINE_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING_50_30
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_EMPEROR </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_emperor_palpatine.TGA</Icon_Name>
+		
+		<Company_Transport_Unit>Shuttle_Tyderium_Palps</Company_Transport_Unit>
+		<Company_Units>The_Senate</Company_Units>
+		
+		<Affiliation>Empire, Eriadu_Authority, Pentastar, Greater_Maldrood, Zsinj_Empire, Imperial_Proteus</Affiliation>
+		
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Emperor</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Emperor</SFXEvent_Fleet_Move>
+
+		<!--<MULTIPLAYER SKIRMISH VALUES BEGIN>-->
+		<Tactical_Build_Cost_Multiplayer>6555</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>19</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites>Ground_Level_Five_Tech_Upgrade</Tactical_Build_Prerequisites>
+	</HeroCompany>
+
+	<!-- Zaarin Coup Forces -->
+	
+	<!-- Mr Bad Man: Demetrius Zaarin -->
+	<UniqueUnit Name="Zaarin_Glory">
+		<Variant_Of_Existing_Type>Template_Imperial_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_ZAARIN</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_11_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_INTEL_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ZAARIN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_GLORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_STAR_DESTROYER_HULL
+		TEXT_TOOLTIP_STAR_DESTROYER_SHIELD
+		TEXT_TOOLTIP_STAR_DESTROYER_MOVE 
+		TEXT_TOOLTIP_STAR_DESTROYER_SQUADRON
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP1
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP2 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP3 
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP4
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP5
+		TEXT_TOOLTIP_STAR_DESTROYER_WEAP6
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK 
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOMBING_RUN 
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_GRAND_ADMIRAL </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_ZAARIN.tga</Icon_Name>
+
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		
+		<Ranking_In_Category>1</Ranking_In_Category>
+
+		<SpaceBehavior>ABILITY_COUNTDOWN, LURE, SIMPLE_SPACE_LOCOMOTOR, SHIELDED, SELECTABLE, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<Lua_Script>GenericGameObject</Lua_Script>
+		<Tech_Level>99</Tech_Level>
+	  
+		<Score_Cost_Credits> 60000 </Score_Cost_Credits>
+		<Affiliation>Empire</Affiliation>
+		<Property_Flags>GTSImmune</Property_Flags>
+
+		<Starting_Spawned_Units_Tech_1>Skipray_Squadron_Half, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Missile_Boat_Squadron_Half, 1</Starting_Spawned_Units_Tech_1> <!-- Put after all other bombers so iconic bombing run units happen instead -->
+
+		<Reserve_Spawned_Units_Tech_1>Missile_Boat_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Fighter_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skipray_Squadron_Half, 1</Reserve_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Shielded_TIE_Interceptor_Squadron, 2</Reserve_Spawned_Units_Tech_1>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LURE</Type>
+					<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_NAME</Alternate_Name_Text>
+					<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_ART_OF_WAR_DESCRIPTION</Alternate_Description_Text>
+					<Alternate_Icon_Name>i_sa_ART_OF_WAR.tga</Alternate_Icon_Name>
+				<!-- If you change this - please make sure you communicate the change to artists (to Mike specifically).
+				     Any change to this radius will require a manual adjustment to the particle effect. Thank you. -->
+				<Effective_Radius>1</Effective_Radius>
+
+				<Target_Types />
+
+				<Recharge_Seconds>120</Recharge_Seconds>
+				<Expiration_Seconds>20</Expiration_Seconds>
+
+				<Is_Pulsing>Yes</Is_Pulsing>
+				<Pulse_Frequency_Secs>0.5</Pulse_Frequency_Secs>
+				<Max_Number_Of_Pulses>40</Max_Number_Of_Pulses>
+				<Particle_Effect>Art_of_War_Ability_Particle</Particle_Effect>
+
+				<Mod_Multiplier />
+				<Supports_Autofire>False</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_11 + Intel -->
+			<Combat_Bonus_Ability Name="Command_Tier_11_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.30</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.33</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.39</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_11_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.51</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Zaarin_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_VORRU</Specific_Mod_Source_Text>
+				<!-- 300% bonus to base planetary income -->
+				<Percentage_Income_Modifier>3</Percentage_Income_Modifier>
+				<!-- plus an absolute 0 credits to planetary income -->
+				<Absolute_Income_Modifier>800</Absolute_Income_Modifier>
+				<!-- net effect of +( (base income * 0%) + 20) credits -->
+				<Additional_Multiplier_On_Mining_Colonies>4.5</Additional_Multiplier_On_Mining_Colonies>
+				<!-- net result above multiplied by 2.5 if the affected planet is a mining colony -->
+			</Planet_Income_Bonus_Ability>
+			<Reduce_Production_Time_Ability Name="Zaarin_Production_Time_Bonus">
+				<Unit_Strength_Category />
+				<Applicable_Unit_Categories> All </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types></Excluded_Unit_Types>
+				<Time_Reduction_Percentage>0.5</Time_Reduction_Percentage>
+				<Stacking_Category>9</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+			<Reduce_Production_Price_Ability Name="Zaarin_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Price_Reduction_Percentage>0.6</Price_Reduction_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+		</Abilities>
+	</UniqueUnit>
+
+	<!-- Namuura Din -->
+	<UniqueUnit Name="Din_Zeplin">
+		<Variant_Of_Existing_Type>Victory_I_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_DIN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_04_SPACE
+		TEXT_TOOLTIP_TRAIT_COMMAND_OFFENSE_FOCUS
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_DIN
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_ZEPLIN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_VICTORY1_HULL
+		TEXT_TOOLTIP_VICTORY1_SHIELD 
+		TEXT_TOOLTIP_VICTORY1_MOVE
+		TEXT_TOOLTIP_VICTORY1_SQUADRON
+		TEXT_TOOLTIP_VICTORY1_WEAP1
+		TEXT_TOOLTIP_VICTORY1_WEAP2
+		TEXT_TOOLTIP_VICTORY1_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_COMMANDER </Encyclopedia_Unit_Class>
+		<Icon_Name>I_BUTTON_DIN.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>8</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		<Lua_Script>GenericGameObject</Lua_Script>
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_04 + Offensive -->
+			<Combat_Bonus_Ability Name="Command_Tier_04_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.18</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.12</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.12</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_04_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.12</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<!-- Admiral Harkov -->
+	<UniqueUnit Name="Harkov_Protector">
+		<Variant_Of_Existing_Type>Victory_II_Star_Destroyer</Variant_Of_Existing_Type>
+		<Is_Named_Hero>Yes</Is_Named_Hero>
+		<Text_ID>TEXT_HERO_HARKOV</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_03_SPACE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_HARKOV
+		TEXT_TOOLTIP_SEPARATOR_COMMANDS_BLOCK
+		TEXT_TOOLTIP_COMMAND_PROTECTOR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_VICTORY2_HULL
+		TEXT_TOOLTIP_VICTORY2_SHIELD
+		TEXT_TOOLTIP_VICTORY2_MOVE
+		TEXT_TOOLTIP_VICTORY2_SQUADRON
+		TEXT_TOOLTIP_VICTORY2_WEAP1
+		TEXT_TOOLTIP_VICTORY2_WEAP2
+		TEXT_TOOLTIP_VICTORY2_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_ADMIRAL </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_harkov.tga</Icon_Name>
+		
+		<CategoryMask> SpaceHero | AntiFrigate </CategoryMask>
+		<Property_Flags>GTSImmune</Property_Flags>
+		
+		<Ranking_In_Category>8</Ranking_In_Category>
+		
+		<Tech_Level>99</Tech_Level>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_03 -->
+			<Combat_Bonus_Ability Name="Command_Tier_03_Combat_Bonus">
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.09</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.09</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.09</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+
+			<Battlefield_Modifier_Ability Name="Command_Tier_03_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Space_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.09</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+		</Abilities>
+	</UniqueUnit>
+
+	<!-- Arden Lyn -->
+	<HeroUnit Name="Arden_Lyn">
+		<Variant_Of_Existing_Type>Template_Lightsaber_Hero</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_ARDEN_LYN</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_03_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_COMMAND_INTEL_FOCUS
+		TEXT_TOOLTIP_TRAIT_UTILITY_STEALTH_OPERATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ARDEN_LYN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FABLE_ASTIN_HEALTH
+		TEXT_TOOLTIP_FABLE_ASTIN_MOVE
+		TEXT_TOOLTIP_FABLE_ASTIN_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING_40_20
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_EMPERORS_HAND </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_lyn.tga</Icon_Name>
+
+		<Land_Model_Name>EI_Fable_Astin.ALO</Land_Model_Name>
+		<Land_Model_Anim_Override_Name>EI_MaraSaber.alo</Land_Model_Anim_Override_Name>
+		
+		<Ranking_In_Category>5</Ranking_In_Category>
+		
+		<Walk_Animation_Speed> 0.5 </Walk_Animation_Speed>
+		<Max_Speed>1.3</Max_Speed>
+		<OverrideAcceleration> 1.3 </OverrideAcceleration>
+		<OverrideDeceleration> 1.3 </OverrideDeceleration>
+		
+		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Imperial_Proteus</Affiliation>
+		
+		<Tactical_Health>160</Tactical_Health>
+		
+		<Projectile_Appearance_Delay_Frames> 10 </Projectile_Appearance_Delay_Frames>
+		
+		<AI_Combat_Power>215</AI_Combat_Power>
+		
+		<Highlight_Blob_Material_Name>Highlight_Empire_Hero</Highlight_Blob_Material_Name>
+
+		<Always_Spawn_In_Orbit>Yes</Always_Spawn_In_Orbit> <!-- Stealth heroes spawn in orbit -->
+		
+		<SFXEvent_Select>Unit_Select_Mara_Jade</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Mara_Jade</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mara_Jade</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Mara_Jade</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Mara_Jade</SFXEvent_Guard>
+		<SFXEvent_Health_Low_Warning> Unit_Health_Low_Mara_Jade </SFXEvent_Health_Low_Warning>
+		<SFXEvent_Health_Critical_Warning> Unit_Health_Critical_Mara_Jade </SFXEvent_Health_Critical_Warning>
+		<Death_SFXEvent_Start_Die> Unit_Defeat_Mara_Jade </Death_SFXEvent_Start_Die>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FORCE_WHIRLWIND</Type>
+				<Recharge_Seconds>25.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Fable_Astin_Force_Whirlwind </GUI_Activated_Ability_Name> 
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<Spawned_Object_Type> Force_Whirlwind_Particles </Spawned_Object_Type>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>STICKY_BOMB</Type>
+				<Recharge_Seconds>30.0f </Recharge_Seconds>
+				<GUI_Activated_Ability_Name>Fable_Astin_Grenade_Attack</GUI_Activated_Ability_Name>
+				<SFXEvent_Target_Ability> Unit_Bomb_Mara_Jade </SFXEvent_Target_Ability>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes"> <!-- Command_Tier_03 + Force Sensitive + Intel Focus -->
+			<Combat_Bonus_Ability Name="Command_Tier_03_Combat_Bonus">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<Excluded_Unit_Types> Ground_Ion_Cannon, Ground_Hypervelocity_Gun </Excluded_Unit_Types>
+				<Damage_Bonus_Percentage>0.06</Damage_Bonus_Percentage>
+				<Defense_Bonus_Percentage>0.09</Defense_Bonus_Percentage>
+				<Movement_Speed_Bonus_Percentage>0.21</Movement_Speed_Bonus_Percentage>
+				<Stacking_Category>0</Stacking_Category>
+			</Combat_Bonus_Ability>
+			<Battlefield_Modifier_Ability Name="Command_Tier_03_FOW_Increase">
+				<Initially_Enabled>Yes</Initially_Enabled>
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<FOW_Reveal_Range_Multiplier>1.36</FOW_Reveal_Range_Multiplier>
+				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
+				<Stacking_Category>0</Stacking_Category>
+			</Battlefield_Modifier_Ability>
+			
+			<Galactic_Stealth_Ability Name="Stealth_Operative_Galactic_Stealth">
+				<Evade_Detection_Chance>0.0</Evade_Detection_Chance>
+			</Galactic_Stealth_Ability>
+
+			<Redirect_Blaster_Ability Name="Fable_Astin_Redirect_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.4</Redirect_Chance>
+				<Block_Chance>0.5</Block_Chance>
+				<Reaction_Arc_In_Degrees>180.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 135.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories> Infantry | InfantryHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+
+			<Absorb_Blaster_Ability Name="Fable_Astin_Absorb_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<Absorb_Chance>0.2</Absorb_Chance>
+				<!-- Absorb Percentage and Amount work together in the following way: -->
+				<!-- Actual Amount healed = (Projectile Damage * Absorb Percentage) + Absorb Amount -->
+				<!-- Either value can be zero, but at least one should be non-zero. -->
+				<Damage_Absorb_Percentage>0.2</Damage_Absorb_Percentage>
+				<Damage_Absorb_Amount>1</Damage_Absorb_Amount>
+				<!-- We can absorb shots from the following units types (but no missiles or grenades): -->
+				<Applicable_Unit_Categories>Infantry | InfantryHero</Applicable_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<SFXEvent_Activate>Unit_Force_Absorb</SFXEvent_Activate>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 0.4, 0.4</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2></Owner_Light_Effect_Color2>
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count></Owner_Light_Effect_Pulse_Count>
+			</Absorb_Blaster_Ability>
+
+			<Force_Healing_Ability Name="Fable_Astin_Self_Heal">
+				<Activation_Style>Ground_Automatic</Activation_Style>
+				<Heal_Range>5.0</Heal_Range>
+				<Heal_Amount> 0.0 </Heal_Amount>
+				<Heal_Percent> 0.02 </Heal_Percent>
+				<Heal_Interval_In_Secs>5.0</Heal_Interval_In_Secs>
+				<Single_Target_Heal>Yes</Single_Target_Heal>
+				
+				<Applicable_Unit_Types>Fable_Astin</Applicable_Unit_Types>
+
+				<SFXEvent_Target_Affected>Unit_Force_Healing_Pulse</SFXEvent_Target_Affected>
+				<Target_Particle_Bone_Name>B_HEAD</Target_Particle_Bone_Name>
+				<Target_Light_Effect_Type>Color_Flash</Target_Light_Effect_Type>
+				<Target_Light_Effect_Color>1.2, 2.0, 1.2</Target_Light_Effect_Color>
+				<Target_Light_Effect_Color2 />
+				<Target_Light_Effect_Duration>0.6</Target_Light_Effect_Duration>
+				<Target_Light_Effect_Pulse_Count>1</Target_Light_Effect_Pulse_Count>
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>1.2, 2.0, 1.2</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.6</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count>1</Owner_Light_Effect_Pulse_Count>
+			</Force_Healing_Ability>
+
+			<Force_Whirlwind_Ability Name="Fable_Astin_Force_Whirlwind">
+				<!-- <Activation_Style>Special_Attack</Activation_Style> -->
+				<Activation_Style> User_Input </Activation_Style>
+				<!-- We need to be within this distance of the clicked target to consider activating Force Whirlwind -->
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>75.0</Activation_Max_Range>
+				<Damage_Amount>500.0</Damage_Amount>
+				<Damage_Range>75.0</Damage_Range>
+				<!-- How long does it take for the shockwave to spread from the hero to the max range? -->
+				<Travel_Time_In_Secs>1.0</Travel_Time_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,0.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!--				<Activation_Chance>0,0.0, 500,0.0</Activation_Chance>	< ! - - never activate -->
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Force_Whirlwind</SFXEvent_Activate>
+				<Owner_Particle_Effect>Force_Whirlwind_Particles</Owner_Particle_Effect>
+				<Owner_Particle_Bone_Name />
+				<Owner_Light_Effect_Type>Color_Flash</Owner_Light_Effect_Type>
+				<Owner_Light_Effect_Color>2.0, 2.0, 2.0</Owner_Light_Effect_Color>
+				<Owner_Light_Effect_Color2 />
+				<Owner_Light_Effect_Duration>0.5</Owner_Light_Effect_Duration>
+				<Owner_Light_Effect_Pulse_Count />
+			</Force_Whirlwind_Ability>
+
+			<Grenade_Attack_Ability Name="Fable_Astin_Grenade_Attack"> 
+				<Activation_Style> User_Input </Activation_Style> <!-- Was Special_Attack -->
+				<!-- We need to be within this distance of the clicked target to consider throwing the grenade -->
+				<Activation_Min_Range>5.0</Activation_Min_Range>
+				<Activation_Max_Range>300.0</Activation_Max_Range>
+				<Requires_Direct_Player_Command> No </Requires_Direct_Player_Command> <!-- Was NO -->
+				<Grenade_Type>Proj_Hero_Sticky_Bomb</Grenade_Type>
+				<Grenade_Toss_Anim>BOMBTOSS</Grenade_Toss_Anim>
+				<Grenade_Spawn_Frame>12.0</Grenade_Spawn_Frame>
+				<Grenade_Spawn_Bone>MuzzleA_00</Grenade_Spawn_Bone>
+				<Grenade_Explode_Timer_In_Secs>3.0</Grenade_Explode_Timer_In_Secs>
+				<!-- Percentage chance to activate given a certain number of valid targets in range. -->
+				<!-- First number in the pair is the number of valid targets, second is the chance to activate. -->
+				<Activation_Chance>0,0.0, 1,1.0, 5,1.0, 500,1.0</Activation_Chance>
+				<!-- We only consider the following unit types "valid targets": -->
+				<Applicable_Unit_Categories>Vehicle, VehicleHero, Structure</Applicable_Unit_Categories>
+				<!-- <Applicable_Unit_Types /> -->
+			</Grenade_Attack_Ability>
+
+			<Earthquake_Attack_Ability Name="Fable_Astin_Attack_Structures">
+				<Activation_Style>Special_Attack</Activation_Style>
+				<Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>120.0</Activation_Max_Range>
+				<Activation_Chance>1.0</Activation_Chance>
+				<Damage_Amount>0.0</Damage_Amount>
+				<Damage_Percentage>0.02</Damage_Percentage>
+				<Damage_Interval_In_Secs>0.5</Damage_Interval_In_Secs>
+				<!-- Note: As well as matching the below Unit_Category/Unit_Type filters, the -->
+				<!-- target object must also have the EARTHQUAKE_TARGET behavior attached. -->
+				<Applicable_Unit_Categories>Structure</Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate />
+				<Target_Particle_Effect>Earthquake_Dust_Particles</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Earthquake_Attack_Ability>
+
+			<Berserker_Ability Name="Fable_Astin_Force_Attack">
+				<Activation_Style> Special_Attack </Activation_Style>
+				<Activation_Min_Range>0.0</Activation_Min_Range>
+				<Activation_Max_Range>120.0</Activation_Max_Range>
+				<Berserker_Speed>2.0</Berserker_Speed>
+				<Berserker_Damage>15.0</Berserker_Damage>
+				<Berserker_Damage_Range>12.0</Berserker_Damage_Range>
+				<Berserker_Duration_In_Secs>3.0</Berserker_Duration_In_Secs>
+				<Applicable_Unit_Categories>Infantry</Applicable_Unit_Categories>
+			</Berserker_Ability>
+		</Abilities>
+	</HeroUnit>
+	<HeroCompany Name="Arden_Lyn_Team">
+		<Variant_Of_Existing_Type>Template_Hero_Team</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_HERO_ARDEN_LYN</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_SEPARATOR_TRAITS_BLOCK
+		TEXT_TOOLTIP_TRAIT_COMMAND_TIER_03_LAND
+		TEXT_TOOLTIP_TRAIT_COMMAND_FORCE_SENSITIVE
+		TEXT_TOOLTIP_TRAIT_UTILITY_STEALTH_OPERATIVE
+		TEXT_TOOLTIP_SEPARATOR_BIO_BLOCK
+		TEXT_TOOLTIP_ARDEN_LYN
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FABLE_ASTIN_HEALTH
+		TEXT_TOOLTIP_FABLE_ASTIN_MOVE
+		TEXT_TOOLTIP_FABLE_ASTIN_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_FORCE_SELF_HEAL
+		TEXT_TOOLTIP_BONUS_FORCE_TRAINING_40_20
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_INFANTRY_CAPTURE
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_EMPERORS_HAND </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_lyn.tga</Icon_Name>
+		
+		<Company_Transport_Unit>Shuttle_Tyderium</Company_Transport_Unit>
+		<Company_Units>Arden_Lyn</Company_Units>
+		
+		<Affiliation>Empire, Pentastar, Zsinj_Empire, Greater_Maldrood, Eriadu_Authority, Imperial_Proteus</Affiliation>
+		
+		<SFXEvent_Build_Started>EHD_Request_Assistance</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Request_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>Unit_Respawn_Mara_Jade</SFXEvent_Build_Complete>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Mara_Jade</SFXEvent_Fleet_Move>
+	</HeroCompany>
 
 </My_Heroes>
 

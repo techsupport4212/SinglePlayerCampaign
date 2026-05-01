@@ -130,7 +130,7 @@
 		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
 
-		<Affiliation>Neutral, Rebel, Empire, Hutt_Cartels, Zsinj_Empire, EmpireoftheHand, Pentastar, Greater_Maldrood, Warlords, Sector_Forces, Eriadu_Authority, Corporate_Sector, Hapes_Consortium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Hutt_Cartels, Zsinj_Empire, EmpireoftheHand, Pentastar, Greater_Maldrood, Warlords, Sector_Forces, Holdouts, Eriadu_Authority, Corporate_Sector, Hapes_Consortium, Imperial_Proteus</Affiliation>
 
 		<Hides_When_Built_On>True</Hides_When_Built_On>
 		<Base_Level_Available> 1 </Base_Level_Available>
@@ -2821,7 +2821,7 @@
 				UC_Generic_Field_Support_Emplacement, 
 				UC_Generic_Field_Sensor_Emplacement,
 				UC_Generic_Field_Scrambler_Emplacement,
-			Warlords, Sector_Forces,
+			Warlords, Sector_Forces, Holdouts,
 				UC_Generic_Field_Turbolaser_Emplacement, 
 				UC_Generic_Field_Support_Emplacement, 
 				UC_Generic_Field_Sensor_Emplacement,
@@ -2919,7 +2919,7 @@
 				UC_Generic_Field_Support_Emplacement, 
 				UC_Generic_Field_Sensor_Emplacement,
 				UC_Generic_Field_Scrambler_Emplacement,
-			Warlords, Sector_Forces,
+			Warlords, Sector_Forces, Holdouts,
 				UC_Generic_Field_Turbolaser_Emplacement, 
 				UC_Generic_Field_Support_Emplacement, 
 				UC_Generic_Field_Sensor_Emplacement,
@@ -2950,7 +2950,7 @@
 		<Shield_Points> 0 </Shield_Points>
 		<Tactical_Health> 10000 </Tactical_Health>
 
-		<Affiliation>Neutral, Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 
 		<Hides_When_Built_On>True</Hides_When_Built_On>
 		<Base_Level_Available> 1 </Base_Level_Available>
@@ -2992,7 +2992,7 @@
 		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
 
 		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 
 		<Icon_Name>I_BUTTON_FIELD_EMPLACEMENT_SUPPORT.tga</Icon_Name>
 
@@ -3058,7 +3058,7 @@
 		    TEXT_TOOLTIP_FIELD_EMPLACEMENT_SUPPORT_MEDIC_HEAL_REPAIR
 		</Encyclopedia_Text>
 		<Land_Model_Name> NB_MercenaryOutfitter.alo </Land_Model_Name>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 		<Scale_Factor>1.0</Scale_Factor>
         <Garrison_Radius>10</Garrison_Radius>
 		<Num_Garrison_Slots>0</Num_Garrison_Slots>
@@ -3114,7 +3114,7 @@
 		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
 
 		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 
 		<Icon_Name>I_BUTTON_FIELD_EMPLACEMENT_SENSOR.tga</Icon_Name>
 
@@ -3182,7 +3182,7 @@
 		<Radar_Icon_Name>MINI_MAP_SENSOR.TGA</Radar_Icon_Name>
 		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
 		<Land_Model_Name>SLD-26_Planetary_Shield_Generator.alo</Land_Model_Name>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 		<Scale_Factor>1.0</Scale_Factor>
         <Garrison_Radius>10</Garrison_Radius>
 		<Num_Garrison_Slots>0</Num_Garrison_Slots>
@@ -3233,7 +3233,7 @@
 		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
 
 		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 
 		<Space_Layer> Land </Space_Layer>
         <UnitCollisionClass> Vehicle </UnitCollisionClass>
@@ -3297,7 +3297,7 @@
 		<Radar_Icon_Name>MINI_MAP_TURRET_R.TGA</Radar_Icon_Name>
 		<Radar_Icon_Size>0.08  0.08</Radar_Icon_Size>
 		<Land_Model_Name>XX-10_Turbolaser_Single_Barrel.ALO</Land_Model_Name>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 		<Scale_Factor>1.0</Scale_Factor>
 		<Garrison_Radius>10</Garrison_Radius>
 		<Num_Garrison_Slots>0</Num_Garrison_Slots>
@@ -3382,7 +3382,7 @@
 		<Terrain_Texture_Modifier_Square>false</Terrain_Texture_Modifier_Square>
 
 		<Obstacle_Proxy_Type> Bunker_Pad </Obstacle_Proxy_Type>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 
 		<Icon_Name>I_BUTTON_FIELD_EMPLACEMENT_SCRAMBLER.tga</Icon_Name>
 
@@ -3450,7 +3450,7 @@
 			TEXT_TOOLTIP_BONUS_BLOCK_LZ_BR
 		</Encyclopedia_Text>
 		<Land_Model_Name> SLD-14_Shield_Generator_Scrambler.alo </Land_Model_Name>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 		<Scale_Factor>1.0</Scale_Factor>
         <Garrison_Radius>10</Garrison_Radius>
 		<Num_Garrison_Slots>0</Num_Garrison_Slots>
@@ -3498,7 +3498,7 @@
 		<Icon_Name>I_BUTTON_FIELD_EMPLACEMENT_SHIELD.tga</Icon_Name>
 
 		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 
 		<Tactical_Buildable_Constructed> Generic_Field_Shield_Emplacement </Tactical_Buildable_Constructed>
 		<Tactical_Build_Cost_Multiplayer> 300 </Tactical_Build_Cost_Multiplayer>
@@ -3533,7 +3533,7 @@
 		<Icon_Name>I_BUTTON_FIELD_EMPLACEMENT_SHIELD.tga</Icon_Name>
 		<Loop_Idle_Anim_00>Yes</Loop_Idle_Anim_00>
 
-		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Imperial_Proteus</Affiliation>
+		<Affiliation>Rebel, Empire, Hutt_Cartels, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corporate_Sector, Hapes_Consortium, EmpireoftheHand, Independent_Forces, Corellia, Yevetha, Chiss, SsiRuuvi_Imperium, Mandalorians, Warlords, Sector_Forces, Holdouts, Imperial_Proteus</Affiliation>
 
 		<Behavior>SELECTABLE, TACTICAL_SELL</Behavior>
 		<LandBehavior>IDLE, SELECTABLE, HIDE_WHEN_FOGGED, REVEAL, BASE_SHIELD, DAMAGE_TRACKING, POWERED, EARTHQUAKE_TARGET, UNIT_AI</LandBehavior>

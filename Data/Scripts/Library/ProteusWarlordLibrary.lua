@@ -20,12 +20,12 @@
 	--Or {era1text, [x] = alttext, [y] = alttext2...} where alttext will play instead if the year is above x
 
 return {
-		["ZAARIN"] = {
+		["ZAARIN_EMPIRE"] = {
 			FriendlyName = "Zaarin's Coup Forces",
-			Planets = {"OTTEGA"},
+			Planets = {"OTTEGA", "GRAVAN", "TANGRENE", "PHINDAR"},
 			LeaderTable = {"ZAARIN_GLORY"},
 			LeaderEndingNames = {"Grand Admiral Zaarin"},
-			HeroList = {"Zaarin_Glory", "Raveen_Predominant", "Arden_Lyn_Team", "Din_Zeplin"},
+			HeroList = {"Zaarin_Glory", "Raveen_Predominant", "Arden_Lyn_Team", "Din_Zeplin", "Harkov_Protector"},
 			LastYear = 0,
 			FactionOverride = "Empire",
 			FactionOverride2 = "Zsinj_Empire",

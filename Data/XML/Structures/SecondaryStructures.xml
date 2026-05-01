@@ -19,7 +19,7 @@
 
 		<Scale_Factor>0.55</Scale_Factor>
 		<GUI_Bracket_Size>2</GUI_Bracket_Size>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Build_Cost_Credits>500</Build_Cost_Credits>
 		<Build_Time_Seconds>30</Build_Time_Seconds>
@@ -99,7 +99,7 @@
 		<Property_Flags>NotOpportunityTarget</Property_Flags>
 
         <Ownership_Sticks>Yes</Ownership_Sticks>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Tactical_Health>700</Tactical_Health>
 		<Behavior> CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
 		<LandBehavior>SPACE_OBSTACLE,ABILITY_COUNTDOWN,LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,</LandBehavior>
@@ -183,7 +183,7 @@
 		<Property_Flags>NotOpportunityTarget</Property_Flags>
 
         <Ownership_Sticks>Yes</Ownership_Sticks>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Tactical_Health>700</Tactical_Health>
 		<Behavior> CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
 		<LandBehavior>SPACE_OBSTACLE,ABILITY_COUNTDOWN,LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,</LandBehavior>
@@ -270,7 +270,7 @@
 		<Property_Flags>NotOpportunityTarget | HealsVehicles</Property_Flags>
 
         <Ownership_Sticks>Yes</Ownership_Sticks>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Tactical_Health>700</Tactical_Health>
 		<Behavior> CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
 		<LandBehavior>SPACE_OBSTACLE,ABILITY_COUNTDOWN,LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,</LandBehavior>
@@ -364,7 +364,7 @@
 		<Lua_Script></Lua_Script>
 
         <Ownership_Sticks>Yes</Ownership_Sticks>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Tactical_Health>700</Tactical_Health>
 		<Behavior> CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
 		<LandBehavior>SPACE_OBSTACLE,ABILITY_COUNTDOWN,LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,</LandBehavior>
@@ -445,7 +445,7 @@
 		<Property_Flags>NotOpportunityTarget</Property_Flags>
 
         <Ownership_Sticks>Yes</Ownership_Sticks>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Tactical_Health>700</Tactical_Health>
 		<Behavior> CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
 		<LandBehavior>SPACE_OBSTACLE,ABILITY_COUNTDOWN,LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,</LandBehavior>
@@ -523,7 +523,7 @@
 		<Property_Flags>NotOpportunityTarget | HealsInfantry</Property_Flags>
 
         <Ownership_Sticks>Yes</Ownership_Sticks>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 		<Tactical_Health>700</Tactical_Health>
 		<Behavior> CAPTURE_POINT, SELECTABLE, DUMMY_GROUND_STRUCTURE</Behavior>
 		<LandBehavior>SPACE_OBSTACLE,ABILITY_COUNTDOWN,LAND_OBSTACLE,REVEAL,HIDE_WHEN_FOGGED,DAMAGE_TRACKING,DUMMY_LAND_BASE_LEVEL_COMPONENT,UNIT_AI,</LandBehavior>
@@ -642,7 +642,7 @@
 
 		<Icon_Name>i_button_n_tl_tower_2x_abandon.tga</Icon_Name> 
 
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Independent_Forces, Hostile, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Independent_Forces, Hostile, Imperial_Proteus</Affiliation>
 	</SecondaryStructure>
 
 	<SecondaryStructure Name="N_Remote_Sensor_Pod">
@@ -659,7 +659,7 @@
 
 		<Space_Model_Name>NB_SpaceSensorNode.ALO</Space_Model_Name>
 		<Icon_Name>i_button_n_space_sensornode.tga</Icon_Name>
-		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Neutral, Rebel, Empire, Zsinj_Empire, EmpireoftheHand, Pentastar, Hapes_Consortium, Greater_Maldrood, Eriadu_Authority, Hutt_Cartels, Corporate_Sector, Warlords, Sector_Forces, Holdouts, Chiss, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
 
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>

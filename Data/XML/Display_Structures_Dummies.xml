@@ -4,8 +4,8 @@
 	<DummyStructure Name="AI_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -56,8 +56,8 @@
 	<DummyStructure Name="Placeholder_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -108,8 +108,8 @@
 	<DummyStructure Name="Non_Capital_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -160,8 +160,8 @@
 	<DummyStructure Name="Heavy_Frigate_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -212,8 +212,8 @@
 	<DummyStructure Name="Options_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -280,8 +280,8 @@
 	<DummyStructure Name="Capital_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -332,8 +332,8 @@
 	<DummyStructure Name="Dreadnought_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -416,8 +416,8 @@
 	<DummyStructure Name="Structure_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -467,8 +467,8 @@
 	<DummyStructure Name="Story_Category_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>
@@ -838,8 +838,8 @@
 	<DummyStructure Name="Crew_Resource_Dummy">
 		<Affiliation>
 			Empire, Rebel, Underworld, Independent_Forces, Hutt_Cartels,
-			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Sith_Warlords, Tion_Hegemony,
-			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces,
+			Alsakan_Republic, Chiss, Eternal_Empire, Killik_Hives, Krath, Lorell_Raiders, Mon_Cal_Kingdom, Rakata_Empire, Sector_Forces, Holdouts, Sith_Warlords, Tion_Hegemony,
+			Banking_Clan, Commerce_Guild, Techno_Union, Trade_Federation, Mandalorians, Sector_Forces, Holdouts,
 			Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, SsiRuuvi_Imperium, Warlords, Imperial_Proteus
 		</Affiliation>
 		<Text_ID>

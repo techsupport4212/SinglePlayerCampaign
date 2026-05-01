@@ -162,9 +162,6 @@
 	<File>Heroes\Hapes_Heroes.xml</File>
 	<File>Heroes\SsiRuuvi_Heroes.xml</File>
 
-	<!-- Custom Heroes -->
-	<File>Heroes\My_Heroes.xml</File>
-
 	<File>Heroes\Eriadu_Heroes.xml</File>
 	<File>Heroes\Empire_Heroes.xml</File>
 	<File>Heroes\Pentastar_Heroes.xml</File>
@@ -190,6 +187,10 @@
 	<File>Heroes\New_Republic_Heroes_Jedi.xml</File>
 	
 	<File>Heroes\EotH_Heroes.xml</File>
+
+	<!-- Custom Heroes -->
+	<File>Heroes\My_Heroes.xml</File>
+	<File>Heroes\CommandStaffDummies.xml</File>
 
 	<File>Particles\TR_Particles_Abilities.xml</File>
 	<File>Projectiles\TR_Projectiles_SpecialAbility.xml</File>
