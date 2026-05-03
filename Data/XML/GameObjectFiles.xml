@@ -191,6 +191,8 @@
 	<!-- Custom Heroes -->
 	<File>Heroes\My_Heroes.xml</File>
 	<File>Heroes\CommandStaffDummies.xml</File>
+	<File>Structures\New_Ground_Structures.xml</File>
+	<File>Units\Ported_Units.xml</File>
 
 	<File>Particles\TR_Particles_Abilities.xml</File>
 	<File>Projectiles\TR_Projectiles_SpecialAbility.xml</File>

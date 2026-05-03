@@ -329,7 +329,7 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_One">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_One</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>Beta_ETR_3_Squadron,2</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_1>
@@ -389,7 +389,7 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_Two">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_Two</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_1>
@@ -450,7 +450,7 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_Three">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_Three</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>A9_Squadron_Double,1</Starting_Spawned_Units_Tech_1>
 		<Reserve_Spawned_Units_Tech_1>A9_Squadron_Double,2</Reserve_Spawned_Units_Tech_1>
@@ -522,7 +522,273 @@
 	<SpecialStructure Name="Empire_Shipyard_Level_Four">
 		<Variant_Of_Existing_Type>Template_Shipyard_Level_Four</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Warlords, Sector_Forces, Holdouts</Affiliation>
+		<Affiliation>Empire, Warlords, Sector_Forces</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_IPV1,3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_IPV1,6</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_I_Star_Destroyer,1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Tector_Star_Destroyer,1</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Victory_I_Star_Destroyer,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Avenger_Squadron,3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Avenger_Squadron,6</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Bomber_Squadron_Double,2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Bomber_Squadron_Double,4</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,-1</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_IPV1,3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_IPV1,6</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Imperial_I_Star_Destroyer,1</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Tector_Star_Destroyer,1</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Victory_I_Star_Destroyer,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Avenger_Squadron,3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Avenger_Squadron,6</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Bomber_Squadron_Double,2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Bomber_Squadron_Double,4</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Droid_Squadron,3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Droid_Squadron,-1</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_3>Preybird_Squadron,3</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Preybird_Squadron,6</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Scimitar_Squadron_Double,2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Scimitar_Squadron_Double,4</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Crusader,3</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Skirmish_Crusader,6</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Imperial_I_Star_Destroyer,1</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Tector_Star_Destroyer,1</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Victory_I_Star_Destroyer,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Vindicator_Cruiser,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Super_TIE_Squadron,3</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Super_TIE_Squadron,-1</Reserve_Spawned_Units_Tech_3>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_4 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP2
+		TEXT_TOOLTIP_SHIPYARD_ALL_4_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GE_4_1
+		TEXT_TOOLTIP_SHIPYARD_GE_4_2
+		TEXT_TOOLTIP_SHIPYARD_GE_4_3
+		TEXT_TOOLTIP_SHIPYARD_GE_4_4
+		TEXT_TOOLTIP_SHIPYARD_GE_4_5
+		TEXT_TOOLTIP_SHIPYARD_GE_4_6
+		TEXT_TOOLTIP_SHIPYARD_GE_4_7
+		TEXT_TOOLTIP_SHIPYARD_GE_4_8
+		TEXT_TOOLTIP_SHIPYARD_GE_4_9
+		TEXT_TOOLTIP_SHIPYARD_GE_4_10
+		TEXT_TOOLTIP_SHIPYARD_GE_4_11
+		TEXT_TOOLTIP_SHIPYARD_GE_4_12
+		TEXT_TOOLTIP_SHIPYARD_GE_4_13
+		TEXT_TOOLTIP_SHIPYARD_GE_4_14
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFRASTRUCTURE_PLUS_1
+		</Encyclopedia_Text>
+	</SpecialStructure>
+
+
+	<SpecialStructure Name="Holdout_Shipyard_Level_One">
+		<Variant_Of_Existing_Type>Template_Shipyard_Level_One</Variant_Of_Existing_Type>
+
+		<Affiliation>Holdouts</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>Beta_ETR_3_Squadron,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_IPV1,2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_IPV1,2</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Bomber_Squadron_Double,1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Bomber_Squadron_Double,2</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Fighter_Squadron_Double,1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Fighter_Squadron_Double,-1</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_2>Beta_ETR_3_Squadron,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_IPV1,2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_IPV1,2</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Bomber_Squadron_Double,1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Bomber_Squadron_Double,2</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Droid_Squadron_Double,1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Droid_Squadron_Double,-1</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Interceptor_Squadron,1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Interceptor_Squadron,2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_3>Beta_ETR_3_Squadron,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Crusader,2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Skirmish_Crusader,2</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Super_TIE_Squadron_Double,1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Super_TIE_Squadron_Double,-1</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>TIE_Bomber_Squadron_Double,1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>TIE_Bomber_Squadron_Double,2</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>TIE_Interceptor_Squadron,1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>TIE_Interceptor_Squadron,2</Reserve_Spawned_Units_Tech_3>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_1
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_HULL 
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_SHIELD 
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_1_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GE_1_1
+		TEXT_TOOLTIP_SHIPYARD_GE_1_2
+		TEXT_TOOLTIP_SHIPYARD_GE_1_3
+		TEXT_TOOLTIP_SHIPYARD_GE_1_4
+		TEXT_TOOLTIP_SHIPYARD_GE_1_5
+		TEXT_TOOLTIP_SHIPYARD_GE_1_6
+		TEXT_TOOLTIP_SHIPYARD_GE_1_7
+		TEXT_TOOLTIP_SHIPYARD_GE_1_8
+		TEXT_TOOLTIP_SHIPYARD_GE_1_9
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFRASTRUCTURE_PLUS_1
+		</Encyclopedia_Text>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Holdout_Shipyard_Level_Two">
+		<Variant_Of_Existing_Type>Template_Shipyard_Level_Two</Variant_Of_Existing_Type>
+
+		<Affiliation>Holdouts</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_IPV1,2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_IPV1,4</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Bomber_Squadron_Double,1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Bomber_Squadron_Double,2</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Fighter_Squadron_Double,1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Fighter_Squadron_Double,-1</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,2</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_2>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_IPV1,2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_IPV1,4</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Bomber_Squadron_Double,1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Bomber_Squadron_Double,2</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Droid_Squadron_Double,1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Droid_Squadron_Double,-1</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Interceptor_Squadron,1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Interceptor_Squadron,2</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_3>Preybird_Squadron,1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Preybird_Squadron,2</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Carrack_Cruiser,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Crusader,2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Skirmish_Crusader,4</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Super_TIE_Squadron_Double,1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Super_TIE_Squadron_Double,-1</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>TIE_Bomber_Squadron_Double,1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>TIE_Bomber_Squadron_Double,2</Reserve_Spawned_Units_Tech_3>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_2
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_HULL
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_2_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GE_2_1
+		TEXT_TOOLTIP_SHIPYARD_GE_2_2
+		TEXT_TOOLTIP_SHIPYARD_GE_2_3
+		TEXT_TOOLTIP_SHIPYARD_GE_2_4
+		TEXT_TOOLTIP_SHIPYARD_GE_2_5
+		TEXT_TOOLTIP_SHIPYARD_GE_2_6
+		TEXT_TOOLTIP_SHIPYARD_GE_2_7
+		TEXT_TOOLTIP_SHIPYARD_GE_2_8
+		TEXT_TOOLTIP_SHIPYARD_GE_2_9
+		TEXT_TOOLTIP_SHIPYARD_GE_2_10
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFRASTRUCTURE_PLUS_1
+		</Encyclopedia_Text>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Holdout_Shipyard_Level_Three">
+		<Variant_Of_Existing_Type>Template_Shipyard_Level_Three</Variant_Of_Existing_Type>
+
+		<Affiliation>Holdouts</Affiliation>
+
+		<Starting_Spawned_Units_Tech_1>A9_Squadron_Double,1</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>A9_Squadron_Double,2</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Carrack_Cruiser,4</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_IPV1,2</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>Skirmish_IPV1,4</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Strike_Cruiser,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>Skirmish_Victory_I_Star_Destroyer,2</Starting_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Bomber_Squadron,3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Bomber_Squadron,6</Reserve_Spawned_Units_Tech_1>
+		<Starting_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,3</Starting_Spawned_Units_Tech_1>
+		<Reserve_Spawned_Units_Tech_1>TIE_Interceptor_Squadron,-1</Reserve_Spawned_Units_Tech_1>
+
+		<Starting_Spawned_Units_Tech_2>Howlrunner_Squadron_Double,1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Howlrunner_Squadron_Double,2</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Carrack_Cruiser,4</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_IPV1,2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Skirmish_IPV1,4</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Strike_Cruiser,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>Skirmish_Victory_I_Star_Destroyer,2</Starting_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Bomber_Squadron,3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Bomber_Squadron,6</Reserve_Spawned_Units_Tech_2>
+		<Starting_Spawned_Units_Tech_2>TIE_Droid_Squadron,3</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>TIE_Droid_Squadron,-1</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_3>Preybird_Squadron_Double,1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Preybird_Squadron_Double,2</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Scimitar_Squadron,3</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Scimitar_Squadron,6</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Carrack_Cruiser,3</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Crusader,2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Skirmish_Crusader,4</Reserve_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Strike_Cruiser,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Victory_I_Star_Destroyer,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Skirmish_Vindicator_Cruiser,2</Starting_Spawned_Units_Tech_3>
+		<Starting_Spawned_Units_Tech_3>Super_TIE_Squadron,3</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Super_TIE_Squadron,-1</Reserve_Spawned_Units_Tech_3>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SHIPYARD_ALL_3 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_HULL 
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_SHIELD
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP1
+		TEXT_TOOLTIP_SHIPYARD_ALL_3_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_SHIPYARD_GE_3_1
+		TEXT_TOOLTIP_SHIPYARD_GE_3_2
+		TEXT_TOOLTIP_SHIPYARD_GE_3_3
+		TEXT_TOOLTIP_SHIPYARD_GE_3_4
+		TEXT_TOOLTIP_SHIPYARD_GE_3_5
+		TEXT_TOOLTIP_SHIPYARD_GE_3_6
+		TEXT_TOOLTIP_SHIPYARD_GE_3_7
+		TEXT_TOOLTIP_SHIPYARD_GE_3_8
+		TEXT_TOOLTIP_SHIPYARD_GE_3_9
+		TEXT_TOOLTIP_SHIPYARD_GE_3_10
+		TEXT_TOOLTIP_SHIPYARD_GE_3_11
+		TEXT_TOOLTIP_SHIPYARD_GE_3_12
+		TEXT_TOOLTIP_SHIPYARD_GE_3_13
+		TEXT_TOOLTIP_SHIPYARD_GE_3_14
+		TEXT_TOOLTIP_SHIPYARD_GE_3_15
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFRASTRUCTURE_PLUS_1
+		</Encyclopedia_Text>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Holdout_Shipyard_Level_Four">
+		<Variant_Of_Existing_Type>Template_Shipyard_Level_Four</Variant_Of_Existing_Type>
+
+		<Affiliation>Holdouts</Affiliation>
 
 		<Starting_Spawned_Units_Tech_1>Skirmish_Imperial_DHC,2</Starting_Spawned_Units_Tech_1>
 		<Starting_Spawned_Units_Tech_1>Skirmish_IPV1,3</Starting_Spawned_Units_Tech_1>

@@ -20,6 +20,7 @@ GameConstants = {
         -- "SSIRUUVI_IMPERIUM",
         "IMPERIAL_PROTEUS",
         "YEVETHA",
+        "HOLDOUTS",
     },
     NONPLAYABLE_FACTIONS = {
         "UNDERWORLD",
@@ -34,7 +35,7 @@ GameConstants = {
         "WARLORDS",
         "YEVETHA",
         "SECTOR_FORCES",
-        "HOLDOUTS",
+        --"HOLDOUTS",
     },
     ALL_FACTIONS = {--Adjust Get_Faction_Index in Data\XML\AI\PerceptualEquations\TRBasicGalacticEquations.xml to match for any additions or redorders
         "REBEL",
@@ -137,7 +138,7 @@ GameConstants = {
         ["IMPERIAL_PROTEUS"] = 20,
         ["YEVETHA"] = 21,
         --["SECTOR_FORCES"] = 22,
-        --["HOLDOUTS"] = 23,
+        ["HOLDOUTS"] = 23,
     },
     ALL_FACTIONS_CAPITALS = {
         REBEL = {STRUCTURE = "NEWREP_CAPITAL", LOCATION = {"CORUSCANT", "SAIJO", "MON_CALAMARI", "BOTHAWUI", "ITHOR", "WALINOR"}},
@@ -187,7 +188,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = {"EMPIRE_STAR_BASE_1","IMPERIAL_PROTEUS_OFFICE"},
         YEVETHA = {"EMPIRE_STAR_BASE_1","YEVETHA_OFFICE"},
         SECTOR_FORCES = {"EMPIRE_STAR_BASE_1","EMPIRE_OFFICE"},
-        HOLDOUTS = {"CSA_STAR_BASE_1","CSA_OFFICE"},
+        HOLDOUTS = {"EMPIRE_STAR_BASE_1","HOLDOUT_OFFICE"},
     },
     ALL_FACTIONS_AI = {
         REBEL = "NRAI",
@@ -212,7 +213,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "WarlordAI",
         YEVETHA = "YevethaAI",
         SECTOR_FORCES = "None",
-        HOLDOUTS = "None",
+        HOLDOUTS = "WarlordAI",
     },
     ALL_FACTIONS_CRUEL_AI = {
         REBEL = "SkynetAI",
@@ -237,7 +238,7 @@ GameConstants = {
         IMPERIAL_PROTEUS = "SkynetAI",
         YEVETHA = "SkynetAI",
         SECTOR_FORCES = "None",
-        HOLDOUTS = "None",
+        HOLDOUTS = "SkynetAI",
     },
     FACTION_COLORS = {
         ["REBEL"] = {r = 239, g = 139, b = 9},
@@ -352,7 +353,7 @@ GameConstants = {
         WARLORDS = "IMPERIAL",
         IMPERIAL_PROTEUS = "IMPERIAL",
         YEVETHA = "IMPERIAL", --Stopgap, probably
-        SECTOR_FORCES = "IMPERIAL",
+        SECTOR_FORCES = "INDEPENDENT_FORCES",
     },
     TRANSPORTS = {
         ["REBEL"] = "Gallofree_Transport_Landing",

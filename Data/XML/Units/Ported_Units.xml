@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='ASCII'?>
-<Ported_Ground_Units>
-
+<Ported_Units>
+ 
 	<SpaceUnit Name="C9979_Carrier">
 
 		<Text_ID>TEXT_UNIT_C9979</Text_ID>
@@ -56,7 +56,7 @@
 		<AI_Combat_Power>105</AI_Combat_Power>
 		<Damage>40</Damage>
 
-		<Affiliation>Rebel</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Maintenance_Cost>12</Maintenance_Cost>
 
@@ -82,7 +82,7 @@
 		<Slice_Cost_Credits>1400</Slice_Cost_Credits>
 
 		<Required_Special_Structures>
-		CIS_Shipyard_Level_One | CIS_Shipyard_Level_Two | CIS_Shipyard_Level_Three | CIS_Shipyard_Level_Four,
+		Holdout_Shipyard_Level_One | Holdout_Shipyard_Level_Two | Holdout_Shipyard_Level_Three | Holdout_Shipyard_Level_Four,
 		AI_Category_Dummy | Non_Capital_Category_Dummy
 		</Required_Special_Structures>
 
@@ -104,20 +104,6 @@
 		</HardPoints>
 
 		<Lua_Script>GenericGameObject</Lua_Script>
-
-		<Starting_Spawned_Units_Tech_1> Vulture_Brown_Squadron, 1 </Starting_Spawned_Units_Tech_1>
-		<Starting_Spawned_Units_Tech_2> Vulture_Squadron, 1 </Starting_Spawned_Units_Tech_2>
-		
-		<Starting_Spawned_Units_Tech_1> Coyote_Bomber_Brown_Squadron, 1 </Starting_Spawned_Units_Tech_1>
-		<Starting_Spawned_Units_Tech_2> Coyote_Bomber_Squadron, 1 </Starting_Spawned_Units_Tech_2>
-		
-		<Spawned_Squadron_Delay_Seconds> 15 </Spawned_Squadron_Delay_Seconds>
-		
-		<Reserve_Spawned_Units_Tech_1> Vulture_Brown_Squadron, 1 </Reserve_Spawned_Units_Tech_1>
-		<Reserve_Spawned_Units_Tech_2> Vulture_Squadron, 1 </Reserve_Spawned_Units_Tech_2>
-		
-		<Reserve_Spawned_Units_Tech_1> Coyote_Bomber_Brown_Squadron, 2 </Reserve_Spawned_Units_Tech_1>
-		<Reserve_Spawned_Units_Tech_2> Coyote_Bomber_Squadron, 2 </Reserve_Spawned_Units_Tech_2>
 
 		<Target_Bones>Target_00</Target_Bones>
 		<Ranged_Target_Z_Adjust>0</Ranged_Target_Z_Adjust>
@@ -308,7 +294,7 @@
 		<Damage>1</Damage>
 		<AI_Combat_Power>0.78</AI_Combat_Power>
 
-		<Affiliation>Rebel</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Maintenance_Cost/>
 
@@ -464,7 +450,7 @@
 		<Tech_Level>99</Tech_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 
-		<Affiliation>Rebel</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 
 		<GUI_Row> 0 </GUI_Row>
@@ -679,7 +665,7 @@
 		<Damage>1</Damage>
 		<AI_Combat_Power>6.52</AI_Combat_Power>
 
-		<Affiliation>Rebel</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Maintenance_Cost/>
 
@@ -843,7 +829,7 @@
 		<Tech_Level>99</Tech_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 
-		<Affiliation>Rebel</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 
 		<GUI_Row> 0 </GUI_Row>
@@ -1044,7 +1030,7 @@
 		<Damage>8</Damage>
 		<AI_Combat_Power>56</AI_Combat_Power>
 
-		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Type>Hover</Type>
@@ -1224,7 +1210,7 @@
 		<Build_Cost_Credits>1000</Build_Cost_Credits>
 		<Build_Time_Seconds>50</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>R_Ground_Light_Vehicle_Factory | Haor_Chall_HQ | Baktoid_HQ</Required_Special_Structures>
+		<Required_Special_Structures>Holdout_Factory | Haor_Chall_HQ | Baktoid_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>no</Build_Initially_Locked>
@@ -1236,14 +1222,14 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Rebel, Techno_Union, Trade_Federation, Commerce_Guild, Banking_Clan</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>HMP_Landing_Craft_HMP</Company_Transport_Unit>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
@@ -1304,7 +1290,7 @@
 		<Damage>20</Damage>
 		<AI_Combat_Power>47</AI_Combat_Power>
 
-		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 
 		<Type>Hover</Type>
@@ -1483,7 +1469,7 @@
 		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
 		<Build_Time_Seconds>60</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>R_Ground_Heavy_Vehicle_Factory | Baktoid_HQ</Required_Special_Structures>
+		<Required_Special_Structures>Holdout_Factory | Baktoid_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>no</Build_Initially_Locked>
@@ -1494,14 +1480,14 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
 		<Create_Team_Type/>
 		<Max_Squad_Size> 1 </Max_Squad_Size>
-		<Company_Transport_Unit>TF_Landing_Craft_Artillery</Company_Transport_Unit>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
@@ -1559,7 +1545,7 @@
 		<Damage>20</Damage>
 		<AI_Combat_Power>41</AI_Combat_Power>
 
-		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 
 		<Type>Hover</Type>
@@ -1753,7 +1739,7 @@
 		<Damage>100</Damage>
 		<AI_Combat_Power>199</AI_Combat_Power>
 
-		<Affiliation>Rebel, Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control>0</Political_Control>
 
 		<Type>Walk</Type>
@@ -1937,7 +1923,7 @@
 		<Expensive_Bribe_Cost>0</Expensive_Bribe_Cost>
 		<Build_Time_Seconds>40</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>R_Ground_Advanced_Vehicle_Factory | Baktoid_HQ</Required_Special_Structures>
+		<Required_Special_Structures>Holdout_Factory | Baktoid_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>no</Build_Initially_Locked>
@@ -1948,14 +1934,14 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Banking_Clan, Trade_Federation, Commerce_Guild, Techno_Union</Affiliation>
+		<Affiliation>Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
 
 		<Create_Team_Type/>
 		<Max_Squad_Size>1</Max_Squad_Size>
-		<Company_Transport_Unit>TF_Landing_Craft_Heavy</Company_Transport_Unit>
+		<Company_Transport_Unit>Gallofree_Transport</Company_Transport_Unit>
 
 		<SFXEvent_Build_Started>RHD_Build_Vehicle</SFXEvent_Build_Started>
 		<SFXEvent_Build_Cancelled>RHD_Vehicle_Canceled</SFXEvent_Build_Cancelled>
@@ -2021,7 +2007,7 @@
 		<Build_Cost_Credits>300</Build_Cost_Credits>
 		<Build_Time_Seconds>10</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures/>
+		<Required_Special_Structures>Holdout_Barracks | Baktoid_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
@@ -2029,10 +2015,10 @@
 		<Score_Cost_Credits>45</Score_Cost_Credits>
 		<Population_Value>1</Population_Value>
 
-		<Tech_Level>99</Tech_Level>
+		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Mandalorians, Independent_Forces</Affiliation>
+		<Affiliation>Mandalorians, Independent_Forces, Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -2084,18 +2070,18 @@
 		<Build_Cost_Credits>850</Build_Cost_Credits>
 		<Build_Time_Seconds>50</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures/>
+		<Required_Special_Structures>Holdout_Factory | Baktoid_HQ</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
-		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+		<Build_Initially_Locked>No</Build_Initially_Locked>
 		<Piracy_Value_Credits>50</Piracy_Value_Credits>
 		<Score_Cost_Credits>500</Score_Cost_Credits>
 		<Population_Value>1</Population_Value>
 
-		<Tech_Level>99</Tech_Level>
+		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Independent_Forces</Affiliation>
+		<Affiliation>Independent_Forces, Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -2124,4 +2110,4 @@
 		</Unit_Abilities_Data>
 	</GroundCompany>
 
-</Ported_Ground_Units>
+</Ported_Units>

@@ -3,7 +3,7 @@
     <DummyStructure Name="Template_Option">
         <Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
 
-        <Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Yevetha, Imperial_Proteus</Affiliation>
+        <Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Yevetha, Imperial_Proteus, Holdouts</Affiliation>
         <Lua_Script>DelayedSelfDelete</Lua_Script>
 
         <Build_Initially_Locked>Yes</Build_Initially_Locked>

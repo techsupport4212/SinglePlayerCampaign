@@ -50,6 +50,11 @@ return {
 		if suffix then
 			fighter = fighter .. suffix
 		end
+
+		if owner == "HOLDOUTS" then
+			fighter = "HYENA_SQUADRON"
+		end
+
 		return fighter
 	end
 }

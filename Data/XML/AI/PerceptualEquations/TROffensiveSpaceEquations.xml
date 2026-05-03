@@ -298,6 +298,7 @@
 		*
 		Variable_Enemy.HasUnit {Parameter_Type = "NewRepublic_Shipyard_Level_One",
 								Parameter_Type = "Empire_Shipyard_Level_One",
+								Parameter_Type = "Holdout_Shipyard_Level_One",
 								Parameter_Type = "Pentastar_Shipyard_Level_One",
 								Parameter_Type = "Zsinj_Shipyard_Level_One",
 								Parameter_Type = "Eriadu_Shipyard_Level_One",
@@ -313,6 +314,7 @@
 		*
 		Variable_Enemy.HasUnit {Parameter_Type = "NewRepublic_Shipyard_Level_Two",
 								Parameter_Type = "Empire_Shipyard_Level_Two",
+								Parameter_Type = "Holdout_Shipyard_Level_Two",
 								Parameter_Type = "Pentastar_Shipyard_Level_Two",
 								Parameter_Type = "Zsinj_Shipyard_Level_Two",
 								Parameter_Type = "Pirate_Base",
@@ -329,6 +331,7 @@
 		*
 		Variable_Enemy.HasUnit {Parameter_Type = "NewRepublic_Shipyard_Level_Three",
 								Parameter_Type = "Empire_Shipyard_Level_Three",
+								Parameter_Type = "Holdout_Shipyard_Level_Three",
 								Parameter_Type = "Pentastar_Shipyard_Level_Three",
 								Parameter_Type = "Zsinj_Shipyard_Level_Three",
 								Parameter_Type = "Eriadu_Shipyard_Level_Three",
@@ -345,6 +348,7 @@
 		*
 		Variable_Enemy.HasUnit {Parameter_Type = "NewRepublic_Shipyard_Level_Four",
 								Parameter_Type = "Empire_Shipyard_Level_Four",
+								Parameter_Type = "Holdout_Shipyard_Level_Four",
 								Parameter_Type = "Pentastar_Shipyard_Level_Four",
 								Parameter_Type = "Zsinj_Shipyard_Level_Four",
 								Parameter_Type = "Rancor_Base",
@@ -460,12 +464,12 @@
 		*
 		Variable_Self.CanRetreat
 		*
-		(1.0 - Variable_Self.IsFaction {Parameter_Faction = "Hostile", 
-										Parameter_Faction = "Warlords", 
-										Parameter_Faction = "Independent_Forces",
-										Parameter_Faction = "Sector_Forces",
-										Parameter_Faction = "Holdouts",
-										Parameter_Faction = "Mandalorians" <!-- FOTR/TR only; Rev Mandos are Underworld-->
+		(1.0 - Variable_Self.IsFaction {Parameter_Faction = "HOSTILE", 
+										Parameter_Faction = "WARLORDS", 
+										Parameter_Faction = "INDEPENDENT_FORCES",
+										Parameter_Faction = "SECTOR_FORCES",
+										Parameter_Faction = "HOLDOUTS",
+										Parameter_Faction = "MANDALORIANS" <!-- FOTR/TR only; Rev Mandos are Underworld-->
 									   }
 		)
 	</Allowed_To_Retreat_From_Space>

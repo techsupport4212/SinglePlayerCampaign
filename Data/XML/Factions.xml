@@ -30,7 +30,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies />
-		<Enemies> Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_nr_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_empire_victory.png</Space_Lose_Image>
@@ -718,8 +718,8 @@
 		<Can_Control_Planets>true</Can_Control_Planets>
 
 		<Is_Neutral> No </Is_Neutral>
-		<Allies></Allies>
-		<Enemies> Rebel, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Allies>Sector_Forces</Allies>
+		<Enemies> Rebel, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_empire_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_nr_victory.png</Space_Lose_Image>
@@ -1568,7 +1568,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>Factions_Thing_To_Replace</Space_Win_Image>
 		<Space_Lose_Image>Factions_Thing_To_Replace</Space_Lose_Image>
@@ -2014,7 +2014,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies>Neutral</Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 	<!--does stuff we care about; should be the same for all factions; do not change-->
 		<Space_Tactical_Unit_Cap>300</Space_Tactical_Unit_Cap> <!--Rev + FotR: 200, TR: 300-->
@@ -2045,7 +2045,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies>Neutral</Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 	<!--does stuff we care about; should be the same for all factions; do not change-->
 		<Space_Tactical_Unit_Cap>300</Space_Tactical_Unit_Cap> <!--Rev + FotR: 200, TR: 300-->
@@ -2081,7 +2081,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_es_win.tga</Space_Win_Image>
 		<Space_Lose_Image>i_es_lose.tga</Space_Lose_Image>
@@ -2748,7 +2748,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_ea_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_nr_victory.png</Space_Lose_Image>
@@ -3491,7 +3491,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_gm_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_nr_victory.png</Space_Lose_Image>
@@ -4236,7 +4236,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_pa_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_nr_victory.png</Space_Lose_Image>
@@ -4979,7 +4979,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_zsinj_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_nr_victory.png</Space_Lose_Image>
@@ -5722,7 +5722,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_nr_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_empire_victory.png</Space_Lose_Image>
@@ -6149,7 +6149,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_nr_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_empire_victory.png</Space_Lose_Image>
@@ -6645,7 +6645,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_hapan_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_empire_victory.png</Space_Lose_Image>
@@ -7274,7 +7274,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>i_eoth_victory.png</Space_Win_Image>
 		<Space_Lose_Image>i_nr_victory.png</Space_Lose_Image>
@@ -7766,7 +7766,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies> </Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>Factions_Thing_To_Replace</Space_Win_Image>
 		<Space_Lose_Image>Factions_Thing_To_Replace</Space_Lose_Image>
@@ -8193,7 +8193,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>Factions_Thing_To_Replace</Space_Win_Image>
 		<Space_Lose_Image>Factions_Thing_To_Replace</Space_Lose_Image>
@@ -8620,7 +8620,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>Factions_Thing_To_Replace</Space_Win_Image>
 		<Space_Lose_Image>Factions_Thing_To_Replace</Space_Lose_Image>
@@ -9042,7 +9042,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Warlords </Enemies>
 
 	<!--does stuff we care about; should be the same for all factions; do not change-->
 		<Space_Tactical_Unit_Cap>300</Space_Tactical_Unit_Cap> <!--Rev + FotR: 200, TR: 300-->
@@ -9073,7 +9073,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies>Neutral</Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians </Enemies>
 
 	<!--does stuff we care about; should be the same for all factions; do not change-->
 		<Space_Tactical_Unit_Cap>300</Space_Tactical_Unit_Cap> <!--Rev + FotR: 200, TR: 300-->
@@ -9844,7 +9844,7 @@
 
 		<Is_Neutral> No </Is_Neutral>
 		<Allies></Allies>
-		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
 
 		<Space_Win_Image>Factions_Thing_To_Replace</Space_Win_Image>
 		<Space_Lose_Image>Factions_Thing_To_Replace</Space_Lose_Image>
@@ -10269,8 +10269,8 @@
 		<Can_Control_Planets>true</Can_Control_Planets>
 
 		<Is_Neutral> No </Is_Neutral>
-		<Allies>Neutral</Allies>
-		<Enemies> Rebel, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians </Enemies>
+		<Allies>Neutral, Empire</Allies>
+		<Enemies> Rebel, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Holdouts, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians </Enemies>
 
 	<!--does stuff we care about; should be the same for all factions; do not change-->
 		<Space_Tactical_Unit_Cap>300</Space_Tactical_Unit_Cap> <!--Rev + FotR: 200, TR: 300-->
@@ -10284,7 +10284,6 @@
 		<Basic_AI> GenericAI </Basic_AI>
 	</Faction>
 
-
 	<Faction Name="Holdouts">
 		<Text_ID> TEXT_FACTION_HOLDOUTS </Text_ID>
 
@@ -10296,15 +10295,438 @@
 		<Selection_Blob_RGBA>                44, 121, 216, 255 </Selection_Blob_RGBA>
 
 		<Infantry_Icon_Name>i_button_b1.tga</Infantry_Icon_Name>
+		<Tech_Tree_Dialog_Name>IDD_TECH_TREE_EMPIREOFTHEHAND</Tech_Tree_Dialog_Name>
 
-		<Is_Playable>false</Is_Playable>
-		<Is_Debug_Switchable_To> No </Is_Debug_Switchable_To> <!--if playable = true then Yes; else No-->
-		<Create_Player_In_Multiplayer_Games> Yes </Create_Player_In_Multiplayer_Games> <!--if playable = true then No; else Yes-->
+		<Reinforcements_Shadow_Blob_Material_Name> Reinforcement_Overlay_Underworld </Reinforcements_Shadow_Blob_Material_Name>
+
+		<Is_Playable>true</Is_Playable>
+		<Is_Debug_Switchable_To> Yes </Is_Debug_Switchable_To> <!--if playable = true then Yes; else No-->
+		<Create_Player_In_Multiplayer_Games> No </Create_Player_In_Multiplayer_Games> <!--if playable = true then No; else Yes-->
 		<Can_Control_Planets>true</Can_Control_Planets>
 
 		<Is_Neutral> No </Is_Neutral>
-		<Allies>Neutral</Allies>
-		<Enemies> Rebel, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, EmpireoftheHand, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Empire </Enemies>
+		<Allies></Allies>
+		<Enemies> Rebel, Empire, Underworld, Hutt_Cartels, Independent_Forces, Hostile, Eriadu_Authority, Greater_Maldrood, Pentastar, Zsinj_Empire, Imperial_Proteus, EmpireoftheHand, Sector_Forces, Corellia, Corporate_Sector, Hapes_Consortium, Yevetha, Chiss, Killik_Hives, SsiRuuvi_Imperium, Mandalorians, Warlords </Enemies>
+
+		<Space_Win_Image>i_eoth_victory.png</Space_Win_Image>
+		<Space_Lose_Image>i_nr_victory.png</Space_Lose_Image>
+		<Land_Win_Image>i_eoth_victory.png</Land_Win_Image>
+		<Land_Lose_Image>i_nr_victory.png</Land_Lose_Image>
+
+		<Space_Retreat_Countdown_Text_ID> TEXT_RETREAT_COUNTDOWN </Space_Retreat_Countdown_Text_ID>
+		<Land_Retreat_Countdown_Text_ID> TEXT_RETREAT_COUNTDOWN </Land_Retreat_Countdown_Text_ID>
+
+		<Land_Mode_Selection_Blob_Material_Name>Selection_Hand</Land_Mode_Selection_Blob_Material_Name>
+		<Space_Mode_Selection_Blob_Material_Name>Selection_Hand</Space_Mode_Selection_Blob_Material_Name>
+		<Land_Mode_Garrison_Selection_Blob_Material_Name>Selection_Hand</Land_Mode_Garrison_Selection_Blob_Material_Name>
+		<Space_Mode_Garrison_Selection_Blob_Material_Name>Selection_Hand</Space_Mode_Garrison_Selection_Blob_Material_Name>
+
+		<Standalone_Space_Maps_Special_Weapon_A>Ground_Hypervelocity_Gun</Standalone_Space_Maps_Special_Weapon_A>
+
+	<!--Skirmish & Multiplayer-->
+		<Skirmish_Land_Bomber>Syca_Bombing_Run</Skirmish_Land_Bomber>
+
+		<Space_Skirmish_AI_Default_Forces>
+			Krssis_Interceptor_Squadron, Krssis_Interceptor_Squadron
+		</Space_Skirmish_AI_Default_Forces>
+		<Land_Skirmish_AI_Default_Forces>
+			Skirmish_EotH_Phalanx_Trooper_Company
+		</Land_Skirmish_AI_Default_Forces>
+
+		<Multiplayer_Map_Preview_Icon>I_BUTTON_FACTION_EOTH.TGA</Multiplayer_Map_Preview_Icon>
+
+	<!--Bombing runs & Orbital Bombardments-->
+		<Bombardment_Shadow_Blob_Material_Name> Bombardment_EotH </Bombardment_Shadow_Blob_Material_Name>
+		<Bombardment_Blob_Size> 150.0 </Bombardment_Blob_Size>
+		<Bombardment_Required_Orbital_Ships>
+			Fruoro_Picket_Ship,
+			Kuuro_Gunship,
+			Ormos_Carrier,
+			Rohkea_Frigate,
+			Baomu_Tender,
+			Shandian,
+			Jiucha,
+			Raju,
+			Prolipsi,
+			Kynigos_Cruiser,
+			Chaf_Destroyer,
+			Ascendancy_Star_Destroyer,
+			Efodio_Fleet_Tender,
+			Intego_Destroyer,
+			Phalanx_Destroyer,
+			Syndic_Destroyer,
+			Peltast_Star_Destroyer,
+			Saytara,
+			Afavos_Frigate,
+			Smynos_Frigate,
+			<!--Influence units-->
+			Beta_Cruiser_Influence,
+			T_Type_Thrustship_Influence,
+			Nova_Cruiser_Influence,
+			Keldabe_Influence,
+			Namana_Cruiser_Influence,
+			Bakura_Destroyer_Influence,
+			Munificent_Influence,
+			Geonosian_Cruiser_Influence,
+			<!-- Reward -->
+			Imperial_DHC,
+			Gladiator_II,
+			Strike_Cruiser,
+			Venator_Star_Destroyer,
+			Victory_I_Star_Destroyer,
+			Imperial_I_Star_Destroyer,
+			EX_F,
+			<!--Generic Heroes-->
+			Commander_I_Kuuro_Gunship,
+			Commander_I_Fruoro_Picket_Ship,
+			Commander_I_Ormos_Carrier,
+			Commander_II_Rohkea_Frigate,
+			Commander_II_Kynigos_Cruiser,
+			Commander_II_Jiucha,
+			Commander_III_Chaf_Destroyer,
+			Commander_III_Efodio_Fleet_Tender,
+			Commander_III_Ascendancy_Star_Destroyer,
+			Commander_IV_Syndic_Destroyer,
+			Commander_IV_Phalanx_Destroyer,
+			Commander_IV_Intego_Destroyer,
+			<!--Heroes-->
+			Thrawn_Clone_Eviscerator,
+			Ferob_Iron_Fist,
+			Stent_Thrawns_Hand,
+			Niriz_Admonitor,
+			Parck_Strikefast,
+			Parck_Chaf_Destroyer,
+			Thrawn_Grey_Wolf,
+			Aralani_Frontier,
+			Nuruodo_Foreas,
+			Tarrak_Bognog,
+			Frangelic_Aleulya,
+			Prince_Militaire_Jieban_Ren,
+			Uingali_Ystava,
+		</Bombardment_Required_Orbital_Ships>
+		<Bombardment_Projectile> Proj_Bombardment_Turbolaser_Blue </Bombardment_Projectile>
+		<Bombardment_Particle> Bombard_Particle_Effect </Bombardment_Particle>
+		<Bombardment_Number_Of_Salvos> 1 </Bombardment_Number_Of_Salvos>
+		<Bombardment_Shots_Per_Salvo> 1 </Bombardment_Shots_Per_Salvo>
+		<Bombardment_Shot_Delay> 0.2 </Bombardment_Shot_Delay>
+		<Bombardment_Salvo_Delay> 1.0 </Bombardment_Salvo_Delay>
+		<Bombardment_Initial_Delay> 4.0 </Bombardment_Initial_Delay>
+
+		<Bombardment_Lighting_Color_List>0.33,0.57,0.9</Bombardment_Lighting_Color_List>
+		<Bombardment_Lighting_Intensity_List>0.5</Bombardment_Lighting_Intensity_List>
+		<Bombardment_Lighting_Seconds_List>3</Bombardment_Lighting_Seconds_List>
+
+	<!--SFX-->
+		<Space_Retreat_Begin_SFXEvent> EHD_Retreat_Started_Space </Space_Retreat_Begin_SFXEvent>
+		<Space_Retreat_Enemy_Begin_SFXEvent> Empire_Enemy_Retreat_Started </Space_Retreat_Enemy_Begin_SFXEvent>
+		<Space_Retreat_Cancel_SFXEvent> EHD_Retreat_Cancelled </Space_Retreat_Cancel_SFXEvent>
+		<Space_Retreat_Not_Allowed_SFXEvent> EHD_Retreat_Not_Allowed </Space_Retreat_Not_Allowed_SFXEvent>
+		<Space_Retreat_Not_Allowed_Reason_1_SFXEvent> EHD_Retreat_Interdictor </Space_Retreat_Not_Allowed_Reason_1_SFXEvent> <!-- Reason 1: Gravity Well -->
+		<Space_Retreat_Not_Allowed_Reason_2_SFXEvent></Space_Retreat_Not_Allowed_Reason_2_SFXEvent> <!-- Reason 2: Friendly Hero Preventing -->
+		<Space_Retreat_Not_Allowed_Reason_3_SFXEvent></Space_Retreat_Not_Allowed_Reason_3_SFXEvent> <!-- Reason 3: Tactical Superweaper Present -->
+		<Space_Surrender_SFXEvent> EHD_Retreat_Started_Space </Space_Surrender_SFXEvent>
+
+		<Land_Retreat_Begin_SFXEvent> EHD_Retreat_Started_land </Land_Retreat_Begin_SFXEvent>
+		<Land_Retreat_Enemy_Begin_SFXEvent> Empire_Enemy_Retreat_Started </Land_Retreat_Enemy_Begin_SFXEvent>
+		<Land_Retreat_Cancel_SFXEvent> EHD_Retreat_Cancelled </Land_Retreat_Cancel_SFXEvent>
+		<Land_Retreat_Not_Allowed_SFXEvent> EHD_Retreat_Not_Allowed </Land_Retreat_Not_Allowed_SFXEvent>
+		<Land_Retreat_Not_Allowed_Reason_1_SFXEvent></Land_Retreat_Not_Allowed_Reason_1_SFXEvent> <!-- Reason 1: Gravity Well -->
+		<Land_Retreat_Not_Allowed_Reason_2_SFXEvent></Land_Retreat_Not_Allowed_Reason_2_SFXEvent> <!-- Reason 2: Friendly Hero Preventing -->
+		<Land_Retreat_Not_Allowed_Reason_3_SFXEvent></Land_Retreat_Not_Allowed_Reason_3_SFXEvent> <!-- Reason 3: Tactical Superweaper Present -->
+		<Land_Surrender_SFXEvent> EHD_Retreat_Started_Land </Land_Surrender_SFXEvent>
+
+		<!-- <Reinforcements_Selection_SFXEvent> EHD_Choose_Reinforcements </Reinforcements_Selection_SFXEvent> -->
+		<!-- <Reinforcements_Pick_Landing_Zone_SFXEvent></Reinforcements_Pick_Landing_Zone_SFXEvent> -->
+		<!-- <Reinforcements_Enroute_SFXEvent> EHD_Reinforcements_En_Route </Reinforcements_Enroute_SFXEvent> -->
+		<!-- <Reinforcements_Cancelled_SFXEvent> EHD_Reinforcements_Cancelled </Reinforcements_Cancelled_SFXEvent> -->
+
+		<Reinforcements_Requesting_SFXEvent> EHD_Request_Assistance </Reinforcements_Requesting_SFXEvent>
+		<Reinforcements_Ready_SFXEvent> EHD_Reinforcements_Available </Reinforcements_Ready_SFXEvent>
+
+		<SFXEvent_Max_Credits_Limit_Reached> EHD_Credit_Capacity </SFXEvent_Max_Credits_Limit_Reached>
+		<SFXEvent_Land_Invasion_Commencing> EHD_Invasion_Commencing </SFXEvent_Land_Invasion_Commencing>
+		<SFXEvent_New_Construction_Options_Available>  </SFXEvent_New_Construction_Options_Available> <!-- Can be Tactical or Galactic -->
+		<SFXEvent_Mission_Added> EHD_Mission_Updated </SFXEvent_Mission_Added> <!-- A new mission has been added to the holocron - the incoming transmission radar movie (and audio) is also playing -->
+		<SFXEvent_Base_Shield_Absorb_Damage> SFX_Shield_Absorb_Detonation </SFXEvent_Base_Shield_Absorb_Damage> <!-- Tactical: When the base shield absorbs damage, most likely by a projectile -->
+		<SFXEvent_Tactical_Unit_Cap_Reached> EHD_Unit_Cap_Reached </SFXEvent_Tactical_Unit_Cap_Reached> <!-- Tactical: We you can drag in anymore tactical units from the reinforcement palette -->
+		<SFXEvent_Arrive_From_Hyperspace> Unit_Ship_Hyperspace_Enter </SFXEvent_Arrive_From_Hyperspace>
+		<SFXEvent_Exit_Into_Hyperspace> Unit_Ship_Hyperspace_Exit </SFXEvent_Exit_Into_Hyperspace>
+		<SFXEvent_Space_Base_Under_Attack_Announcement> EHD_Space_Station_Under_Attack </SFXEvent_Space_Base_Under_Attack_Announcement>
+		<SFXEvent_Land_Base_Under_Attack_Announcement> EHD_Base_Under_Attack </SFXEvent_Land_Base_Under_Attack_Announcement>
+		<SFXEvent_Enemy_Fleet_Approaching_Planet>EHD_Enemy_Fleet_Approaching </SFXEvent_Enemy_Fleet_Approaching_Planet>
+		<SFXEvent_Strategic_Pop_Cap_Reached> EHD_Unit_Cap_Reached </SFXEvent_Strategic_Pop_Cap_Reached>
+		<SFXEvent_Tactical_Pop_Cap_Reached> EHD_Unit_Cap_Reached </SFXEvent_Tactical_Pop_Cap_Reached>
+		<SFXEvent_Bunker_Garrisoned> Structure_Garrison_SFX </SFXEvent_Bunker_Garrisoned>
+		<SFXEvent_Bunker_Vacated> Structure_UnGarrison_SFX </SFXEvent_Bunker_Vacated>
+
+		<SFX_Event_Tactical_Land_Battle_Pending> EHD_Battle_Pending </SFX_Event_Tactical_Land_Battle_Pending>
+		<SFX_Event_Tactical_Space_Battle_Pending> EHD_Battle_Pending </SFX_Event_Tactical_Space_Battle_Pending>
+
+		<!-- Event to play when a local player captures or loses control of a planet -->
+		<SFXEvent_Planet_Gained_Control> EHD_Planet_Gained </SFXEvent_Planet_Gained_Control> <!-- Plays anytime control is gained -->
+		<SFXEvent_Planet_Lost_Control> EHD_Planet_Lost </SFXEvent_Planet_Lost_Control> <!-- Plays only when control is lost from other player -->
+
+		<!-- Events to play when toggling ability states from the GUI / Command Bar -->
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>DEFEND, GUI_Toggle_Shields_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>DEFEND, GUI_Toggle_Shields_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>INTERDICT, GUI_Toggle_Grav_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>INTERDICT, GUI_Toggle_Grav_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>BARRAGE, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>BARRAGE, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HUNT, GUI_Toggle_Hunt_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>HUNT, GUI_Toggle_Hunt_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SPREAD_OUT, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>SPREAD_OUT, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>LURE, GUI_Toggle_Lure_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>LURE, GUI_Toggle_Lure_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>ROCKET_ATTACK, GUI_Toggle_Rocket_Attack_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HARASS, GUI_Toggle_Harass_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>HARASS, GUI_Toggle_Harass_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>AVOID_DANGER, GUI_Toggle_Scout_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>AVOID_DANGER, GUI_Toggle_Scout_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>DEPLOY, GUI_Toggle_Deploy_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>DEPLOY, GUI_Toggle_Deploy_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>TURBO, GUI_Toggle_Turbo_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>TURBO, GUI_Toggle_Turbo_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SPOILER_LOCK, GUI_Toggle_Turbo_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>SPOILER_LOCK, GUI_Toggle_Turbo_Off</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>HARMONIC_BOMB, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>INVULNERABILITY, GUI_Toggle_Shields_On</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>FORCE_CLOAK, Unit_Cloaking</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>FORCE_CLOAK, Unit_Cloaking</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>STEALTH, Unit_Stealth</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>STEALTH, Unit_Stealth</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>STIM_PACK, GUI_Stim_Pack_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>STIM_PACK, GUI_Stim_Pack_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SENSOR_JAMMING, GUI_Sensor_Jamming_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>SENSOR_JAMMING, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>BUZZ_DROIDS, GUI_Buzz_Droids_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>BUZZ_DROIDS, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>SWAP_WEAPONS, GUI_Swap_Weapons_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>SWAP_WEAPONS, GUI_Swap_Weapons_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_On>BLAST, GUI_Weapon_Boost_SFX</SFXEvent_GUI_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>BLAST, Null</SFXEvent_GUI_Toggle_Non_Hero_Ability_Off>
+
+		<!-- Events to play when enemy is toggling ability states from the GUI / Command Bar -->
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEFEND, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEFEND, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>INTERDICT, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>INTERDICT, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>BARRAGE, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>BARRAGE, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HUNT, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HUNT, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>SPREAD_OUT, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>SPREAD_OUT, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ABILITY_LURE, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ABILITY_LURE, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>ABILITY_ROCKET_ATTACK, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>ABILITY_ROCKET_ATTACK, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>HARASS, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>HARASS, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>AVOID_DANGER, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>AVOID_DANGER, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>DEPLOY, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>DEPLOY, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>TURBO, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>TURBO, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>STIM_PACK, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_On>
+		<SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>STIM_PACK, Null</SFXEvent_GUI_Enemy_Toggle_Non_Hero_Ability_Off>
+
+		<!-- HUD Tactical Battle Audio -->
+		<SFXEvent_Enemy_Spotted> Unit_See_Enemy_Storm_Trooper </SFXEvent_Enemy_Spotted>
+
+		<SFXEvent_HUD_Landing_Zone_Captured> EHD_Landing_Zone_Captured </SFXEvent_HUD_Landing_Zone_Captured> <!-- We captured a landing soze -->
+		<SFXEvent_HUD_Landing_Zone_Lost> EHD_Landing_Zone_Lost </SFXEvent_HUD_Landing_Zone_Lost> <!-- We lost one of our landing zones -->
+		<SFXEvent_HUD_Last_Landing_Zone_Lost> EHD_Last_Landing_Zone_Lost </SFXEvent_HUD_Last_Landing_Zone_Lost> <!-- We lost our last landing zone -->
+		<!-- <SFXEvent_HUD_Build_Pad_Captured> EHD_Build_Pad_Captured </SFXEvent_HUD_Build_Pad_Captured> --> <!-- We captured a build pad -->
+		<!-- <SFXEvent_HUD_Build_Pad_Lost> EHD_Build_Pad_Lost </SFXEvent_HUD_Build_Pad_Lost> --> <!-- We lost one of our build pads -->
+		<SFXEvent_HUD_Base_Shield_Offline> EHD_Base_Shield_Offline </SFXEvent_HUD_Base_Shield_Offline> <!-- Our base shield just went offline -->
+		<SFXEvent_HUD_Enemy_Base_Shield_Offline> EHD_Enemy_Base_Shield_Offline </SFXEvent_HUD_Enemy_Base_Shield_Offline> <!-- The enemies base shield just went offline -->
+		<SFXEvent_HUD_Base_Shield_Online> EHD_Base_Shields_Up </SFXEvent_HUD_Base_Shield_Online> <!-- Our base shield just went back online -->
+		<SFXEvent_HUD_Enemy_Base_Shield_Online> EHD_Enemy_Base_Shields_Up </SFXEvent_HUD_Enemy_Base_Shield_Online> <!-- The enemies base shield just went back online -->
+		<SFXEvent_HUD_Base_Shield_Penetrated> EHD_Base_Shield_Penetrated </SFXEvent_HUD_Base_Shield_Penetrated> <!-- Our base shield was just penetrated by the enemy -->
+		<SFXEvent_HUD_Enemy_Base_Shield_Penetrated> EHD_Enemy_Base_Shield_Penetrated </SFXEvent_HUD_Enemy_Base_Shield_Penetrated> <!-- We just penetrated then enemies base shield -->
+
+		<SFXEvent_HUD_Won_Land_Battle> EHD_Battle_End </SFXEvent_HUD_Won_Land_Battle> <!-- We won the land battle -->
+		<SFXEvent_HUD_Lost_Land_Battle> EHD_Defeated </SFXEvent_HUD_Lost_Land_Battle> <!-- We lost the land battle -->
+		<SFXEvent_HUD_Won_Space_Battle> EHD_Battle_End </SFXEvent_HUD_Won_Space_Battle> <!-- We won the space battle -->
+		<SFXEvent_HUD_Lost_Space_Battle> EHD_Defeated </SFXEvent_HUD_Lost_Space_Battle> <!-- We lost the space battle -->
+
+		<SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present> EHD_Battle_End </SFXEvent_HUD_Won_Land_Battle_Enemy_TSW_Present> <!-- We won the land battle with enemy tactical superweapon present -->
+		<SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present> EHD_Defeated </SFXEvent_HUD_Lost_Land_Battle_Enemy_TSW_Present> <!-- We lost the land battle with enemy tactical superweapon present -->
+		<SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present> EHD_Battle_End </SFXEvent_HUD_Won_Space_Battle_Enemy_TSW_Present> <!-- We won the space battle with enemy tactical superweapon present -->
+		<SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present> EHD_Defeated </SFXEvent_HUD_Lost_Space_Battle_Enemy_TSW_Present> <!-- We lost the space battle with enemy tactical superweapon present -->
+
+		<SFXEvent_HUD_Tactical_Victory_Near> Unit_Near_Victory_Storm_Trooper </SFXEvent_HUD_Tactical_Victory_Near> <!-- PLACERHOLDER FOR FRANK --> <!-- We are outnumbering our enemy significantly and the FOW has been pushed back to help us exterminate the opposition -->
+		<SFXEvent_HUD_Repairing> EHD_Repairing </SFXEvent_HUD_Repairing> <!-- Repair is underway on something -->
+
+		<SFXEvent_HUD_Special_Weapon_Ready> EHD_Hypervelocity_Available </SFXEvent_HUD_Special_Weapon_Ready> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Special_Weapon_Ready></SFXEvent_HUD_Special_Weapon_Ready> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+
+		<SFXEvent_HUD_Special_Weapon_Charging> EHD_Hypervelocity_Charging </SFXEvent_HUD_Special_Weapon_Charging> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Special_Weapon_Charging></SFXEvent_HUD_Special_Weapon_Charging> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+
+		<SFXEvent_HUD_Special_Weapon_Firing> EHD_Hypervelocity_Firing </SFXEvent_HUD_Special_Weapon_Firing> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Special_Weapon_Firing></SFXEvent_HUD_Special_Weapon_Firing> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+
+		<SFXEvent_HUD_Enemy_Special_Weapon_Ready></SFXEvent_HUD_Enemy_Special_Weapon_Ready> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Ready></SFXEvent_HUD_Enemy_Special_Weapon_Ready> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+
+		<SFXEvent_HUD_Enemy_Special_Weapon_Charging></SFXEvent_HUD_Enemy_Special_Weapon_Charging> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Charging></SFXEvent_HUD_Enemy_Special_Weapon_Charging> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+
+		<SFXEvent_HUD_Enemy_Special_Weapon_Firing> EHD_Hypervelocity_Firing </SFXEvent_HUD_Enemy_Special_Weapon_Firing> <!-- Index 0 = Hypervelocity Gun -->
+		<SFXEvent_HUD_Enemy_Special_Weapon_Firing> EHD_Ion_Cannon_Firing </SFXEvent_HUD_Enemy_Special_Weapon_Firing> <!-- Index 1 = Ion Cannon - If entry here, must have 1 above even if stub -->
+
+		<SFXEvent_Tactical_Lose_Friendly_Control> Reinforcement_Point, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Reinforcement_Point, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Mining_Facility, EHD_Lost_Mining </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Mining_Facility, EHD_Capture_Mining </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Heavy_Factory_R, EHD_Lost_Heavy_Vehicle </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Heavy_Factory_R, EHD_Capture_Heavy_Vehicle </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Heavy_Factory_E, EHD_Lost_Heavy_Vehicle </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Heavy_Factory_E, EHD_Capture_Heavy_Vehicle </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Abandoned_Sensor, EHD_Lost_Sensor </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Abandoned_Sensor, EHD_Capture_Sensor </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Abandoned_Turbolaser_Tower, EHD_Lost_Turbo </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Abandoned_Turbolaser_Tower, EHD_Capture_Turbo </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Secondary_Mercenary_Outfitter, </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Secondary_Mercenary_Outfitter, EHD_Capture_Mercenaries </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Skirmish_Build_Pad, EHD_Build_Pad_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Skirmish_Mineral_Processor_Pad, EHD_Build_Pad_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Skirmish_Mineral_Processor_Pad, EHD_Build_Pad_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Skirmish_Alternative_Recruitment_Structure_Build_Pad, EHD_Build_Pad_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Skirmish_Alternative_Recruitment_Structure_Build_Pad, EHD_Build_Pad_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Skirmish_Build_Pad_Bunker, EHD_Build_Pad_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Skirmish_Build_Pad_Bunker, EHD_Build_Pad_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control> Skirmish_Ground_Mining_Facility, EHD_Build_Pad_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control> Skirmish_Ground_Mining_Facility, EHD_Build_Pad_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+
+<!--
+		<SFXEvent_Tactical_Lose_Friendly_Control>Garrison_Bunker_Capturable, EHD_Lost_Bunker </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Garrison_Bunker_Capturable, EHD_Capture_Bunker </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Hutt_Asteroid_Base, EHD_Lost_Hutt_Asteroid </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Skirmish_Hutt_Asteroid_Base, EHD_Capture_Hutt_Asteroid </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>N_Gravity_Well_Station, EHD_Lost_GravWell </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>N_Gravity_Well_Station, EHD_Capture_GravWell </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>N_Remote_Sensor_Pod, EHD_Lost_Sensor </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>N_Remote_Sensor_Pod, EHD_Capture_Sensor </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirmish_Outpost_Pad, EHD_Lost_Outpost_Pad </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Skirmish_Outpost_Pad, EHD_Capture_Outpost_Pad </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Skirrmish_Mineral_Processor_Pad, EHD_Lost_MinProc </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Skirrmish_Mineral_Processor_Pad, EHD_Capture_MinProc </SFXEvent_Tactical_Gain_Friendly_Control>
+-->
+
+		<SFXEvent_HUD_Reinforcement_Point_Contested> EHD_Reinforcement_Contested </SFXEvent_HUD_Reinforcement_Point_Contested>
+
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus1_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus1_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus2_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus2_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus3_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus3_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus4_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus4_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus5_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus5_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus6_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus6_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus7_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus7_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus8_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus8_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus9_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus9_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+		<SFXEvent_Tactical_Lose_Friendly_Control>Reinforcement_Point_Plus10_Cap, EHD_Landing_Zone_Lost </SFXEvent_Tactical_Lose_Friendly_Control>
+		<SFXEvent_Tactical_Gain_Friendly_Control>Reinforcement_Point_Plus10_Cap, EHD_Landing_Zone_Captured </SFXEvent_Tactical_Gain_Friendly_Control>
+
+		<!-- Faction-based tactical constuction world 3D SFX - these are not HUD responses, but physical sound effects -->
+		<SFXEvent_Tactical_Object_Building_Started> Structure_Buildable_Start </SFXEvent_Tactical_Object_Building_Started> <!-- An object is just starting construction in the world -->
+		<SFXEvent_Tactical_Object_Building_Loop> Structure_Buildable_Loop </SFXEvent_Tactical_Object_Building_Loop> <!-- An object is currently under construction (loop) in the world -->
+		<SFXEvent_Tactical_Object_Building_Complete> Structure_Buildable_Stop </SFXEvent_Tactical_Object_Building_Complete> <!-- An object has just completed construction in the world -->
+		<SFXEvent_Tactical_Object_Sold> Structure_Buildable_Sold </SFXEvent_Tactical_Object_Sold> <!-- An object is sold in the world -->
+
+		<!-- Weather begin/end audio cues: Rain, Snow, Sandstorm, Ash -->
+		<SFXEvent_Weather_Begin> RAIN,      </SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_Begin> SNOW,      </SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_Begin> SANDSTORM, </SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_Begin> ASH,       </SFXEvent_Weather_Begin>
+		<SFXEvent_Weather_End>   RAIN,      </SFXEvent_Weather_End>
+		<SFXEvent_Weather_End>   SNOW,      </SFXEvent_Weather_End>
+		<SFXEvent_Weather_End>   SANDSTORM, </SFXEvent_Weather_End>
+		<SFXEvent_Weather_End>   ASH,       </SFXEvent_Weather_End>
+
+		<!-- Bombing runs becoming available cues -->
+		<SFXEvent_Bombing_Run_Available> EHD_Bombing_Run_Available </SFXEvent_Bombing_Run_Available>
+		<SFXEvent_Bombing_Run_Ally_Available> EHD_Bombing_Run_Available </SFXEvent_Bombing_Run_Ally_Available>
+		<SFXEvent_Bombing_Run_Enemy_Available></SFXEvent_Bombing_Run_Enemy_Available>
+		<SFXEvent_Bombing_Run_Cancelled> EHD_Bombing_Run_Canceled </SFXEvent_Bombing_Run_Cancelled>
+		<SFXEvent_Bombing_Run_Begin_Crosstalk> EHD_Bombing_Run_Start </SFXEvent_Bombing_Run_Begin_Crosstalk>
+
+		<!-- Bombiard becoming available cues -->
+		<SFXEvent_Bombard_Available> EHD_Bombard_Available </SFXEvent_Bombard_Available>
+		<SFXEvent_Bombard_Ally_Available> EHD_Bombard_Ally_Available </SFXEvent_Bombard_Ally_Available>
+		<SFXEvent_Bombard_Enemy_Available>EHD_Bombard_Enemy_Available </SFXEvent_Bombard_Enemy_Available>
+		<SFXEvent_Bombard_Cancelled> EHD_Bombard_Canceled </SFXEvent_Bombard_Cancelled>
+
+		<!-- Starbase upgrading cues -->
+		<SFXEvent_Starbase_Upgraded> EHD_Space_Station_Upgraded </SFXEvent_Starbase_Upgraded>
+		<SFXEvent_Starbase_Enemy_Upgraded> EHD_Enemy_Space_Station_Upgraded</SFXEvent_Starbase_Enemy_Upgraded>
+		<SFXEvent_Starbase_Ally_Upgraded> EHD_Space_Station_Upgraded </SFXEvent_Starbase_Ally_Upgraded>
+
+		<!-- Player taunt SFXEvents variable sized list for taunt hot keys -->
+		<SFXEvent_Player_Taunt> Unit_Taunt_Tyber_Zann </SFXEvent_Player_Taunt>
+		<SFXEvent_Player_Taunt> Unit_Taunt_IG88   </SFXEvent_Player_Taunt>
+		<SFXEvent_Player_Taunt> Unit_Taunt_Silri </SFXEvent_Player_Taunt>
+
+	<!--Music-->
+		<Strategic_Map_Music_Event> Galactic_Map_Empire_Music_Event </Strategic_Map_Music_Event>
+		<Music_Event_Battle_Load_Screen> Tactical_Battle_Loading_Loop_Event </Music_Event_Battle_Load_Screen>
+
+		<!-- WIN/LOSE MUSIC EVENTS -->
+		<!-- Generic -->
+		<Music_Event_Tactical_Win> Empire_Win_Tactical_Event </Music_Event_Tactical_Win>
+		<Music_Event_Tactical_Lose> Empire_Lose_Tactical_Event </Music_Event_Tactical_Lose>
+		<Music_Event_Strategic_Win> Empire_Win_Strategic_Event </Music_Event_Strategic_Win>
+		<Music_Event_Strategic_Lose> Empire_Lose_Strategic_Event </Music_Event_Strategic_Lose>
+
+		<!-- Specific vs. Factions -->
+		<!-- <Music_Event_Tactical_Win_Vs_Faction>   Rebel, Empire_Win_Tactical_Event  </Music_Event_Tactical_Win_Vs_Faction> -->
+		<!-- <Music_Event_Tactical_Lose_Vs_Faction>  Rebel, Lose_To_Rebel_Event        </Music_Event_Tactical_Lose_Vs_Faction> -->
+		<!-- <Music_Event_Strategic_Win_Vs_Faction>  Rebel, Empire_Win_Strategic_Event </Music_Event_Strategic_Win_Vs_Faction> -->
+		<!-- <Music_Event_Strategic_Lose_Vs_Faction> Rebel, Lose_To_Rebel_Event        </Music_Event_Strategic_Lose_Vs_Faction> -->
+
+		<!-- SUPERWEAPON PRESENT MUSIC EVENTS - Overrides to map events below -->
+		<Music_Event_Space_Ambient_Super_Weapon></Music_Event_Space_Ambient_Super_Weapon>
+		<Music_Event_Space_Battle_Super_Weapon> Space_Map_Rebel_Battle_Death_Star_Music_Event </Music_Event_Space_Battle_Super_Weapon>
+		<Music_Event_Land_Ambient_Super_Weapon></Music_Event_Land_Ambient_Super_Weapon>
+		<Music_Event_Land_Battle_Super_Weapon></Music_Event_Land_Battle_Super_Weapon>
+
+		<!-- TACTICAL BATTLE PENDING AUDIO EVENTS -->
+		<Music_Event_Tactical_Land_Battle_Pending> Tactical_Battle_Loading_Loop_Event </Music_Event_Tactical_Land_Battle_Pending>
+		<Music_Event_Tactical_Space_Battle_Pending> Tactical_Battle_Loading_Loop_Event </Music_Event_Tactical_Space_Battle_Pending>
+
+		<!-- MAPS MUSIC EVENTS - AMBIENT (NON-BATTLE) -->
+		<Music_Event_List_Ambient> Space, Space_Map_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Ambient> Temperate, Temperate_Land_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Ambient> Arctic, Ice_Land_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Ambient> Desert, Desert_Land_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Ambient> Forest, Temperate_Land_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Ambient> Swamp, Swamp_Land_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Ambient> Volcanic, Volcanic_Land_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+		<Music_Event_List_Ambient> Urban, Urban_Land_Empire_Ambient_Music_Event </Music_Event_List_Ambient>
+
+		<!-- MAPS MUSIC EVENTS - BATTLE -->
+		<Music_Event_List_Battle> Space, Space_Map_Empire_Battle_Music_Event </Music_Event_List_Battle>
+		<Music_Event_List_Battle> Temperate, Temperate_Land_Empire_Battle_Music_Event </Music_Event_List_Battle>
+		<Music_Event_List_Battle> Arctic, Ice_Land_Empire_Battle_Music_Event </Music_Event_List_Battle>
+		<Music_Event_List_Battle> Desert, Desert_Land_Empire_Battle_Music_Event </Music_Event_List_Battle>
+		<Music_Event_List_Battle> Forest, Temperate_Land_Empire_Battle_Music_Event </Music_Event_List_Battle>
+		<Music_Event_List_Battle> Swamp, Swamp_Land_Empire_Battle_Music_Event </Music_Event_List_Battle>
+		<Music_Event_List_Battle> Volcanic, Volcanic_Land_Empire_Battle_Music_Event </Music_Event_List_Battle>
+		<Music_Event_List_Battle> Urban, Urban_Land_Empire_Battle_Music_Event </Music_Event_List_Battle>
 
 	<!--does stuff we care about; should be the same for all factions; do not change-->
 		<Space_Tactical_Unit_Cap>300</Space_Tactical_Unit_Cap> <!--Rev + FotR: 200, TR: 300-->
@@ -10312,10 +10734,46 @@
 		<Hyperspace_Speed_Factor>0.07</Hyperspace_Speed_Factor>
 		<Maintenance_Cost>1.0</Maintenance_Cost>
 
+		<Space_Retreat_Countdown_Seconds> 10.99 </Space_Retreat_Countdown_Seconds>
+		<Land_Retreat_Countdown_Seconds> 10.99 </Land_Retreat_Countdown_Seconds>
+		<Bombing_Run_Shadow_Blob_Material_Name> Bombing_Run_Reticle </Bombing_Run_Shadow_Blob_Material_Name>
+		<Bombing_Run_Blob_Size> 100.0 </Bombing_Run_Blob_Size>
+
+		<Multiplayer_Beacon_Type>Multiplayer_Beacon</Multiplayer_Beacon_Type>
+
+		<Land_Skirmish_Unit_Cap_By_Player_Count>
+			0,10,
+			1,10,
+			8,10,
+		</Land_Skirmish_Unit_Cap_By_Player_Count>
+
+		<Land_Area_Effect_Range_Overlay_Material_Name> Land_Area_Effect_Range_Overlay </Land_Area_Effect_Range_Overlay_Material_Name>
+		<Land_Area_Effect_Range_Overlay_RGBA> 128, 255, 128, 128 </Land_Area_Effect_Range_Overlay_RGBA>
+		<Land_Area_Effect_Range_Overlay_Scale_Factor> 1.20 </Land_Area_Effect_Range_Overlay_Scale_Factor>
+		<Land_Ability_Targeting_Range_Overlay_Material_Name> Land_Targeting_Range_Overlay </Land_Ability_Targeting_Range_Overlay_Material_Name>
+		<Land_Ability_Targeting_Range_Overlay_RGBA> 255, 255, 64, 128 </Land_Ability_Targeting_Range_Overlay_RGBA>
+		<Land_Ability_Targeting_Range_Overlay_Scale_Factor> 1.20 </Land_Ability_Targeting_Range_Overlay_Scale_Factor>
+
+		<Corruption_Galactic_Production_Time_Multipliers> 1.0, 1.0 </Corruption_Galactic_Production_Time_Multipliers>
+		<Corruption_Galactic_Production_Price_Multipliers> 1.0, 1.0 </Corruption_Galactic_Production_Price_Multipliers>
+		<Corruption_Tactical_Production_Time_Multipliers> 1.0, 1.0 </Corruption_Tactical_Production_Time_Multipliers>
+		<Corruption_Tactical_Production_Price_Multipliers> 1.0, 1.0 </Corruption_Tactical_Production_Price_Multipliers>
+		<Corruption_Tactical_Build_Pad_Time_Multipliers> 1.0, 1.0 </Corruption_Tactical_Build_Pad_Time_Multipliers>
+		<Corruption_Tactical_Build_Pad_Price_Multipliers> 1.0, 1.0 </Corruption_Tactical_Build_Pad_Price_Multipliers>
+
 	<!--don't touch; many of these may not do anything but not worth messing with-->
 		<Credits_Accumulation_Factor> 1.0 </Credits_Accumulation_Factor>
 		<Force_Alignment>Neutral</Force_Alignment>
-		<Basic_AI> GenericAI </Basic_AI>
+		<Basic_AI>GenericAI</Basic_AI>
+
+		<Space_Retreat_Pursue_Max_Speed_Mod_Factor> 1.0 </Space_Retreat_Pursue_Max_Speed_Mod_Factor>
+		<Space_Retreat_Units_Damaged_Mod_Factor> 1.0 </Space_Retreat_Units_Damaged_Mod_Factor>
+		<Space_Retreat_Flight_Move_Increment> 500.0 </Space_Retreat_Flight_Move_Increment>
+		<Space_Retreat_Unit_Increment_Wait_Frames> 1 </Space_Retreat_Unit_Increment_Wait_Frames>
+		<Space_Retreat_Off_Map_Dest_Pos> 12000.0, 12000.0, 0.0 </Space_Retreat_Off_Map_Dest_Pos> <!-- WARNING: For some reason, non-0.0 Z can cause problems? -->
+
+		<Land_Retreat_Pursue_Max_Speed_Mod_Factor> 1.0 </Land_Retreat_Pursue_Max_Speed_Mod_Factor>
+		<Land_Retreat_Units_Damaged_Mod_Factor> 2.0 </Land_Retreat_Units_Damaged_Mod_Factor>
 	</Faction>
 
 </Factions>

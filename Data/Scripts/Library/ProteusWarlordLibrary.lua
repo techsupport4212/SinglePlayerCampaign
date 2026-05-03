@@ -22,7 +22,7 @@
 return {
 		["ZAARIN_EMPIRE"] = {
 			FriendlyName = "Zaarin's Coup Forces",
-			Planets = {"OTTEGA", "GRAVAN", "TANGRENE", "PHINDAR"},
+			Planets = {"QRETU"},
 			LeaderTable = {"ZAARIN_GLORY"},
 			LeaderEndingNames = {"Grand Admiral Zaarin"},
 			HeroList = {"Zaarin_Glory", "Raveen_Predominant", "Arden_Lyn_Team", "Din_Zeplin", "Harkov_Protector"},

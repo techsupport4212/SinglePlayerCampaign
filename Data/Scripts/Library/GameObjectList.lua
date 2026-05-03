@@ -13,6 +13,12 @@ return {
 ["ZAARIN_GLORY"] = true,
 ["DIN_ZEPLIN"] = true,
 ["HARKOV_PROTECTOR"] = true,
+["HOLDOUT_SHIPYARD_LEVEL_FOUR"] = true,
+["HOLDOUT_SHIPYARD_LEVEL_ONE"] = true,
+["HOLDOUT_SHIPYARD_LEVEL_THREE"] = true,
+["HOLDOUT_SHIPYARD_LEVEL_TWO"] = true,
+-- Ported Units
+["C9979_CARRIER"] = true,
 -- Continue with the rest of the original list in alphabetical order
 ["ABAHT_INTREPID"] = true,
 ["ABAHT_INTREPID_SUPCOM"] = true,

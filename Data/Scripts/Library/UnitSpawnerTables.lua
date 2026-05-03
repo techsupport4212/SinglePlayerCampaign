@@ -195,6 +195,8 @@ function DefineUnitTable(faction, rosterOverride)
 		PAATAATUS = true,
 		PACC = true,
 		GARWIAN = true,
+		SECTOR_FORCES = true,
+		HOLDOUTS = true,
 	}
 	local factionData = nil
 	local returnValue = {} --Cannot write overrides directly to faction data or they will edit the cache of that file and affect all future worlds for that faction

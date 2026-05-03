@@ -26,7 +26,7 @@
 			*
 			(Game.Age > 120 # 240)
 			+
-			Variable_Self.IsFaction {Parameter_Faction = "Hostile", Parameter_Faction = "Warlords", Parameter_Faction = "Independent_Forces"}
+			Variable_Self.IsFaction {Parameter_Faction = "HOSTILE", Parameter_Faction = "WARLORDS", Parameter_Faction = "INDEPENDENT_FORCES"}
 		)
 	</Allowed_As_Defender_Land>
 
@@ -206,7 +206,7 @@
 	<Should_Destroy_Structure>
 		Function_Allowed_As_Defender_Land.Evaluate
 		*
-		(1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Neutral"})
+		(1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "NEUTRAL"})
 		*
 		(
 			0.001
@@ -367,12 +367,10 @@
 		*
 		Variable_Self.CanRetreat
 		*
-		(1.0 - Variable_Self.IsFaction {Parameter_Faction = "Hostile", 
-										Parameter_Faction = "Warlords", 
-										Parameter_Faction = "Independent_Forces",
-										Parameter_Faction = "Mandalorians", <!-- FOTR/TR only; Rev Mandos are Underworld-->
-										Parameter_Faction = "Sector_Forces",
-										Parameter_Faction = "Holdouts"
+		(1.0 - Variable_Self.IsFaction {Parameter_Faction = "HOSTILE", 
+										Parameter_Faction = "WARLORDS", 
+										Parameter_Faction = "INDEPENDENT_FORCES",
+										Parameter_Faction = "MANDALORIANS" <!-- FOTR/TR only; Rev Mandos are Underworld-->
 									   }
 		)
 	</Allowed_To_Retreat_From_Land>
@@ -1189,7 +1187,7 @@
 											}
 			)
 			*
-			(1 - Variable_Self.IsFaction {Parameter_Faction = "Hostile"})
+			(1 - Variable_Self.IsFaction {Parameter_Faction = "HOSTILE"})
 			*
 			Variable_Self.IsDefender
 			*
@@ -1219,7 +1217,7 @@
 	<Should_Firesale_Land>
 		Function_Want_To_Retreat_From_Land.Evaluate
 		*
-		(1 - Variable_Self.IsFaction {Parameter_Faction = "Hostile"})
+		(1 - Variable_Self.IsFaction {Parameter_Faction = "HOSTILE"})
 		*
 		(Game.IsCampaignGame == 1)
 		*

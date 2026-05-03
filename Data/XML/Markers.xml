@@ -63,6 +63,7 @@
 		<Marker_For_Specific_Object_Type>
 			NewRepublic_Shipyard_Level_One,
 			Empire_Shipyard_Level_One,
+			Holdout_Shipyard_Level_One,
 			Pentastar_Shipyard_Level_One,
 			Zsinj_Shipyard_Level_One,
 			Eriadu_Shipyard_Level_One,
@@ -76,6 +77,7 @@
 
 			NewRepublic_Shipyard_Level_Two,
 			Empire_Shipyard_Level_Two,
+			Holdout_Shipyard_Level_Two,
 			Pentastar_Shipyard_Level_Two,
 			Zsinj_Shipyard_Level_Two,
 			Pirate_Base,
@@ -90,6 +92,7 @@
 
 			NewRepublic_Shipyard_Level_Three,
 			Empire_Shipyard_Level_Three,
+			Holdout_Shipyard_Level_Three,
 			Pentastar_Shipyard_Level_Three,
 			Zsinj_Shipyard_Level_Three,
 			Eriadu_Shipyard_Level_Three,
@@ -103,6 +106,7 @@
 
 			NewRepublic_Shipyard_Level_Four,
 			Empire_Shipyard_Level_Four,
+			Holdout_Shipyard_Level_Four,
 			Pentastar_Shipyard_Level_Four,
 			Zsinj_Shipyard_Level_Four,
 			Rancor_Base,
