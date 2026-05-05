@@ -106,3 +106,31 @@ Recusant_Dreadnought
 		<Force_Alignment>Neutral</Force_Alignment>
 		<Basic_AI> GenericAI </Basic_AI>
 	</Faction>
+
+
+additions to base roster:
+gozanti gunship squadron
+at-dp
+ton-falk variable loadout cruiser
+secutor star destroyer
+tie-gt
+vigil corvette
+
+additional research + upgrade options
+research ISD 2 (replace isd 1)
+research ALLEGIANCE (replace secutor)
+research EXECUTOR (gives sarlacc project prototype, upgrade ozzel to executor)
+research VSD 3 (replace victory 1)
+research pursuit (replace vigil)
+research raider (replace ipv)
+research immobilizer 418 (new unit)
+
+research lancet wing (replace deathawk)
+research imperial apc (new unit)
+
+
+research tie bomber (replace tie gt)
+research howlrunner (replace tie fighter)
+research tie avenger (replace tie interceptor)
+research scimitar assault bomber (replace tie bomber)
+research tie terror (variable loadout ship variant)

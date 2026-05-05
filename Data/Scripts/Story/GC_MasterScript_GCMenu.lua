@@ -1837,6 +1837,10 @@ function Load_GC(regime_choice)
 		Enable_and_Visible_Button("s_shield_41", 0, 0)
 		Enable_and_Visible_Button("s_shield_47", 0, 0)
 
+	if Faction_Selected == "EMPIRE" then
+		Faction_Selected = "HOLDOUTS"
+	end
+
 	if Era_Selected == "Historical" or Era_Selected == "Custom" then
 		campaign_name = Map_Selected.."_"..Faction_Selected
 	else

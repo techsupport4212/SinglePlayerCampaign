@@ -110,7 +110,7 @@ function State_Delayed_Initialize(message)
 
 		Clear_Fighter_Hero("VESSERY_STRANGER_SQUADRON")
 		State_Delayed_Lock()
-		crossplot:publish("WARLORD_CHOICE_OPTION","ZAARIN_EMPIRE")
+		-- crossplot:publish("WARLORD_CHOICE_OPTION","ZAARIN_EMPIRE")
 		crossplot:publish("INITIALIZE_AI", "empty")
 	else
 		crossplot:update()

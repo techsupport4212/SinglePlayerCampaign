@@ -1,0 +1,46 @@
+<?xml version="1.0" ?>
+
+<Equations>
+
+	<Should_Garrison_Bunker>
+		Function_Near_Friendly_Base_Or_Pad.Evaluate
+		*
+		(Variable_Target.GarrisonSlotsAvailable > 0)
+		*
+		(
+			Variable_Self.IsDefender
+			+
+			Function_Cowardly_Personality.Evaluate
+			+ 
+			((Game.IsCampaignGame == 0)
+			* 
+			Function_Is_Initial_Skirmish_State_Established.Evaluate
+			*
+			(Function_May_Lose_Land_Control_Game.Evaluate == 0.0)))
+		*
+		(Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Capturable"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Rebel" } *
+		Variable_Self.IsFaction {Parameter_Faction = "REBEL"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Empire" } *
+		Variable_Self.IsFaction {Parameter_Faction = "EMPIRE"}
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Underworld" } *
+		(Variable_Self.IsFaction {Parameter_Faction = "EMPIREOFTHEHAND"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "HOLDOUTS"})
+		+
+		Variable_Target.Type.IsType {Parameter_Type = "Garrison_Bunker_Pentastar" } *
+		(Variable_Self.IsFaction {Parameter_Faction = "Zsinj_Empire"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Eriadu_Authority"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Pentastar"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Greater_Maldrood"}
+		+
+		Variable_Self.IsFaction {Parameter_Faction = "Imperial_Proteus"}))
+	</Should_Garrison_Bunker>
+
+</Equations>

@@ -19,7 +19,7 @@
 		<Variant_Of_Existing_Type>Template_Tax_Agency</Variant_Of_Existing_Type>
 
 		<Affiliation>Empire, Rebel, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Warlords, Sector_Forces, Holdouts, Corporate_Sector, Yevetha, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
-		<Required_Special_Structures>Empire_Office | Rebel_Office | EOTH_Office | Pentastar_Office | Maldrood_Office | Eriadu_Office | Zsinj_Office | Kamino_Office | Imperial_Proteus_Office | Yevetha_Office | Hapan_Royal_Office | Hapan_AlGray_Office | Hapan_Corr_Office | Hapan_Galney_Office | Hapan_Maluri_Office | Hapan_Requud_Office | Hapan_Thane_Office | SsiRuuvi_Office | CSA_Office</Required_Special_Structures>
+		<Required_Special_Structures>Empire_Office | Holdout_Office | Rebel_Office | EOTH_Office | Pentastar_Office | Maldrood_Office | Eriadu_Office | Zsinj_Office | Kamino_Office | Imperial_Proteus_Office | Yevetha_Office | Hapan_Royal_Office | Hapan_AlGray_Office | Hapan_Corr_Office | Hapan_Galney_Office | Hapan_Maluri_Office | Hapan_Requud_Office | Hapan_Thane_Office | SsiRuuvi_Office | CSA_Office</Required_Special_Structures>
 		<Starting_Spawned_Units_Tech_0>Security_Trooper_Squad, 1</Starting_Spawned_Units_Tech_0>
 	</SpecialStructure>
 
@@ -89,7 +89,7 @@
 	<SpecialStructure Name="Labour_Camp">
 		<Variant_Of_Existing_Type>Template_Labour_Camp</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Hutt_Cartels, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Yevetha, Hapes_Consortium, Hutt_Cartels, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Hutt_Cartels, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Yevetha, Hapes_Consortium, Hutt_Cartels, Imperial_Proteus, Holdouts</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Police_Responder_Assault_Squad, 1</Starting_Spawned_Units_Tech_0>
 	</SpecialStructure>
 

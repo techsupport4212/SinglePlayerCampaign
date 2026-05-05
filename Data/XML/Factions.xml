@@ -10295,7 +10295,7 @@
 		<Selection_Blob_RGBA>                44, 121, 216, 255 </Selection_Blob_RGBA>
 
 		<Infantry_Icon_Name>i_button_b1.tga</Infantry_Icon_Name>
-		<Tech_Tree_Dialog_Name>IDD_TECH_TREE_EMPIREOFTHEHAND</Tech_Tree_Dialog_Name>
+		<Tech_Tree_Dialog_Name>IDD_TECH_TREE_HOLDOUTS</Tech_Tree_Dialog_Name>
 
 		<Reinforcements_Shadow_Blob_Material_Name> Reinforcement_Overlay_Underworld </Reinforcements_Shadow_Blob_Material_Name>
 

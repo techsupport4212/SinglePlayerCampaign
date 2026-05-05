@@ -993,7 +993,7 @@
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>0</Required_Star_Base_Level>
 		<Tactical_Additional_Structure_Type>Ground_Base_Shield</Tactical_Additional_Structure_Type>
-        <Required_Special_Structures>Empire_Office | Rebel_Office | Pentastar_Office | Maldrood_Office | Eriadu_Office | Zsinj_Office | Kamino_Office | Imperial_Proteus_Office | CSA_Office | Yevetha_Office | EOTH_Office | Hutt_Office | Hapan_Royal_Office | Hapan_Requud_Office | Hapan_Galney_Office | Hapan_Maluri_Office</Required_Special_Structures>
+        <Required_Special_Structures>Empire_Office | Holdout_Office | Rebel_Office | Pentastar_Office | Maldrood_Office | Eriadu_Office | Zsinj_Office | Kamino_Office | Imperial_Proteus_Office | CSA_Office | Yevetha_Office | EOTH_Office | Hutt_Office | Hapan_Royal_Office | Hapan_Requud_Office | Hapan_Galney_Office | Hapan_Maluri_Office</Required_Special_Structures>
 		<!-- When one of these objects is created in galactic mode, we will populate every marker in land mode
 		that is a specific marker for Ground_Turbolaser_Tower. The galactic object will persist unless all
 		instances of those tactical objects have been destroyed. -->
@@ -1012,7 +1012,7 @@
 
 		<Variant_Of_Existing_Type>Template_Ion_Cannon</Variant_Of_Existing_Type>
 
-		<Affiliation>Rebel, Underworld, Hapes_Consortium, Corporate_Sector, Hutt_Cartels</Affiliation>
+		<Affiliation>Rebel, Underworld, Hapes_Consortium, Corporate_Sector, Hutt_Cartels, Holdouts</Affiliation>
 
 	</Generic_Structure>
 

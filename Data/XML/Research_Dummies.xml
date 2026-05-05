@@ -699,7 +699,7 @@
 		<Encyclopedia_Text> TEXT_TOOLTIP_TIE_DEFENDER </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
 
-		<Icon_Name>i_button_TIE_Defender.tga</Icon_Name>
+		<Icon_Name>i_button_TIE_Defender_research.tga</Icon_Name>
 		<GUI_Row>1</GUI_Row>
 
 		<Affiliation>Empire</Affiliation>
@@ -727,7 +727,7 @@
 		<Encyclopedia_Text> TEXT_TOOLTIP_SKIPRAY </Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
 
-		<Icon_Name>i_button_skipray.tga</Icon_Name>
+		<Icon_Name>i_button_skipray_research.tga</Icon_Name>
 		<GUI_Row>1</GUI_Row>
 
 		<Affiliation>Empire</Affiliation>
