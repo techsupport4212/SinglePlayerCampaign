@@ -1,0 +1,54 @@
+--*****************************************************
+--******  Thrawn's Revenge: Zaarin Insurrection  ******
+--*****************************************************
+
+require("PGStoryMode")
+require("deepcore/crossplot/crossplot")
+require("deepcore/std/class")
+require("eawx-util/StoryUtil")
+require("eawx-util/StringUtil")
+require("eawx-util/UnitUtil")
+require("CustomLibrary")
+require("SetFighterResearch")
+
+
+
+function Definitions()
+	DebugMessage("%s -- In Definitions", tostring(Script))
+
+	StoryModeEvents = {
+	}
+
+	p_empire = Find_Player("Empire")
+
+	crossplot:galactic()
+	crossplot:subscribe("LOADOUT_CHOICE_OPTION", Loadout_Choice)
+	crossplot:subscribe("LOADOUT_OPTION_SELECTED", Loadout_Set_Selected)
+end
+
+function State_Determine_Faction(message)
+	if message == OnEnter then
+		Story_Event("GE_STORY_START")
+	else
+		crossplot:update()
+	end
+end
+
+function State_Delayed_Initialize(message)
+	if message == OnEnter then
+
+		crossplot:publish("WARLORD_CHOICE_OPTION","ZAARIN_EMPIRE")
+
+		p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_TIE_Defender"))
+		p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_Skipray_Blastboat"))
+		p_empire.Unlock_Tech(Find_Object_Type("Option_Change_Loadout"))
+
+		GlobalValue.Set("CUSTOM_LOADOUT","MIXED")
+
+		crossplot:publish("INITIALIZE_AI", "empty")
+	else
+		crossplot:update()
+	end
+end
+
+

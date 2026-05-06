@@ -22,6 +22,7 @@ EMPIRE_PLAYER_AVAILABLE_UNITS = {
 	"IPV1",
 	"Lancer_Frigate",
 	"Patrol_Nebulon_B",
+	"Ton_Falk_Escort_Carrier",
 	"Strike_Cruiser",
 	"Victory_I_Star_Destroyer",
 	"Imperial_I_Star_Destroyer",
@@ -63,6 +64,7 @@ function State_Delayed_Lock()
 
 	p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_TIE_Defender"))
 	p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_Skipray_Blastboat"))
+	p_empire.Unlock_Tech(Find_Object_Type("Option_Change_Loadout"))
 end
 
 function Definitions()
@@ -110,6 +112,7 @@ function State_Delayed_Initialize(message)
 
 		Clear_Fighter_Hero("VESSERY_STRANGER_SQUADRON")
 		State_Delayed_Lock()
+		GlobalValue.Set("CUSTOM_LOADOUT","MIXED")
 		crossplot:publish("WARLORD_CHOICE_OPTION","ZAARIN_EMPIRE")
 		crossplot:publish("INITIALIZE_AI", "empty")
 	else
