@@ -1,0 +1,75 @@
+'Unknown due to pre-determined CRC' - CRC 1014117559
+'Unknown due to pre-determined CRC' - CRC 709388633
+'TEXT_EVENT_LOADOUT_CHOICE_BODY' - CRC -1691010938
+'TEXT_EVENT_LOADOUT_FULL_FIGHTER' - CRC 1867733619
+'TEXT_EVENT_LOADOUT_FULL_BOMBER' - CRC 1253480049
+'TEXT_EVENT_LOADOUT_MIXED' - CRC -484735082
+'TEXT_DOOR' - CRC 144186355
+'TEXT_UNIT_DARKSIDE_ADEPT' - CRC 1088119207
+'TEXT_POWERNODE' - CRC 516217855
+'TEXT_OPTION_CHANGE_LOADOUT' - CRC -1537301347
+'TEXT_HERO_VIEW_SPACE_COMMANDERS' - CRC -1166778222
+'TEXT_HERO_VIEW_ADMINS' - CRC 252796895
+'TEXT_HERO_VIEW_SPECIAL_FORCES' - CRC -1765136198
+'TEXT_HERO_RETIRE_GRAND_ADMIRALS' - CRC 1774912982
+'TEXT_HERO_RETIRE_SPACE_COMMANDERS' - CRC 1925531417
+'TEXT_HERO_RETIRE_ADMINS' - CRC 789826498
+'TEXT_HERO_RETIRE_SPECIAL_FORCES' - CRC -419770272
+'TEXT_COMPANY_CORPORATEHQ' - CRC 1712370024
+'TEXT_GROUND_CIS_BARRACKS' - CRC 312972050
+'TEXT_GROUND_CIS_ADVANCED_VEHICLE_FACTORY' - CRC 2072040554
+'TEXT_UNIT_VULTURE_DROID' - CRC 1127683566
+'TEXT_HYENA_SQUADRON' - CRC -1348394385
+'_Space_Planet_Felucia' - CRC -1360486779
+'_Space_Planet_Muunilinst' - CRC -1235391624
+'_Space_Planet_Honoghr_01' - CRC 1592098634
+'Assault on Hoth' - CRC 223558516
+'Clash on Tatooine' - CRC 1664110176
+'Anaxes' - CRC 1530570668
+'Metellos' - CRC -738070036
+'EAWX: Side Seven Ground War (Large)' - CRC -1896227807
+'Galactic Conquest Selection Menu' - CRC 140224980
+'' - CRC 0
+' ' - CRC -378745019
+'4 ABY                                        The New Republic' - CRC -921714661
+'In the wake of Palpatine's death at Endor, the Empire retains control of ' - CRC -354649450
+'the core under the leadership of Sate Pestage, while the rest of Imperial ' - CRC 1674344334
+'territory has fractured into various Warlord states attempting to ward off ' - CRC 1605065633
+'the growing New Republic.' - CRC 341207520
+'The New Republic fleet heavily relies on strong fighters deployed from carriers ' - CRC -1415808452
+'of all sizes to make up for a lack in larger capital ships. They also periodically ' - CRC -169426124
+'elect new leaders with their own bonuses, and can swap out commanders in ' - CRC -1761143792
+'different positions.' - CRC -489225625
+'Known Galaxy Large' - CRC -968015778
+'Conquer the known Star Wars galaxy (without the Unknown Regions). The starting ' - CRC 524109961
+'year changes planets and factions available, and the game progresses through ' - CRC 357871826
+'many in-universe events. ' - CRC 985826803
+'                                             The New Republic' - CRC 1052273036
+'                                          The Galactic Empire' - CRC -1103050945
+'Representing the core of the fragmented Imperial government, what remains ' - CRC -1884409137
+'of the Empire has a generalist roster which varies based on who is able to ' - CRC -160045963
+'establish control. By proving themselves to be the legitimate government, ' - CRC -1587705982
+'they can attract new heroes to their faction.' - CRC -1082787395
+'Zaarin Insurrection' - CRC 1828717305
+'Story Mode campaign focused on the leadup to the Battle of Endor, with a ' - CRC 2130423170
+'focus on progressing through multiple campaigns before the final battle.' - CRC 1723039923
+'2 BBY                                     The Galactic Empire' - CRC 637388920
+'You start as a commander in an Imperial Sector Fleet. Move up the ranks through ' - CRC -1272151357
+'multiple campaigns as you fight against all those who stand against the Empire.' - CRC 1286310010
+'Cheats Enabled' - CRC 1424627196
+'Era' - CRC -1364403069
+'3 ABY month 1 (Era 0) - Difficulty: Captain' - CRC 1511631989
+'===========  INFRASTRUCTURE & RESOURCES   ===========' - CRC -2075633797
+'INFRASTRUCTURE SCORE: Pending' - CRC 1322681004
+'SHIP CREWS: 250 | PER CYCLE: Pending' - CRC 159748387
+'SHIP UPKEEP: Pending | NET INCOME: Pending' - CRC 1223911488
+'Zaarin's Coup Forces has conquered Qretu 5' - CRC 1824241651
+'INFRASTRUCTURE SCORE: 20' - CRC -369920832
+'SHIP CREWS: 250 | PER CYCLE: +0' - CRC 295511077
+'SHIP UPKEEP: $385 | NET INCOME: $2165' - CRC 1032968712
+'TEXT_GUI_DIALOG_TOOLTIP_IDC_STATIC_MEDIUM' - CRC -23034086
+'TEXT_GUI_DIALOG_TOOLTIP_IDC_SAVE_GAME' - CRC -2083286698
+'Game Version: 3.5.1.3' - CRC -420113876
+'USER STRING 1 HERE' - CRC 717632970
+'USER STRING 2 HERE' - CRC -1403893916
+'USER STRING 3 HERE' - CRC 1729008833

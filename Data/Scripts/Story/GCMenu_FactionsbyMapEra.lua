@@ -1516,7 +1516,7 @@ return {
 					["ZSINJ_EMPIRE"] = false,
 					["GREATER_MALDROOD"] = false,
 					["HAPES_CONSORTIUM"] = false,
-					["EMPIREOFTHEHAND"] = false,
+					["EMPIREOFTHEHAND"] = true,
 					["HUTT_CARTELS"] = false,
 					["CORPORATE_SECTOR"] = false,
 					["IMPERIAL_PROTEUS"] = false,

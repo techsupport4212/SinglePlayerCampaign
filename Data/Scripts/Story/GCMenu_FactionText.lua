@@ -208,7 +208,7 @@ return {
 	,["FIP_TITLE"] = "Final Imperial Push"
 	,["Caamas_TITLE"] = "Caamas Crisis"
 	-- TechSupport: Added in title for the singleplayer mode
-	,["StoryMode_TITLE"] = "Zaarin Insurrection"
+	,["StoryMode_TITLE"] = "Story Mode"
 	,["FTGU_TITLE"] = "From the Ground Up"
 	,["Custom_Small_TITLE"] = "Custom GC Small"
 	,["Custom_Medium_TITLE"] = "Custom GC Medium"

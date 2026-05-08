@@ -313,7 +313,7 @@ return {
 		},
 		-- TechSupport: Added in text for the singleplayer mode
 		["StoryMode"] = {
-			Title = "Zaarin Insurrection"
+			Title = "Story Mode Campaign"
 			,Description = "Story Mode campaign focused on the leadup to the Battle of Endor, with a focus on progressing through multiple campaigns before the final battle."
 			,DateOverride = "2 BBY"
 			,EraTextOverride = {
