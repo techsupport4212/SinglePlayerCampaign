@@ -104,6 +104,8 @@
 	<File>Conquests\Regional\WesternReaches\Western_Reaches_Era_2.xml</File>
 
 	<!-- Historical -->
+	<File>Conquests\Zaarin\Campaigns_Zaarin.xml</File>
+	
 	<File>Conquests\Historical\7_ABY_BactaWar\Campaigns_BactaWar.xml</File>
 	<File>Conquests\Historical\9_ABY_IsardsRevenge\Campaigns_IsardsRevenge.xml</File>
 	<File>Conquests\Historical\9_ABY_ThrawnCampaign\Campaigns_ThrawnCampaign.xml</File>

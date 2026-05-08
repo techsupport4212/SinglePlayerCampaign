@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+
+<Story_Mode_Plots>
+	<Lua_Script>GC_MasterScript_Zaarin</Lua_Script>
+	<Active_Plot>Conquests\Zaarin\Story_Zaarin_Empire.xml</Active_Plot>
+
+	<Active_Plot>Conquests\Factions\Story_Generic_EMPIRE.xml</Active_Plot>
+</Story_Mode_Plots>
