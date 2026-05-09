@@ -2,7 +2,7 @@
 <Campaigns>
 	<Campaign Name="Zaarin_Empire">
 		<Campaign_Set> Zaarin </Campaign_Set>
-		<Sort_Order>2</Sort_Order>
+		<Sort_Order>1</Sort_Order>
 		<Tutorial>true</Tutorial>
 
 		<Text_ID> Zaarin Insurrection Campaign </Text_ID>
@@ -581,7 +581,6 @@
 		<Starting_Forces> Zsinj_Empire, Tangrene, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Tangrene, Imperial_I_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Tangrene, Imperial_I_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Zsinj_Empire, Tangrene, Zsinj_Iron_Fist_Executor </Starting_Forces>
 		<!--Tangrene Land Forces -->
 		<Starting_Forces> Zsinj_Empire, Tangrene, Zsinj_Office </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Tangrene, Raptor_Trooper_Company </Starting_Forces>

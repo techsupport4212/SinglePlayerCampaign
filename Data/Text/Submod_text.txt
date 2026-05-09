@@ -1,1 +1,3 @@
 ﻿TEXT_CAMPAIGN_DESCRIPTION_ZAARIN,Grand Admiral Demetrius Zaarin, once entrusted with the future of Imperial starfighter design, has betrayed the Emperor and launched a sudden, calculated coup. His forces strike deep into loyalist territory, kidnapping Emperor Palpatine and seizing advanced prototypes in a bid to seize control of the Empire itself.Track down Zaarin’s hidden shipyards, recover stolen technology, and crush the traitor before his insurrection tears the Imperial Navy apart.
+TEXT_CONQUEST_ZAARIN_GE_INTRO,Sector Command: TODO
+TEXT_STORY_TRANSMISSION_SECTOR_COMMAND,Incoming Transmission from Sector Command
