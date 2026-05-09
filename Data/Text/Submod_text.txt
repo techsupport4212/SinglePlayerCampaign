@@ -1,3 +1,114 @@
 ﻿TEXT_CAMPAIGN_DESCRIPTION_ZAARIN,Grand Admiral Demetrius Zaarin, once entrusted with the future of Imperial starfighter design, has betrayed the Emperor and launched a sudden, calculated coup. His forces strike deep into loyalist territory, kidnapping Emperor Palpatine and seizing advanced prototypes in a bid to seize control of the Empire itself.Track down Zaarin’s hidden shipyards, recover stolen technology, and crush the traitor before his insurrection tears the Imperial Navy apart.
 TEXT_CONQUEST_ZAARIN_GE_INTRO,Sector Command: TODO
+TEXT_HERO_ARDEN_LYN,Arden Lyn
+TEXT_HERO_BATCH,Martio Batch
+TEXT_HERO_DARTH_VADER,Darth Vader
+TEXT_HERO_DECLANN,Nial Declann
+TEXT_HERO_DIN,Namuura Din
+TEXT_HERO_EMPEROR_PALPATINE,Emperor Palpatine
+TEXT_HERO_HARKOV,Harkov
+TEXT_HERO_IL_RAZ,Ishin-Il-Raz
+TEXT_HERO_KUUZTIN,Kuuztin
+TEXT_HERO_TESHIK,Osvald Teshik
+TEXT_HERO_VIEW_GRAND_ADMIRALS,View Grand Admiral Roster
+TEXT_HERO_ZAARIN,Demetrius Zaarin
+TEXT_NOTE,Put text changes for submods here
+TEXT_STATBLOCK_HYENA_BASE,Health: 11 | Unshielded
+TEXT_STATBLOCK_HYENA_MOVE,Speed: 8 | Maneuverability: 5.0
+TEXT_STATBLOCK_HYENA_SQUADRON,Squadron: 24x Hyena Droid Bomber
+TEXT_STATBLOCK_HYENA_SQUADRON_DOUBLE,Squadron: 48x Hyena Droid Bomber
+TEXT_STATBLOCK_HYENA_SQUADRON_HALF,Squadron: 12x Hyena Droid Bomber
+TEXT_STATBLOCK_HYENA_WEAP1,1x Fighter Laser Cannon: 4 / 3.0s / 1.0km
+TEXT_STATBLOCK_HYENA_WEAP2,1x Fighter Concussion Missile (AF): 1 / 50.0s / 1.8km
+TEXT_STATBLOCK_HYENA_WEAP3,1x Light Proton Rocket (AC): 1 / 25.0s / 3.0km
+TEXT_STATBLOCK_HYENA_WEAP4,1x Light Concussion Bomb (AC): 1 / 37.5s / 0.8km
+TEXT_STATBLOCK_VULTURE_BASE,Health: 4 | Unshielded
+TEXT_STATBLOCK_VULTURE_ESCORT_BASE,Health: 25 | Unshielded
+TEXT_STATBLOCK_VULTURE_HERO_BASE,Health: 325 | Unshielded
+TEXT_STATBLOCK_VULTURE_MOVE,Speed: 8.05 | Maneuverability: 5.0
+TEXT_STATBLOCK_VULTURE_SQUADRON,Squadron: 24x Vulture Droid-I
+TEXT_STATBLOCK_VULTURE_SQUADRON_DOUBLE,Squadron: 48x Vulture Droid-I
+TEXT_STATBLOCK_VULTURE_SQUADRON_HALF,Squadron: 12x Vulture Droid-I
+TEXT_STATBLOCK_VULTURE_WEAP1,1x Fighter Laser Cannon: 4 / 3.0s / 1.0km
+TEXT_STATBLOCK_VULTURE_WEAP2,1x Fighter Concussion Missile: 1 / 75.0s / 1.8km
 TEXT_STORY_TRANSMISSION_SECTOR_COMMAND,Incoming Transmission from Sector Command
+TEXT_TOOLTIP_ARDEN_LYN,Arden Lyn was a female Human and master of Teräs Käsi who belonged to the Followers of Palawa. At the end of the Great Jedi Purge, Lyn was reawakened by three of Darth Sidious's Inquisitors, who spared her life so that she could serve Sidious as an Emperor's Hand. Lyn did so for a while, spurred on by the Sidious's promise that he would resurrect Xendor from the dead. When she finally came to accept that Sidious had been lying, she turned rogue, and aided Grand Admiral Demetrius Zaarin in his attempt to abduct Sidious. The endeavor failed, and Lyn was forced to flee.
+TEXT_TOOLTIP_BATCH,Martio Batch was one of the original twelve Grand Admirals appointed by Emperor Palpatine. Batch preferred to avoid attention and disliked Imperial court politics. As a result of his low profile, he earned the nickname the "Invisible Admiral." Following the Imperial defeat at the Battle of Yavin in 0 BBY, the Emperor tasked Batch with designing a fool-proof cloaking device on pain of death. Despite succeeding initially, the project was destroyed by the Rebels and Batch fled into hiding, fearing the Emperor's wrath, until hearing news of Palpatine's death at Endor.
+TEXT_TOOLTIP_C9979,A ubiquitous logistics vessel designed to resemble the pre-existing cargo barges and support vessels of the Trade Federation. Though most famous as a supermassive troop lander, the C-9979 is often converted to a respectable carrier and picket by converting the internal storage into bays suitable for storing both piloted and droid starfighters.
+TEXT_TOOLTIP_C9979_FACTORY_CIS_1,B1 Battle Droid Squad: 4 / ∞
+TEXT_TOOLTIP_C9979_FACTORY_CIS_2,Single Trooper Aerial Platform: 4 / 8
+TEXT_TOOLTIP_C9979_FACTORY_CIS_3,Armored Assault Tank-1: 2 / 4
+TEXT_TOOLTIP_C9979_FACTORY_CIS_4,Multi-Troop Transport: 1 / 0
+TEXT_TOOLTIP_C9979_FACTORY_CIS_HEALTH,Health: 2000 (Structure)
+TEXT_TOOLTIP_C9979_FACTORY_CIS_WEAP1,4x Heavy AV Blaster Cannons: 2 / 1.0s / 1000m
+TEXT_TOOLTIP_C9979_HULL,Hull: 700 (Corvette)
+TEXT_TOOLTIP_C9979_MOVE,Speed: 3.5 | Accel: 0.2 | Turn: 0.45
+TEXT_TOOLTIP_C9979_PD,Point-Defense: 1 / 1.14s / 1.5km
+TEXT_TOOLTIP_C9979_SHIELD,Shields: 700 / [14/R] (Corvette)
+TEXT_TOOLTIP_C9979_SQUADRON,Fighters: 1 / 1 | Bombers: 1 / 2
+TEXT_TOOLTIP_C9979_WEAP1,2x Heavy Dual Laser Cannons: 2 / 5.0s / 4.6km
+TEXT_TOOLTIP_C9979_WEAP2,2x Medium Dual Rapid Laser Cannons: 6 / 5.0s / 3.6km
+TEXT_TOOLTIP_CAPABILITY_SWARM_SQUADRON,Swarm Squadron: 2x fighters in squadron
+TEXT_TOOLTIP_COMMAND_COURAGEOUS,Modified Imperial-I Star Destroyer, Courageous
+TEXT_TOOLTIP_COMMAND_DEVESTATOR,Imperial-I Star Destroyer, Devestator
+TEXT_TOOLTIP_COMMAND_ELEEMOSYNARY,Imperial-I Star Destroyer, Eleemosynary
+TEXT_TOOLTIP_COMMAND_EMPERORSDISCIPLE,Imperial-II Star Destroyer, Emperor's Disciple
+TEXT_TOOLTIP_COMMAND_GARRETT,Imperial-I Star Destroyer, Garrett
+TEXT_TOOLTIP_COMMAND_GLORY,Imperial-I Star Destroyer, Glory
+TEXT_TOOLTIP_COMMAND_MENISCUS,Modified Imperial-II Star Destroyer, Meniscus
+TEXT_TOOLTIP_COMMAND_PROTECTOR,Victory-II Star Destroyer, Protector
+TEXT_TOOLTIP_COMMAND_RECONDITE,Imperial-I Star Destroyer, Recondite
+TEXT_TOOLTIP_COMMAND_STALWART,Victory-I Star Destroyer, Stalwart
+TEXT_TOOLTIP_COMMAND_VANGUARD,Imperial-I Star Destroyer, Vanguard
+TEXT_TOOLTIP_COMMAND_ZEPLIN,Victory-I Star Destroyer, Zeplin
+TEXT_TOOLTIP_DECLANN,Nial Declann was a Human male Force-sensitive and one of the original twelve Grand Admirals appointed by Emperor Palpatine. Declann's impressive, Force-enhanced skills as a TIE pilot brought him to the attention of Emperor Palpatine's agents who sent him to the Prophets of the Darkside for training. When his training was complete, he was allowed to return to service in the Imperial Navy. Declann specialized in Battle Meditation to enhance his forces, but he suffered from severe mood swings.
+TEXT_TOOLTIP_DIN,Namuura Din was a commander in the Imperial Navy, serving as one of Admiral Demetrius Zaarin's top commanders and later joining him when he splintered off from the Empire and founded a new faction during the Galactic Civil War. Upon learning of Emperor Palpatine's plans for the Rebel Alliance at Endor and the Death Star II superweapon's fully operational status, Din decided to defect to the Alliance and provide them with the information and a Missile Boat. While he met with the Rebel cruiser Link at a rendezvous point aboard his command ship, the Zeplin, and successfully transferred them, Imperial forces attacked the ships, and the Zeplin was captured with Din aboard. He divulged his knowledge to the Sith Lord Darth Vader in a subsequent interrogation. 
+TEXT_TOOLTIP_HARKOV,Harkov was an male human admiral who served in the Alliance Fleet and before his defection in the Imperial Navy during the Galactic Civil War. Shortly after the Galactic Empire victory in the Battle of Hoth, he was charged with bringing an end to the Sepan Civil War, and succeeded in bringing order to the system. However, during the campaign, he also supplied arms to both sides.
+TEXT_TOOLTIP_HMP,The gunship colloquially known as the HMP is a joint effort between Baktoid and Haor Chall developed in response to the success of the Republic's LAAT and underperformance of the earlier MAF. It is armed with three laser cannon turrets and two racks of seven missiles which can be fitted with different kinds of ordnance along with two wingtip hardpoints for a variety of weapons.
+TEXT_TOOLTIP_HMP_COMPANY,Company: 2x HMP Gunship
+TEXT_TOOLTIP_HMP_HEALTH,Health: 120 (Heavy Speeder)
+TEXT_TOOLTIP_HMP_MOVE,Speed: 5.0 | Turn: 4.0 
+TEXT_TOOLTIP_HMP_SHIELD,Shields: 100 / [10/R] (Speeder)
+TEXT_TOOLTIP_HMP_WEAP1,1x AV Blaster Cannon: 1 / 2.0s / 400m
+TEXT_TOOLTIP_HMP_WEAP2,2x AI Blaster Cannons: 4 / 3.0s / 400m
+TEXT_TOOLTIP_HMP_WEAP3,1x Light AI Blaster Cannon: 4 / 2.0s / 400m
+TEXT_TOOLTIP_HMP_WEAP4,1x Concussion Missile: 2 / 12.0s / 400m
+TEXT_TOOLTIP_HYENA,A twin-headed expansion of the vulture droid intended to operate as a bomber, replacing prior Trade Federation bomber models in that role. Its slightly larger body size resolves several of the vulture droid's endurance issues, making it well suited to engaging enemy capital ships or dogfighting if pressed.
+TEXT_TOOLTIP_IL_RAZ,Ishin-Il-Raz was promoted by Emperor Palpatine to be one of the original twelve Grand Admirals in spite of having no military training and his appointment was met with much criticism. A fanatical supporter of the New Order and its core precepts, Il-Raz began to idolize Palpatine, and initiated a series of bloody massacres in an attempt to win favor with the Emperor.
+TEXT_TOOLTIP_J1_CANNON,An awkwardly mobile, semi-autonomous artillery unit that requires a loading crew or field magazine attachment that is not particularly able to respond to battlefield conditions due to its cumbersome nature. It is notable for being able to operate independently, with or without crew.
+TEXT_TOOLTIP_J1_CANNON_COMPANY,Company: 2x J1 Proton Cannon
+TEXT_TOOLTIP_J1_CANNON_HEALTH,Health: 50 (Heavy Vehicle)
+TEXT_TOOLTIP_J1_CANNON_MOVE,Speed: 0.75 | Turn: 2.0 
+TEXT_TOOLTIP_J1_CANNON_WEAP1,1x Heavy Mass Driver Cannon: 1 / 3.0s / 800m
+TEXT_TOOLTIP_KUUZTIN,Kuuztin was the captain of the Imperial-class Star Destroyer Courageous during the Galactic Civil War. In 3.5 ABY, Kuuztin was selected to join Grand Admiral Thrawn's task force during his campaign against the traitorous Grand Admiral Demetrius Zaarin. After leading a successful raid on a supply convoy bound for Zaarin's fleet, Kuuztin learned the location of one of Zaarin's supply depots and decided to attack it without Thrawn's authorization. Kuuztin hoped the ambitious attack would lead to a promotion, but his overconfidence led him into an ambush, and he was killed when his ship was destroyed. 
+TEXT_TOOLTIP_MTT,The Multi-Troop Transport is a ponderous and heavily armored transport vehicle. Though only lightly armed, the MTT can carry 112 battle droids through a battlefield and rapidly deploy them via a hydraulic rack.
+TEXT_TOOLTIP_MTT_CARGO,A version of the Multi-Troop Transport used for supply lines. Its inner droid racks have been gutted, instead using the space to transport massive loads of cargo within its bulky frame.
+TEXT_TOOLTIP_MTT_CARGO_COMPANY,Company: 1x Cargo Multi-Troop Transport
+TEXT_TOOLTIP_MTT_COMPANY,Company: 1x Multi-Troop Transport
+TEXT_TOOLTIP_MTT_DEPLOY,Deploys: 1x B1 Battle Droid Assault Squad
+TEXT_TOOLTIP_MTT_HEALTH,Health: 900 (Heavy Vehicle)
+TEXT_TOOLTIP_MTT_MOVE,Speed: 0.75 | Turn: 1.0 
+TEXT_TOOLTIP_MTT_WEAP1,2x Heavy AI Blaster Cannons: 4 / 1.0s / 320m
+TEXT_TOOLTIP_PALPATINE,Palpatine was a Senator from Naboo who was elected Supreme Chancellor of the Republic. The instability of the Clone Wars allowed him to accrue tremendous executive power, to the point he declared himself Emperor by its end. Behind his genial public persona Palpatine is the Sith Lord Darth Sidious, and he commands a terrifying mastery of the Dark Side.
+TEXT_TOOLTIP_PALPATINE_MOVE,Speed: 1.1
+TEXT_TOOLTIP_PALPATINE_WEAP1,1x Lightsaber: 1 / 0.1s / 1m
+TEXT_TOOLTIP_PALPATINE_WEAP2,1x Force Lightning: 25 / 0.1s / 175m
+TEXT_TOOLTIP_TESHIK,Osvald Teshik, a native of Anaxes and respected strategist, served in the Imperial Starfleet as one of the original twelve Grand Admirals. After a failed mission against the Hapes Consortium, he was severely injured and required extensive cybernetic replacement. During the Battle of Endor, he continued fighting from his flagship until it was disabled and captured.
+TEXT_TOOLTIP_TRAIT_ACEPILOT,Ace Pilot
+TEXT_TOOLTIP_TRAIT_FORCESENSITIVE,Force Sensitive
+TEXT_TOOLTIP_VADER,The Dark Lord Darth Vader was once the Jedi Anakin Skywalker. When he was defeated by his former friend Obi-wan Kenobi, Vader was retrieved by Darth Sidious. His agonizing recovery had Vader encased in imposing life-support armor, and with it came the realization he had lost everything save for his new master. Now Vader acts as the notorious enforcer of the Galactic Empire, seeking to crush all who oppose it with his brutal strength and the power of the Dark Side.
+TEXT_TOOLTIP_VADER_HEALTH,Health: 300 [2%/5s] (Hero)
+TEXT_TOOLTIP_VADER_MOVE,Speed: 1.1
+TEXT_TOOLTIP_VADER_WEAP1,1x Lightsaber: 1 / 0.1s / 1m
+TEXT_TOOLTIP_VULTURE_DROID,A small droid fighter that relies on numbers and maneuverability to win dogfights. While modular enough to carry munitions, they are often replaced with extra fuel slugs to increase flight time from being minutes long. They are best used to swarm enemy fighters and bombers.
+TEXT_TOOLTIP_ZAARIN,Demetrius Zaarin was an Imperial admiral who sought to install himself as Emperor of the galaxy during the Galactic Civil War. Originally a Grand Admiral, Zaarin was the Imperial Navy's head of starfighter research and development. At his facility "Research," he developed such starfighters as the TIE Advanced and the TIE Defender. He also secured new technology for the Empire from third parties, such as the Habeen. In addition to his design skills, he was a talented tactician. 
+TEXT_UNIT_C9979,C-9979 Carrier
+TEXT_UNIT_HMP,Heavy Missile Platform Gunship
+TEXT_UNIT_HMP_COMPANY,HMP Gunship Company
+TEXT_UNIT_HYENA_DROID,Hyena Droid Bomber
+TEXT_UNIT_J1_CANNON,J-1 Proton Cannon
+TEXT_UNIT_J1_CANNON_COMPANY,J-1 Proton Cannon Company
+TEXT_UNIT_MTT,Multi-Troop Transport
+TEXT_VULTURE_SQUADRON,Vulture Droid-I Squadron
+TEXT_VULTURE_SQUADRON_HALF,Vulture Droid-I Squadron 1/2
+TEXT_VULTURE_SQUADRON2,Vulture Droid-I Squadron x2
