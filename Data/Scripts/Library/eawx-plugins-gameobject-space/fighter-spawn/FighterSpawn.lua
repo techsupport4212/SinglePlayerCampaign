@@ -66,11 +66,11 @@ end
 ---@private
 function FighterSpawn:sanitize_fighter_data(fighter_data)
     local customLoadout = GlobalValue.Get("CUSTOM_LOADOUT")
-
+    
     if customLoadout == nil then
         return fighter_data
     end
-
+    
     local loadoutVariants = {
         ["FULL_FIGHTER"] = {"LOADOUT_FULL_FIGHTERS"},
         ["FULL_BOMBER"] = {"LOADOUT_FULL_BOMBERS"},
@@ -84,7 +84,7 @@ function FighterSpawn:sanitize_fighter_data(fighter_data)
 
     local sanitized = {}
     local matchedAny = false
-
+    
     for type_string, data in pairs(fighter_data) do
         local typeUpper = string.upper(type_string)
         for _, variant in pairs(variants) do
@@ -95,7 +95,7 @@ function FighterSpawn:sanitize_fighter_data(fighter_data)
             end
         end
     end
-
+    
     if not matchedAny then
         return fighter_data
     end
@@ -201,6 +201,12 @@ function FighterSpawn:check_fighters()
                      delay = 1
                 end
             end
+            DebugMessage(
+                "%s -- Scheduling spawn for %s with delay %d",
+                tostring(Script),
+                tostring(data.RefString),
+                delay
+            )
             Register_Timer(self.spawn, delay, {self, data})
             table.remove(self.spawned_fighers, i)
         end
@@ -251,22 +257,28 @@ function FighterSpawn:get_initial_fighters(fighter_data, original_owner)
             local standardtype = nil
             local suffix = ""
 
-            if standards[type_string] then
-                standardtype = type_string
-            elseif randoms[type_string] then
-                randomtype = type_string
+            local typeUpper = string.upper(type_string)
+            if string.sub(typeUpper, 1, 8) == "LOADOUT_" then
+                -- explicit loadout wrapper key: treat as a standard-fighters module name
+                standardtype = typeUpper
             else
-                for _, affix in pairs(suffixes) do
-                    local try = string.gsub(type_string, affix, "")
-                    if standards[try] then
-                        standardtype = try
-                        suffix = affix
-                        break
-                    end
-                    if randoms[try] then
-                        randomtype = try
-                        suffix = affix
-                        break
+                if standards[type_string] then
+                    standardtype = type_string
+                elseif randoms[type_string] then
+                    randomtype = type_string
+                else
+                    for _, affix in pairs(suffixes) do
+                        local try = string.gsub(type_string, affix, "")
+                        if standards[try] then
+                            standardtype = try
+                            suffix = affix
+                            break
+                        end
+                        if randoms[try] then
+                            randomtype = try
+                            suffix = affix
+                            break
+                        end
                     end
                 end
             end
@@ -316,6 +328,13 @@ function FighterSpawn:get_initial_fighters(fighter_data, original_owner)
             end
         end
     end
+
+    DebugMessage(
+        "%s -- Built %d initial fighter entries for %s",
+        tostring(Script),
+        table.getn(initial_fighters),
+        tostring(self.object_name)
+    )
 
     return initial_fighters
 end
@@ -425,6 +444,12 @@ end
 function FighterSpawn.spawn(wrapper)
     local self = wrapper[1]
     local data = wrapper[2]
+    DebugMessage(
+        "%s -- Spawn timer fired for %s (%s)",
+        tostring(Script),
+        tostring(data.RefString),
+        tostring(data.TypeString)
+    )
     local objectType = data.ObjectType
     local RefString = data.RefString
     local TypeString = data.TypeString
@@ -463,6 +488,14 @@ function FighterSpawn.spawn(wrapper)
 
     if entry.Reserve > 0 then
         local fighterType = Find_Object_Type(TypeString)
+        if not fighterType then
+            DebugMessage(
+                "Could not find fighter type %s for Carrier %s",
+                tostring(TypeString),
+                tostring(self.object_name)
+            )
+            return
+        end
         local squadron = Spawn_Unit(fighterType, location, Object.Get_Owner())[1]
         if TestValid(Find_First_Object("ATTACKER ENTRY POSITION")) and TestValid(Find_First_Object("SCRIPTED_BATTLE_MARKER")) then
             squadron.Face_Immediate(Find_First_Object("ATTACKER ENTRY POSITION"))

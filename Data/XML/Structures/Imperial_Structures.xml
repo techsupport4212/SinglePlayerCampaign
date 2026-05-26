@@ -1,0 +1,1963 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Imperial_Structures>
+
+	<SpecialStructure Name="Sith_Academy">
+		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_COMPANY_SITH_ACADEMY</Text_ID>
+
+		<Icon_Name>I_BUTTON_SITH_ACADEMY.TGA</Icon_Name>
+
+		<Land_Model_Name>Sith_Temple_Academy.alo</Land_Model_Name>
+		<Land_Terrain_Model_Mapping>
+			Temperate, 			Sith_Temple_Academy_Forest.ALO,
+			Urban, 				Sith_Temple_Academy_Urban.ALO,
+			Arctic, 			Sith_Temple_Academy_Urban.ALO,
+			Volcanic, 			Sith_Temple_Academy_Urban.ALO,
+			Desert, 			Sith_Temple_Academy.ALO,
+			Forest, 			Sith_Temple_Academy_Forest.ALO,
+			Swamp, 				Sith_Temple_Academy_Forest.ALO
+		</Land_Terrain_Model_Mapping>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Affiliation>Warlords</Affiliation>
+
+		<Build_Cost_Credits>1000</Build_Cost_Credits>
+
+		<Required_Planets>Dromund, Korriban, Thule, Malachor</Required_Planets>
+
+		<Encyclopedia_Text>
+		TEXT_COMPANY_SITH_ACADEMY_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_COMPANY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_COMPANY_GARRISON_SITH_ACADEMY1
+		TEXT_COMPANY_GARRISON_SITH_ACADEMY2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UNITS_SITH_ACADEMY
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		TEXT_TOOLTIP_BONUS_INFRASTRUCTURE_PLUS_1
+		TEXT_TOOLTIP_SEPARATOR_LOCATION_BLOCK
+		TEXT_OBJECT_STAR_SYSTEM_DROMUND
+		TEXT_OBJECT_STAR_SYSTEM_KORRIBAN
+		TEXT_OBJECT_STAR_SYSTEM_THULE
+		TEXT_OBJECT_STAR_SYSTEM_MALACHOR
+		</Encyclopedia_Text>
+		
+		<Build_Limit_Current_Per_Player>99</Build_Limit_Current_Per_Player> <!-- Meant to be unlimited for current amount, but only one per planet for greater access in this era -->
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Dark_Jedi_Company, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Dark_Jedi_Company, 2</Reserve_Spawned_Units_Tech_0>
+		
+		<Starting_Spawned_Units_Tech_0>Sith_Sorcerer, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Sith_Sorcerer, 1</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+
+	<!-- Empire -->
+
+	<SpecialStructure Name="Empire_Capital">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_EMPIRE_CAPITAL</Text_ID>
+
+		<Land_Model_Name>EB_GOVERNORSQUARTERS.alo</Land_Model_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Icon_Name>I_BUTTON_GE_CAPITAL.TGA</Icon_Name>
+
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>Royal_Guard_Ranged_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Royal_Guard_Ranged_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Royal_Guard_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Royal_Guard_Stormtrooper_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_ST_Walker, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_ST_Walker, 10</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>S_1_Firehawke, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>S_1_Firehawke, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_0>
+
+		<!--Era 4 & 5-->
+		<Starting_Spawned_Units_Tech_2>Royal_Guard_Ranged_Squad, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Royal_Guard_Ranged_Squad, 6</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Shadow_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Shadow_Stormtrooper_Squad, 9</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>AT_ST_A_Walker, 4</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>AT_ST_A_Walker, 8</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>S_1_Firehawke, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>S_1_Firehawke, 4</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_2>
+
+		<!--Era 6 & 7-->
+		<Starting_Spawned_Units_Tech_3>Royal_Guard_Ranged_Squad, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Royal_Guard_Ranged_Squad, 6</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>Elite_Guard_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Elite_Guard_Stormtrooper_Squad, 9</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>AT_ST_A_Walker, 4</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>AT_ST_A_Walker, 8</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>S_1_Firehawke, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>S_1_Firehawke, 4</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_3>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_GE1
+		TEXT_TOOLTIP_CAPITAL_GE2 
+		TEXT_TOOLTIP_CAPITAL_GE3
+		TEXT_TOOLTIP_CAPITAL_GE4
+		TEXT_TOOLTIP_CAPITAL_GE5
+		TEXT_TOOLTIP_CAPITAL_GE6
+		TEXT_TOOLTIP_CAPITAL_GE7
+		TEXT_TOOLTIP_CAPITAL_GE8
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Death_Clone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Empire_Sector_Capital">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_EMPIRE_SECTOR_CAPITAL</Text_ID>
+
+		<Land_Model_Name>EB_GOVERNORSQUARTERS.alo</Land_Model_Name>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Build_Cost_Credits>5000</Build_Cost_Credits>
+
+		<Icon_Name>I_BUTTON_GE.TGA</Icon_Name>
+
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>Royal_Guard_Ranged_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Royal_Guard_Ranged_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Royal_Guard_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Royal_Guard_Stormtrooper_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_ST_Walker, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_ST_Walker, 10</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>S_1_Firehawke, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>S_1_Firehawke, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_0>
+
+		<!--Era 4 & 5-->
+		<Starting_Spawned_Units_Tech_2>Royal_Guard_Ranged_Squad, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Royal_Guard_Ranged_Squad, 6</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Shadow_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Shadow_Stormtrooper_Squad, 9</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>AT_ST_A_Walker, 4</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>AT_ST_A_Walker, 8</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>S_1_Firehawke, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>S_1_Firehawke, 4</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_2>
+
+		<!--Era 6 & 7-->
+		<Starting_Spawned_Units_Tech_3>Royal_Guard_Ranged_Squad, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Royal_Guard_Ranged_Squad, 6</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>Elite_Guard_Stormtrooper_Squad, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>Elite_Guard_Stormtrooper_Squad, 9</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>AT_ST_A_Walker, 4</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>AT_ST_A_Walker, 8</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>S_1_Firehawke, 2</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>S_1_Firehawke, 4</Reserve_Spawned_Units_Tech_3>
+
+		<Starting_Spawned_Units_Tech_3>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_3>
+		<Reserve_Spawned_Units_Tech_3>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_3>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_GE1
+		TEXT_TOOLTIP_CAPITAL_GE2 
+		TEXT_TOOLTIP_CAPITAL_GE3
+		TEXT_TOOLTIP_CAPITAL_GE4
+		TEXT_TOOLTIP_CAPITAL_GE5
+		TEXT_TOOLTIP_CAPITAL_GE6
+		TEXT_TOOLTIP_CAPITAL_GE7
+		TEXT_TOOLTIP_CAPITAL_GE8
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Death_Clone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Empire_Office">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_EMPIRE_MOFFPALACE</Text_ID>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Icon_Name>I_BUTTON_GE.TGA</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Assault_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Squad, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_74Z_Speeder_Bike, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_74Z_Speeder_Bike, 12</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>S_1_Firehawke, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>S_1_Firehawke, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text>
+		TEXT_COMPANY_MOFFPALACE_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_GE1
+		TEXT_TOOLTIP_OFFICE_GE2
+		TEXT_TOOLTIP_OFFICE_GE3
+		TEXT_TOOLTIP_OFFICE_GE4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="E_Ground_Barracks">
+
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_GE1
+		TEXT_TOOLTIP_BARRACKS_GE2 
+		TEXT_TOOLTIP_BARRACKS_GE3
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Special_Structures>Empire_Office</Required_Special_Structures>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Empire,
+				Imperial_Army_Trooper_Company,
+				Imperial_74Z_Bike_Company,
+				Imperial_Dwarf_Spider_Droid_Company,
+				Imperial_Stormtrooper_Company,
+				Imperial_Scout_Trooper_Company,
+				Shadow_Stormtrooper_Company,
+
+			Pentastar,
+				Pentastar_Army_Trooper_Company,
+				Enforcer_Trooper_Company,
+				Guardian_Protector_Company,
+				Imperial_Army_Commando_Company,
+
+			Zsinj_Empire,
+				Imperial_Army_Trooper_Company,
+				Zsinj_74Z_Bike_Company,
+				Raptor_Trooper_Company,
+				EVO_Trooper_Company,
+				Incinerator_Stormtrooper_Company,
+
+			Greater_Maldrood,
+				Imperial_Army_Trooper_Company,
+				Imperial_Army_74Z_Bike_Company,
+				Navy_Commando_Company,
+				Imperial_Fleet_Commando_Company,
+
+			Eriadu_Authority,
+				Imperial_Army_Trooper_Company,
+				64_Y_Swift_Repulsorlift_Sled_Company,
+				Army_Special_Missions_Company,
+				Imperial_Galactic_Marine_Company,
+				Imperial_Army_Commando_Company,
+
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Reserves-->
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Reserves-->
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 4</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="E_Ground_Light_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_L_FACTORY_GE1
+		TEXT_TOOLTIP_L_FACTORY_GE2
+		TEXT_TOOLTIP_L_FACTORY_GE3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_10
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Special_Structures>Empire_Office</Required_Special_Structures>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Empire,
+				Imperial_AT_PT_Company,
+				AT_ST_Company,
+				Chariot_LAV_Company,
+				AT_ST_A_Company,
+			Pentastar,
+				AT_DP_Company,
+				Imperial_AT_PT_Company,
+				TIE_Mauler_Company,
+				Imperial_Gaba18_Company,
+			Zsinj_Empire,
+				Repulsor_Scout_Company,
+				Chariot_LAV_Company,
+				PX10_Company,
+				Imperial_ULAV_Company,
+			Greater_Maldrood,
+				Imperial_AT_RT_Company,
+				Imperial_ISP_Company,
+				RTT_Company,
+				2M_Repulsor_Tank_Company,
+				INT4_Company,
+			Eriadu_Authority,
+				AT_MP_Company,
+				1L_Tank_Company,
+				1M_Tank_Company,
+				PX7_Company,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>AT_ST_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_ST_Walker, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Chariot_LAV_Combat, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Chariot_LAV_Combat, 4</Reserve_Spawned_Units_Tech_0>
+
+		<!--Era 4+ -->
+
+		<Starting_Spawned_Units_Tech_2>AT_ST_A_Walker, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>AT_ST_A_Walker, 4</Reserve_Spawned_Units_Tech_2>
+
+		<Starting_Spawned_Units_Tech_2>Chariot_LAV_Combat, 2</Starting_Spawned_Units_Tech_2>
+		<Reserve_Spawned_Units_Tech_2>Chariot_LAV_Combat, 4</Reserve_Spawned_Units_Tech_2>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="E_Ground_Heavy_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_H_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_GE1
+		TEXT_TOOLTIP_H_FACTORY_GE2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_20
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Special_Structures>Empire_Office</Required_Special_Structures>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Empire,
+				Deathhawk_Company,
+				AT_AA_Walker_Company,
+				Imperial_TNT_Company,
+				S_1_Firehawke_Company,
+				SPMAG_Walker_Company,
+				Imperial_Dropship_Transport_Company,
+				Imperial_A5_Juggernaut_Company,
+				Imperial_AT_AT_Walker_Company,
+				PX4_Company,
+				Imperial_AT_AT_Walker_Turbolaser_Refit_Company,
+				XR85_Company,
+			Pentastar,
+				TIE_Crawler_Company,
+				Imperial_UT_AA_Company,
+				Imperial_Heavy_Mobile_Artillery_Company,
+				Nemesis_Gunship_Company,
+				B5_Juggernaut_Company,
+				C10_Siege_Tower_Company,
+			Zsinj_Empire,
+				SPMAT_Company,
+				Imperial_Dropship_Transport_Company,
+				AT_AA_Flak_Walker_Company,
+				Imperial_APC_Company,
+				A9_Floating_Fortress_Company,
+				Imperial_AT_AP_Walker_Company,
+				Tracked_Shield_Disabler_Company,
+			Greater_Maldrood,
+				AT_AA_Missile_Walker_Company,
+				Swift_Assault_5_Company,
+				Imperial_A5_Juggernaut_Company,
+				MAAT_Company,
+				Imperial_Missile_Artillery_Company,
+				Heavy_Recovery_Vehicle_Company,
+			Eriadu_Authority,
+				1H_Tank_Company,
+				AT_AA_Walker_Company,
+				Imperial_Flashblind_Company,
+				Imperial_Light_Mobile_Artillery_Company,
+				Lancet_Air_Artillery_Company,
+				Imperial_AT_AT_Walker_Company,
+				Tracked_Mobile_Base_Company,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>S_1_Firehawke, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>S_1_Firehawke, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Chariot_LAV_Combat, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="E_Ground_Advanced_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_A_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_A_FACTORY_GE1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_30
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Advanced_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Required_Special_Structures>Empire_Office</Required_Special_Structures>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Reserve_Spawned_Units_Tech_0>
+
+
+	</SpecialStructure>
+
+
+	<!-- Pentastar -->
+
+	<SpecialStructure Name="PA_Capital">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_CIS_CAPITAL</Text_ID>
+
+		<Land_Model_Name>CIS_Local_Government.alo</Land_Model_Name>
+
+		<Affiliation>Pentastar</Affiliation>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Icon_Name>I_BUTTON_CIS_CAPITAL.TGA</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Enforcer_Trooper_Squad, 8</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Enforcer_Trooper_Squad, 15</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 8</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_DP_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_DP_Walker, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Crawler, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Crawler, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>C10_Siege_Tower, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>C10_Siege_Tower, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CAPITAL_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_PA1 
+		TEXT_TOOLTIP_CAPITAL_PA2
+		TEXT_TOOLTIP_CAPITAL_PA3
+		TEXT_TOOLTIP_CAPITAL_PA4
+		TEXT_TOOLTIP_CAPITAL_PA5
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UNITS_PA_CAPITAL
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Death_Clone>Damage_Normal, CIS_Local_Government_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Pentastar_Office">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_CORPORATEHQ</Text_ID>
+
+		<Affiliation>Pentastar</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+		<Land_Model_Name>CIS_Local_Government.alo</Land_Model_Name>
+		<Icon_Name>I_BUTTON_CIS.tga</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Enforcer_Trooper_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Enforcer_Trooper_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_DP_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_DP_Walker, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Crawler, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Crawler, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SENATORSOFFICE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_CIS_1
+		TEXT_TOOLTIP_OFFICE_CIS_2 
+		TEXT_TOOLTIP_OFFICE_CIS_3
+		TEXT_TOOLTIP_OFFICE_CIS_4
+		TEXT_TOOLTIP_OFFICE_CIS_5
+		TEXT_TOOLTIP_OFFICE_CIS_6
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="P_Ground_Barracks">
+
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_GROUND_CIS_BARRACKS</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_CIS_1
+		TEXT_TOOLTIP_BARRACKS_CIS_2
+		TEXT_TOOLTIP_BARRACKS_CIS_3
+		TEXT_TOOLTIP_BARRACKS_CIS_4
+		TEXT_TOOLTIP_BARRACKS_CIS_5
+		TEXT_TOOLTIP_BARRACKS_CIS_6
+		TEXT_TOOLTIP_BARRACKS_CIS_7
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+
+		<Affiliation>Pentastar</Affiliation>
+
+		<Required_Special_Structures>Pentastar_Office</Required_Special_Structures>
+
+		<Icon_Name>i_button_cis_infantry_factory.tga</Icon_Name>
+
+		<Land_Model_Name>CIS_Infantry_Factory.alo</Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Obstacle_Proxy_Type> E_Ground_Barracks_Build_Pad </Obstacle_Proxy_Type>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Pentastar_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pentastar_Army_Trooper_Assault_Squad, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Respawns-->
+
+		<Starting_Spawned_Units_Tech_0>Pentastar_Army_Trooper_Heavy_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Pentastar_Army_Trooper_Heavy_Squad, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Respawns-->
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 4</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="P_Ground_Light_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_GROUND_CIS_LIGHT_VEHICLE_FACTORY</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_CIS_1
+		TEXT_TOOLTIP_L_FACTORY_CIS_2
+		TEXT_TOOLTIP_L_FACTORY_CIS_3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_10
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+
+		<Icon_Name>i_button_cis_vehicle_factory.tga</Icon_Name>
+
+		<Land_Model_Name>CIS_Droid_Vehicle_Factory.alo</Land_Model_Name>
+		<Scale_Factor> 1.0 </Scale_Factor>
+
+		<Affiliation>Pentastar</Affiliation>
+
+		<Required_Special_Structures>Pentastar_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>AT_DP_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_DP_Walker, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Mauler, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Mauler, 4</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="P_Ground_Heavy_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_GROUND_CIS_HEAVY_VEHICLE_FACTORY</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_CIS_1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_20
+		</Encyclopedia_Text>
+
+		<Icon_Name>i_button_cis_piloted_vehicle_factory.tga</Icon_Name>
+
+		<Land_Model_Name>CIS_Piloted_Vehicle_Factory.alo</Land_Model_Name>
+		<Scale_Factor> 1.0 </Scale_Factor>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Pentastar</Affiliation>
+
+		<Required_Special_Structures>Pentastar_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>TIE_Crawler, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Crawler, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>TIE_Mauler, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>TIE_Mauler, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="P_Ground_Advanced_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_GROUND_CIS_ADVANCED_VEHICLE_FACTORY</Text_ID>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_A_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_A_FACTORY_PA1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_30
+		</Encyclopedia_Text>
+
+		<Icon_Name>i_button_cis_heavy_factory.tga</Icon_Name>
+
+		<Land_Model_Name>CIS_Heavy_Factory.alo</Land_Model_Name>
+		<Scale_Factor> 1.0 </Scale_Factor>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Pentastar</Affiliation>
+
+		<Required_Special_Structures>Pentastar_Office</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>C10_Siege_Tower, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>C10_Siege_Tower, 1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+
+	<!-- Maldrood -->
+
+	<SpecialStructure Name="Maldrood_Capital">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_GOVERNORSQUARTERS.alo</Land_Model_Name>
+
+		<Text_ID>TEXT_COMPANY_MALDROOD_CAPITAL</Text_ID>
+
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<Icon_Name>I_BUTTON_GM_CAPITAL.TGA</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Navy_Commando_Squad, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Navy_Commando_Squad, 15</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_74Z_Speeder_Bike, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_74Z_Speeder_Bike, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_AT_RT_Walker, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_AT_RT_Walker, 12</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Reconnaissance_Troop_Transporter, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Reconnaissance_Troop_Transporter, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>2M_Repulsor_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2M_Repulsor_Tank, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_CAPITAL_GM1
+		TEXT_TOOLTIP_CAPITAL_GM2
+		TEXT_TOOLTIP_CAPITAL_GM3
+		TEXT_TOOLTIP_CAPITAL_GM4
+		TEXT_TOOLTIP_CAPITAL_GM5
+		TEXT_TOOLTIP_CAPITAL_GM6
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Death_Clone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Maldrood_Office">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_EMPIRE_MOFFPALACE</Text_ID>
+
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Icon_Name>i_button_gm.tga</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Navy_Commando_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Navy_Commando_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_AT_RT_Walker, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_AT_RT_Walker, 12</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>2M_Repulsor_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>2M_Repulsor_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_MOFFPALACE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_OFFICE_GM1
+		TEXT_TOOLTIP_OFFICE_GM2 
+		TEXT_TOOLTIP_OFFICE_GM3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="T_Ground_Barracks">
+
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BARRACKS_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_GE1
+		TEXT_TOOLTIP_BARRACKS_GE2
+		TEXT_TOOLTIP_BARRACKS_GM3
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<Required_Special_Structures>Maldrood_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Barracks_Build_Pad </Obstacle_Proxy_Type>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_AT_RT_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_AT_RT_Walker, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Tactical_Buildable_Objects_Multiplayer>
+			Greater_Maldrood,
+				Imperial_Stormtrooper_Company,
+				Imperial_Army_Trooper_Company,
+				Imperial_Jumptrooper_Squad,
+		</Tactical_Buildable_Objects_Multiplayer>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="T_Ground_Light_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_L_FACTORY_GM1
+		TEXT_TOOLTIP_L_FACTORY_GM2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_10
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<Required_Special_Structures>Maldrood_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Reconnaissance_Troop_Transporter, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Reconnaissance_Troop_Transporter, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Infantry_Support_Platform, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Infantry_Support_Platform, 4</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="T_Ground_Heavy_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_GM1
+		TEXT_TOOLTIP_H_FACTORY_GM2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_20
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<Required_Special_Structures>Maldrood_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Swift_Assault_5, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Swift_Assault_5, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Infantry_Support_Platform, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Infantry_Support_Platform, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="T_Ground_Advanced_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_A_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_A_FACTORY_GM1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_30
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Greater_Maldrood</Affiliation>
+
+		<Required_Special_Structures>Maldrood_Office</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+
+	<!-- Eriadu -->
+
+	<SpecialStructure Name="Eriadu_Capital">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Land_Model_Name>EB_GOVERNORSQUARTERS.alo</Land_Model_Name>
+
+		<Text_ID>TEXT_COMPANY_ERIADU_CAPITAL</Text_ID>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Icon_Name>I_BUTTON_EA_CAPITAL.TGA</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>1L_Tank, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>1L_Tank, 8</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>1M_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>1M_Tank, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CAPITAL_HEALTH  
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_EA1 
+		TEXT_TOOLTIP_CAPITAL_EA2 
+		TEXT_TOOLTIP_CAPITAL_EA3
+		TEXT_TOOLTIP_CAPITAL_EA4
+		TEXT_TOOLTIP_CAPITAL_EA5
+		TEXT_TOOLTIP_CAPITAL_EA6
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Death_Clone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Eriadu_Office">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_EMPIRE_MOFFPALACE</Text_ID>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Icon_Name>I_BUTTON_EA.TGA</Icon_Name>
+
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Heavy_Squad, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Army_Special_Missions_Weapons_Squad, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>64_Y_Swift_Repulsorlift_Sled, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>64_Y_Swift_Repulsorlift_Sled, 12</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>1M_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>1M_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_MOFFPALACE_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HEALTH  
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_EA1 
+		TEXT_TOOLTIP_OFFICE_EA2 
+		TEXT_TOOLTIP_OFFICE_EA3
+		TEXT_TOOLTIP_OFFICE_EA4
+		TEXT_TOOLTIP_OFFICE_EA5
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="A_Ground_Barracks">
+
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_GE1
+		TEXT_TOOLTIP_BARRACKS_GE2
+		TEXT_TOOLTIP_BARRACKS_EA3
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Required_Special_Structures>Eriadu_Office</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>1L_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>1L_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="A_Ground_Light_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_L_FACTORY_EA1
+		TEXT_TOOLTIP_L_FACTORY_EA2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_10
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Required_Special_Structures>Eriadu_Office</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>AT_MP_Walker, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_MP_Walker, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>1L_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>1L_Tank, 4</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="A_Ground_Heavy_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_H_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_EA1
+		TEXT_TOOLTIP_H_FACTORY_EA2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_20
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Required_Special_Structures>Eriadu_Office</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>1H_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>1H_Tank, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>1L_Tank, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>1L_Tank, 2</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="A_Ground_Advanced_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_A_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_A_FACTORY_EA1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_30
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Advanced_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Eriadu_Authority</Affiliation>
+
+		<Required_Special_Structures>Eriadu_Office</Required_Special_Structures>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+
+	<!-- Zsinj -->
+
+	<SpecialStructure Name="Rancor_Base">
+		<Text_ID>TEXT_COMPANY_ZSINJ_CAPITAL</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_COMPANY_RANCOR_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_CAPITAL_ZE_HULL
+		TEXT_TOOLTIP_CAPITAL_ZE_SHIELD
+		TEXT_TOOLTIP_CAPITAL_ZE_WEAP1
+		TEXT_TOOLTIP_CAPITAL_ZE_WEAP2 
+		TEXT_TOOLTIP_CAPITAL_ZE_WEAP3 
+		TEXT_TOOLTIP_CAPITAL_ZE_WEAP4 
+		TEXT_TOOLTIP_CAPITAL_ZE_WEAP5  
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_ZE1
+		TEXT_TOOLTIP_CAPITAL_ZE2
+		TEXT_TOOLTIP_CAPITAL_ZE3
+		TEXT_TOOLTIP_CAPITAL_ZE4
+		TEXT_TOOLTIP_CAPITAL_ZE5
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UNITS_RANCOR_BASE
+		TEXT_TOOLTIP_BONUS_PRICE_TIME_ALL
+		TEXT_TOOLTIP_BONUS_DISCOUNT_COMPANY_LOW
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_FACTION_CAPITAL_STATION</Encyclopedia_Unit_Class>
+		<Space_Model_Name>EB_STATION_05.alo</Space_Model_Name>
+		
+		<GUI_Row> 0 </GUI_Row>
+		<Select_Box_Scale>1800</Select_Box_Scale>
+		<Select_Box_Z_Adjust>-50</Select_Box_Z_Adjust>
+		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
+
+		<Is_Dummy>Yes</Is_Dummy>
+		<Political_Control>0</Political_Control>
+		<Build_Cost_Credits>15000</Build_Cost_Credits>
+		<Build_Time_Seconds>150</Build_Time_Seconds>
+		<Build_Max_Instances_Per_Planet> 1 </Build_Max_Instances_Per_Planet>
+		<Build_Limit_Current_Per_Player> 1 </Build_Limit_Current_Per_Player>
+		<Size_Value>50</Size_Value>
+		<Base_Position>Orbital</Base_Position>
+		<Reinforcement_Prevention_Radius> 2000 </Reinforcement_Prevention_Radius>
+
+		<Armor_Type> ArmourS_Capital </Armor_Type>
+		<Tactical_Health>7000</Tactical_Health>
+		<Shield_Armor_Type>ShieldS_Capital</Shield_Armor_Type>
+		<Shield_Points>14000</Shield_Points>
+		<Shield_Refresh_Rate>170</Shield_Refresh_Rate>
+		<Energy_Capacity>5000</Energy_Capacity>
+		<Energy_Refresh_Rate>1000</Energy_Refresh_Rate>
+		<Tech_Level>99</Tech_Level>
+		<AI_Combat_Power>20000</AI_Combat_Power>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy</Required_Special_Structures>
+		<Required_Planets />
+		<Behavior>SELECTABLE, DUMMY_ORBITAL_STRUCTURE</Behavior>
+		<SpaceBehavior>ABILITY_COUNTDOWN, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Death_Explosions>Huge_Explosion_Space</Death_Explosions>
+		<Space_FOW_Reveal_Range>25000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>2000.0</Targeting_Max_Attack_Distance>
+		<Last_State_Visible_Under_FOW> Yes </Last_State_Visible_Under_FOW>
+		<Icon_Name>I_BUTTON_ZE_CAPITAL.TGA</Icon_Name>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<Scale_Factor>1.1</Scale_Factor>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+		<Sabotage_Cost_Credits>5000</Sabotage_Cost_Credits>				  
+
+		<SFXEvent_Build_Started>EHD_Build_Structure</SFXEvent_Build_Started>
+		<SFXEvent_Build_Cancelled>EHD_Building_Canceled</SFXEvent_Build_Cancelled>
+		<SFXEvent_Build_Complete>EHD_Construction_Complete</SFXEvent_Build_Complete>
+		<SFXEvent_Ambient_Loop>Unit_Starbase_Engine_Loop</SFXEvent_Ambient_Loop>
+		<SFXEvent_Fire>Unit_Turbo_Fire</SFXEvent_Fire>
+		<SFXEvent_Select>Unit_Select_Empire_Space_Station</SFXEvent_Select>
+		<SFXEvent_Attack>Unit_Attack_Empire_Space_Station</SFXEvent_Attack>
+		<SFXEvent_Barrage>Unit_Barrage_Empire_Space_Station</SFXEvent_Barrage>
+		<Death_SFXEvent_Start_Die>Unit_Space_Station_Death_SFX</Death_SFXEvent_Start_Die>
+		<SFXEvent_Unit_Under_Attack> EHD_Space_Station_Under_Attack </SFXEvent_Unit_Under_Attack>
+
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_LASER, Unit_HP_LASER_Empire_Space_Station</SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MISSILE, Unit_HP_MISSILE_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_TORPEDO, Unit_HP_TORP_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_ION_CANNON, Unit_HP_ION_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_SHIELD_GENERATOR, Unit_HP_SHIELDS_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENGINE, Unit_HP_ENGINES_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_GRAVITY_WELL, Unit_HP_Grav_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_FIGHTER_BAY, Unit_HP_BAY_Empire_Space_Station </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Attack_Hardpoint>
+		<SFXEvent_Attack_Hardpoint> HARD_POINT_DUMMY_ART, null </SFXEvent_Attack_Hardpoint>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, Unit_Lost_Laser_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE,  Unit_Lost_Missile_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_TORPEDO,  Unit_Lost_Torpedo_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_ION_CANNON, Unit_Lost_Ion_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, Unit_Lost_Shields_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENGINE, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_GRAVITY_WELL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_FIGHTER_BAY, Unit_Lost_Bay_Empire_Space_Station </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_TRACTOR_BEAM, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MASS_DRIVER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_SPECIAL, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_ENABLE_SPECIAL_ABILITY, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_DUMMY_ART, null </SFXEvent_Hardpoint_Destroyed>
+
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Influences_Capture_Point>False</Influences_Capture_Point>
+
+		<Modifies_Reveal_Range>no</Modifies_Reveal_Range>
+		<Reveal_Range_Modifier>-.50</Reveal_Range_Modifier>
+		<Damage>200</Damage>
+		<CategoryMask> SpaceStructure | AntiCapital </CategoryMask>
+		<Space_Or_Garrison_Category>Capital</Space_Or_Garrison_Category>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+        <Visible_On_Radar_When_Fogged>true</Visible_On_Radar_When_Fogged>
+		<Radar_Icon_Name>i_radar_station5_e.tga</Radar_Icon_Name>
+		<Radar_Icon_Size>0.16  0.16</Radar_Icon_Size>
+		<Radar_Rotate_Icon>Yes</Radar_Rotate_Icon>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Elite_TIE_Raptor_Squadron, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Elite_TIE_Raptor_Squadron, 15</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Starwing_Squadron, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Starwing_Squadron, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skirmish_Dragon_Heavy_Cruiser, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skirmish_Dragon_Heavy_Cruiser, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skirmish_Victory_II_Star_Destroyer, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skirmish_Victory_II_Star_Destroyer, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Skirmish_Imperial_II_Star_Destroyer, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Skirmish_Imperial_II_Star_Destroyer, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Dense_FOW_Reveal_Range_Multiplier>0.2</Dense_FOW_Reveal_Range_Multiplier>
+		<Space_FOW_Reveal_Range>20000.0</Space_FOW_Reveal_Range>
+		<Targeting_Max_Attack_Distance>800.0</Targeting_Max_Attack_Distance>
+
+		<Additional_Population_Capacity>300</Additional_Population_Capacity>
+
+		<HardPoints>
+			HP_Empire_Station_One_00,
+			HP_Empire_Station_One_01,
+			HP_Empire_Station_One_02,
+			HP_Empire_Station_One_Fighter_Bay,
+			HP_Empire_Station_One_Comm_Array_Dummy,
+			HP_Empire_Station_Two_00,
+			HP_Empire_Station_Two_01,
+			HP_Empire_Station_Two_02,
+			HP_Empire_Station_Three_00,
+			HP_Empire_Station_Three_01,
+			HP_Empire_Station_Three_02,
+			HP_Empire_Station_Four_00,
+			HP_Empire_Station_Four_01,
+			HP_Empire_Station_Four_02,
+			HP_Empire_Station_Four_03,
+			HP_Empire_Station_Five_00,
+			HP_Empire_Station_Five_01,
+			HP_Empire_Station_Five_02,
+			HP_Empire_Station_Five_03,
+			HP_Empire_Station_One_Supply_Dock_Dummy
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Huge_Explosion_Space</Death_Clone>
+		
+		<Score_Cost_Credits> 1500 </Score_Cost_Credits>
+		<Has_Space_Evaluator>True</Has_Space_Evaluator>
+		<Custom_Soft_Footprint_Radius> 250 </Custom_Soft_Footprint_Radius>
+		<Space_Obstacle_Offset> 0 0 0 </Space_Obstacle_Offset> 
+		<Space_Layer> StaticObject </Space_Layer>
+		<Layer_Z_Adjust>-350.0</Layer_Z_Adjust>
+
+		<SpaceBehavior> ABILITY_COUNTDOWN, SPACE_OBSTACLE, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, UNIT_AI, ION_STUN_EFFECT</SpaceBehavior>
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+		<Abilities SubObjectList="Yes">
+			<Reduce_Production_Price_Ability Name="Rancor_Reduce_Production_Price">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Excluded_Unit_Categories>Upgrade | Wall</Excluded_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Price_Reduction_Percentage>0.2</Price_Reduction_Percentage>
+				<Stacking_Category>50</Stacking_Category>
+			</Reduce_Production_Price_Ability>
+
+			<Reduce_Production_Time_Ability Name="Rancor_Production_Time_Bonus">
+				<Applicable_Unit_Categories>All</Applicable_Unit_Categories>
+				<Excluded_Unit_Categories>Upgrade | Wall</Excluded_Unit_Categories>
+				<Applicable_Unit_Types></Applicable_Unit_Types>
+				<Time_Reduction_Percentage>0.2</Time_Reduction_Percentage>
+				<Stacking_Category>50</Stacking_Category>
+				<Galaxy_Wide> No </Galaxy_Wide>
+			</Reduce_Production_Time_Ability>
+
+			<Planet_Income_Bonus_Ability Name="Capital_Income_Bonus">
+				<Specific_Mod_Source_Text>TEXT_ECONOMY_CAPITAL</Specific_Mod_Source_Text>
+				<Percentage_Income_Modifier>0</Percentage_Income_Modifier> <!-- X percent of base planetary income -->
+				<Absolute_Income_Modifier>1000</Absolute_Income_Modifier> <!-- plus flat Y credits -->
+				<Additional_Multiplier_On_Mining_Colonies>1.0</Additional_Multiplier_On_Mining_Colonies> <!-- multiply by Z on mining planets  -->
+				<!-- Total bonus credits per cycle = ((base * X) + Y) * Z -->
+			</Planet_Income_Bonus_Ability>
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Zsinj_Office">
+		<Text_ID>TEXT_GROUND_PDF_HQ_BASE</Text_ID>
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+		<Land_Model_Name>UB_PALACE.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_palace_abandon.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Starting_Spawned_Units_Tech_0>Mercenary_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Mercenary_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Elite_Mercenary_Heavy_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>X34_Technical, 6</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>X34_Technical, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>SD_6_Hulk_Infantry_Droid, -1</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_OFFICE_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_1
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_2
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_3
+		TEXT_TOOLTIP_REVOLT_PDF_HQ_BASE_4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="ZE_Capital_Alternate"> <!-- For Zsinj Remnants and Imperial Kamino in Lambda Sector GC. -->
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_ZE_CAPITAL_ALTERNATE</Text_ID>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Icon_Name>I_BUTTON_ZE_CAPITAL_ALTERNATE.TGA</Icon_Name>
+
+		<!--Era 1 to 3-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>EVO_Trooper_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>EVO_Trooper_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Repulsor_Scout, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Repulsor_Scout, 10</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_AP_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_AP_Walker, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>A9_Floating_Fortress, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A9_Floating_Fortress, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_KM1
+		TEXT_TOOLTIP_CAPITAL_KM2 
+		TEXT_TOOLTIP_CAPITAL_KM3
+		TEXT_TOOLTIP_CAPITAL_KM4
+		TEXT_TOOLTIP_CAPITAL_KM5
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Death_Clone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Kamino_Office">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_EMPIRE_MOFFPALACE</Text_ID>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Icon_Name>I_BUTTON_GE.tga</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Stormtrooper_Heavy_Squad, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>EVO_Trooper_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>EVO_Trooper_Squad, 3</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Zsinj_74Z_Speeder_Bike, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Zsinj_74Z_Speeder_Bike, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Chariot_LAV_Combat, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>PX10, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>PX10, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_MOFFPALACE_DESCRIPTION  
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_OFFICE_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_KM1
+		TEXT_TOOLTIP_OFFICE_ZE2
+		TEXT_TOOLTIP_OFFICE_ZE3
+		TEXT_TOOLTIP_OFFICE_ZE4
+		TEXT_TOOLTIP_OFFICE_ZE5
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Z_Ground_Barracks">
+
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+
+		<Land_Model_Name>UB_Barracks.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_barracks_abandon.tga</Icon_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_REVOLT_MERC_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_LIGHTMERC_BARRACKS_1
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_GROUND_BARRACKS_UNDERWORLD </MP_Encyclopedia_Text>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<Required_Special_Structures>Zsinj_Office | Kamino_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Barracks_Build_Pad </Obstacle_Proxy_Type>
+
+
+		<Starting_Spawned_Units_Tech_0>Light_Mercenary_Squad, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Light_Mercenary_Squad, -1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Z_Ground_Light_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Icon_Name>i_button_e_factory_1_abandon.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_OLDREP_LIGHT_FACTORY_1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_10
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<Required_Special_Structures>Zsinj_Office | Kamino_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 8</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Z_Ground_Heavy_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+		<Land_Model_Name>UB_HeavyFactory.alo</Land_Model_Name>
+		<Icon_Name>i_button_ub_heavyfactory_abandon.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_H_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_ILLEGAL_HEAVY_FACTORY_1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_20
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<Required_Special_Structures>Zsinj_Office | Kamino_Office</Required_Special_Structures>
+
+		<Obstacle_Proxy_Type> E_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+		<Starting_Spawned_Units_Tech_0>MZ8_Tank, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>MZ8_Tank, 4</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Z_Ground_Advanced_Vehicle_Factory">
+
+		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
+		<Icon_Name>i_button_e_factory_3_abandon.tga</Icon_Name>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_A_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_REVOLT_A_FACTORY_1_TR
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_30
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
+
+		<Affiliation>Zsinj_Empire</Affiliation>
+
+		<Required_Special_Structures>Zsinj_Office | Kamino_Office</Required_Special_Structures>
+
+		<!-- TR Difference  -->
+		<Starting_Spawned_Units_Tech_0>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_0>
+
+	</SpecialStructure>
+	
+	<!-- Imperial_Proteus -->
+
+	<SpecialStructure Name="Imperial_Proteus_Capital">
+
+		<Variant_Of_Existing_Type>Template_Faction_Capital</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_WARLORD_CAPITAL</Text_ID>
+
+		<Land_Model_Name>EB_GOVERNORSQUARTERS.alo</Land_Model_Name>
+
+		<Affiliation>Imperial_Proteus</Affiliation>
+
+		<Build_Cost_Credits>10000</Build_Cost_Credits>
+
+		<Icon_Name>i_button_warlord_capital.TGA</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Nova_Stormtrooper_Squad, 4</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Nova_Stormtrooper_Squad, 12</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>AT_ST_Walker, 5</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_ST_Walker, 10</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>S_1_Firehawke, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>S_1_Firehawke, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>A5_Juggernaut, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>A5_Juggernaut, 1</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_CAPITAL_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CAPITAL_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_CAPITAL_MW1
+		TEXT_TOOLTIP_CAPITAL_MW2
+		TEXT_TOOLTIP_CAPITAL_GE7
+		TEXT_TOOLTIP_CAPITAL_GE8
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_BLOCK_OB
+		TEXT_TOOLTIP_BONUS_BLOCK_BR
+        TEXT_TOOLTIP_BONUS_BLOCK_VP
+		TEXT_TOOLTIP_INCOME_CAPITAL
+		TEXT_TOOLTIP_INCOME_CREWS_CAPITAL
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_3
+		TEXT_TOOLTIP_SEPARATOR_LIMITS_BLOCK
+		TEXT_TOOLTIP_BUILDLIMIT_CAPITAL
+		</Encyclopedia_Text>
+
+		<Death_Clone>Damage_Normal, EB_OfficerAcademy_Death_Clone</Death_Clone>
+
+	</SpecialStructure>
+
+	<SpecialStructure Name="Imperial_Proteus_Office">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_COMPANY_EMPIRE_MOFFPALACE</Text_ID>
+
+		<Affiliation>Imperial_Proteus</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Icon_Name>i_button_warlord.TGA</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Guard_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Guard_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_74Z_Speeder_Bike, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_74Z_Speeder_Bike, 12</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>S_1_Firehawke, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>S_1_Firehawke, 2</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text>
+		TEXT_COMPANY_MOFFPALACE_DESCRIPTION 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_OFFICE_MW1
+		TEXT_TOOLTIP_OFFICE_GE3
+		TEXT_TOOLTIP_OFFICE_GE4
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+
+		<Abilities SubObjectList="Yes">
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="I_Ground_Barracks">
+		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_BARRACKS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_BARRACKS_GE1
+		TEXT_TOOLTIP_BARRACKS_GE2 
+		TEXT_TOOLTIP_BARRACKS_GE3
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
+
+		<Affiliation>Imperial_Proteus</Affiliation>
+
+		<Required_Special_Structures>Imperial_Proteus_Office</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Assault_Squad, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Reserves-->
+
+		<Starting_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_Army_Trooper_Heavy_Squad, -1</Reserve_Spawned_Units_Tech_0> <!--Infinite Reserves-->
+
+		<Starting_Spawned_Units_Tech_0>AT_PT_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_PT_Walker, 4</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpecialStructure Name="I_Ground_Light_Vehicle_Factory">
+		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_L_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_L_FACTORY_MW1
+		TEXT_TOOLTIP_L_FACTORY_GE3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_10
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Light_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Imperial_Proteus</Affiliation>
+
+		<Required_Special_Structures>Imperial_Proteus_Office</Required_Special_Structures>
+
+		<!-- All Eras -->
+		<Starting_Spawned_Units_Tech_0>AT_ST_Walker, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>AT_ST_Walker, 4</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Chariot_LAV_Combat, 2</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Chariot_LAV_Combat, 4</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpecialStructure Name="I_Ground_Heavy_Vehicle_Factory">
+		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_H_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_FACTORY_HEALTH
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_H_FACTORY_GE1
+		TEXT_TOOLTIP_H_FACTORY_GE2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_20
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Heavy_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Imperial_Proteus</Affiliation>
+
+		<Required_Special_Structures>Imperial_Proteus_Office</Required_Special_Structures>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>S_1_Firehawke, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>S_1_Firehawke, 6</Reserve_Spawned_Units_Tech_0>
+
+		<Starting_Spawned_Units_Tech_0>Chariot_LAV_Combat, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Chariot_LAV_Combat, 2</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+
+	<SpecialStructure Name="I_Ground_Advanced_Vehicle_Factory">
+		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_A_FACTORY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_A_FACTORY_GE1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_UPKEEP_BONUS_30
+		</Encyclopedia_Text>
+
+		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
+
+		<Obstacle_Proxy_Type> E_Ground_Advanced_Vehicle_Factory_Build_Pad </Obstacle_Proxy_Type>
+
+		<Affiliation>Imperial_Proteus</Affiliation>
+
+		<Required_Special_Structures>Imperial_Proteus_Office</Required_Special_Structures>
+
+		<Starting_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Imperial_AT_AT_Walker, 1</Reserve_Spawned_Units_Tech_0>
+	</SpecialStructure>
+</Imperial_Structures>

@@ -1,0 +1,969 @@
+<?xml version='1.0' encoding='ASCII'?>
+<Militia_Vehicles_Collective>
+
+<!-- Local Forces not meant for factional use - Revolt spawns and abandonded factories are fair game -->
+
+	<GroundVehicle Name="SD_9_Assault_Battle_Droid">
+		<Variant_Of_Existing_Type>SD_9_Battle_Droid</Variant_Of_Existing_Type>
+
+		<Text_ID>TEXT_UNIT_SD_9_ASSAULT_BATTLE_DROID</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SD_9_ASSAULT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_SD_9_ASSAULT_HEALTH
+		TEXT_TOOLTIP_SD_9_SHIELD
+		TEXT_TOOLTIP_SD_9_MOVE
+		TEXT_TOOLTIP_SD_9_ASSAULT_WEAP1
+		TEXT_TOOLTIP_SD_9_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_REFLECTIVE_ARMOR_10
+		</Encyclopedia_Text>
+
+		<Icon_Name>i_button_SD9_ASSAULT.tga</Icon_Name>
+
+		<Tactical_Health>100</Tactical_Health>
+
+		<AI_Combat_Power>32</AI_Combat_Power>
+
+		<HardPoints>
+			HP_SD_9_Droid_Plasma,
+			HP_SD_9_Droid_Light_Blaster
+		</HardPoints>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>SPRINT</Type>
+				<Expiration_Seconds> 8.0 </Expiration_Seconds>
+				<Recharge_Seconds> 45.0 </Recharge_Seconds>
+				<Mod_Multiplier>SPEED_MULTIPLIER,	 2.0f</Mod_Multiplier>
+				<Mod_Multiplier>TAKE_DAMAGE_MULTIPLIER, 0.75f</Mod_Multiplier>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<!-- 10% Chance for Merc Assault Conversion -->
+			<!-- Redirect Blaster must appear in the special ability list before Absorb Blaster -->
+			<Redirect_Blaster_Ability Name="SD_9_Deflect_Blaster">
+				<Activation_Style>Take_Damage</Activation_Style>
+				<!-- Redirection chance is rolled first. If failed, we roll block chance. If failed, we take the damage. -->
+				<Redirect_Chance>0.0</Redirect_Chance>
+				<Block_Chance>0.10</Block_Chance>
+				<Reaction_Arc_In_Degrees>360.0</Reaction_Arc_In_Degrees>
+				<Max_Projectile_Redirection_Angle_In_Degrees> 135.0 </Max_Projectile_Redirection_Angle_In_Degrees>
+				<Turn_To_Face_Unblockable_Shots>No</Turn_To_Face_Unblockable_Shots>
+				<!-- We can block/redirect shots from the following units types: -->
+				<Applicable_Unit_Categories> Infantry | InfantryHero | Vehicle | VehicleHero | AirGunship | AirSpeeder | Structure </Applicable_Unit_Categories>
+				<Applicable_Unit_Types />
+				<SFXEvent_Activate>Unit_Lightsaber_Projectile_Block</SFXEvent_Activate>
+			</Redirect_Blaster_Ability>
+		</Abilities>
+
+	</GroundVehicle>
+
+	<!-- AA5 Converted into military command vehicle -->
+	<GroundVehicle Name="AA70_Command_Truck">
+		<Variant_Of_Existing_Type>AA5_Truck</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Text_ID>TEXT_UNIT_AA70_TRUCK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_AA70_TRUCK 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_AA70_TRUCK_HEALTH
+		TEXT_TOOLTIP_AA70_TRUCK_MOVE
+		TEXT_TOOLTIP_AA70_TRUCK_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_SUPER_TRANSPORT
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_aa70_truck.tga</Icon_Name>
+
+		<Max_Speed>2.5</Max_Speed>
+		<OverrideAcceleration> .08333333333 </OverrideAcceleration>
+		<OverrideDeceleration> .5 </OverrideDeceleration>
+
+		<Tactical_Health>450</Tactical_Health>
+
+		<AI_Combat_Power>85</AI_Combat_Power>
+
+        <Num_Garrison_Slots>3</Num_Garrison_Slots>
+
+		<HardPoints>
+				HP_aa70_One
+		</HardPoints>
+
+		<!-- Enhanced sensors capability -->
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 30.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Land_FOW_Reveal_Ping_Blast </Spawned_Object_Type>
+				<Effective_Radius> 0.0 </Effective_Radius>
+				<!-- 0.0 means no distance factor, unlimited to entire map -->
+				<Area_Effect_Decal_Distance> 250.0 </Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>
+				</GUI_Activated_Ability_Name>
+
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+
+		<Vehicle_Thief_Inside_Clone>AA70_Command_Truck_Captured</Vehicle_Thief_Inside_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="AA70_Command_Truck_Captured">
+		<Variant_Of_Existing_Type>AA70_Command_Truck</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FOW_REVEAL_PING</Type>
+				<Recharge_Seconds> 90.0 </Recharge_Seconds>
+				<Spawned_Object_Type> Proj_Special_Land_FOW_Reveal_Ping_Blast </Spawned_Object_Type>
+				<Effective_Radius> 0.0 </Effective_Radius>
+				<!-- 0.0 means no distance factor, unlimited to entire map -->
+				<Area_Effect_Decal_Distance> 250.0 </Area_Effect_Decal_Distance>
+				<GUI_Activated_Ability_Name>
+				</GUI_Activated_Ability_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- T1a Tank -->
+	<GroundVehicle Name="T1A_Tank">
+		<Variant_Of_Existing_Type>T1B_Tank</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+
+		<Text_ID>TEXT_UNIT_T1A_HOVERTANK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_T1A_HOVERTANK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_T1B_HOVERTANK_HEALTH
+		TEXT_TOOLTIP_T1B_HOVERTANK_MOVE 
+		TEXT_TOOLTIP_T1B_HOVERTANK_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_t1a.tga</Icon_Name>
+
+		<Land_Model_Name>RV_T1A_hovertank.alo</Land_Model_Name>
+
+		<AI_Combat_Power>19</AI_Combat_Power>
+
+		<LandBehavior>AFFECTED_BY_SHIELD, HUNT,WALK_LOCOMOTOR, IDLE,TARGETING, WEAPON, TURRET, POWERED, REVEAL,HIDE_WHEN_FOGGED, UNIT_AI, SURFACE_FX, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING, GARRISON_UNIT</LandBehavior>
+
+		<HardPoints>HP_T1B</HardPoints>
+
+		<Shield_Armor_Type>ShieldG_LightVehicle</Shield_Armor_Type>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<Vehicle_Thief_Inside_Clone>T1A_Tank_Captured</Vehicle_Thief_Inside_Clone>
+		
+		<CategoryMask> Vehicle | AntiInfantry </CategoryMask>
+		
+		<Targeting_Priority_Set> AntiInfantry </Targeting_Priority_Set>
+	</GroundVehicle>
+
+	<GroundVehicle Name="T1A_Tank_Captured">
+		<Variant_Of_Existing_Type>T1A_Tank</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- T2a Tank -->
+	<GroundVehicle Name="T2A_Tank">
+		<Variant_Of_Existing_Type>T2B_Tank</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+
+		<Text_ID>TEXT_UNIT_T2A_TANK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_T2A 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_T2B_HEALTH
+		TEXT_TOOLTIP_T2B_MOVE 
+		TEXT_TOOLTIP_T2A_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_t-1a_repulsor_tank.tga</Icon_Name>
+
+		<AI_Combat_Power>43</AI_Combat_Power>
+
+		<CategoryMask> Vehicle | AntiVehicle </CategoryMask>
+		<LandBehavior>AFFECTED_BY_SHIELD, HUNT,WALK_LOCOMOTOR, IDLE,TARGETING, WEAPON, TURRET, POWERED, REVEAL,HIDE_WHEN_FOGGED, UNIT_AI, SURFACE_FX, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING, GARRISON_UNIT</LandBehavior>
+
+		<HardPoints>HP_T2A_Left,HP_T2A_Right </HardPoints>
+
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+
+		<Shield_Armor_Type>ShieldG_LightVehicle</Shield_Armor_Type>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+
+		<Vehicle_Thief_Inside_Clone>T2A_Tank_Captured</Vehicle_Thief_Inside_Clone>
+
+		<!-- Enhanced sensors capability -->
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+
+	</GroundVehicle>
+
+	<GroundVehicle Name="T2A_Tank_Captured">
+		<Variant_Of_Existing_Type>T2A_Tank</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- T3a Tank -->
+	<GroundVehicle Name="T3A_Tank">
+		<Variant_Of_Existing_Type>T3B_Tank</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+
+		<Text_ID>TEXT_UNIT_T3A_TRACKEDTANK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_T3A_TRACKEDTANK 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_T3B_HEALTH
+		TEXT_TOOLTIP_T3B_MOVE 
+		TEXT_TOOLTIP_T3B_WEAP1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_t-3a.tga</Icon_Name>
+
+		<Land_Model_Name>rv_t3a_heavy_tank.ALO</Land_Model_Name>
+
+		<AI_Combat_Power>76</AI_Combat_Power>
+
+		<LandBehavior>AFFECTED_BY_SHIELD, TREAD_SCROLL, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, SQUASH, SURFACE_FX, UNIT_AI, TELEKINESIS_TARGET,STUNNABLE,DAMAGE_TRACKING</LandBehavior>
+
+		<HardPoints>HP_T3B_Laser</HardPoints>
+
+		<Shield_Armor_Type>ShieldG_LightVehicle</Shield_Armor_Type>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+		
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+
+		<Vehicle_Thief_Inside_Clone>T3A_Tank_Captured</Vehicle_Thief_Inside_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="T3A_Tank_Captured">
+		<Variant_Of_Existing_Type>T3A_Tank</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- T4a Tank -->
+	<GroundVehicle Name="T4A_Tank">
+		<Variant_Of_Existing_Type>T4B_Tank</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+
+		<Text_ID>TEXT_UNIT_T4A_TANK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_TANK</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_T4A
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_T4B_HEALTH
+		TEXT_TOOLTIP_T4A_MOVE 
+		TEXT_TOOLTIP_T4A_WEAP1
+		TEXT_TOOLTIP_T4A_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_CRUSH
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_t-3a_repulsor_tank.tga</Icon_Name>
+
+		<!-- Engine less overburdened -->
+		<Max_Speed>0.75</Max_Speed>
+		<Max_Thrust>1.0</Max_Thrust>
+		<OverrideAcceleration>0.05</OverrideAcceleration>
+		<OverrideDeceleration>0.15</OverrideDeceleration>
+
+		<AI_Combat_Power>106</AI_Combat_Power>
+
+		<HardPoints>
+			HP_T4A_Laser, HP_T4A_Tank_Grenade
+		</HardPoints>
+
+		<Vehicle_Thief_Inside_Clone>T4A_Tank_Captured</Vehicle_Thief_Inside_Clone>
+
+	</GroundVehicle>
+
+	<GroundVehicle Name="T4A_Tank_Captured">
+		<Variant_Of_Existing_Type>T4A_Tank</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- Stock Model Freerunner without Alliance/NR Upgrades -->
+	<GroundVehicle Name="Freerunner_Early">
+		<Variant_Of_Existing_Type>Freerunner</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Text_ID>TEXT_UNIT_FREERUNNER_EARLY</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_FREERUNNER_EARLY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FREERUNNER_EARLY_HEALTH
+		TEXT_TOOLTIP_FREERUNNER_MOVE
+		TEXT_TOOLTIP_FREERUNNER_WEAP1
+		TEXT_TOOLTIP_FREERUNNER_EARLY_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_freerunner_early.tga</Icon_Name>
+		
+		<AI_Combat_Power>57</AI_Combat_Power>
+		<Tactical_Health>175</Tactical_Health>
+		
+		<LandBehavior>AFFECTED_BY_SHIELD, HUNT,WALK_LOCOMOTOR, IDLE,TARGETING, WEAPON, TURRET, POWERED, REVEAL,HIDE_WHEN_FOGGED, UNIT_AI, SURFACE_FX, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING</LandBehavior>
+		
+		<HardPoints>HP_RAF_AI_One, HP_RAF_AV</HardPoints>
+
+		<Shield_Armor_Type>ShieldG_LightVehicle</Shield_Armor_Type>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<Land_FOW_Reveal_Range>600.0</Land_FOW_Reveal_Range>
+
+		<Vehicle_Thief_Inside_Clone>Freerunner_Early_Captured</Vehicle_Thief_Inside_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Freerunner_Early_Captured">
+		<Variant_Of_Existing_Type>Freerunner_Early</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.0</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.0</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_TANKOVERCHARGE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_TANKOVERCHARGE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- Non-alliance Military Speculative Model -->
+	<GroundVehicle Name="Freerunner_Assault">
+		<Variant_Of_Existing_Type>Freerunner</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Text_ID>TEXT_UNIT_FREERUNNER_ASSAULT</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_FREERUNNER_ASSAULT
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FREERUNNER_HEALTH
+		TEXT_TOOLTIP_FREERUNNER_SHIELD
+		TEXT_TOOLTIP_FREERUNNER_MOVE
+		TEXT_TOOLTIP_FREERUNNER_ASSAULT_WEAP1
+		TEXT_TOOLTIP_FREERUNNER_ASSAULT_WEAP2
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_freerunner_assault.tga</Icon_Name>
+
+		<AI_Combat_Power>57</AI_Combat_Power>
+
+
+		<HardPoints>
+			HP_RAF_ASSAULT_LC,
+			HP_RAF_ASSAULT_GL
+		</HardPoints>
+
+
+		<Vehicle_Thief_Inside_Clone>Freerunner_Assault_Captured</Vehicle_Thief_Inside_Clone>
+
+		<!-- Assault Freerunner swaps abilities for salvo -->
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>7.5</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Interceptor_IV</SFXEvent_GUI_Unit_Ability_Activated>
+				<GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FULL_SALVO_CONCUSSION_GRENADE</Alternate_Description_Text>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Freerunner_Assault_Captured">
+		<Variant_Of_Existing_Type>Freerunner_Assault</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>FULL_SALVO</Type>
+				<Recharge_Seconds>60</Recharge_Seconds>
+				<Expiration_Seconds>7.5</Expiration_Seconds>
+				<SFXEvent_GUI_Unit_Ability_Activated>Unit_Barrage_Interceptor_IV</SFXEvent_GUI_Unit_Ability_Activated>
+				<GUI_Activated_Ability_Name>Interceptor_Full_Salvo</GUI_Activated_Ability_Name>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_FULL_SALVO_CONCUSSION_GRENADE</Alternate_Description_Text>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- AA Freerunner -->
+	<!-- Awaiting Turret Asset -->
+	<GroundVehicle Name="Freerunner_AA">
+		<Variant_Of_Existing_Type>Freerunner</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Text_ID>TEXT_UNIT_FREERUNNER_AA</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_LIGHT_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_FREERUNNER_AA
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FREERUNNER_HEALTH
+		TEXT_TOOLTIP_FREERUNNER_MOVE
+		TEXT_TOOLTIP_FREERUNNER_AA_WEAP1
+		TEXT_TOOLTIP_FREERUNNER_AA_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_freerunner_aa.tga</Icon_Name>
+
+		<AI_Combat_Power>52</AI_Combat_Power>
+
+		<LandBehavior>AFFECTED_BY_SHIELD, HUNT,WALK_LOCOMOTOR, IDLE,TARGETING, WEAPON, TURRET, POWERED, REVEAL,HIDE_WHEN_FOGGED, UNIT_AI, SURFACE_FX, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE,DAMAGE_TRACKING</LandBehavior>
+		<CategoryMask> Vehicle | AntiAirGunship | AntiAirSpeeder </CategoryMask>
+
+
+		<HardPoints>
+			HP_RAF_AA_AA,
+			HP_RAF_AA_AI
+		</HardPoints>
+
+		<Shield_Armor_Type>ShieldG_LightVehicle</Shield_Armor_Type>
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range>
+		<Targeting_Priority_Set>AntiAir</Targeting_Priority_Set>
+
+		<Vehicle_Thief_Inside_Clone>Freerunner_AA_Captured</Vehicle_Thief_Inside_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Freerunner_AA_Captured">
+		<Variant_Of_Existing_Type>Freerunner_AA</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.0</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.0</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_TANKOVERCHARGE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_TANKOVERCHARGE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<!-- Stock Model Freerunner without Alliance/NR Upgrades -->
+	<GroundVehicle Name="Swift_Assault_5_Early">
+		<Variant_Of_Existing_Type>Swift_Assault_5</Variant_Of_Existing_Type>
+		<Affiliation>Warlords</Affiliation>
+		<Text_ID>TEXT_UNIT_SWIFT_ASSAULT_5_EARLY</Text_ID>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_SWIFT_ASSAULT_5_EARLY
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_SWIFT_ASSAULT_5_HEALTH
+		TEXT_TOOLTIP_SWIFT_ASSAULT_5_MOVE
+		TEXT_TOOLTIP_SWIFT_ASSAULT_5_EARLY_WEAP1
+		TEXT_TOOLTIP_SWIFT_ASSAULT_5_EARLY_WEAP2
+		TEXT_TOOLTIP_SWIFT_ASSAULT_5_EARLY_WEAP3
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_ENHANCED_SENSORS
+		TEXT_TOOLTIP_BONUS_AA_ACCURACY
+		</Encyclopedia_Text>
+		<Icon_Name> i_button_swift_assault_5_early.tga </Icon_Name>
+
+		<AI_Combat_Power>94</AI_Combat_Power>
+
+		<HardPoints>
+				HP_SA5_Early_AV,
+				HP_SA5_Early_Missile,
+				HP_SA5_Early_AI,
+		</HardPoints>
+
+		<Land_FOW_Reveal_Range>650.0</Land_FOW_Reveal_Range>
+
+		<Vehicle_Thief_Inside_Clone>Swift_Assault_5_Early_Captured</Vehicle_Thief_Inside_Clone>
+
+		<!-- Enhanced sensors capability -->
+		<Target_Stealth_Units>Yes</Target_Stealth_Units>
+		
+		<Targeting_Priority_Set>AntiInfantryVehicle</Targeting_Priority_Set>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Swift_Assault_5_Early_Captured">
+		<Variant_Of_Existing_Type>Swift_Assault_5_Early</Variant_Of_Existing_Type>
+		
+		<Affiliation>Independent_Forces</Affiliation> <!-- Stop AI enumerating -->
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>POWER_TO_WEAPONS</Type>
+				<Mod_Multiplier>WEAPON_DELAY_MULTIPLIER,	1.0</Mod_Multiplier>
+				<Mod_Multiplier>SPEED_MULTIPLIER,		1.0</Mod_Multiplier>
+				<Mod_Multiplier>CAUSE_DAMAGE_MULTIPLIER ,	1.0</Mod_Multiplier>
+				<Recharge_Seconds>50</Recharge_Seconds>
+				<Expiration_Seconds>10</Expiration_Seconds>
+				<Alternate_Name_Text>TEXT_TOOLTIP_ABILITY_TANKOVERCHARGE</Alternate_Name_Text>
+				<Alternate_Description_Text>TEXT_TOOLTIP_ABILITY_TANKOVERCHARGE_DESCRIPTION</Alternate_Description_Text>
+				<Alternate_Icon_Name>i_sa_assault.tga</Alternate_Icon_Name>
+			</Unit_Ability>
+
+			<Unit_Ability>
+				<Type>EJECT_VEHICLE_THIEF</Type>
+				<Recharge_Seconds>10</Recharge_Seconds> <!-- time that the user can't eject thief, kicks in right away -->
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Canderous_Assault_Tank">
+
+		<Text_ID>TEXT_UNIT_CANDEROUS_TANK</Text_ID>
+		<Encyclopedia_Unit_Class>TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CANDEROUS_TANK
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CANDEROUS_TANK_HEALTH
+		TEXT_TOOLTIP_CANDEROUS_TANK_SHIELD
+		TEXT_TOOLTIP_CANDEROUS_TANK_MOVE 
+		TEXT_TOOLTIP_CANDEROUS_TANK_WEAP1
+		TEXT_TOOLTIP_CANDEROUS_TANK_WEAP2
+		</Encyclopedia_Text>
+		<Icon_Name> i_button_uv_cander_tank.tga </Icon_Name>
+
+		<Land_Model_Name>UV_CanderousAssaultTank.alo</Land_Model_Name>
+		<No_Colorization_Color />
+		<Scale_Factor>0.30</Scale_Factor>
+		<Select_Box_Scale>540</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<Size_Value>60</Size_Value>
+
+		<Mass>1.0</Mass>
+		<Max_Speed>0.5</Max_Speed>
+		<Max_Thrust>1.0</Max_Thrust>
+		<OverrideAcceleration>0.0333</OverrideAcceleration>
+		<OverrideDeceleration>0.1</OverrideDeceleration>
+		<Max_Rate_Of_Turn>2.0</Max_Rate_Of_Turn>
+
+		<Shield_Armor_Type>ShieldG_HeavyVehicle</Shield_Armor_Type>
+		<Shield_Points>100</Shield_Points>
+		<Shield_Refresh_Rate>10</Shield_Refresh_Rate>
+
+		<Armor_Type> ArmourG_HeavyVehicle </Armor_Type>
+		<Tactical_Health>600</Tactical_Health>
+
+		<Energy_Capacity>999</Energy_Capacity>
+		<Energy_Refresh_Rate>999</Energy_Refresh_Rate>
+		<Damage>10</Damage>
+		<AI_Combat_Power>204</AI_Combat_Power>
+
+		<Affiliation> Rebel, Empire, EmpireoftheHand, Greater_Maldrood, Zsinj_Empire, Eriadu_Authority, Pentastar, Corporate_Sector, Hutt_Cartels, Hapes_Consortium, Imperial_Proteus </Affiliation>
+		<Political_Control />
+
+		<Type>Hover</Type>
+		<CategoryMask> Vehicle | AntiVehicle</CategoryMask>
+		<Ranking_In_Category/>
+		<Property_Flags>DoKite</Property_Flags>
+		<Weather_Category>Hover</Weather_Category>
+		<Visible_To_Enemies_When_Empty>true</Visible_To_Enemies_When_Empty>
+		<Victory_Relevant>yes</Victory_Relevant>
+
+
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+
+		<Tactical_Bribe_Cost>100</Tactical_Bribe_Cost>
+		<Score_Cost_Credits>125</Score_Cost_Credits>
+
+		<LandBehavior>ABILITY_COUNTDOWN, LURE, AFFECTED_BY_SHIELD, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, SHIELDED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE, SURFACE_FX,DAMAGE_TRACKING</LandBehavior>
+
+
+		<HardPoints>
+			HP_Canderous_Right,
+			HP_Canderous_Left,
+			HP_Canderous_Missile
+		</HardPoints>
+
+		<Lua_Script />
+
+		<Garrison_Category />
+		<Num_Garrison_Slots>0</Num_Garrison_Slots>
+		<Garrison_Bone_Names />
+		<Garrison_Exit_Dist>20</Garrison_Exit_Dist>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+		<Garrison_Radius>50</Garrison_Radius>
+		<Num_Garrison_Guns>0</Num_Garrison_Guns>
+
+		<Target_Bones>B_Turret</Target_Bones>
+		<Ranged_Target_Z_Adjust>12.0</Ranged_Target_Z_Adjust>
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Ground_Vehicle_Turret_Target> Yes </Ground_Vehicle_Turret_Target>
+		<Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+		<Death_Explosions>Large_Explosion_Land</Death_Explosions>
+		<Remove_Upon_Death>true</Remove_Upon_Death>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+		<SFXEvent_Tactical_Build_Started> UHD_Reinforcements_En_Route </SFXEvent_Tactical_Build_Started>
+		<SFXEvent_Tactical_Build_Complete> UHD_Reinforcements_Available </SFXEvent_Tactical_Build_Complete>
+		<SFXEvent_Tactical_Build_Cancelled> UHD_Reinforcements_Cancelled  </SFXEvent_Tactical_Build_Cancelled>
+		<SFXEvent_Unit_Lost> UHD_Unit_Destroyed </SFXEvent_Unit_Lost>
+
+		<SFXEvent_Select>Unit_Select_Canderous_Tank</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Canderous_Tank</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Canderous_Tank</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Canderous_Tank</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Canderous_Tank</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Canderous_Tank </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Canderous_Tank</SFXEvent_Assist_Attack>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_MISSILE, null </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_2M_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_2M_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Turret_Rotating_Loop> Vehicle_Turret_Motor </SFXEvent_Turret_Rotating_Loop>
+		<Death_SFXEvent_Start_Die>Unit_Tank_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<MovementClass>Hover</MovementClass>
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Vehicle </UnitCollisionClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Custom_Hard_XExtent> 55.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 35.0 </Custom_Hard_YExtent>
+		<FormationSpacing> 2.75 </FormationSpacing>
+		<FormationOrder> 5 </FormationOrder>
+		<FormationGrouping> Standard </FormationGrouping>
+		<FormationRaggedness> 1 </FormationRaggedness>
+		<MaxJiggleDistance> 0 </MaxJiggleDistance>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+		<UseSecondaryFacing> true </UseSecondaryFacing>
+		<SecondaryTurnInPlaceROTCoefficient> .4 </SecondaryTurnInPlaceROTCoefficient>
+		<SecondaryTurnAngle> 90 </SecondaryTurnAngle>
+		<MinSecondaryTurnROTCoefficient> .4 </MinSecondaryTurnROTCoefficient>
+		<MaxSecondaryTurnROTCoefficient> .9 </MaxSecondaryTurnROTCoefficient>
+		<SecondaryTurnLookaheadDistance> 60 </SecondaryTurnLookaheadDistance>
+
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+
+		<Land_FOW_Reveal_Range>400.0</Land_FOW_Reveal_Range>
+
+		<Targeting_Max_Attack_Distance>550.0</Targeting_Max_Attack_Distance>
+		<Targeting_Min_Attack_Distance>0.0</Targeting_Min_Attack_Distance>
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>500.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>500.0</Attack_Move_Response_Range>
+		<Autonomous_Move_Extension_Vs_Attacker>0.0</Autonomous_Move_Extension_Vs_Attacker>
+
+		<Targeting_Priority_Set>AntiVehicleAir</Targeting_Priority_Set>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+
+		<Overall_Length>40.0</Overall_Length>
+		<Overall_Width>25.0</Overall_Width>
+		<Has_Land_Evaluator>Yes</Has_Land_Evaluator>
+
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>65.0, 65.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Occlusion_Silhouette_Enabled>1</Occlusion_Silhouette_Enabled>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+
+		<Wind_Disturbance_Radius>100</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.3</Wind_Disturbance_Sphere_Alpha>
+
+		<Movement_Animation_Speed> 1.0 </Movement_Animation_Speed>
+		<Behavior> SELECTABLE </Behavior>
+
+		<Turret_Rotate_Extent_Degrees>360</Turret_Rotate_Extent_Degrees>
+		<Turret_Elevate_Extent_Degrees>60</Turret_Elevate_Extent_Degrees>
+		<Turret_Bone_Name>b_turret</Turret_Bone_Name>
+		<Barrel_Bone_Name>b_barrel</Barrel_Bone_Name>
+		<Turret_Rotate_Speed>5.0</Turret_Rotate_Speed>
+		<Apply_Z_Turret_Rotate_To_Axis>2</Apply_Z_Turret_Rotate_To_Axis>
+		<Apply_Y_Turret_Rotate_To_Axis>1</Apply_Y_Turret_Rotate_To_Axis>
+		<Turret_Targets_Ground_Vehicles> 1 </Turret_Targets_Ground_Vehicles>
+		<Turret_Targets_Ground_Infantry> 3 </Turret_Targets_Ground_Infantry>
+		<Turret_Targets_Air_Vehicles> 2 </Turret_Targets_Air_Vehicles>
+		<Turret_Targets_Anything_Else> 4 </Turret_Targets_Anything_Else>
+
+		<Is_Squashable_By_Supercrusher>No</Is_Squashable_By_Supercrusher>
+		
+		<Death_Clone>Damage_Force_Telekinesis, Large_Explosion_Land</Death_Clone>
+		<Death_Clone>Damage_Crush, Large_Explosion_Land</Death_Clone>
+	</GroundVehicle>
+
+	<GroundVehicle Name="Canderous_Assault_Tank_Lasers">
+		<Variant_Of_Existing_Type>Canderous_Assault_Tank</Variant_Of_Existing_Type>
+		<Text_ID>TEXT_UNIT_CANDEROUS_TANK_LASERS</Text_ID>
+
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CANDEROUS_TANK_LASERS
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_CANDEROUS_TANK_HEALTH
+		TEXT_TOOLTIP_CANDEROUS_TANK_MOVE
+		TEXT_TOOLTIP_CANDEROUS_TANK_LASERS_WEAP1
+		TEXT_TOOLTIP_CANDEROUS_TANK_WEAP2
+		</Encyclopedia_Text>
+		<Icon_Name>i_button_uv_cander_tank_lasers.tga</Icon_Name>
+
+		<LandBehavior>ABILITY_COUNTDOWN, LURE, AFFECTED_BY_SHIELD, WALK_LOCOMOTOR, IDLE, TARGETING, WEAPON, TURRET, POWERED, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, TELEKINESIS_TARGET,STUNNABLE, WIND_DISTURBANCE, SURFACE_FX,DAMAGE_TRACKING</LandBehavior>
+
+		<Shield_Points>0</Shield_Points>
+		<Shield_Refresh_Rate>0</Shield_Refresh_Rate>
+
+		<HardPoints>
+			HP_Canderous_Lasers_Right,
+			HP_Canderous_Lasers_Left,
+			HP_Canderous_Missile
+		</HardPoints>
+
+		<AI_Combat_Power>201</AI_Combat_Power>
+
+	</GroundVehicle>
+
+	<GroundVehicle Name="Aratech_Battle_Platform">
+		<Text_ID>TEXT_UNIT_ARATECH_BP</Text_ID>
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_ARATECH_BP 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
+		TEXT_TOOLTIP_ARATECH_BP_HEALTH
+		TEXT_TOOLTIP_ARATECH_BP_SHIELD
+		TEXT_TOOLTIP_ARATECH_BP_MOVE
+		TEXT_TOOLTIP_ARATECH_BP_WEAP1
+		TEXT_TOOLTIP_ARATECH_BP_WEAP2
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_TRANSPORT
+		</Encyclopedia_Text>
+		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_HEAVY_VEHICLE </Encyclopedia_Unit_Class>
+		<Icon_Name>i_button_aratech520.tga</Icon_Name>
+
+		<Land_Model_Name>RV_GARGANTUAN.ALO</Land_Model_Name>
+		<Select_Box_Scale>200</Select_Box_Scale>
+		<Select_Box_Z_Adjust>3.0f</Select_Box_Z_Adjust>
+		<GUI_Bracket_Size>2</GUI_Bracket_Size>
+		<Is_Named_Hero>No</Is_Named_Hero>
+
+		<Scale_Factor>1.2</Scale_Factor>
+		<Mass>1.0</Mass>
+		<Size_Value>150</Size_Value>
+
+		<Max_Speed>1.5</Max_Speed>
+		<Max_Rate_Of_Turn>1</Max_Rate_Of_Turn>
+		<Stopped_Rate_Of_Turn>1</Stopped_Rate_Of_Turn>
+		<OverrideAcceleration> .05 </OverrideAcceleration>
+		<OverrideDeceleration> .3 </OverrideDeceleration>
+
+		<CategoryMask> Vehicle | AntiVehicle | AntiStructure </CategoryMask>
+		<Behavior>SELECTABLE</Behavior>
+		<LandBehavior>ABILITY_COUNTDOWN,WALK_LOCOMOTOR,IDLE,TARGETING,POWERED,SHIELDED,REVEAL,HIDE_WHEN_FOGGED,UNIT_AI,SURFACE_FX,AFFECTED_BY_SHIELD,STUNNABLE,WIND_DISTURBANCE,DAMAGE_TRACKING,GARRISON_VEHICLE</LandBehavior>
+		<Property_Flags>CanContainGarrison</Property_Flags>
+		
+		<Has_Land_Evaluator>True</Has_Land_Evaluator>
+		<Is_Affected_By_Gravity_Control_Field> Yes </Is_Affected_By_Gravity_Control_Field>
+		<Is_Supercrusher>Yes</Is_Supercrusher>
+		<SurfaceFX_Name>Hover</SurfaceFX_Name>
+
+		<Wind_Disturbance_Radius>200</Wind_Disturbance_Radius>
+		<Wind_Disturbance_Strength>10</Wind_Disturbance_Strength>
+		<Wind_Disturbance_Sphere_Alpha>0.4</Wind_Disturbance_Sphere_Alpha>
+
+		<Garrison_Category> Infantry, InfantryHero  </Garrison_Category>
+        <Num_Garrison_Slots>4</Num_Garrison_Slots>
+        <Garrison_Bone_Names>b_garrison_00</Garrison_Bone_Names>
+		<Garrison_Exit_Dist>0</Garrison_Exit_Dist>
+		<Garrison_Enter_Dist>0</Garrison_Enter_Dist>
+        <Garrison_Radius>30</Garrison_Radius>
+
+		<Affiliation>Warlords, Corporate_Sector, Rebel</Affiliation>
+
+		<Armor_Type> ArmourG_HeavyVehicle </Armor_Type>
+		<Tactical_Health>600</Tactical_Health>
+		<Shield_Armor_Type>ShieldG_HeavyVehicle</Shield_Armor_Type>
+		<Shield_Points>200</Shield_Points>
+		<Shield_Refresh_Rate>20</Shield_Refresh_Rate>
+		<Energy_Capacity>9999</Energy_Capacity>
+		<Energy_Refresh_Rate>9999</Energy_Refresh_Rate>
+		<AI_Combat_Power>270</AI_Combat_Power>
+		<Damage>70</Damage>
+
+		<Land_FOW_Reveal_Range>500.0</Land_FOW_Reveal_Range>
+		<!-- This value must be less than the range of the hard points -->
+		<Targeting_Max_Attack_Distance>550.0</Targeting_Max_Attack_Distance>
+		<Ranged_Target_Z_Adjust>15.0</Ranged_Target_Z_Adjust>
+
+		<HardPoints>
+			HP_Aratech_BP_Shield_Gen_Left,
+			HP_Aratech_BP_Shield_Gen_Right,
+			HP_Aratech_BP_Main_Turret_Front,
+			HP_Aratech_BP_Main_Turret_Back,
+			HP_Aratech_BP_Small_Turret_Front_Left,
+			HP_Aratech_BP_Small_Turret_Front_Right,
+			HP_Aratech_BP_Small_Turret_Back_Left,
+			HP_Aratech_BP_Small_Turret_Back_Right
+		</HardPoints>
+
+		<Collidable_By_Projectile_Living>Yes</Collidable_By_Projectile_Living>
+		<Collidable_By_Projectile_Dead>Yes</Collidable_By_Projectile_Dead>
+		<Death_Explosions>Huge_Explosion_Land</Death_Explosions>
+
+		<Land_Damage_Thresholds>1, 0.66, 0.33</Land_Damage_Thresholds>
+		<Land_Damage_Alternates>0, 1, 2</Land_Damage_Alternates>
+		<Land_Damage_SFX>null,SFX_Grenade_Detonation, SFX_Grenade_Detonation</Land_Damage_SFX>
+
+		<SFXEvent_Select>Unit_Select_Juggernaut</SFXEvent_Select>
+		<SFXEvent_Move>Unit_Move_Juggernaut</SFXEvent_Move>
+		<SFXEvent_Fleet_Move>Unit_Fleet_Move_Juggernaut</SFXEvent_Fleet_Move>
+		<SFXEvent_Attack>Unit_Attack_Juggernaut</SFXEvent_Attack>
+		<SFXEvent_Guard>Unit_Guard_Juggernaut</SFXEvent_Guard>
+		<SFXEvent_Assist_Move> Unit_Assist_Move_Juggernaut </SFXEvent_Assist_Move>
+		<SFXEvent_Assist_Attack> Unit_Assist_Attack_Juggernaut</SFXEvent_Assist_Attack>
+ 
+		<Death_SFXEvent_Start_Die>Unit_AT_AT_Death_SFX</Death_SFXEvent_Start_Die>
+
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_WEAPON_LASER, null </SFXEvent_Hardpoint_Destroyed>
+		<SFXEvent_Hardpoint_Destroyed> HARD_POINT_SHIELD_GENERATOR, null </SFXEvent_Hardpoint_Destroyed>
+
+		<SFXEvent_Engine_Idle_Loop> Unit_Gargantuan_Idle_Engine_Loop </SFXEvent_Engine_Idle_Loop>
+		<SFXEvent_Engine_Moving_Loop> Unit_Gargantuan_Moving_Engine_Loop </SFXEvent_Engine_Moving_Loop>
+		<SFXEvent_Turret_Rotating_Loop> Structure_Turret_Motor_Turbo </SFXEvent_Turret_Rotating_Loop>
+
+		<Overall_Length>60.0</Overall_Length>
+		<Overall_Width>0.0</Overall_Width>
+		
+		<MovementClass>LargeHover</MovementClass>
+		<OccupationStyle>1x1</OccupationStyle>
+		<Victory_Relevant>yes</Victory_Relevant>
+		<No_Reflection_Below_Detail_Level>1</No_Reflection_Below_Detail_Level>
+		<No_Refraction_Below_Detail_Level>1</No_Refraction_Below_Detail_Level>
+		<Blob_Shadow_Below_Detail_Level>2</Blob_Shadow_Below_Detail_Level>
+		<Blob_Shadow_Scale>75.0, 50.0</Blob_Shadow_Scale>
+		<Blob_Shadow_Material_Name>Generic_Shadow</Blob_Shadow_Material_Name>
+		<Weather_Category>Hover</Weather_Category>
+        <Ranking_In_Category/>
+
+		<Space_Layer> Land </Space_Layer>
+		<UnitCollisionClass> Giant Vehicle </UnitCollisionClass>
+		<Custom_Hard_XExtent> 75.0 </Custom_Hard_XExtent>
+		<Custom_Hard_YExtent> 25.0 </Custom_Hard_YExtent>
+		<FormationGrouping> Solo </FormationGrouping>
+		<MinimumPushReturnDistance> 100 </MinimumPushReturnDistance>
+
+		<Idle_Chase_Range>0.0</Idle_Chase_Range>
+		<Guard_Chase_Range>200.0</Guard_Chase_Range>
+		<Attack_Move_Response_Range>150.0</Attack_Move_Response_Range>
+		<Targeting_Stickiness_Time_Threshold>5.0</Targeting_Stickiness_Time_Threshold>
+		<Targeting_Priority_Set>AntiVehicle</Targeting_Priority_Set>
+		<Score_Cost_Credits> 18000 </Score_Cost_Credits>
+		<Population_Value>1</Population_Value>
+		<Influences_Capture_Point> False </Influences_Capture_Point>
+		<Base_Shield_Penetration_Particle>Shield_Penetration_Effect_Particle</Base_Shield_Penetration_Particle>
+		<Is_Visible_On_Radar>Yes</Is_Visible_On_Radar>
+		<Death_Clone>Damage_Normal, Aratech_Battle_Platform_Death_Clone</Death_Clone>
+		<Movement_Directions_Count>2</Movement_Directions_Count>
+		<Lua_Script>ObjectScript_Gargantuan</Lua_Script>
+
+		<Neutralization_Cost>2500.0</Neutralization_Cost>
+
+		<Death_Clone>Damage_Force_Telekinesis, Huge_Explosion_Land</Death_Clone>
+		<Death_Clone>Damage_Crush, Huge_Explosion_Land</Death_Clone>
+	</GroundVehicle>
+
+	<Death_Clone Name="Aratech_Battle_Platform_Death_Clone">
+		<Variant_Of_Existing_Type>Aratech_Battle_Platform</Variant_Of_Existing_Type>
+		<CategoryMask>None</CategoryMask>
+		<Specific_Death_Anim_Type>DIE</Specific_Death_Anim_Type>
+		<Land_Model_Name>RV_gargantuan_DC.alo</Land_Model_Name>
+		<Death_Clone_Is_Obstacle>yes</Death_Clone_Is_Obstacle>
+		<LandBehavior>HIDE_WHEN_FOGGED,LAND_OBSTACLE,IMPOSING_PRESENCE </LandBehavior>
+		<Obstacle_Width>40.0</Obstacle_Width>
+		<Obstacle_Height>40.0</Obstacle_Height>
+		<Obstacle_X_Offset>0.0</Obstacle_X_Offset>
+		<Obstacle_Y_Offset>-20.0</Obstacle_Y_Offset>
+		<Death_Persistence_Duration> 20 </Death_Persistence_Duration>
+		<Death_Explosions_End>Huge_Explosion_Land</Death_Explosions_End>
+		<Death_SFXEvent_End_Die>Unit_Calamari_Death_SFX</Death_SFXEvent_End_Die>
+		<IsDeathClone> true </IsDeathClone>
+		<Specific_Death_Anim_Index> 0 </Specific_Death_Anim_Index>
+		<Presence_Range>200.0</Presence_Range>
+	</Death_Clone>
+
+</Militia_Vehicles_Collective>

@@ -1,0 +1,3 @@
+return {
+    Flags = {FULLINHERIT = "EOTH_SHIPYARD_LEVEL_ZERO"}
+}

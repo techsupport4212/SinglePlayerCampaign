@@ -21,7 +21,7 @@
 		<Reward_Param6 />
 		<Reward_Param7 />
 		<Reward_Param8 />
-		<Reward_Param9>Commander_Moff_Loop</Reward_Param9>
+		<Reward_Param9>Vader_Loop</Reward_Param9>
 		<Reward_Param10>0</Reward_Param10>
 		<Prereq>GE_Story_Start</Prereq>
 	</Event>

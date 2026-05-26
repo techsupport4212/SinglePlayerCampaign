@@ -1,0 +1,23 @@
+return {
+    -- Zann Consortium Loadout
+    ["INTERCEPTOR_IV_FRIGATE"] = 9,
+    ["CR90"] = 14,
+    ["CRUSADER_GUNSHIP"] = 19,
+    ["MARAUDER_MISSILE_CRUISER"] = 20,
+    ["MARAUDER_CRUISER"] = 20,
+    ["TARTAN_PATROL_CRUISER"] = 30,
+    ["STAR_GALLEON"] = 39,
+    ["NEBULON_B_FRIGATE"] = 39,
+    ["VENGEANCE_FRIGATE"] = 49,
+    ["BROADSIDE_CRUISER"] = 84,
+    ["ACCLAMATOR_II"] = 155,
+    ["REFIT_VENATOR_STAR_DESTROYER"] = 290,
+    ["AGGRESSOR_STAR_DESTROYER"] = 480,
+    ["KELDABE"] = 530,
+    -- Pirate Base
+    ["INTERCEPTOR_IV_FRIGATE"] = 11,
+    ["ACTION_VI_SUPPORT"] = 9,
+    ["SUPER_TRANSPORT_XI_MODIFIED"] = 185,
+    ["SPACE_ARC_CRUISER"] = 240,
+    -- Heroes
+}

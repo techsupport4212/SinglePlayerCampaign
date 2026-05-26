@@ -24,7 +24,7 @@ function YearHandler:new(galactic_display, start_year, start_month, id)
     end
 
     -- TechSupport: added support for era zero, which has a different calendar system and thus different month lengths and year suffixes
-    if id == "ZAARIN" then
+    if GlobalValue.Get("CURRENT_ERA") == 0 then
         self.cycles_per_month = 4
     end
 

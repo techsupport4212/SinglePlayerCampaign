@@ -1,6 +1,6 @@
---*******************************************
---******  Thrawn's Revenge: Bacta War  ******
---*******************************************
+--*****************************************************
+--******  Thrawn's Revenge: Zaarin Insurrection  ******
+--*****************************************************
 
 require("PGDebug")
 require("PGStateMachine")
@@ -39,8 +39,8 @@ function Begin_GC(message)
         --        :with_sink(holocron_sink)
         --        :with_log_level(3)
 
-        GlobalValue.Set("CURRENT_ERA", 1)
-        GlobalValue.Set("REGIME_INDEX", 1)
+        GlobalValue.Set("CURRENT_ERA", 0)
+        GlobalValue.Set("REGIME_INDEX", 0)
         GlobalValue.Set("PROGRESS_REGIME", false)
         GlobalValue.Set("STORYLINE", "LIMITED_SCOPE")
 
@@ -49,7 +49,7 @@ function Begin_GC(message)
             plot = plot,
             maxroutes = 6,
             id = "DEFAULT",
-            year_start = 4,
+            year_start = 3,
             is_generated = false,
             dark_empire = false,
             statemachine_dsl_config = {

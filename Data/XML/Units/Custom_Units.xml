@@ -236,4 +236,109 @@
 	   </Unit_Abilities_Data>
 	</SpaceUnit>
 
+	<SpaceUnit Name="Conqueror_Star_Destroyer">
+		<Variant_Of_Existing_Type>Template_Tector_Star_Destroyer</Variant_Of_Existing_Type>
+
+		<Icon_Name>I_BUTTON_CONQUEROR.tga</Icon_Name>
+
+		<Space_Model_Name>Conqueror.ALO</Space_Model_Name>
+
+		<Text_ID>TEXT_UNIT_CONQUEROR</Text_ID>
+		<Encyclopedia_Unit_Class>Ship Crews Cost: 580</Encyclopedia_Unit_Class>
+		<Encyclopedia_Text>
+		TEXT_TOOLTIP_CONQUEROR
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_TECTOR_HULL
+		TEXT_TOOLTIP_TECTOR_SHIELD
+		TEXT_TOOLTIP_TECTOR_MOVE
+		TEXT_TOOLTIP_TECTOR_WEAP1
+		TEXT_TOOLTIP_TECTOR_WEAP2
+		TEXT_TOOLTIP_TECTOR_WEAP3
+		TEXT_TOOLTIP_TECTOR_WEAP4
+		TEXT_TOOLTIP_TECTOR_WEAP5
+		TEXT_TOOLTIP_SEPARATOR_CAPABILITIES_BLOCK
+		TEXT_TOOLTIP_CAPABILITY_ORBITAL_BOMBARDMENT
+		TEXT_TOOLTIP_CAPABILITY_BOARDABLE
+		</Encyclopedia_Text>
+		<SpaceBehavior> ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, SELECTABLE, POWERED, SHIELDED, TARGETING, REVEAL, HIDE_WHEN_FOGGED, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA</SpaceBehavior>
+		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
+		<Required_Star_Base_Level>1</Required_Star_Base_Level>
+		<Property_Flags>Boardable</Property_Flags>
+		<Required_Special_Structures>
+		Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four,
+		AI_Category_Dummy | Capital_Category_Dummy</Required_Special_Structures>
+		<Tactical_Health>7961</Tactical_Health>
+		<Tech_Level>0</Tech_Level>
+		<Affiliation>Empire</Affiliation>
+
+		<Lua_Script>GenericGameObject</Lua_Script>
+
+		<HardPoints>
+			HP_Tector_Engines,
+			HP_Tector_Weapon_01,
+			HP_Tector_Weapon_02,
+			HP_Tector_Weapon_03,
+			HP_Tector_Weapon_04,
+			HP_Tector_Weapon_05,
+			HP_Tector_Weapon_06,
+			HP_Tector_Weapon_07,
+			HP_Tector_Weapon_08,
+			HP_Tector_Weapon_09,
+			HP_Tector_Weapon_10,
+			HP_Tector_Weapon_11,
+			HP_Tector_Weapon_12,
+			HP_Tector_Weapon_13,
+			HP_Tector_Weapon_14,
+			HP_Tector_Weapon_15,
+			HP_Tector_Weapon_16,
+			HP_Tector_Weapon_17,
+			HP_Tector_Weapon_18,
+			HP_Tector_Weapon_19,
+			HP_Tector_Weapon_20,
+			HP_Tector_Weapon_21,
+			HP_Conqueror_Shield_Leech
+		</HardPoints>
+
+		<Death_Clone>Damage_Normal, Friggin_Huge_Explosion_Space</Death_Clone>
+
+		<!-- SURVIVAL -->
+		<Tactical_Build_Cost_Multiplayer>3740</Tactical_Build_Cost_Multiplayer>
+		<Tactical_Build_Time_Seconds>19</Tactical_Build_Time_Seconds>
+		<Tactical_Build_Prerequisites/>
+		<Tactical_Production_Queue>Tactical_Units</Tactical_Production_Queue>
+
+		<Unit_Abilities_Data SubObjectList="Yes">
+			<Unit_Ability>
+				<Type>LEECH_SHIELDS</Type>
+				<Recharge_Seconds>60.0</Recharge_Seconds>
+				<GUI_Activated_Ability_Name> Conqueror_Leech_Shields </GUI_Activated_Ability_Name>
+				<Effective_Radius> 500.0 </Effective_Radius>
+				<SFXEvent_Target_Ability> Unit_Leech_Shields_Keldabe </SFXEvent_Target_Ability>
+				<SFXEvent_Special_Ability_Loop> Unit_Star_Destroyer_Tractor_Beam </SFXEvent_Special_Ability_Loop>
+				<Supports_Autofire>True</Supports_Autofire>
+			</Unit_Ability>
+		</Unit_Abilities_Data>
+
+		<Abilities SubObjectList="Yes">
+			<Leech_Shields_Ability Name="Conqueror_Leech_Shields">
+				<Activation_Style> User_Input </Activation_Style>
+				<Applicable_Unit_Categories> Corvette | Frigate | Capital | SuperCapital | SpaceHero | SpaceStructure </Applicable_Unit_Categories>
+				<Activation_Min_Range>10</Activation_Min_Range>
+				<Activation_Max_Range>7000</Activation_Max_Range>
+				<Duration_In_Secs> 20.0 </Duration_In_Secs>
+				<Shield_Damage_Per_Second> 100.0 </Shield_Damage_Per_Second>
+				<Damage_Multiplier> 1.0 </Damage_Multiplier>
+				<Beam_Color>34, 34, 235, 255</Beam_Color>
+				<Beam_Bone_Name>MUZZLEA_00</Beam_Bone_Name>
+				<Beam_Frames>10</Beam_Frames>
+				<Beam_Width>40.0</Beam_Width>
+				<Beam_Texture_Name>tractor_beam00.tga</Beam_Texture_Name>
+				<Beam_Effect_Name>Leech_Shields</Beam_Effect_Name>
+				<Leech_Effect>Leech_Effect</Leech_Effect>
+			</Leech_Shields_Ability>
+		</Abilities>
+
+
+	</SpaceUnit>
+
 </Custom_Units>
