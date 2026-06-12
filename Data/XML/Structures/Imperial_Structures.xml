@@ -1,6 +1,80 @@
 <?xml version='1.0' encoding='ASCII'?>
 <Imperial_Structures>
 
+	<SpecialStructure Name="Imperial_Fleet_Relay_Station">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+		<Land_Model_Name> SLD-14_Shield_Generator_Scrambler.alo </Land_Model_Name>
+		<Scale_Factor>1.4</Scale_Factor>
+		<Text_ID>TEXT_STRUCTURE_FLEET_RELAY</Text_ID>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Icon_Name>I_BUTTON_FIELD_EMPLACEMENT_SCRAMBLER.tga</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Navy_Commando_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Navy_Commando_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_STRUCTURE_FLEET_RELAY_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_OFFICE_GM1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
+	<SpecialStructure Name="Imperial_Airbase">
+
+		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
+		<Land_Model_Name> Imperial_Airbase.alo </Land_Model_Name>
+		<Scale_Factor>1.0</Scale_Factor>
+		<Text_ID>TEXT_STRUCTURE_IMPERIAL_AIRBASE</Text_ID>
+
+		<Affiliation>Empire</Affiliation>
+
+		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
+
+		<Icon_Name>I_BUTTON_TIE_FIGHTER.tga</Icon_Name>
+
+		<!--All Eras-->
+		<Starting_Spawned_Units_Tech_0>Navy_Commando_Squad, 3</Starting_Spawned_Units_Tech_0>
+		<Reserve_Spawned_Units_Tech_0>Navy_Commando_Squad, 9</Reserve_Spawned_Units_Tech_0>
+
+		<Encyclopedia_Text> 
+		TEXT_STRUCTURE_AIRBASE_DESCRIPTION
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_OFFICE_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
+		TEXT_TOOLTIP_OFFICE_GM1
+		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
+		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
+		</Encyclopedia_Text>
+		<Build_Limit_Current_Per_Player>3</Build_Limit_Current_Per_Player>
+		<Abilities SubObjectList="Yes">
+
+			<Political_Transition_Bonus_Ability Name="Pacification_Bonus">
+				<Time_Reduction_Percentage>0.05</Time_Reduction_Percentage>
+				<Stacking_Category>1</Stacking_Category>
+			</Political_Transition_Bonus_Ability>
+
+		</Abilities>
+	</SpecialStructure>
+
 	<SpecialStructure Name="Sith_Academy">
 		<Variant_Of_Existing_Type>Template_Galactic_Company</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_COMPANY_SITH_ACADEMY</Text_ID>

@@ -3,13 +3,13 @@
 
 	<!-- Loadouts -->
 
-
 	<DummyStructure Name="Loadout_Header">
 		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
 
 		<Text_ID>TEXT_EVENT_CHOOSE_AN_OPTION_HEADER</Text_ID>
 		<Icon_Name>nothing.tga</Icon_Name>
 	</DummyStructure>
+	
 	<DummyStructure Name="Loadout_Body">
 		<Variant_Of_Existing_Type>Event_Dummy_Template</Variant_Of_Existing_Type>
 
@@ -44,35 +44,8 @@
 		<Encyclopedia_Text>TEXT_EVENT_LOADOUT_MIXED_DESCRIPTION</Encyclopedia_Text>
 		<Encyclopedia_Unit_Class> </Encyclopedia_Unit_Class>
 
-		<Icon_Name>I_BUTTON_FACTIONAL_FIGHTERS.tga</Icon_Name>
+		<Icon_Name>I_BUTTON_LOADOUT_MIXED.tga</Icon_Name>
 	</DummyStructure>
-
-	<DummyStructure Name="Option_Change_Loadout">
-		<Variant_Of_Existing_Type>Template_Research_Dummy</Variant_Of_Existing_Type>
-
-		<Text_ID>TEXT_OPTION_CHANGE_LOADOUT</Text_ID>
-		<Encyclopedia_Text> TEXT_OPTION_CHANGE_LOADOUT_DESCRIPTION </Encyclopedia_Text>
-		<Encyclopedia_Unit_Class> TEXT_ENCYCLOPEDIA_CLASS_TECHUPGRADE </Encyclopedia_Unit_Class>
-
-		<Icon_Name>I_BUTTON_FACTIONAL_FIGHTERS.tga</Icon_Name>
-		<GUI_Row>1</GUI_Row>
-
-		<Lua_Script>DelayedSelfDelete</Lua_Script>
-
-		<Affiliation>Empire</Affiliation>
-		<Build_Initially_Locked>Yes</Build_Initially_Locked>
-		<Tech_Level>0</Tech_Level>
-		<Required_Star_Base_Level>1</Required_Star_Base_Level>
-		<Required_Special_Structures>AI_Category_Dummy | Story_Category_Dummy</Required_Special_Structures>
-		<Build_Cost_Credits>1</Build_Cost_Credits>
-		<Build_Time_Seconds>1</Build_Time_Seconds>
-
-		<SFXEvent_Build_Started>EHD_Researching</SFXEvent_Build_Started>
-		<SFXEvent_Build_Cancelled>EHD_Research_Canceled</SFXEvent_Build_Cancelled>
-		<SFXEvent_Build_Complete>EHD_Research_Complete</SFXEvent_Build_Complete>
-	</DummyStructure>
-
-
 
 	<!-- Command Staff Hire / Retire Dummies -->
 

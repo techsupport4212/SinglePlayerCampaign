@@ -969,7 +969,6 @@
 				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
 				<Stacking_Category>0</Stacking_Category>
 			</Battlefield_Modifier_Ability>
-
 			<Earthquake_Attack_Ability Name="Vader_Attack_Structures">
 				<Activation_Style>Special_Attack</Activation_Style>
 				<Terminate_Effect_On_Move_Command>Yes</Terminate_Effect_On_Move_Command>

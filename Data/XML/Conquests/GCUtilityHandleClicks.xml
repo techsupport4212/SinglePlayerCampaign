@@ -1,0 +1,910 @@
+<?xml version="1.0" ?>
+<Story>
+	<Event Name="Trigger_Initialize_GCUtilityHandleClicks">
+		<Event_Type>STORY_ELAPSED</Event_Type>
+		<Event_Param1>0</Event_Param1>
+	</Event>
+
+	<Event Name="Trigger_Resting_State">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESET_STATE</Event_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Frigate_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_space_filter01</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Capital_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_space_filter02</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Station_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_space_filter03</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Story_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_space_filter04</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Options_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_save_fixer01</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Loadout_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_save_fixer</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Research_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter06</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Bombardment_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter08</Event_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Filter_00">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_filter_all</Event_Param1>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>b_filters0</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Filter_01">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_filter_all</Event_Param1>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>b_filters1</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Filter_02">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_filter_all</Event_Param1>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>b_filters2</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Filter_03">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_filter_all</Event_Param1>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>b_filters3</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Filter_Ground_Enable">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_ground_filter</Event_Param1>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>b_planet_tab</Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Force_Space_Tab">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1>b_space_tab</Reward_Param1>
+		<Prereq>Filter_Station_Enable</Prereq>
+		<Prereq>Filter_Capital_Enable</Prereq>
+		<Prereq>Filter_Frigate_Enable</Prereq>
+		<Prereq>Filter_Story_Enable</Prereq>
+		<Prereq>Filter_Options_Enable</Prereq>
+		<Prereq>Filter_Research_Enable</Prereq>
+		<Prereq>Filter_Bombardment_Enable</Prereq>
+		<Prereq>Filter_Loadout_Enable</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Click_Create_00">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_00</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_00</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_01">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_01</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_01</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_02">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_02</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_02</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_03">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_03</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_03</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_04">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_04</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_04</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_05">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_05</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_05</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_06">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_06</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_06</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_07">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_07</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_07</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_08">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_08</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_08</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_09">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_09</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_09</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_10">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_10</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_10</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_11">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_11</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_11</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_12">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_12</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_12</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_13">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_13</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_13</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_14">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_14</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_14</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_15">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_15</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_15</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_16">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_16</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_16</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_17">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_17</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_17</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_18">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_18</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_18</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_19">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_19</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_19</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_20">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_20</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_20</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_21">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_21</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_21</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_22">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_22</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_22</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create_23">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_23</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_23</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_24">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_24</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_24</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create_25">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_Create_25</Event_Param1>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_25</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Click_Create00_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_00 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create01_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_01 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create02_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_02 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create03_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_03 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create04_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_04 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create05_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_05 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create06_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_06 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create07_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_07 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create08_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_08 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create09_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_09 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Create10_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_10 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create11_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_11</Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create12_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_12 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create13_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_13 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create14_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_14 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create15_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_15 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create16_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_16 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create17_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_17 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create18_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_18 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create19_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_19 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create20_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_20 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create21_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_21 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create22_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_22 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create23_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_23 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create24_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_24 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Click_Create25_Delay">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>b_Create_25 </Reward_Param2>
+		<Prereq>Click_Queue00_Delay</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Click_Queue00">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CANCELED_OBJECT</Event_Param2>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue00</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue01">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CANCELED_OBJECT</Event_Param2>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue01</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue02">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CANCELED_OBJECT</Event_Param2>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue02</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue03">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CANCELED_OBJECT</Event_Param2>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue03</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue04">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>CANCELED_OBJECT</Event_Param2>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue04</Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+
+	<Event Name="Click_Queue00_Delay">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESTORE_BUTTONS</Event_Param2>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue00</Reward_Param2>
+		<Prereq>Click_Queue00</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue01_Delay">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESTORE_BUTTONS</Event_Param2>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue01</Reward_Param2>
+		<Prereq>Click_Queue01</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue02_Delay">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESTORE_BUTTONS</Event_Param2>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue02</Reward_Param2>
+		<Prereq>Click_Queue02</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue03_Delay">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESTORE_BUTTONS</Event_Param2>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue03</Reward_Param2>
+		<Prereq>Click_Queue03</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_Queue04_Delay">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>RESTORE_BUTTONS</Event_Param2>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2>queue04</Reward_Param2>
+		<Prereq>Click_Queue04</Prereq>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Disable_Button">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>DISABLE_BUTTON_EVENT</Event_Param2>
+		<Reward_Type>DISABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Enable_Button">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>ENABLE_BUTTON_EVENT</Event_Param2>
+		<Reward_Type>ENABLE_EVENT</Reward_Type>
+		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
+		<Reward_Param2></Reward_Param2>
+		<Perpetual>true</Perpetual>
+	</Event>
+	
+	<Event Name="Force_Click_Button">
+		<Event_Type>STORY_AI_NOTIFICATION</Event_Type>
+		<Event_Param2>FORCE_CLICK_BUTTON_EVENT</Event_Param2>
+		<Reward_Type>FORCE_CLICK_GUI</Reward_Type>
+		<Reward_Param1></Reward_Param1>
+		<Perpetual>true</Perpetual>
+	</Event>
+
+	<Event Name="Click_EotH_Close">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>eoth_govt_menu_close</Event_Param1>
+		<Branch>Click_EotH_Close_Branch</Branch>
+	</Event>
+	<Event Name="Click_EotH_Close_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Click_EotH_Close_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EotH_Close</Prereq>
+	</Event>
+
+	<Event Name="Click_Ally_1_Select">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>Ally_1_Select</Event_Param1>
+		<Branch>Ally_1_Select_Branch</Branch>
+	</Event>
+	<Event Name="Click_Ally_1_Select_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ally_1_Select_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_Ally_1_Select</Prereq>
+	</Event> 
+
+	<Event Name="Click_Ally_2_Select">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>Ally_2_Select</Event_Param1>
+		<Branch>Ally_2_Select_Branch</Branch>
+	</Event>
+	<Event Name="Click_Ally_2_Select_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ally_2_Select_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_Ally_2_Select</Prereq>
+	</Event> 
+
+	<Event Name="Click_Ally_3_Select">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>Ally_3_Select</Event_Param1>
+		<Branch>Ally_3_Select_Branch</Branch>
+	</Event>
+	<Event Name="Click_Ally_3_Select_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ally_3_Select_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_Ally_3_Select</Prereq>
+	</Event> 
+
+	<Event Name="Click_Ally_4_Select">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>Ally_4_Select</Event_Param1>
+		<Branch>Ally_4_Select_Branch</Branch>
+	</Event>
+	<Event Name="Click_Ally_4_Select_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ally_4_Select_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_Ally_4_Select</Prereq>
+	</Event> 
+
+	<Event Name="Click_Ally_5_Select">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>Ally_5_Select</Event_Param1>
+		<Branch>Ally_5_Select_Branch</Branch>
+	</Event>
+	<Event Name="Click_Ally_5_Select_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ally_5_Select_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_Ally_5_Select</Prereq>
+	</Event>
+
+	<Event Name="Click_Ally_6_Select">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>Ally_6_Select</Event_Param1>
+		<Branch>Ally_6_Select_Branch</Branch>
+	</Event>
+	<Event Name="Click_Ally_6_Select_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>Ally_6_Select_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_Ally_6_Select</Prereq>
+	</Event>
+
+	<Event Name="Click_EOTH_Clone_1_2">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_1_2</Event_Param1>
+		<Branch>EOTH_Clone_1_2_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_1_2_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_1_2_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_1_2</Prereq>
+	</Event>  
+	<Event Name="Click_EOTH_Clone_1_3">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_1_3</Event_Param1>
+		<Branch>EOTH_Clone_1_3_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_1_3_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_1_3_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_1_3</Prereq>
+	</Event>
+
+	<Event Name="Click_EOTH_Clone_2_2">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_2_2</Event_Param1>
+		<Branch>EOTH_Clone_2_2_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_2_2_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_2_2_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_2_2</Prereq>
+	</Event>  
+	<Event Name="Click_EOTH_Clone_2_3">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_2_3</Event_Param1>
+		<Branch>EOTH_Clone_2_3_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_2_3_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_2_3_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_2_3</Prereq>
+	</Event>
+
+	<Event Name="Click_EOTH_Clone_3_2">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_3_2</Event_Param1>
+		<Branch>EOTH_Clone_3_2_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_3_2_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_3_2_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_3_2</Prereq>
+	</Event>  
+	<Event Name="Click_EOTH_Clone_3_3">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_3_3</Event_Param1>
+		<Branch>EOTH_Clone_3_3_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_3_3_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_3_3_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_3_3</Prereq>
+	</Event>
+
+	<Event Name="Click_EOTH_Clone_4_2">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_4_2</Event_Param1>
+		<Branch>EOTH_Clone_4_2_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_4_2_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_4_2_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_4_2</Prereq>
+	</Event>  
+	<Event Name="Click_EOTH_Clone_4_3">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_4_3</Event_Param1>
+		<Branch>EOTH_Clone_4_3_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_4_3_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_4_3_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_4_3</Prereq>
+	</Event>
+
+	<Event Name="Click_EOTH_Clone_5_2">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_5_2</Event_Param1>
+		<Branch>EOTH_Clone_5_2_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_5_2_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_5_2_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_5_2</Prereq>
+	</Event>  
+	<Event Name="Click_EOTH_Clone_5_3">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>EOTH_Clone_5_3</Event_Param1>
+		<Branch>EOTH_Clone_5_3_Branch</Branch>
+	</Event>
+	<Event Name="Click_EOTH_Clone_5_3_Reset">
+		<Event_Type>STORY_TRIGGER</Event_Type>
+		<Reward_Type>RESET_BRANCH</Reward_Type>
+		<Reward_Param1>EOTH_Clone_5_3_Branch</Reward_Param1>
+		<Perpetual>true</Perpetual>
+		<Prereq>Click_EOTH_Clone_5_3</Prereq>
+	</Event>
+    
+</Story>

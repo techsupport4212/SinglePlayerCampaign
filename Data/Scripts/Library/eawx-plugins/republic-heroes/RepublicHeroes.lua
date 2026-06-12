@@ -31,7 +31,6 @@ function RepublicHeroes:new(gc, herokilled_finished_event, human_player, id)
 	crossplot:subscribe("COMMAND_STAFF_EXIT", self.CommandStaff_Exit, self)
 	crossplot:subscribe("COMMAND_STAFF_RETURN", self.CommandStaff_Return, self)
 	crossplot:subscribe("COMMAND_STAFF_CENSUS", self.CommandStaff_Census, self)
-	crossplot:subscribe("LOADOUT_OPTION_SELECTED", self.loadout_Set_Selected, self)
 
 	self.default_category_slots = 1
 	self.category_slot_limits = {
@@ -303,15 +302,6 @@ function RepublicHeroes:on_production_finished(planet, object_type_name)
 		self:CommandStaff_Initialize()
 	end
 
-	if object_type_name == "OPTION_CHANGE_LOADOUT" then
-		self:change_loadout()
-		local loadout_dummy = Find_First_Object(object_type_name)
-		if TestValid(loadout_dummy) then
-			loadout_dummy.Despawn()
-		end
-		return
-	end
-
 	local dispatch = self.object_dispatch[object_type_name]
 	if dispatch == nil then
 		return
@@ -417,44 +407,4 @@ function RepublicHeroes:CommandStaff_Census()
 	end
 
 	self:unlock_view_buttons()
-end
-
-function RepublicHeroes:change_loadout()
-	local current_loadout = GlobalValue.Get("CUSTOM_LOADOUT")
-	DebugMessage(
-		"%s -- change_loadout opened, current CUSTOM_LOADOUT: %s",
-		tostring(Script),
-		tostring(current_loadout)
-	)
-	StoryUtil.ShowScreenText("Current loadout: " .. tostring(current_loadout), 10)
-	local options = {"FULL_FIGHTER", "FULL_BOMBER", "MIXED"}
-	crossplot:publish("POPUPEVENT", "LOADOUT", options, "LOADOUT_OPTION_SELECTED")
-end
-
-function RepublicHeroes:loadout_Set_Selected(selected_option)
-	StoryUtil.ShowScreenText("Selected option: " .. tostring(selected_option), 10)
-	if selected_option == "LOADOUT_FULL_FIGHTER" or selected_option == "FULL_FIGHTER" then
-		GlobalValue.Set("CUSTOM_LOADOUT", "FULL_FIGHTER")
-	elseif selected_option == "LOADOUT_FULL_BOMBER" or selected_option == "FULL_BOMBER" then
-		GlobalValue.Set("CUSTOM_LOADOUT", "FULL_BOMBER")
-	elseif selected_option == "LOADOUT_MIXED" or selected_option == "MIXED" then
-		GlobalValue.Set("CUSTOM_LOADOUT", "MIXED")
-	else
-		StoryUtil.ShowScreenText("Loadout selection was invalid/nil.", 10)
-		DebugMessage(
-			"%s -- loadout_Set_Selected received unexpected option: %s",
-			tostring(Script),
-			tostring(selected_option)
-		)
-		return
-	end
-
-	local new_loadout = GlobalValue.Get("CUSTOM_LOADOUT")
-	DebugMessage(
-		"%s -- loadout_Set_Selected: option=%s, new CUSTOM_LOADOUT=%s",
-		tostring(Script),
-		tostring(selected_option),
-		tostring(new_loadout)
-	)
-	StoryUtil.ShowScreenText("Selected loadout: " .. tostring(new_loadout), 10)
 end

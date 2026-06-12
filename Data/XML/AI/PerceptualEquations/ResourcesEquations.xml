@@ -140,6 +140,11 @@
 									Parameter_Only_Consider_Complete = 1.0}
 	</Tradestation_Count>
 
+	<Reklam_Count>
+		Variable_Self.StructureCount {Parameter_Type = "Reklam_Plant", 
+									Parameter_Only_Consider_Complete = 1.0}
+	</Reklam_Count>
+
 <!-- Infrastructure Slots -->
 	<Infrastructure_Score>
 		(

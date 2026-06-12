@@ -1,22 +1,4 @@
-###################### zaarin insurrection ############################
-gamd zaarin - isd glory --done
-raveen - isd predominant --done
-arden lyn - emperors hand / inquisitor model# --done
-namuura din, vsd zeplin --done
-
-loosly associated
-harkov, vsd protector --done
-
-long live the empire:
-lord sidious, isd majestic ++ scrap majestic gonna be land unit only
-lord vader, isd garrett ++ all done
-vice admiral thrawn, isd vanguard -> grand admiral thrawn, grey wolf ++ added in commander thrawn in the stalwart
-colonel maarek stele (tie defender) -> colonel maarek stele (skipray blastboat) ++ blastboat gonna come later
-
-final notes - still need to do a shite ton of work. start with the new files and check for edits. then we go and add heroes in. named heroes for the proteus faction have been added already, will need a shite ton of effort please go bye bye
-
 needs adding in:
-grand admiral dummies
 firmus piett, executor star dreadnought
 
 ok so for the command staff options:
@@ -26,130 +8,75 @@ generals - covell, veers, ashen
 admins - pestage / dangor
 special forces - starkiller, bly, cody, tremayne, victor strang
 
-
 later updates of the command staff:
 admin - ramier, hauser
 space - needa, piett, ozzel
 moff - yularen, praji
+blitzer harsk maybe
+Faction Map:
+Empire - Empire
+Warlords - True Empire
+Imperial_Proteus - All sorts of defectors
+Pentastar - Seperatist Holdouts
+Zsinj_Empire - Zann Consortium
+Rebel - Alliance to restore the Republic
+Killik_Hives - Sith Cultists / Silri Sith Army
+
+Imperial Factions left to strip - Greater_Maldrood, Eriadu_Authority
 
 
-holdouts roster: -- means already ingame, without needs implementing
-ground:
-HMP_Company
-J1_Cannon_Company
-MTT_Company
-B2_Droid_Company --
-AAT_Company --
-CSA_B1_Droid_Company --
-CSA_Destroyer_Droid_Company --
-space:
-C9979_Carrier
-Munificent --
-Munificent_C3 --
-Recusant_Light_Destroyer --
-Lucrehulk_Core_Destroyer --
-Providence_Carrier_Destroyer --
-Lucrehulk_CSA --
-Diamond_Frigate --
-DH_Omni --
-Recusant_Dreadnought --
 
-stuff to potentially port:
-Munificent_Heavy_Cruiser
+Empire additions to base roster:
 
+additional research + upgrade options:
 
-Empir
-additions to base roster:
-RTT_Company
-AT_DP_Company
-Imperial_TX130T_Company
-Imperial_APC_Company
-Deathhawk_Company
-Repulsor_Tank_Mark_II_Company
-Imperial_Modified_LAAT_Company
-MAAT_Company
-Lancet_Air_Artillery_Company
-Imperial_AT_TE_Walker_Company
-Imperial_A6_Juggernaut_Company
-Gozanti_Cruiser_Group
-Raider_I_Corvette
-Raider_II_Corvette
-Vigil
-Surveyor_Frigate
-Arquitens
-Active_Frigate
-Victory_I_Frigate
-Victory_II_Frigate
-Imperial_I_Frigate
-Imperial_II_Frigate
-Immobilizer_418
+Fighter Research:
+--research tie bomber (replace tie gt)
+--research howlrunner (replace tie fighter)
+--research tie avenger (replace tie interceptor)
+--research scimitar assault bomber (replace tie bomber)
+--research tie terror (variable loadout ship variant)
 
--------
-gozanti gunship squadron
-at-dp
-ton-falk variable loadout cruiser
-tie-gt
-vigil corvette
+EMPIRE BASE ROSTER:
 
-additional research + upgrade options
-research ISD 2 (replace isd 1)
-research ALLEGIANCE (replace secutor)
-research EXECUTOR (gives sarlacc project prototype, upgrade ozzel to executor)
-research VSD 3 (replace victory 1)
-research pursuit (replace vigil)
-research raider (replace ipv)
-research immobilizer 418 (new unit)
-
-research lancet wing (replace deathawk)
-research imperial apc (new unit)
-resaearch reuplsor 2 tank (replaces something, tbd)
-research at at (replace atte)
+"Imperial_Army_Trooper_Company",BASE_ROSTER
+"Imperial_AT_PT_Company",BASE_ROSTER
+"Chariot_LAV_Company",BASE_ROSTER
+"Imperial_TX130T_Company",BASE_ROSTER
+"Victory_I_Star_Destroyer",BASE_ROSTER
+"Imperial_I_Star_Destroyer",BASE_ROSTER
+"RTT_Company",BASE_ROSTER
+"AT_DP_Company",BASE_ROSTER
+"Imperial_Modified_LAAT_Company", BASE_ROSTER
+"Imperial_AT_TE_Walker_Company", BASE_ROSTER
+"Gozanti_Cruiser_Group", BASE_ROSTER
+"Arquitens", BASE_ROSTER
+"Active_Frigate", BASE_ROSTER
+"Victory_I_Frigate", BASE_ROSTER
+"Deathhawk_Company" BASE_ROSTER
+"Imperial_I_Frigate", BASE_ROSTER
+"Pelta_Support",BASE_ROSTER
+"Gladiator_I",BASE_ROSTER
+"Acclamator_I_Carrier", BASE_ROSTER
+"Charger_C70", BASE_ROSTER
 
 
-research tie bomber (replace tie gt)
-research howlrunner (replace tie fighter)
-research tie avenger (replace tie interceptor)
-research scimitar assault bomber (replace tie bomber)
-research tie terror (variable loadout ship variant)
 
-
-Factions to redo:
- - empire
- - eriadu_authority
- - greater_maldrood
- - pentastar (lock everything, unlock specific seperatist stuff)
- - rebel
- - zsinj_empire (lock everything, unlock specific zann consortium stuff)
-
-
-zaarin campaign planets:
-
-Warlords (NPC Galactic Empire):
-doorik, polneye, prildaz, zfell, nzoth, jtptan, Odik, Scarl, Kuat, Byblos, Endor, Annaj, Eriadu, Eiattu, Emberlene, Druckenwell, Rothana, Maw, commenor, vulpter, anaxes, coruscant, borleias, celanon, corvis, ciutric, liinade, bilbringi
-
-Mandalorians (Some more NPCs):
-ordo, mandalore, concord dawn, mandallia, fenel
-
-Empire (Player):
-Thyferra, Yagdhul, Qrettu, Serenity, Tophalion, Gwar, Mustafar, Yrrna, Kiilimar, Parmel, Evat, gargon, ottega
-
-Rebel (Alliance):
-Hoth, Dagobah, Bpfassh, derra, chardaan, denon, kothlis, bothawui, ebaq, campala, arkania, brentaal, the graveyard, mon cala, hast, new alderaan, ithor, lonnaw, phindar, levian
-
-Zsinj_Empire (Zann Consortium):
-Halanit, Talasea, Ryloth, Tatooine, Hypori, Kamino, Hollastin, Sleyheyron, Mulatan, toydaria, lucazec, ossus, tangrene, akuria, axxila
-
-Pentastar (Seperatist Holdouts):
-Utapau, Ruusan, Tellanroeg, Geonosis, balmorra, columus, foerost, empress teta, raxus prime, raxus secundus, serenno, belsmuth, gravan
-
-Independant_Forces (Non Aligned):
-galantos, calseti, kaikeilius, prakith, bespin, Exocron, dravian, kira, Rintonne, circumtore, ganath, aargau, ixtlar, alsakan, bonadan, florrum, jagas cluster, jomark, the wheel, minntooine, pammant
-
-Hutt_Cartels (Jabbas friends)
-ryndellia, gamorr, lathara, nal hutta, nar shadda, nar hekka, corsin, comkin
-
-Corporate Sector (wannabe CIS)
-Maryo, Etti, Oslumpex, Saffalore
-
-Underworld (Dark Side Cultists):
-Malachor, Dromund Kaas, Korriban, Thule
+EMPIRE RESEARCH ROSTER:
+"IPV1",RESEARCH REPLACE CHARGER C70 COMPLETE
+"Raider_I_Corvette" RESEARCH REPLACE C70 COMPLETE
+"Vigil" RESEARCH 
+"Raider_II_Corvette" RESEARCH REPLACE RAIDER 1
+"Strike_Cruiser",RESEARCH
+"Immobilizer_418" RESEARCH
+"Victory_II_Frigate" RESEARCH REPLACE VICTORY 1 FRIGATE
+"Imperial_II_Frigate" RESEARCH REPLACE IMPERIAL 1 FRIGATE
+"Imperial_APC_Company", RESEARCH REPLACE CHARIOT
+"Ton_Falk_Escort_Carrier", RESEARCH REPLACE ACCLAMATOR CARRIER
+"Gladiator_II",RESEARCH REPLACE GLADIATOR
+"Repulsor_Tank_Mark_II_Company" RESEARCH
+"MAAT_Company" RESEARCH REPLACE LAAT
+"Imperial_II_Star_Destroyer" RESEARCH COMPLETE
+"Lancet_Air_Artillery_Company" RESEARCH REPLACE DEATHHAWK
+"Imperial_AT_AT_Walker_Company" RESEARCH REPLACE ATTE
+"Imperial_A6_Juggernaut_Company" RESEARCH

@@ -1,5 +1,6 @@
 return {
 -- New Additions
+["ELITE_FORCE_TROOPER_COMPANY_DUMMY"] = true,
 ["SITH_SORCERER_COMPANY_DUMMY"] = true,
 -- Continue TR dummies
 ["64_Y_SWIFT_REPULSORLIFT_SLED_COMPANY_DUMMY"] = true,

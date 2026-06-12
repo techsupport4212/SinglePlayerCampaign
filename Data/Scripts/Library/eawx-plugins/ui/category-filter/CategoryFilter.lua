@@ -20,6 +20,7 @@
 
 require("PGSpawnUnits")
 require("deepcore/std/class")
+require("eawx-util/StoryUtil")
 
 ---@class CategoryFilter
 CategoryFilter = class()
@@ -32,7 +33,10 @@ function CategoryFilter:new(plot, galacticConquest, ai_dummy_handler, selected_p
         "Filter_Capitals",
         "Filter_Structures",
         "Filter_Story",
-        "Filter_Options"
+        "Filter_Options",
+        "Filter_Loadout",
+        "Filter_Research",
+        "Filter_Bombardment"
     }
 
     self.CategoryFlags = {
@@ -40,7 +44,10 @@ function CategoryFilter:new(plot, galacticConquest, ai_dummy_handler, selected_p
         ["SELECT_STRUCTURE"] = {[0] = "Structure_Category_Dummy"},
         ["SELECT_STORY"] = {[0] = "Story_Category_Dummy"},
         ["SELECT_CAPITAL"] = {[4] = "Capital_Category_Dummy", [5] = "Dreadnought_Category_Dummy"},
-        ["SELECT_OPTIONS"] = {[0] = "Options_Category_Dummy"}
+        ["SELECT_OPTIONS"] = {[0] = "Options_Category_Dummy"},
+        ["FILTER_LOADOUT"] = {[0] = "Loadout_Category_Dummy"},
+        ["FILTER_RESEARCH"] = {[0] = "Research_Category_Dummy"},
+        ["FILTER_BOMBARDMENT"] = {[0] = "Bombardment_Category_Dummy"}
     }
 
     self.Placeholder = "Placeholder_Category_Dummy"
@@ -82,7 +89,7 @@ function CategoryFilter:handle_filter_change()
     DebugMessage("CategoryFilter HandleFilterChange Started")
     for categoryFlag, _ in pairs(self.CategoryFlags) do
         if Check_Story_Flag(self.GalacticConquest.HumanPlayer, categoryFlag, nil, true) then
-            if self.ActiveFilter == categoryFlag then
+            if self.ActiveFilter == categoryFlag and categoryFlag ~= "SELECT_NON_CAPITAL" then
                 break
             end
             self.ActiveFilter = categoryFlag
@@ -128,6 +135,15 @@ function CategoryFilter:spawn_player_category_dummies(selectedPlanet)
         return
     end
 
+    if self.ActiveFilter == "FILTER_BOMBARDMENT" then
+        if not selectedPlanet:get_owner().Is_Human() then
+            crossplot:publish("BOMBARDMENT_CALLED_PLAYER", "empty")
+            StoryUtil.ShowScreenText(self.ActiveFilter, 10)
+            self.ActiveFilter = "SELECT_STRUCTURE"
+            return
+        end
+    end
+
     if not selectedPlanet:get_owner().Is_Human() then
         return
     end
@@ -139,10 +155,17 @@ function CategoryFilter:spawn_player_category_dummies(selectedPlanet)
     local shipyard_level =
         EvaluatePerception("Shipyard_Level", selectedPlanet:get_owner(), selectedPlanet:get_game_object())
     local typeList = self:make_dummy_type_table_for_shipyard_level(shipyard_level)
-
-    self.current_player_dummies =
-        SpawnList(typeList, selectedPlanet:get_game_object(), self.GalacticConquest.HumanPlayer, false, false)
+    if self.ActiveFilter == "FILTER_LOADOUT" then
+        --StoryUtil.ShowScreenText("Filter_loadout: SELECT_LOADOUT received", 10)
+        crossplot:publish("LOADOUT_OPTION_CHOICE", "empty")
+        self.ActiveFilter = "SELECT_STRUCTURE"
+    else
+        StoryUtil.ShowScreenText(self.ActiveFilter, 10)
+        self.current_player_dummies =
+            SpawnList(typeList, selectedPlanet:get_game_object(), self.GalacticConquest.HumanPlayer, false, false)
+    end
     DebugMessage("CategoryFilter SpawnCategoryDummy Finished")
+
 end
 
 ---@private

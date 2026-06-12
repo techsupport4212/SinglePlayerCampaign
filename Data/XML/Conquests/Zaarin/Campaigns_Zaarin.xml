@@ -574,16 +574,13 @@
 		<!-- Eva-T Space Forces -->
 		<Starting_Forces> Empire, Evat, Empire_Star_Base_4 </Starting_Forces>
 		<Starting_Forces> Empire, Evat, Empire_Shipyard_Level_Zero </Starting_Forces>
-		<Starting_Forces> Empire, Evat, Venator_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Evat, Venator_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Evat, Victory_I_Star_Destroyer </Starting_Forces>
+		<Starting_Forces> Empire, Evat, PrePellaeon </Starting_Forces>
 		<Starting_Forces> Empire, Evat, Lancer_Frigate </Starting_Forces>
 		<Starting_Forces> Empire, Evat, Lancer_Frigate </Starting_Forces>
 
 		<!-- Parmel Space Forces -->
 		<Starting_Forces> Empire, Parmel, Empire_Star_Base_1 </Starting_Forces>
 		<Starting_Forces> Empire, Parmel, Empire_Shipyard_Level_Zero </Starting_Forces>
-		<Starting_Forces> Empire, Parmel, Venator_Star_Destroyer </Starting_Forces>
 		<Starting_Forces> Empire, Parmel, Imperial_DHC </Starting_Forces>
 		<Starting_Forces> Empire, Parmel, Imperial_DHC </Starting_Forces>
 		<Starting_Forces> Empire, Parmel, Strike_Cruiser </Starting_Forces>
@@ -603,8 +600,7 @@
 		<Starting_Forces> Empire, Yrrna, Empire_Star_Base_2 </Starting_Forces>
 		<Starting_Forces> Empire, Yrrna, Empire_Shipyard_Level_Zero </Starting_Forces>
 		<Starting_Forces> Empire, Yrrna, Reklam_Plant </Starting_Forces>
-		<Starting_Forces> Empire, Yrrna, Imperial_I_Star_Destroyer </Starting_Forces>
-		<Starting_Forces> Empire, Yrrna, Strike_Cruiser </Starting_Forces>
+		<Starting_Forces> Empire, Yrrna, Death_Star_II </Starting_Forces>
 		<Starting_Forces> Empire, Yrrna, Strike_Cruiser </Starting_Forces>
 		<Starting_Forces> Empire, Yrrna, Strike_Cruiser </Starting_Forces>
 		<Starting_Forces> Empire, Yrrna, IPV1 </Starting_Forces>
@@ -712,6 +708,7 @@
 		<Starting_Forces> Rebel, Hast, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Hollastin, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Hoth, Generate_Force </Starting_Forces>
+		<Starting_Forces> Zsinj_Empire, Hypori, Imperial_Airbase </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Hypori, Generate_Force </Starting_Forces>
 		<Starting_Forces> Warlords, Ilum, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>

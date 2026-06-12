@@ -6755,14 +6755,14 @@
 		<Event_Param1>h_close</Event_Param1>
 		<Reward_Type>ENABLE_EVENT</Reward_Type>
 		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
-		<Reward_Param2>b_doc_filter06</Reward_Param2>
+		<Reward_Param2>b_doc_filter07</Reward_Param2>
 		<Perpetual>true</Perpetual>
 	</Event>
 
 	<Event Name="Flash_Event_Button">
 		<Event_Type>STORY_TRIGGER</Event_Type>
 		<Reward_Type>FLASH_GUI</Reward_Type>
-		<Reward_Param1>b_doc_filter06</Reward_Param1>
+		<Reward_Param1>b_doc_filter07</Reward_Param1>
 		<Perpetual>true</Perpetual>
 		<Prereq>Unlock_Event_Button</Prereq>
 	</Event>
@@ -6797,7 +6797,7 @@
 		<Event_Param1>1</Event_Param1>
 		<Reward_Type>DISABLE_EVENT</Reward_Type>
 		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
-		<Reward_Param2>b_doc_filter06</Reward_Param2>
+		<Reward_Param2>b_doc_filter07</Reward_Param2>
 	</Event>
 
 	<Event Name="Lock_Unpause_Event1">
@@ -6883,7 +6883,7 @@
 
 	<Event Name="Click_Current_Event_Button_Event">
 		<Event_Type>STORY_CLICK_GUI</Event_Type>
-		<Event_Param1>b_doc_filter06</Event_Param1>
+		<Event_Param1>b_doc_filter07</Event_Param1>
 		
 		<Reward_Type>TRIGGER_AI</Reward_Type>
 		<Reward_Param1>EVENT_BUTTON_CLICKED</Reward_Param1>
@@ -6897,7 +6897,7 @@
 		<Event_Param2>RELOCK_EVENT_BUTTON</Event_Param2>
 		<Reward_Type>DISABLE_EVENT</Reward_Type>
 		<Reward_Param1>TUTORIAL_CLICK_GUI</Reward_Param1>
-		<Reward_Param2>b_doc_filter06</Reward_Param2>
+		<Reward_Param2>b_doc_filter07</Reward_Param2>
 		<Perpetual>true</Perpetual>
 	</Event>
 
@@ -7054,9 +7054,25 @@
 	</Event>
 	<Event Name="Filter_Options">
 		<Event_Type>STORY_CLICK_GUI</Event_Type>
-		<Event_Param1>b_save_fixer</Event_Param1>
+		<Event_Param1>b_save_fixer01</Event_Param1>
 		<Reward_Type>TRIGGER_AI</Reward_Type>
 		<Reward_Param1>SELECT_OPTIONS</Reward_Param1>
+		<Reward_Param2 />
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Filter_Loadout">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_save_fixer</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>FILTER_LOADOUT</Reward_Param1>
+		<Reward_Param2 />
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Filter_Research">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter06</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>FILTER_RESEARCH</Reward_Param1>
 		<Reward_Param2 />
 		<Perpetual>true</Perpetual>
 	</Event>
@@ -7065,6 +7081,14 @@
 		<Event_Param1>b_space_filter04</Event_Param1>
 		<Reward_Type>TRIGGER_AI</Reward_Type>
 		<Reward_Param1>SELECT_STORY</Reward_Param1>
+		<Reward_Param2 />
+		<Perpetual>true</Perpetual>
+	</Event>
+	<Event Name="Filter_Bombardment">
+		<Event_Type>STORY_CLICK_GUI</Event_Type>
+		<Event_Param1>b_doc_filter08</Event_Param1>
+		<Reward_Type>TRIGGER_AI</Reward_Type>
+		<Reward_Param1>FILTER_BOMBARDMENT</Reward_Param1>
 		<Reward_Param2 />
 		<Perpetual>true</Perpetual>
 	</Event>
@@ -7095,7 +7119,10 @@
 		<Prereq>Filter_Capitals</Prereq>
 		<Prereq>Filter_Structures</Prereq>
 		<Prereq>Filter_Story</Prereq>
+		<Prereq>Filter_Bombardment</Prereq>
 		<Prereq>Filter_Options</Prereq>
+		<Prereq>Filter_Research</Prereq>
+		<Prereq>Filter_Loadout</Prereq>
 		<Perpetual>true</Perpetual>
 		<Branch>Click_Pause_Branch</Branch>
 	</Event>

@@ -3,11 +3,14 @@
 --*****************************************************
 
 require("PGStoryMode")
+require("PGSpawnUnits")
 require("deepcore/crossplot/crossplot")
 require("eawx-util/ChangeOwnerUtilities")
 require("deepcore/std/class")
 require("eawx-util/StoryUtil")
+require("eawx-util/MissionUtil")
 require("eawx-util/UnitUtil")
+require("eawx-util/GalacticUtil")
 require("CustomLibrary")
 require("SetFighterResearch")
 
@@ -54,6 +57,10 @@ function State_Determine_Faction(message)
             spawn_list = {"Tyber_Zann_Merciless", "Urai_Fen_Team", "Sykes_EndofDays"}
             SpawnList(spawn_list, zann_planet, p_zann, true, false)
         end
+		--StoryUtil.RevealPlanet("CORUSCANT", false)
+		--StoryUtil.RevealPlanet("HYPORI", false)
+		--MissionUtil.EnableInvasion("HYPORI", false)
+		--StoryUtil.SetPlanetRestricted("HYPORI", 1, false)
 	else
 		crossplot:update()
 	end
@@ -63,26 +70,27 @@ function State_Delayed_Initialize(message)
 	if message == OnEnter then
 		local dummies = Get_FTGU_Dummies()
 		local EMPIRE_PLAYER_AVAILABLE_UNITS = {
-			"Imperial_Army_Trooper_Company",
-			"Imperial_AT_PT_Company",
-			"Chariot_LAV_Company",
-			"Imperial_TX130S_Company",
-			"IPV1",
-			"Strike_Cruiser",
+			"Imperial_Army_Trooper_Company", --ground
+			"Imperial_AT_PT_Company", --ground
+			"Chariot_LAV_Company", --ground
 			"Victory_I_Star_Destroyer",
 			"Imperial_I_Star_Destroyer",
-			"RTT_Company",
-			"AT_DP_Company",
-			"Imperial_TX130T_Company",
-			"Imperial_APC_Company",
-			"Imperial_Modified_LAAT_Company",
-			"Imperial_AT_TE_Walker_Company",
+			"RTT_Company", --ground
+			"AT_DP_Company", --ground
+			"Imperial_TX130T_Company", --ground
+			"Imperial_APC_Company", --ground
+			"Imperial_Modified_LAAT_Company", --ground
+			"Imperial_AT_TE_Walker_Company", --ground
 			"Gozanti_Cruiser_Group",
 			"Arquitens",
 			"Active_Frigate",
 			"Victory_I_Frigate",
 			"Imperial_I_Frigate",
-			"Ton_Falk_Escort_Carrier",
+			"Deathhawk_Company", --ground
+			"Charger_C70",
+			"Pelta_Support",
+			"Gladiator_I",
+			"Acclamator_I_Carrier",
 		}
 		local SEP_HOLDOUT_AVAILABLE_UNITS = {
 			"HMP_Company",
@@ -143,6 +151,7 @@ function State_Delayed_Initialize(message)
 		local ZANN_EXTRA_LOCKS = {
 			"RASLAN_RAZORS_KISS_DUMMY",
 			"ZSINJ_IRON_FIST_DUMMY",
+			"RANCOR_BASE",
 		}
 		if dummies.EMPIRE ~= nil and dummies.EMPIRE.RosterUnits ~= nil then
 			UnitUtil.SetLockList("Empire", dummies.EMPIRE.RosterUnits, false)
@@ -158,9 +167,6 @@ function State_Delayed_Initialize(message)
 			UnitUtil.SetLockList("Zsinj_Empire", ZANN_AVAILABLE_UNITS)
 			UnitUtil.SetLockList("Zsinj_Empire", ZANN_EXTRA_LOCKS, false)
 		end
-		p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_TIE_Defender"))
-		p_empire.Unlock_Tech(Find_Object_Type("Dummy_Research_Skipray_Blastboat"))
-		p_empire.Unlock_Tech(Find_Object_Type("Option_Change_Loadout"))
 		GlobalValue.Set("CUSTOM_LOADOUT","MIXED")
 		crossplot:publish("WARLORD_CHOICE_OPTION","ZAARIN_EMPIRE")
 		crossplot:publish("INITIALIZE_AI", "empty")

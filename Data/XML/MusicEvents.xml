@@ -4,10 +4,9 @@
 
 	<MusicEvent Name="Main_Menu_Music_Event">
 		<Files>
-            UND_Zann_Consortium_Theme.MP3,
-			Boscovich_Beyond_the_Stars.mp3,
+            ESB_The_Imperial_Probe.mp3,
+            BF2_Galactic_Conquest_Mix.mp3,
 			FA_The_Might_Of_The_Empire.mp3,
-			Fan_Dark_Side_Themes_Reimagined_by_Daniel_Ciurlizza.mp3,
 			AOTC_Across_the_Stars.mp3
 		</Files>
         <Volume_Percent>100</Volume_Percent>
@@ -71,8 +70,7 @@
 		TFU_General_Kota.mp3,
 		ANH_Tales_of_a_Jedi_Knight.mp3,
 		ANH_Millenium_Falcon.mp3,
-		BF2_Galactic_Conquest_Mix.mp3,
-		Boscovich_Beyond_the_Stars.mp3
+		BF2_Galactic_Conquest_Mix.mp3
 		</Files>
         <Volume_Percent>60</Volume_Percent>
         <Fade_In_Seconds>2.0</Fade_In_Seconds>
@@ -82,7 +80,6 @@
 
 	<MusicEvent Name="Galactic_Map_Empire_Music_Event">
 		<Files>
-        UND_Zann_Consortium_Theme.MP3,
 		ESB_The_Imperial_Probe.mp3,
 		ROTJ_Approaching_The_Death_Star.mp3,
 		ROTJ_Emperors_Throne_Room.mp3,

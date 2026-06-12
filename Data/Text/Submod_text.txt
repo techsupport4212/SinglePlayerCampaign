@@ -1,4 +1,7 @@
-﻿TEXT_CAMPAIGN_DESCRIPTION_ZAARIN,Grand Admiral Demetrius Zaarin, once entrusted with the future of Imperial starfighter design, has betrayed the Emperor and launched a sudden, calculated coup. His forces strike deep into loyalist territory, kidnapping Emperor Palpatine and seizing advanced prototypes in a bid to seize control of the Empire itself.Track down Zaarin’s hidden shipyards, recover stolen technology, and crush the traitor before his insurrection tears the Imperial Navy apart.
+﻿SET_YOUR_GAME_LANGUAGE_TO_ENGLISH_IF_YOU_READ_THIS,TR Version: 3.5.1        GCW Version: 0.0
+STAT_REKLAM_COUNT,Fighter Recycling Facilities: %s
+TEXT_BUTTON_GALACTIC_CONQUEST,Play
+TEXT_CAMPAIGN_DESCRIPTION_ZAARIN,Grand Admiral Demetrius Zaarin, once entrusted with the future of Imperial starfighter design, has betrayed the Emperor and launched a sudden, calculated coup. His forces strike deep into loyalist territory, kidnapping Emperor Palpatine and seizing advanced prototypes in a bid to seize control of the Empire itself.Track down Zaarin’s hidden shipyards, recover stolen technology, and crush the traitor before his insurrection tears the Imperial Navy apart.
 TEXT_COMPANY_GARRISON_SITH_ACADEMY1,Dark Jedi: 4 / 2
 TEXT_COMPANY_GARRISON_SITH_ACADEMY2,Dark Sorcerer: 1 / 1
 TEXT_COMPANY_SITH_ACADEMY,Sith Academy
@@ -90,6 +93,7 @@ TEXT_STORY_TRANSMISSION_LORD_VADER,Incoming Transmission from Lord Vader
 TEXT_STRUCTURE_IMPERIAL_DOCKYARD,TODO
 TEXT_STRUCTURE_IMPERIAL_DOCKYARD_DESCRIPTION,TODO
 TEXT_STRUCTURE_REKLAM_PLANT_DESCRIPTION,TODO
+TEXT_SUB_MAIN_MENU,Galactic Civil War
 TEXT_TOOLTIP_ARDEN_LYN,Arden Lyn was a female Human and master of Teräs Käsi who belonged to the Followers of Palawa. At the end of the Great Jedi Purge, Lyn was reawakened by three of Darth Sidious's Inquisitors, who spared her life so that she could serve Sidious as an Emperor's Hand. Lyn did so for a while, spurred on by the Sidious's promise that he would resurrect Xendor from the dead. When she finally came to accept that Sidious had been lying, she turned rogue, and aided Grand Admiral Demetrius Zaarin in his attempt to abduct Sidious. The endeavor failed, and Lyn was forced to flee.
 TEXT_TOOLTIP_BATCH,Martio Batch was one of the original twelve Grand Admirals appointed by Emperor Palpatine. Batch preferred to avoid attention and disliked Imperial court politics. As a result of his low profile, he earned the nickname the "Invisible Admiral." Following the Imperial defeat at the Battle of Yavin in 0 BBY, the Emperor tasked Batch with designing a fool-proof cloaking device on pain of death. Despite succeeding initially, the project was destroyed by the Rebels and Batch fled into hiding, fearing the Emperor's wrath, until hearing news of Palpatine's death at Endor.
 TEXT_TOOLTIP_C9979,A ubiquitous logistics vessel designed to resemble the pre-existing cargo barges and support vessels of the Trade Federation. Though most famous as a supermassive troop lander, the C-9979 is often converted to a respectable carrier and picket by converting the internal storage into bays suitable for storing both piloted and droid starfighters.
@@ -122,6 +126,24 @@ TEXT_TOOLTIP_COMMAND_ZEPLIN,Victory-I Star Destroyer, Zeplin
 TEXT_TOOLTIP_CONQUEROR,TODO
 TEXT_TOOLTIP_DECLANN,Nial Declann was a Human male Force-sensitive and one of the original twelve Grand Admirals appointed by Emperor Palpatine. Declann's impressive, Force-enhanced skills as a TIE pilot brought him to the attention of Emperor Palpatine's agents who sent him to the Prophets of the Darkside for training. When his training was complete, he was allowed to return to service in the Imperial Navy. Declann specialized in Battle Meditation to enhance his forces, but he suffered from severe mood swings.
 TEXT_TOOLTIP_DIN,Namuura Din was a commander in the Imperial Navy, serving as one of Admiral Demetrius Zaarin's top commanders and later joining him when he splintered off from the Empire and founded a new faction during the Galactic Civil War. Upon learning of Emperor Palpatine's plans for the Rebel Alliance at Endor and the Death Star II superweapon's fully operational status, Din decided to defect to the Alliance and provide them with the information and a Missile Boat. While he met with the Rebel cruiser Link at a rendezvous point aboard his command ship, the Zeplin, and successfully transferred them, Imperial forces attacked the ships, and the Zeplin was captured with Din aboard. He divulged his knowledge to the Sith Lord Darth Vader in a subsequent interrogation. 
+TEXT_TOOLTIP_ELITE_TROOPER,Elite Squad Troopers were special forces troopers who served the early Galactic Empire prior to the termination of cloning production on Kamino. In the aftermath of the Clone Wars, Elite Squad Troopers were a pathfinder division for the eventual rise of conscripted soldiers in the Imperial Army, which, at the time, consisted entirely of the clone troopers who once served the Galactic Republic.
+TEXT_TOOLTIP_ELITE_TROOPER_COMPANY,Company: 16x Elite Force Troopers
+TEXT_TOOLTIP_ELITE_TROOPER_HEALTH,Health: 30 (Infantry)
+TEXT_TOOLTIP_ELITE_TROOPER_MOVE,Speed: 1.0 
+TEXT_TOOLTIP_ELITE_TROOPER_SERGEANT_SHIELD,Shields: 15 / [3/R] (Infantry)
+TEXT_TOOLTIP_ELITE_TROOPER_SQUAD,Squad: 8x Elite Force Troopers
+TEXT_TOOLTIP_ELITE_TROOPER_SQUAD_WEAP1,3x Blaster Carbine: 3 / 1.25s / 220m
+TEXT_TOOLTIP_ELITE_TROOPER_SQUAD_WEAP2,2x Light Repeating Blaster: 5 / 1.0s / 240m
+TEXT_TOOLTIP_ELITE_TROOPER_SQUAD_WEAP3,2x Heavy AV Missile Launcher: 1 / 9.0s / 320m
+TEXT_TOOLTIP_ELITE_TROOPER_SQUAD_WEAP4,1x Proton Grenade Launcher (AV): 1 / 10.0s / 240m
+TEXT_TOOLTIP_ELITE_TROOPER_SQUAD_WEAP4A,1x Concussion Grenade Launcher (AI): 1 / 10.0s / 240m
+TEXT_TOOLTIP_ELITE_TROOPER_SQUAD_WEAP5,5x Thermal Grenade: 1 / 15.0s / 200m
+TEXT_TOOLTIP_ELITE_TROOPER_WEAP1,1x E18 Blaster Carbine: 3 / 1.25s / 220m
+TEXT_TOOLTIP_ELITE_TROOPER_WEAP2,1x T-21 Repeating Blaster: 5 / 1.0s / 240m
+TEXT_TOOLTIP_ELITE_TROOPER_WEAP3,1x PLX-4 Rocket Launcher: 1 / 9.0s / 320m
+TEXT_TOOLTIP_ELITE_TROOPER_WEAP4,1x FC-1 Flechette Launcher (AV): 1 / 10.0s / 240m
+TEXT_TOOLTIP_ELITE_TROOPER_WEAP4A,1x FC-1 Flechette Launcher (AI): 1 / 10.0s / 240m
+TEXT_TOOLTIP_ELITE_TROOPER_WEAP5,1x Thermal Grenade: 1 / 15.0s / 200m
 TEXT_TOOLTIP_HARKOV,Harkov was an male human admiral who served in the Alliance Fleet and before his defection in the Imperial Navy during the Galactic Civil War. Shortly after the Galactic Empire victory in the Battle of Hoth, he was charged with bringing an end to the Sepan Civil War, and succeeded in bringing order to the system. However, during the campaign, he also supplied arms to both sides.
 TEXT_TOOLTIP_HMP,The gunship colloquially known as the HMP is a joint effort between Baktoid and Haor Chall developed in response to the success of the Republic's LAAT and underperformance of the earlier MAF. It is armed with three laser cannon turrets and two racks of seven missiles which can be fitted with different kinds of ordnance along with two wingtip hardpoints for a variety of weapons.
 TEXT_TOOLTIP_HMP_COMPANY,Company: 2x HMP Gunship
@@ -160,6 +182,17 @@ TEXT_TOOLTIP_PALPATINE,Palpatine was a Senator from Naboo who was elected Suprem
 TEXT_TOOLTIP_PALPATINE_MOVE,Speed: 1.1
 TEXT_TOOLTIP_PALPATINE_WEAP1,1x Lightsaber: 1 / 0.1s / 1m
 TEXT_TOOLTIP_PALPATINE_WEAP2,1x Force Lightning: 25 / 0.1s / 175m
+TEXT_TOOLTIP_PREPELLAEON,A Demonstration Battlecruiser modified while under construction at Kuat Drive Yards, produced before the fall of the Empire. Plagued with maintainance and range limitations it remained confined to the Kuat System and was destroyed in the defence of the Shipyards when the New Republic attacked.
+TEXT_TOOLTIP_PREPELLAEON_HULL,Hull: 13100 (Capital)
+TEXT_TOOLTIP_PREPELLAEON_MOVE,Speed: 4.2 | Accel: 0.05 | Turn: 0.15
+TEXT_TOOLTIP_PREPELLAEON_SHIELD,Shields: 8500 / [42.5/R] (Capital)
+TEXT_TOOLTIP_PREPELLAEON_SQUADRON,Fighters: 4 / 10 | Bombers: 3 / 8
+TEXT_TOOLTIP_PREPELLAEON_WEAP1,2x Heavy Dual Turbolasers: 2 / 5.0s / 7.4km
+TEXT_TOOLTIP_PREPELLAEON_WEAP2,14x Medium Triple Turbolaser: 2 / 1.67s / 6.3km
+TEXT_TOOLTIP_PREPELLAEON_WEAP3,2x Medium Turbolasers: 2 / 1.0s / 6.3km
+TEXT_TOOLTIP_PREPELLAEON_WEAP4,8x Medium Ion Cannons: 2 / 1.0s / 6.3km 
+TEXT_TOOLTIP_PREPELLAEON_WEAP5,4x Assault Concussion Missiles: 7 / 17.5s / 7.4km
+TEXT_TOOLTIP_PREPELLAEON_WEAP6,3x Light Dual Laser Cannons: 2 / 0.5s / 3.8km 
 TEXT_TOOLTIP_REKLAM_HEALTH,TODO
 TEXT_TOOLTIP_REKLAM_PD,TODO
 TEXT_TOOLTIP_REKLAM_SHIELD,TODO
@@ -179,6 +212,10 @@ TEXT_TOOLTIP_TERENTATEK_HEALTH,Health: 450 [5%/5s] (Infantry)
 TEXT_TOOLTIP_TERENTATEK_MOVE,Speed: 1.3 | Turn: 5.0 
 TEXT_TOOLTIP_TERENTATEK_WEAP1,1x Rancor Claws: 1 / 1.0s / 5m
 TEXT_TOOLTIP_TESHIK,Osvald Teshik, a native of Anaxes and respected strategist, served in the Imperial Starfleet as one of the original twelve Grand Admirals. After a failed mission against the Hapes Consortium, he was severely injured and required extensive cybernetic replacement. During the Battle of Endor, he continued fighting from his flagship until it was disabled and captured.
+TEXT_TOOLTIP_TIE_CAS_COMPANY,Company: 4x TIE Fighters
+TEXT_TOOLTIP_TIE_CAS_HEALTH,Health: 110 (Speeder)
+TEXT_TOOLTIP_TIE_CAS_MOVE,Speed: 6.0 | Turn: 5.5
+TEXT_TOOLTIP_TIE_CAS_WEAP1,1x Heavy AV Blaster Cannon: 2 / 2.0s / 400m
 TEXT_TOOLTIP_TRAIT_ACEPILOT,Ace Pilot
 TEXT_TOOLTIP_TRAIT_FORCESENSITIVE,Force Sensitive
 TEXT_TOOLTIP_UNITS_SITH_ACADEMY,Sith Units: Allows unique unit construction
@@ -187,15 +224,24 @@ TEXT_TOOLTIP_VADER_HEALTH,Health: 300 [2%/5s] (Hero)
 TEXT_TOOLTIP_VADER_MOVE,Speed: 1.1
 TEXT_TOOLTIP_VADER_WEAP1,1x Lightsaber: 1 / 0.1s / 1m
 TEXT_TOOLTIP_VULTURE_DROID,A small droid fighter that relies on numbers and maneuverability to win dogfights. While modular enough to carry munitions, they are often replaced with extra fuel slugs to increase flight time from being minutes long. They are best used to swarm enemy fighters and bombers.
+TEXT_TOOLTIP_X_WING_CAS_COMPANY,Company: 3x X-wing Fighters
+TEXT_TOOLTIP_X_WING_CAS_HEALTH,Health: 120 (Speeder)
+TEXT_TOOLTIP_X_WING_CAS_MOVE,Speed: 6.0 | Turn: 6.0
+TEXT_TOOLTIP_X_WING_CAS_SHIELD,Shields: 60 / [4/R] (Speeder)
+TEXT_TOOLTIP_X_WING_CAS_WEAP1,2x Light AV Blaster Cannon: 4 / 2.0s / 400m
+TEXT_TOOLTIP_X_WING_CAS_WEAP2,1x Proton Missile: 2 / 10.0s / 400m
 TEXT_TOOLTIP_ZAARIN,Demetrius Zaarin was an Imperial admiral who sought to install himself as Emperor of the galaxy during the Galactic Civil War. Originally a Grand Admiral, Zaarin was the Imperial Navy's head of starfighter research and development. At his facility "Research," he developed such starfighters as the TIE Advanced and the TIE Defender. He also secured new technology for the Empire from third parties, such as the Habeen. In addition to his design skills, he was a talented tactician. 
 TEXT_UNIT_C9979,C-9979 Carrier
 TEXT_UNIT_CONQUEROR,TODO
+TEXT_UNIT_ELITE_FORCE_TROOPER_SQUAD,Elite Force Trooper Squad
+TEXT_UNIT_ELITE_TROOPER_PLATOON,Elite Force Trooper Platoon
 TEXT_UNIT_HMP,Heavy Missile Platform Gunship
 TEXT_UNIT_HMP_COMPANY,HMP Gunship Company
 TEXT_UNIT_HYENA_DROID,Hyena Droid Bomber
 TEXT_UNIT_J1_CANNON,J-1 Proton Cannon
 TEXT_UNIT_J1_CANNON_COMPANY,J-1 Proton Cannon Company
 TEXT_UNIT_MTT,Multi-Troop Transport
+TEXT_UNIT_PREPELLAEON,Demonstration Battlecruiser
 TEXT_UNIT_SITH_SORCERER,Dark Sorcerer
 TEXT_UNIT_SITH_WAR_BEHEMOTH,War Behemoth
 TEXT_UNIT_SITH_WAR_BEHEMOTH_COMPANY,War Behemoth Company

@@ -15198,7 +15198,12 @@
 				<Apply_To_All_Allies>Yes</Apply_To_All_Allies>
 				<Stacking_Category>0</Stacking_Category>
 			</Battlefield_Modifier_Ability>
-
+			<Planet_Destruction_Ability Name="Death_Star_Planet_Destruction">
+				<Activation_Style>Ground_Activated</Activation_Style>
+				<SFXEvent_Target_Affected>Planet_Death_SFX</SFXEvent_Target_Affected>
+				<Target_Particle_Effect>Planet_Explosion_Galactic</Target_Particle_Effect>
+				<Target_Particle_Bone_Name />
+			</Planet_Destruction_Ability>
 			<Super_Laser_Ability Name="Super_Laser_Attack_Ability">
 				<Activation_Style> User_Input </Activation_Style>
 				<Applicable_Unit_Categories> SpaceHero | SuperCapital | Capital | Frigate | Structure | SpaceStructure </Applicable_Unit_Categories>

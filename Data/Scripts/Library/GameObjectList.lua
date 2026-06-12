@@ -31,6 +31,7 @@ return {
 ["PENTASTAR_SHIPYARD_LEVEL_ZERO"] = true,
 ["EMPIRE_SHIPYARD_LEVEL_ZERO"] = true,
 ["CONQUEROR_STAR_DESTROYER"] = true,
+["PREPELLAEON"] = true,
 -- Ported Units
 ["C9979_CARRIER"] = true,
 ["REPUBLIC_NAVAL_COMMAND_CENTRE"] = true,

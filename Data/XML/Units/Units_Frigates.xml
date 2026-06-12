@@ -1068,7 +1068,7 @@
 
 	<SpaceUnit Name="Gladiator_I">
 		<Variant_Of_Existing_Type>Template_Gladiator</Variant_Of_Existing_Type>
-		<Affiliation>Eriadu_Authority, Corporate_Sector</Affiliation>
+		<Affiliation>Eriadu_Authority, Corporate_Sector, Empire</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
@@ -1569,7 +1569,7 @@
 		<AI_Combat_Power>827</AI_Combat_Power>
 		<Damage>30</Damage>
 
-		<Affiliation>Yevetha, EmpireoftheHand</Affiliation>
+		<Affiliation>Yevetha, EmpireoftheHand, Empire</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Override_Bounty_SP>25</Override_Bounty_SP>
 		<Maintenance_Cost>19</Maintenance_Cost>
@@ -5246,7 +5246,7 @@
 	<SpaceUnit Name="Acclamator_I_Carrier">
 		<Variant_Of_Existing_Type>Template_Acclamator_I_Carrier</Variant_Of_Existing_Type>
 
-		<Affiliation/>
+		<Affiliation>Empire</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>

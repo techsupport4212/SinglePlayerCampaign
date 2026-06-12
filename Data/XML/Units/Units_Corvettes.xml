@@ -625,6 +625,7 @@
 		<Build_Time_Seconds>14</Build_Time_Seconds>
 
 		<Required_Special_Structures>
+		Empire_Shipyard_Level_One | Empire_Shipyard_Level_Two | Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four |
 		Pentastar_Shipyard_Level_One | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four,
 		AI_Category_Dummy | Non_Capital_Category_Dummy
 		</Required_Special_Structures>
@@ -2689,7 +2690,7 @@
 		<AI_Combat_Power>109</AI_Combat_Power>
 		<Damage>20</Damage>
 
-		<Affiliation>Pentastar, Imperial_Proteus</Affiliation> <!-- ZC -->
+		<Affiliation>Pentastar, Imperial_Proteus, Empire</Affiliation> <!-- ZC -->
 		<Political_Control>0</Political_Control>
 		<Override_Bounty_SP>5</Override_Bounty_SP>
 		<Maintenance_Cost>2</Maintenance_Cost>
@@ -2715,6 +2716,7 @@
 		<Build_Time_Seconds>4</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
 		<Required_Special_Structures>
+		Empire_Shipyard_Level_One | Empire_Shipyard_Level_Two | Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four |
 		Pentastar_Shipyard_Level_One | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four |
 		Eriadu_Shipyard_Level_One | Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three | Eriadu_Shipyard_Level_Four |
 		Imperial_Proteus_Shipyard_Level_One | Imperial_Proteus_Shipyard_Level_Two | Imperial_Proteus_Shipyard_Level_Three | Imperial_Proteus_Shipyard_Level_Four,
@@ -2722,7 +2724,7 @@
 		</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories>yes</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
-		<Build_Initially_Locked>no</Build_Initially_Locked>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 		<Tactical_Bribe_Cost>500</Tactical_Bribe_Cost>
 		<Piracy_Value_Credits>50</Piracy_Value_Credits>
 		<Score_Cost_Credits> 1200</Score_Cost_Credits>
@@ -3990,7 +3992,7 @@
 	<SpaceUnit Name="Charger_C70">
 		<Variant_Of_Existing_Type>Template_Charger_C70</Variant_Of_Existing_Type>
 
-		<Affiliation>Eriadu_Authority, Imperial_Proteus</Affiliation>
+		<Affiliation>Eriadu_Authority, Imperial_Proteus, Empire</Affiliation>
 		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
@@ -4418,7 +4420,7 @@
 		<AI_Combat_Power>184</AI_Combat_Power>
 		<Damage>20</Damage>
 
-		<Affiliation>Eriadu_Authority</Affiliation>
+		<Affiliation>Eriadu_Authority, Empire</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Override_Bounty_SP>5</Override_Bounty_SP>
 		<Maintenance_Cost>4</Maintenance_Cost>
@@ -4444,12 +4446,13 @@
 		<Build_Time_Seconds>7</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
 		<Required_Special_Structures>
+		Empire_Shipyard_Level_One | Empire_Shipyard_Level_Two | Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four |
 		Eriadu_Shipyard_Level_One | Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three | Eriadu_Shipyard_Level_Four,
 		AI_Category_Dummy | Non_Capital_Category_Dummy
 		</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories>yes</Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Space_Units>Yes</Build_Tab_Space_Units>
-		<Build_Initially_Locked>no</Build_Initially_Locked>
+		<Build_Initially_Locked>Yes</Build_Initially_Locked>
 		<Tactical_Bribe_Cost>500</Tactical_Bribe_Cost>
 		<Piracy_Value_Credits>50</Piracy_Value_Credits>
 		<Score_Cost_Credits> 1200</Score_Cost_Credits>
@@ -4856,7 +4859,7 @@
 		<AI_Combat_Power>205</AI_Combat_Power>
 		<Damage>20</Damage>
 
-		<Affiliation>Pentastar, Greater_Maldrood, Zsinj_Empire</Affiliation>
+		<Affiliation>Pentastar, Greater_Maldrood, Zsinj_Empire, Empire</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Override_Bounty_SP>5</Override_Bounty_SP>
 		<Maintenance_Cost>4</Maintenance_Cost>
@@ -4882,6 +4885,7 @@
 		<Build_Time_Seconds>7</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
 		<Required_Special_Structures>
+		Empire_Shipyard_Level_One | Empire_Shipyard_Level_Two | Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four |
 		Zsinj_Shipyard_Level_One | Zsinj_Shipyard_Level_Two | Zsinj_Shipyard_Level_Three | Zsinj_Shipyard_Level_Four |
 		Pentastar_Shipyard_Level_One | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four |
 		Greater_Maldrood_Shipyard_Level_One | Greater_Maldrood_Shipyard_Level_Two | Greater_Maldrood_Shipyard_Level_Three | Greater_Maldrood_Shipyard_Level_Four |
@@ -8014,12 +8018,13 @@
 	<SpaceUnit Name="Pelta_Support">
 		<Variant_Of_Existing_Type>Template_Pelta_Support</Variant_Of_Existing_Type>
 
-		<Affiliation>Corporate_Sector</Affiliation>
+		<Affiliation>Corporate_Sector, Empire</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 
 		<Required_Special_Structures>
+		Empire_Shipyard_Level_One | Empire_Shipyard_Level_Two | Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four |
 		CSA_Ship_Market,
 		AI_Category_Dummy | Non_Capital_Category_Dummy
 		</Required_Special_Structures>
@@ -10556,7 +10561,7 @@
 		<AI_Combat_Power>659</AI_Combat_Power>
 		<Damage>40</Damage>
 
-		<Affiliation>Pentastar</Affiliation>
+		<Affiliation>Pentastar, Empire</Affiliation>
 		<Political_Control>0</Political_Control>
 		<Override_Bounty_SP>15</Override_Bounty_SP>
 		<Maintenance_Cost>15</Maintenance_Cost>
@@ -13172,7 +13177,7 @@
 
 		<Lua_Script>GenericGameObject</Lua_Script>
 	</SpaceUnit>
-	
+ 
 	<SpaceUnit Name="Super_Transport_VI_Missile">
 		<Variant_Of_Existing_Type>Template_Super_Transport_VI_Missile</Variant_Of_Existing_Type>
 		<Affiliation>  </Affiliation>
