@@ -31,7 +31,7 @@
 		Reklam_Plant,
 		AI_Category_Dummy | Structure_Category_Dummy
 		</Required_Special_Structures>
-		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Imperial_Proteus, Holdouts</Affiliation>
 		<Icon_Name>i_button_scrap_economic.tga</Icon_Name>
 
 		<Population_Value>0</Population_Value>
@@ -58,7 +58,7 @@
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 
 		<Required_Special_Structures>
-
+		Holdout_Shipyard_Level_Zero | 
 		NewRepublic_Shipyard_Level_Zero |
 		Empire_Shipyard_Level_Zero |
 		Pentastar_Shipyard_Level_Zero |
@@ -74,6 +74,7 @@
 
 		NewRepublic_Shipyard_Level_One |
 		Empire_Shipyard_Level_One |
+		Holdout_Shipyard_Level_One |
 		Pentastar_Shipyard_Level_One |
 		Zsinj_Shipyard_Level_One |
 		Eriadu_Shipyard_Level_One |
@@ -87,6 +88,7 @@
 
 		NewRepublic_Shipyard_Level_Two | 
 		Empire_Shipyard_Level_Two | 
+		Holdout_Shipyard_Level_Two | 
 		Pentastar_Shipyard_Level_Two | 
 		Zsinj_Shipyard_Level_Two | 
 		Pirate_Base | 
@@ -102,6 +104,7 @@
 
 		NewRepublic_Shipyard_Level_Three | 
 		Empire_Shipyard_Level_Three | 
+		Holdout_Shipyard_Level_Three | 
 		Pentastar_Shipyard_Level_Three | 
 		Zsinj_Shipyard_Level_Three | 
 		Eriadu_Shipyard_Level_Three | 
@@ -116,6 +119,7 @@
 
 		NewRepublic_Shipyard_Level_Four | 
 		Empire_Shipyard_Level_Four | 
+		Holdout_Shipyard_Level_Four | 
 		Pentastar_Shipyard_Level_Four | 
 		Zsinj_Shipyard_Level_Four | 
 		Rancor_Base | 
@@ -140,7 +144,7 @@
 		CSA_Ship_Market,
 		AI_Category_Dummy | Structure_Category_Dummy
 		</Required_Special_Structures>
-		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Imperial_Proteus, Holdouts</Affiliation>
 		<Icon_Name>i_button_scrap_production.tga</Icon_Name>
 
 		<Population_Value>0</Population_Value>
@@ -182,7 +186,7 @@
 		Secondary_Meridian_IV,
 		AI_Category_Dummy | Structure_Category_Dummy
 		</Required_Special_Structures>
-		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Imperial_Proteus</Affiliation>
+		<Affiliation>Empire, Rebel, Hutt_Cartels, Underworld, EmpireoftheHand, Pentastar, Greater_Maldrood, Zsinj_Empire, Hapes_Consortium, Eriadu_Authority, Corporate_Sector, SsiRuuvi_Imperium, Imperial_Proteus, Holdouts</Affiliation>
 		<Icon_Name>i_button_scrap_secondary.tga</Icon_Name>
 
 		<Population_Value>0</Population_Value>

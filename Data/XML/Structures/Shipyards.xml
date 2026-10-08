@@ -122,6 +122,12 @@
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>AI_Category_Dummy | Structure_Category_Dummy </Required_Special_Structures>
 
+<Required_Planets>
+		<!-- Shipyard_Level_One Start -->
+		Aargonar,Agamar,Agomar,Aguarl,Akuria,Alaris,Alashan,Alderaan_Graveyard,Almania,Alpheridies,Alsakan,Alzoc,Ando,Ando_Prime,Annaj,Ansion,Anx_Minor,Arkania,Artorias,Atchorb,Athiss,Attahox,Aturi,Atzerri,Azure,Bajic,Balamak,Bandomeer,Bardram_Scoft,Barlok,Basilisk,Begeren,Belderone,Belsavis,Belsmuth,Berchest,Bimmisaari,Bknos,Bogo_Rai,Bompreil,Bpfassh,Bresnia,Brigia,Brintooin,Caamas,Cartao,Casfield,Cathar,Catlia,Cattamascar,Cauldron_Nebula,Cerea,Chalcedon,Champala,Chazwa,Chorax,Chrondre,Colla,Columus,Comkin,Concord_Dawn,Corsin,Corthenia,Corvis_Minor,Cron_Drift,Crustai,Daalang,Dagary_Minor,Dagobah,Dalicron,Daluuj,Dantooine,Darkon,Datar,Dathomir,Dellalt,Derra,Despayre,Dioya,Dkee,Dohlban,Dolomar,Doniphon,Doornik,Dromund,Durace,Dxun,Ejolus,Emberlene,Emmer,Endor,Eredenn,Eres,Esfandia,Euceron,Exocron,Exodo,Falleen,Faras_Belt,Farrfin,Felucia,Feriae_Junction,Filve,Florn,Florrum,Formos,Fresia,Fwillsving,Gabredor,Galantos,Gamorr,Garqi,Gavryn,Generis,Genon,Gestrex,Glee_Anselm,Glom_Tho,Glova,Gobindi,Gravlex_Med,Grho,Gymelo,Halanit,Halthor,Helska,Herdessa,Hewett,Hijarna,Hishyim,Hollastin,Jagas_Cluster,Kaikielius,Kostra,Kriselist,M293,Ordo,Orleon,Prildaz,Qretu,Rduba,Roqoo,Talus_Tralus,Tenupe,The_Redoubt,The_Wheel,Thyrsus,Tolan,Utegetu_Nebula,YagDhul
+		<!-- Shipyard_Level_One End -->
+		</Required_Planets>
+
 		<Reinforcement_Prevention_Radius> 4000 </Reinforcement_Prevention_Radius>
 
 		<Shield_Points>500</Shield_Points>
@@ -223,7 +229,7 @@
 
 		<Required_Planets>
 		<!-- Shipyard_Level_Two Start -->
-				Aargau,Abregado_Rae,Abridon,Adumar,Ailon,Alderaan,Althir,Ambria,Anaxes,Andara,Antar,Antemeridias,Arda,Argovia,Atravis,Bakura,Balmorra,Bannistar,Barab,Barkhesh,Bassadro,Bastion,Belgaroth,Berrols_Donn,Bescane,Bespin,Bestine,Bimmiel,Bomis_Koori,Bonadan,Boonta,Borleias,Borosk,Botajef,Bothawui,Boz_Pity,Brentaal,Burnin_Konn,Cal_Seti,Carida,Cato_Neimoidia,Cejansij,Celanon,Celwis,Centares,Chandrila,Charros,Chasin,Christophsis,Circumtore,Columex,Commenor,Comra,Cormit,Corulag,Coruscant,Crakull,Csilla,Cularin,Da_Soocha,Dalron,Darvannis,Delacrix,Denon,Desevro,Devaron,Dolla,Dorin,Dravian_Starport,Dressel,Druckenwell,Dubrillion,Duro,Durren,Ebaq,Eiattu,Elom,Elrood,Empress_Teta,Enarc,Entralla,Eriadu,Ession,Exodeen,Feldrona,Flashpoint,Foless,Fwsen,Galidraan,Gallinore,Ganath,Gargon,Garos,Gestron,Ghorman,Giju,Gizer,Gravan,Gree,Had_Abbadon,Halmad,Handooine,Hosnian_Prime,Iphigin,Iskadrell,Ithor,Jabiim,Jaminere,Jebble,Kamino,Karavis,Kashyyyk,Kem_Stor_Ai,Kerkoidia,Kile,Kilji,Kinoss,Kirdo,Kirima,Korriban,Kothlis,Laakteen,Lantillies,Latharra,Levian,Liinade,Lonnaw,Lorrd,Lothal,Lown,Makatak,Makeb,Makem_Te,Manaan,Manda,Maridun,Massoss,Mataou,Mechis,Metalorn,Metellos,Mhaeli,Mindor,Mirial,Mrlsst,Mugg_Fallow,Mustafar,Muunilinst,Mygeeto,Naboo,Nam_Chorios,Nar_Haaska,Nar_Hekka,Nar_Kaaga,Nar_Shaddaa,Nespis,Nez_Peron,Nocto,Nouane,Oba_Diah,Obroa_Skai,Obulette,Ord_Cantrell,Ord_Cestus,Ord_Mantell,Ord_Radama,Ord_Tiddell,Oreen,Orinda,Orion,Palanhi,Pelagon,Pesfavri,Pesitiin,Phaeda,Polneye,Poseidenna,Prakith,Prefsbelt,Primea,Qoribu,Quermia,Quethold,Randon,Rapacc,Raxus,Relephon,Rhigar,Ringo_Vinda,Rintonne,Rion,Rodia,Ronyards,Rudrig,Ryloth,Ryndellia,Ryvester,RZ7,Saffalore,Saijo,Saleucami,Sanbra,Sanjin,Sanrafsix,Sellasas,Serenno,Serroco,Shadren,Shili,Shner,Skako,Solitair,Surron,Syned,Talasea,Talcene,Talhovi,Tangrene,Tar_Morden,Taral_V,Taris,Telos,Terephon,Teth,The_Prism,Thrago,Thyferra,Tibrin,Togoria,Transitory_Mists_I,Transitory_Mists_II,Transitory_Mists_III,Trian,Tsoss,Tulpaa,Tynna,Tythe,Ulicia,Umbara,Utapau,Vanquo,Veccacopia,Vento,Vicondor,Vjun,Vondarc,Vorzyd,Vulta,Vurdon_Ka,Wroona,Xagobah,Yavin,Ylesia,Yoggoy,Zeltros,Zolan,Zygerria,Zyzek,Belasco,Telerath,Dohu,Immalia,Eshan,Shasfath,Omar,Aefao,Borgo_Prime,Hratth,Rutan,Atrisia,Neimoidia,Sevarcos,Andosha,Ando_Secundus,Marzoon,Lahag_Erli,Dulin,Port_Jerrell,Riileb,Gand,Dornea,Susevfi,Durkteel,Iridium,Uba,NarBoSholla,Cyborrea,Nanthri,Cyrillia,Darkknell,Ord_Wylan,Eclipse,Thalassia,Sartoy,Taloron,Mondress,Thrantin,Kokash,Daupherm,Botor,Extorin,Uviuy_Exen,Drearia,Kliaar,Daedalon,Sposia,Station_Chaf,Niorde,Sraato,Altiria_Anarris,Braccio,Socorro,Lavisar,Milvayne,Jovan,Torque,Iridia,Amorphiia,Frithia,Kejim,Teyr,Alderath,Rydonni,Lorista,Urce,Galaan,Nyara,JanFathal,Artesia,Xartun,Drackmar,Viis,Shor,Peroenia,Far_Cradle
+		Aargau,Abregado_Rae,Abridon,Adumar,Ailon,Althir,Ambria,Anaxes,Antemeridias,Arda,Argovia,Atravis,Bakura,Balmorra,Barab,Barkhesh,Bastion,Belgaroth,Bescane,Bespin,Bestine,Bimmiel,Bomis_Koori,Bonadan,Boonta,Borleias,Borosk,Botajef,Bothawui,Boz_Pity,Brentaal,Cal_Seti,Carida,Cato_Neimoidia,Cejansij,Celanon,Celwis,Centares,Chandrila,Charros,Chasin,Christophsis,Circumtore,Columex,Commenor,Comra,Corulag,Coruscant,Csilla,Dorin,Druckenwell,Dubrillion,Duro,Elrood,Eriadu,Fwsen,Handooine,Kamino,Karavis,Latharra,Metalorn,Metellos,Muunilinst,Nar_Shaddaa,Ord_Cantrell,Quermia,Quethold,Ringo_Vinda,Ronyards,Saffalore,Skako,Surron,Talhovi,Tar_Morden,Taris,Thrago,Thyferra,Tsoss,Utapau,Yoggoy
 		<!-- Shipyard_Level_Two End -->
 		</Required_Planets>
 
@@ -552,3 +558,5 @@
 		<Remove_Upon_Death>true</Remove_Upon_Death>
 	</SpecialStructure>
 </Shipyards>
+
+

@@ -92,25 +92,6 @@ function State_Delayed_Initialize(message)
 			"Gladiator_I",
 			"Acclamator_I_Carrier",
 		}
-		local SEP_HOLDOUT_AVAILABLE_UNITS = {
-			"HMP_Company",
-			"J1_Cannon_Company",
-			"MTT_Company",
-			"B2_Droid_Company",
-			"AAT_Company",
-			"CSA_B1_Droid_Company",
-			"CSA_Destroyer_Droid_Company",
-			"C9979_Carrier",
-			"Munificent",
-			"Munificent_C3",
-			"Recusant_Light_Destroyer",
-			"Lucrehulk_Core_Destroyer",
-			"Providence_Carrier_Destroyer",
-			"Lucrehulk_CSA",
-			"Diamond_Frigate",
-			"DH_Omni",
-			"Recusant_Dreadnought",
-		}
 		local ZANN_AVAILABLE_UNITS = {
 			"Light_Mercenary_Company",
 			"Mercenary_Company",
@@ -157,10 +138,6 @@ function State_Delayed_Initialize(message)
 			UnitUtil.SetLockList("Empire", dummies.EMPIRE.RosterUnits, false)
 			UnitUtil.SetLockList("Empire", EMPIRE_PLAYER_AVAILABLE_UNITS)
 			UnitUtil.SetLockList("Empire", EMPIRE_EXTRA_LOCKS, false)
-		end
-		if dummies.PENTASTAR ~= nil and dummies.PENTASTAR.RosterUnits ~= nil then
-			UnitUtil.SetLockList("Pentastar", dummies.PENTASTAR.RosterUnits, false)
-			UnitUtil.SetLockList("Pentastar", SEP_HOLDOUT_AVAILABLE_UNITS)
 		end
 		if dummies.ZSINJ_EMPIRE ~= nil and dummies.ZSINJ_EMPIRE.RosterUnits ~= nil then
 			UnitUtil.SetLockList("Zsinj_Empire", dummies.ZSINJ_EMPIRE.RosterUnits, false)

@@ -177,6 +177,7 @@
 													Parameter_Type = "Z_Ground_Barracks",
 													Parameter_Type = "R_Ground_Barracks",
 													Parameter_Type = "P_Ground_Barracks",
+													Parameter_Type = "Holdout_Barracks",
 													Parameter_Type = "Y_Ground_Barracks",
 													Parameter_Type = "I_Ground_Barracks",
 													Parameter_Type = "C_Ground_Barracks",
@@ -192,6 +193,7 @@
 														Parameter_Type = "T_Ground_Barracks",
 														Parameter_Type = "Z_Ground_Barracks",
 														Parameter_Type = "R_Ground_Barracks",
+														Parameter_Type = "Holdout_Barracks",
 														Parameter_Type = "P_Ground_Barracks",
 														Parameter_Type = "Y_Ground_Barracks",
 														Parameter_Type = "I_Ground_Barracks",
@@ -212,6 +214,7 @@
 													Parameter_Type = "R_Ground_Barracks",
 													Parameter_Type = "P_Ground_Barracks",
 													Parameter_Type = "Y_Ground_Barracks",
+													Parameter_Type = "Holdout_Barracks",
 													Parameter_Type = "I_Ground_Barracks",
 													Parameter_Type = "C_Ground_Barracks",
 													Parameter_Type = "EOTH_Ground_Barracks",
@@ -303,19 +306,21 @@
 
 
 	<Need_Advanced_Vehicle_Factory>
-		Variable_Self.IsFaction {Parameter_Faction = "Empire", 
-								Parameter_Faction = "Eriadu_Authority", 
-								Parameter_Faction = "Pentastar", 
-								Parameter_Faction = "Zsinj_Empire", 
-								Parameter_Faction = "Greater_Maldrood", 
-								Parameter_Faction = "Imperial_Proteus", 
-								Parameter_Faction = "Yevetha"}
+		Variable_Self.IsFaction {Parameter_Faction = "EMPIRE", 
+								Parameter_Faction = "ERIADU_AUTHORITY", 
+								Parameter_Faction = "PENTASTAR", 
+								Parameter_Faction = "ZSINJ_EMPIRE", 
+								Parameter_Faction = "GREATER_MALDROOD", 
+								Parameter_Faction = "IMPERIAL_PROTEUS", 
+								Parameter_Faction = "YEVETHA", 
+								Parameter_Faction = "HOLDOUTS"}
 		*
 		(
 			1 + 50 * (Variable_Self.StructureCount {Parameter_Type = "E_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "A_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
+													Parameter_Type = "Holdout_Factory",
 													Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "Y_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "I_Ground_Advanced_Vehicle_Factory",
@@ -332,6 +337,7 @@
 															Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 															Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
 															Parameter_Type = "Y_Ground_Advanced_Vehicle_Factory",
+															Parameter_Type = "Holdout_Factory",
 															Parameter_Type = "I_Ground_Advanced_Vehicle_Factory",
 															Parameter_Type = "R_Ground_Advanced_Vehicle_Factory",
 														Parameter_Only_Consider_Complete = 1.0} /
@@ -342,6 +348,7 @@
 													Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+													Parameter_Type = "Holdout_Factory",
 													Parameter_Type = "Y_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "I_Ground_Advanced_Vehicle_Factory",
 													Parameter_Type = "R_Ground_Advanced_Vehicle_Factory",
@@ -351,6 +358,7 @@
 		(2 > Variable_Target.StructureCount {Parameter_Type = "E_Ground_Advanced_Vehicle_Factory",
 											Parameter_Type = "A_Ground_Advanced_Vehicle_Factory",
 											Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
+											Parameter_Type = "Holdout_Factory",
 											Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 											Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
 											Parameter_Type = "Y_Ground_Advanced_Vehicle_Factory",

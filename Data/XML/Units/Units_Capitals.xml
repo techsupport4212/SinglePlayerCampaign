@@ -4363,12 +4363,12 @@
 	<SpaceUnit Name="Lucrehulk_CSA">
 		<Variant_Of_Existing_Type>Template_Lucrehulk_Carrier</Variant_Of_Existing_Type>
 
-		<Affiliation>Corporate_Sector, Pentastar</Affiliation>
+		<Affiliation>Corporate_Sector, Holdouts</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 
 		<Required_Special_Structures>
-		CSA_Shipyard_Level_Four | Pentastar_Shipyard_Level_Four,
+		CSA_Shipyard_Level_Four | Holdout_Shipyard_Level_Four,
 		AI_Category_Dummy | Dreadnought_Category_Dummy
 		</Required_Special_Structures>
 
@@ -7878,7 +7878,7 @@
 		<Variant_Of_Existing_Type>Template_Executor_Star_Dreadnought</Variant_Of_Existing_Type>
 		<Text_ID>TEXT_HERO_KNIGHTHAMMER</Text_ID>
 		<Icon_Name>i_button_knight_hammer.TGA</Icon_Name>
-		<Population_Value>100</Population_Value>
+
 		<SpaceBehavior>TELEKINESIS_TARGET,ABILITY_COUNTDOWN, SIMPLE_SPACE_LOCOMOTOR, POWERED, SHIELDED, HIDE_WHEN_FOGGED, REVEAL, TARGETING, UNIT_AI, DAMAGE_TRACKING, ASTEROID_FIELD_DAMAGE, ION_STUN_EFFECT, NEBULA </SpaceBehavior>
 		<Tech_Level>99</Tech_Level>
 		<Lua_Script>GenericGameObject</Lua_Script>

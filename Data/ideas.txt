@@ -13,9 +13,12 @@ admin - ramier, hauser
 space - needa, piett, ozzel
 moff - yularen, praji
 blitzer harsk maybe
+
+
+
 Faction Map:
 Empire - Empire
-Warlords - True Empire
+Warlords - True Empire (Need to make another faction slot for this guy)
 Imperial_Proteus - All sorts of defectors
 Pentastar - Seperatist Holdouts
 Zsinj_Empire - Zann Consortium

@@ -3280,12 +3280,12 @@
 	<SpaceUnit Name="Munificent">
 		<Variant_Of_Existing_Type>Template_Munificent</Variant_Of_Existing_Type>
 
-		<Affiliation>Pentastar, Corporate_Sector</Affiliation>
+		<Affiliation>Pentastar, Corporate_Sector, Holdouts</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>
-		CSA_Ship_Market | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four,
+		CSA_Ship_Market | Holdout_Shipyard_Level_Two | Holdout_Shipyard_Level_Three | Holdout_Shipyard_Level_Four,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy,
 		</Required_Special_Structures>
 		<Required_Planets/>
@@ -3360,11 +3360,11 @@
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>
-		CSA_Ship_Market | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four,
+		CSA_Ship_Market | Holdout_Shipyard_Level_Two | Holdout_Shipyard_Level_Three | Holdout_Shipyard_Level_Four,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy,
 		</Required_Special_Structures>
 		<Required_Planets/>
-		<Affiliation>Pentastar, Corporate_Sector</Affiliation>
+		<Affiliation>Pentastar, Corporate_Sector, Holdouts</Affiliation>
 		<Starting_Spawned_Units_Tech_0>Skipray_Squadron_Half, 1</Starting_Spawned_Units_Tech_0>
 		<Starting_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 1</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Fighter_Squadron, 1</Reserve_Spawned_Units_Tech_0>
@@ -3425,7 +3425,7 @@
 	<SpaceUnit Name="Acclamator_II">
 		<Variant_Of_Existing_Type>Template_Acclamator_II</Variant_Of_Existing_Type>
 
-		<Affiliation>Empire, Greater_Maldrood, Yevetha, Imperial_Proteus, Zsinj_Empire</Affiliation>
+		<Affiliation>Empire, Greater_Maldrood, Yevetha, Imperial_Proteus</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
@@ -4129,12 +4129,12 @@
 	<SpaceUnit Name="Recusant_Light_Destroyer">
 		<Variant_Of_Existing_Type>Template_Recusant_Light_Destroyer</Variant_Of_Existing_Type>
 
-		<Affiliation>Corporate_Sector, Pentastar</Affiliation>
+		<Affiliation>Corporate_Sector, Holdouts</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Special_Structures>
-		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four,
+		CSA_Shipyard_Level_Two | CSA_Shipyard_Level_Three | CSA_Shipyard_Level_Four | Holdout_Shipyard_Level_Two | Holdout_Shipyard_Level_Three | Holdout_Shipyard_Level_Four,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy,
 
 		</Required_Special_Structures>
@@ -5833,13 +5833,13 @@
 	<SpaceUnit Name="Lucrehulk_Core_Destroyer">
 		<Variant_Of_Existing_Type>Template_Lucrehulk_Core_Destroyer</Variant_Of_Existing_Type>
 
-		<Affiliation>Corporate_Sector, Pentastar</Affiliation>
+		<Affiliation>Corporate_Sector, Holdouts</Affiliation>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 
 		<Required_Special_Structures>
-		CSA_Ship_Market | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four,
+		CSA_Ship_Market | Holdout_Shipyard_Level_Two | Holdout_Shipyard_Level_Three | Holdout_Shipyard_Level_Four,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy
 		</Required_Special_Structures>
 
@@ -7252,7 +7252,7 @@
 	<SpaceUnit Name="Providence_Carrier_Destroyer">
 		<Variant_Of_Existing_Type>Template_Providence_Carrier_Destroyer</Variant_Of_Existing_Type>
 
-		<Affiliation>Corporate_Sector, Pentastar</Affiliation>
+		<Affiliation>Corporate_Sector, Holdouts</Affiliation>
 		<GUI_Row> 0 </GUI_Row>
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
@@ -7264,7 +7264,8 @@
 		Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four |
 		Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three | Eriadu_Shipyard_Level_Four |
 		Greater_Maldrood_Shipyard_Level_Two | Greater_Maldrood_Shipyard_Level_Three | Greater_Maldrood_Shipyard_Level_Four |
-		Imperial_Proteus_Shipyard_Level_Two | Imperial_Proteus_Shipyard_Level_Three | Imperial_Proteus_Shipyard_Level_Four,
+		Imperial_Proteus_Shipyard_Level_Two | Imperial_Proteus_Shipyard_Level_Three | Imperial_Proteus_Shipyard_Level_Four | 
+		Holdout_Shipyard_Level_Two | Holdout_Shipyard_Level_Three | Holdout_Shipyard_Level_Four,
 		AI_Category_Dummy | Heavy_Frigate_Category_Dummy</Required_Special_Structures>
 		<Required_Planets/>
 

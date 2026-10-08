@@ -55,7 +55,7 @@
 		<Build_Cost_Credits>160</Build_Cost_Credits>
 		<Build_Time_Seconds>5</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>C_Ground_Barracks | Baktoid_HQ | Balmorran_Arms_HQ | Rossum_HQ | P_Ground_Barracks</Required_Special_Structures>
+		<Required_Special_Structures>C_Ground_Barracks | Baktoid_HQ | Balmorran_Arms_HQ | Rossum_HQ | Holdout_Barracks</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>No</Build_Initially_Locked>
@@ -66,7 +66,7 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Corporate_Sector, Pentastar</Affiliation>
+		<Affiliation>Corporate_Sector, Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>
@@ -1395,7 +1395,7 @@
 		<Build_Cost_Credits>415</Build_Cost_Credits>
 		<Build_Time_Seconds>10</Build_Time_Seconds>
 		<Slice_Cost_Credits/>
-		<Required_Special_Structures>C_Ground_Barracks | Rossum_HQ | P_Ground_Barracks</Required_Special_Structures>
+		<Required_Special_Structures>C_Ground_Barracks | Rossum_HQ | Holdout_Barracks</Required_Special_Structures>
 		<Build_Time_Reduced_By_Multiple_Factories> Yes </Build_Time_Reduced_By_Multiple_Factories>
 		<Build_Tab_Land_Units>Yes</Build_Tab_Land_Units>
 		<Build_Initially_Locked>no</Build_Initially_Locked>
@@ -1407,7 +1407,7 @@
 		<Tech_Level>0</Tech_Level>
 		<Required_Ground_Base_Level>1</Required_Ground_Base_Level>
 
-		<Affiliation>Corporate_Sector, Pentastar</Affiliation>
+		<Affiliation>Corporate_Sector, Holdouts</Affiliation>
 		<Political_Control/>
 
 		<Behavior>DUMMY_GROUND_COMPANY</Behavior>

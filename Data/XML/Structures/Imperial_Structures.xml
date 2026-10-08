@@ -661,17 +661,18 @@
 
 	</SpecialStructure>
 
+
 	<SpecialStructure Name="Pentastar_Office">
 
 		<Variant_Of_Existing_Type>Template_Planetary_Government</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_COMPANY_CORPORATEHQ</Text_ID>
+		<Text_ID>TEXT_COMPANY_EMPIRE_MOFFPALACE</Text_ID>
 
 		<Affiliation>Pentastar</Affiliation>
 
 		<Tactical_Additional_Structure_Type>Power_Generator</Tactical_Additional_Structure_Type>
-		<Land_Model_Name>CIS_Local_Government.alo</Land_Model_Name>
-		<Icon_Name>I_BUTTON_CIS.tga</Icon_Name>
+
+		<Icon_Name>i_button_pa.tga</Icon_Name>
 
 		<!--All Eras-->
 		<Starting_Spawned_Units_Tech_0>Enforcer_Trooper_Squad, 3</Starting_Spawned_Units_Tech_0>
@@ -686,17 +687,15 @@
 		<Starting_Spawned_Units_Tech_0>TIE_Crawler, 1</Starting_Spawned_Units_Tech_0>
 		<Reserve_Spawned_Units_Tech_0>TIE_Crawler, 2</Reserve_Spawned_Units_Tech_0>
 
-		<Encyclopedia_Text>
-		TEXT_TOOLTIP_SENATORSOFFICE_DESCRIPTION
+		<Encyclopedia_Text> 
+		TEXT_COMPANY_MOFFPALACE_DESCRIPTION
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_OFFICE_HEALTH 
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
-		TEXT_TOOLTIP_OFFICE_CIS_1
-		TEXT_TOOLTIP_OFFICE_CIS_2 
-		TEXT_TOOLTIP_OFFICE_CIS_3
-		TEXT_TOOLTIP_OFFICE_CIS_4
-		TEXT_TOOLTIP_OFFICE_CIS_5
-		TEXT_TOOLTIP_OFFICE_CIS_6
+		TEXT_TOOLTIP_OFFICE_PA1
+		TEXT_TOOLTIP_OFFICE_PA2 
+		TEXT_TOOLTIP_OFFICE_PA3
+		TEXT_TOOLTIP_OFFICE_PA4
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_BONUS_INFLUENCE_PLUS_1
 		</Encyclopedia_Text>
@@ -716,20 +715,14 @@
 
 		<Variant_Of_Existing_Type>Template_Barracks</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_GROUND_CIS_BARRACKS</Text_ID>
-
-		<Encyclopedia_Text>
+		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_BARRACKS
-		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
-		TEXT_TOOLTIP_BARRACKS_HEALTH 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_BARRACKS_HEALTH
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
-		TEXT_TOOLTIP_BARRACKS_CIS_1
-		TEXT_TOOLTIP_BARRACKS_CIS_2
-		TEXT_TOOLTIP_BARRACKS_CIS_3
-		TEXT_TOOLTIP_BARRACKS_CIS_4
-		TEXT_TOOLTIP_BARRACKS_CIS_5
-		TEXT_TOOLTIP_BARRACKS_CIS_6
-		TEXT_TOOLTIP_BARRACKS_CIS_7
+		TEXT_TOOLTIP_BARRACKS_GE1
+		TEXT_TOOLTIP_BARRACKS_GE2
+		TEXT_TOOLTIP_BARRACKS_GE3
 		</Encyclopedia_Text>
 
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_BARRACKS </MP_Encyclopedia_Text>
@@ -737,11 +730,6 @@
 		<Affiliation>Pentastar</Affiliation>
 
 		<Required_Special_Structures>Pentastar_Office</Required_Special_Structures>
-
-		<Icon_Name>i_button_cis_infantry_factory.tga</Icon_Name>
-
-		<Land_Model_Name>CIS_Infantry_Factory.alo</Land_Model_Name>
-		<Scale_Factor>1.0</Scale_Factor>
 
 		<Obstacle_Proxy_Type> E_Ground_Barracks_Build_Pad </Obstacle_Proxy_Type>
 
@@ -761,26 +749,18 @@
 
 		<Variant_Of_Existing_Type>Template_Light_Vehicle_Factory</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_GROUND_CIS_LIGHT_VEHICLE_FACTORY</Text_ID>
-
-		<Encyclopedia_Text>
-		TEXT_TOOLTIP_L_FACTORY
-		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK 
-		TEXT_TOOLTIP_FACTORY_HEALTH 
-		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK 
-		TEXT_TOOLTIP_L_FACTORY_CIS_1
-		TEXT_TOOLTIP_L_FACTORY_CIS_2
-		TEXT_TOOLTIP_L_FACTORY_CIS_3
+		<Encyclopedia_Text> 
+		TEXT_TOOLTIP_L_FACTORY 
+		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
+		TEXT_TOOLTIP_FACTORY_HEALTH  
+		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
+		TEXT_TOOLTIP_L_FACTORY_PA1
+		TEXT_TOOLTIP_L_FACTORY_PA2
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_UPKEEP_BONUS_10
 		</Encyclopedia_Text>
 
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_L_FACTORY </MP_Encyclopedia_Text>
-
-		<Icon_Name>i_button_cis_vehicle_factory.tga</Icon_Name>
-
-		<Land_Model_Name>CIS_Droid_Vehicle_Factory.alo</Land_Model_Name>
-		<Scale_Factor> 1.0 </Scale_Factor>
 
 		<Affiliation>Pentastar</Affiliation>
 
@@ -801,22 +781,16 @@
 
 		<Variant_Of_Existing_Type>Template_Heavy_Vehicle_Factory</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_GROUND_CIS_HEAVY_VEHICLE_FACTORY</Text_ID>
-
-		<Encyclopedia_Text>
+		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_H_FACTORY 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
 		TEXT_TOOLTIP_FACTORY_HEALTH 
 		TEXT_TOOLTIP_SEPARATOR_GARRISON_BLOCK
-		TEXT_TOOLTIP_H_FACTORY_CIS_1
+		TEXT_TOOLTIP_H_FACTORY_PA1
+		TEXT_TOOLTIP_H_FACTORY_PA2
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_UPKEEP_BONUS_20
 		</Encyclopedia_Text>
-
-		<Icon_Name>i_button_cis_piloted_vehicle_factory.tga</Icon_Name>
-
-		<Land_Model_Name>CIS_Piloted_Vehicle_Factory.alo</Land_Model_Name>
-		<Scale_Factor> 1.0 </Scale_Factor>
 
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_H_FACTORY </MP_Encyclopedia_Text>
 
@@ -839,8 +813,6 @@
 
 		<Variant_Of_Existing_Type>Template_Advanced_Vehicle_Factory</Variant_Of_Existing_Type>
 
-		<Text_ID>TEXT_GROUND_CIS_ADVANCED_VEHICLE_FACTORY</Text_ID>
-
 		<Encyclopedia_Text> 
 		TEXT_TOOLTIP_A_FACTORY 
 		TEXT_TOOLTIP_SEPARATOR_STAT_BLOCK
@@ -850,11 +822,6 @@
 		TEXT_TOOLTIP_SEPARATOR_BONUS_BLOCK
 		TEXT_TOOLTIP_UPKEEP_BONUS_30
 		</Encyclopedia_Text>
-
-		<Icon_Name>i_button_cis_heavy_factory.tga</Icon_Name>
-
-		<Land_Model_Name>CIS_Heavy_Factory.alo</Land_Model_Name>
-		<Scale_Factor> 1.0 </Scale_Factor>
 
 		<MP_Encyclopedia_Text> TEXT_TOOLTIP_A_FACTORY </MP_Encyclopedia_Text>
 

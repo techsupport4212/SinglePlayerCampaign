@@ -57,7 +57,7 @@ return {
 			fighter = fighter .. suffix
 		end
 
-		if owner == "PENTASTAR" then
+		if owner == "HOLDOUTS" then
 			fighter = "VULTURE_SQUADRON"
 		end
 

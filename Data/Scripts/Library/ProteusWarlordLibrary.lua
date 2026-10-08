@@ -27,9 +27,9 @@ return {
 			LeaderEndingNames = {"Grand Admiral Zaarin"},
 			HeroList = {"Zaarin_Glory", "Raveen_Predominant", "Arden_Lyn_Team", "Din_Zeplin", "Harkov_Protector"},
 			LastYear = 0,
-			FactionOverride = "Empire",
+			FactionOverride = "Sector_Forces",
 			FactionOverride2 = "Zsinj_Empire",
-			FactionOverride3 = "Greater_Maldrood",
+			FactionOverride3 = "Holdouts",
 			IntroText = "TODO",
 			IntroHolo = "Imperial_Naval_Officer_Loop"
 		},

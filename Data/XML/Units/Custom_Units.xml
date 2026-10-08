@@ -654,7 +654,7 @@
 		<Surface_Bombardment_Capable>yes</Surface_Bombardment_Capable>
 		<Squadron_Capacity>40</Squadron_Capacity>
 
-		<Tech_Level>0</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1399,7 +1399,7 @@
 		<Surface_Bombardment_Capable>no</Surface_Bombardment_Capable>
 		<Squadron_Capacity>10</Squadron_Capacity>
 
-		<Tech_Level>0</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Required_Ground_Base_Level>0</Required_Ground_Base_Level>
 		<Required_Star_Base_Level>1</Required_Star_Base_Level>
 		<Required_Planets/>
@@ -1596,7 +1596,7 @@
 		Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four,
 		AI_Category_Dummy | Capital_Category_Dummy</Required_Special_Structures>
 		<Tactical_Health>7961</Tactical_Health>
-		<Tech_Level>0</Tech_Level>
+		<Tech_Level>99</Tech_Level>
 		<Affiliation>Empire</Affiliation>
 
 		<Lua_Script>GenericGameObject</Lua_Script>

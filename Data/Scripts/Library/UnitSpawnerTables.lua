@@ -135,7 +135,7 @@ function DefineRosterOverride(planet)
 end
 
 function DefineUnitTable(faction, rosterOverride)
-	if not (faction == "WARLORDS" or faction == "INDEPENDENT_FORCES") and rosterOverride == "ZANN_CONSORTIUM" then
+	if not (faction == "WARLORDS" or faction == "INDEPENDENT_FORCES" or faction == "SECTOR_FORCES" or faction == "HOLDOUTS") and rosterOverride == "ZANN_CONSORTIUM" then
 		rosterOverride = nil
 	end
 
@@ -171,6 +171,8 @@ function DefineUnitTable(faction, rosterOverride)
 		IMPERIAL_PROTEUS = true,
 		MANDALORIANS = true,
 		WARLORDS = true,
+		SECTOR_FORCES = true,
+		HOLDOUTS = true,
 		INDEPENDENT_FORCES = true,
 		GENERIC_UR = true,
 		BAKURANS = true,
@@ -194,6 +196,8 @@ function DefineUnitTable(faction, rosterOverride)
 		PAATAATUS = true,
 		PACC = true,
 		GARWIAN = true,
+		SECTOR_FORCES = true,
+		HOLDOUTS = true,
 	}
 	local factionData = nil
 	local returnValue = {} --Cannot write overrides directly to faction data or they will edit the cache of that file and affect all future worlds for that faction
@@ -220,7 +224,7 @@ function DefineUnitTable(faction, rosterOverride)
 		else
 			returnValue.Land_Unit_Table = factionData.Land_Unit_Table
 		end
-		if faction == "INDEPENDENT_FORCES" or faction == "WARLORDS" then
+		if faction == "INDEPENDENT_FORCES" or faction == "WARLORDS" or faction == "SECTOR_FORCES" or faction == "HOLDOUTS" then
 			for category, values in pairs(factionData) do
 				if category ~= "Land_Unit_Table" and category ~= "Space_Unit_Table" then
 					if override[category] ~= nil then

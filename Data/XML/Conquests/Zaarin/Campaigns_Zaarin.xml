@@ -457,6 +457,8 @@
 		<AI_Player_Control>Underworld, None</AI_Player_Control>
 		<AI_Player_Control>Yevetha, None</AI_Player_Control>
 		<AI_Player_Control>Imperial_Proteus, None</AI_Player_Control>
+		<AI_Player_Control>Sector_Forces, None</AI_Player_Control>
+		<AI_Player_Control>Holdouts, None</AI_Player_Control>
 
 		<Markup_Filename>Chiss, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Corellia, DefaultGalacticHints</Markup_Filename>
@@ -479,6 +481,8 @@
 		<Markup_Filename>Yevetha, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Zsinj_Empire, DefaultGalacticHints</Markup_Filename>
 		<Markup_Filename>Imperial_Proteus, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Sector_Forces, DefaultGalacticHints</Markup_Filename>
+		<Markup_Filename>Holdouts, DefaultGalacticHints</Markup_Filename>
 
 		<Starting_Credits>Chiss, 10000</Starting_Credits>
 		<Starting_Tech_Level>Chiss, 1</Starting_Tech_Level>
@@ -528,6 +532,12 @@
 		<Starting_Credits>Yevetha, 10000</Starting_Credits>
 		<Starting_Tech_Level>Yevetha, 1</Starting_Tech_Level>
 		<Max_Tech_Level>Yevetha, 5</Max_Tech_Level>
+		<Starting_Credits>Holdouts, 10000</Starting_Credits>
+		<Starting_Tech_Level>Holdouts, 1</Starting_Tech_Level>
+		<Max_Tech_Level>Holdouts, 5</Max_Tech_Level>
+		<Starting_Credits>Sector_Forces, 10000</Starting_Credits>
+		<Starting_Tech_Level>Sector_Forces, 1</Starting_Tech_Level>
+		<Max_Tech_Level>Sector_Forces, 5</Max_Tech_Level>
 
 		<Supports_Custom_Settings>False</Supports_Custom_Settings>
 		<Show_Completed_Tab>True</Show_Completed_Tab>
@@ -644,88 +654,88 @@
 		<Starting_Forces> Zsinj_Empire, Akuria, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Alderaan_Graveyard, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Alsakan, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Anaxes, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Annaj, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Anaxes, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Annaj, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Arkania, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Axxila, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Balmorra, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Belsmuth, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Balmorra, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Belsmuth, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Bespin, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Bilbringi, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Bilbringi, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Bonadan, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Borleias, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Borleias, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Bothawui, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Bpfassh, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Brentaal, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Byblos, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Byblos, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Cal_Seti, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Carida, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Celanon, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Carida, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Celanon, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Champala, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Chardaan, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Circumtore, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Ciutric, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Columus, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Ciutric, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Columus, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Comkin, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Commenor, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Commenor, Generate_Force </Starting_Forces>
 		<Starting_Forces> Mandalorians, Concord_Dawn, Generate_Force </Starting_Forces>
 		<Starting_Forces> Chiss, Copero, Generate_Force </Starting_Forces>
 		<Starting_Forces> Corellia, Corellia, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Corsin, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Corulag, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Coruscant, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Corvis_Minor, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Corulag, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Coruscant, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Corvis_Minor, Generate_Force </Starting_Forces>
 		<Starting_Forces> Chiss, Csilla, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Da_Soocha, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Dagobah, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Denon, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Derra, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Doornik, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Doornik, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Dravian_Starport, Generate_Force </Starting_Forces>
 		<Starting_Forces> Killik_Hives, Dromund, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Druckenwell, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Druckenwell, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Ebaq, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Eiattu, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Emberlene, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Eiattu, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Emberlene, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Empress_Teta, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Endor, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Eriadu, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Endor, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Eriadu, Generate_Force </Starting_Forces>
 		<Starting_Forces> Corporate_Sector, Etti, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Exocron, Generate_Force </Starting_Forces>
 		<Starting_Forces> Mandalorians, Fenel, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Florrum, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Foerost, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Fondor, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Foerost, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Fondor, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Galantos, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Gamorr, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Ganath, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Gargon, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Gargon, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Generis, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Geonosis, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Gravan, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Gwar, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Geonosis, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Gravan, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Gwar, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Halanit, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Hast, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Hollastin, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Hoth, Generate_Force </Starting_Forces>
-		<Starting_Forces> Zsinj_Empire, Hypori, Imperial_Airbase </Starting_Forces>
-		<Starting_Forces> Zsinj_Empire, Hypori, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Ilum, Generate_Force </Starting_Forces>
+		<Starting_Forces> Empire, Hypori, Imperial_Airbase </Starting_Forces>
+		<Starting_Forces> Empire, Hypori, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Ilum, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Ithor, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Ixtlar, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Jagas_Cluster, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Jomark, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Jtptan, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Jtptan, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Kaikielius, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Kamino, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Kessel, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Kira, Generate_Force </Starting_Forces>
 		<Starting_Forces> Killik_Hives, Korriban, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Kothlis, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Kuat, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Kuat, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Latharra, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Levian, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Liinade, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Liinade, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Lonnaw, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Lucazec, Generate_Force </Starting_Forces>
 		<Starting_Forces> Killik_Hives, Malachor, Generate_Force </Starting_Forces>
@@ -735,41 +745,41 @@
 		<Starting_Forces> Independent_Forces, Minntooine, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Mon_Calamari, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Mulatan, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Mustafar, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Mustafar, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Naboo, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Nal_Hutta, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Nar_Hekka, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Nar_Shaddaa, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, New_Alderaan, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Nzoth, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Odik, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Omar, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Nzoth, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Odik, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Omar, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Ord_Biniir, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Ord_Mantell, Generate_Force </Starting_Forces>
 		<Starting_Forces> Mandalorians, Ordo, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Orinda, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Orinda, Generate_Force </Starting_Forces>
 		<Starting_Forces> Corporate_Sector, Oslumpex, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Ossus, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Ottega, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Ottega, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Pammant, Generate_Force </Starting_Forces>
 		<Starting_Forces> Chiss, Pesfavri, Generate_Force </Starting_Forces>
 		<Starting_Forces> Rebel, Phindar, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Polneye, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Polneye, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Prakith, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Prildaz, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Qretu, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Raxus, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Raxus_Second, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Rothana, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Ruusan, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Prildaz, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Qretu, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Raxus, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Raxus_Second, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Rothana, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Ruusan, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Ryloth, Generate_Force </Starting_Forces>
 		<Starting_Forces> Hutt_Cartels, Ryndellia, Generate_Force </Starting_Forces>
 		<Starting_Forces> Corporate_Sector, Saffalore, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Scarl, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Scarl, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Selaggis, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Semag, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Serenity, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Serenno, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Semag, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Serenity, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Serenno, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Sleheyron, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Talasea, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Tangrene, Generate_Force </Starting_Forces>
@@ -778,14 +788,14 @@
 		<Starting_Forces> Warlords, The_Maw, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, The_Wheel, Generate_Force </Starting_Forces>
 		<Starting_Forces> Killik_Hives, Thule, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Thyferra, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Tophalion, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Thyferra, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Tophalion, Generate_Force </Starting_Forces>
 		<Starting_Forces> Zsinj_Empire, Toydaria, Generate_Force </Starting_Forces>
-		<Starting_Forces> Pentastar, Utapau, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Vulpter, Generate_Force </Starting_Forces>
+		<Starting_Forces> Holdouts, Utapau, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Vulpter, Generate_Force </Starting_Forces>
 		<Starting_Forces> Independent_Forces, Wistril, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, YagDhul, Generate_Force </Starting_Forces>
-		<Starting_Forces> Warlords, Zfell, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, YagDhul, Generate_Force </Starting_Forces>
+		<Starting_Forces> Sector_Forces, Zfell, Generate_Force </Starting_Forces>
 
 	</Campaign>
 </Campaigns>

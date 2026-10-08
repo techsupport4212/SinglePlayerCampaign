@@ -128,6 +128,7 @@
 									Parameter_Type = "T_Ground_Advanced_Vehicle_Factory",
 									Parameter_Type = "Z_Ground_Advanced_Vehicle_Factory",
 									Parameter_Type = "P_Ground_Advanced_Vehicle_Factory",
+									Parameter_Type = "Holdout_Factory",
 									Parameter_Type = "Y_Ground_Advanced_Vehicle_Factory",
 									Parameter_Type = "I_Ground_Advanced_Vehicle_Factory",
 									Parameter_Type = "R_Ground_Advanced_Vehicle_Factory",

@@ -26,7 +26,7 @@
 			*
 			(Game.Age > 120 # 240)
 			+
-			Variable_Self.IsFaction {Parameter_Faction = "Hostile", Parameter_Faction = "Warlords", Parameter_Faction = "Independent_Forces"}
+			Variable_Self.IsFaction {Parameter_Faction = "HOSTILE", Parameter_Faction = "WARLORDS", Parameter_Faction = "INDEPENDENT_FORCES"}
 		)
 	</Allowed_As_Defender_Land>
 
@@ -208,7 +208,7 @@
 	<Should_Destroy_Structure>
 		Function_Allowed_As_Defender_Land.Evaluate
 		*
-		(1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "Neutral"})
+		(1 - Variable_Target.Owner.IsFaction {Parameter_Faction = "NEUTRAL"})
 		*
 		(
 			0.001

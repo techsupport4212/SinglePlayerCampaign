@@ -55,7 +55,7 @@ function Definitions()
 		"NewRepublic_Shipyard_Level_Zero | NewRepublic_Shipyard_Level_One | NewRepublic_Shipyard_Level_Two | NewRepublic_Shipyard_Level_Three | NewRepublic_Shipyard_Level_Four |"..
 		"Empire_Shipyard_Level_Zero | Empire_Shipyard_Level_One | Empire_Shipyard_Level_Two | Empire_Shipyard_Level_Three | Empire_Shipyard_Level_Four | Republic_Naval_Command_Centre |"..
 		"Zsinj_Shipyard_Level_Zero | Zsinj_Shipyard_Level_One | Zsinj_Shipyard_Level_Two | Zsinj_Shipyard_Level_Three | Zsinj_Shipyard_Level_Four |"..
-		"Greater_Maldrood_Shipyard_Level_Zero | Greater_Maldrood_Shipyard_Level_One | Greater_Maldrood_Shipyard_Level_Two | Greater_Maldrood_Shipyard_Level_Three | Greater_Maldrood_Shipyard_Level_Four |"..
+		"Holdout_Shipyard_Level_Zero | Holdout_Shipyard_Level_One | Holdout_Shipyard_Level_Two | Holdout_Shipyard_Level_Three | Holdout_Shipyard_Level_Four |"..		"Greater_Maldrood_Shipyard_Level_Zero | Greater_Maldrood_Shipyard_Level_One | Greater_Maldrood_Shipyard_Level_Two | Greater_Maldrood_Shipyard_Level_Three | Greater_Maldrood_Shipyard_Level_Four |"..
 		"Eriadu_Shipyard_Level_Zero | Eriadu_Shipyard_Level_One | Eriadu_Shipyard_Level_Two | Eriadu_Shipyard_Level_Three | Eriadu_Shipyard_Level_Four |"..
 		"Pentastar_Shipyard_Level_Zero | Pentastar_Shipyard_Level_One | Pentastar_Shipyard_Level_Two | Pentastar_Shipyard_Level_Three | Pentastar_Shipyard_Level_Four |"..
 		"Imperial_Proteus_Shipyard_Level_Zero | Imperial_Proteus_Shipyard_Level_One | Imperial_Proteus_Shipyard_Level_Two | Imperial_Proteus_Shipyard_Level_Three | Imperial_Proteus_Shipyard_Level_Four |"..
